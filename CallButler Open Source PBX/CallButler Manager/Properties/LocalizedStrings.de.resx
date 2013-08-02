@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutForm_CopyrightPostfix" xml:space="preserve">
+    <value>Telephony2 Corporation. Alle Rechte vorbehalten</value>
+  </data>
+  <data name="AboutForm_Expired" xml:space="preserve">
+    <value>Diese Testversion ist abgelaufen und nicht lizensiert</value>
+  </data>
+  <data name="AboutForm_ExpiresOn" xml:space="preserve">
+    <value>Testlizenz läuft ab {0}</value>
+  </data>
+  <data name="AboutForm_FreeLicense" xml:space="preserve">
+    <value>Dies ist eine kostenfreie Lizenz</value>
+  </data>
+  <data name="AboutForm_LicensedTo" xml:space="preserve">
+    <value>Lizensiert für: {0}</value>
+  </data>
+  <data name="AboutForm_ManagerVersion" xml:space="preserve">
+    <value>Manager Version {0}</value>
+  </data>
+  <data name="AboutForm_ServerVersion" xml:space="preserve">
+    <value>Server Version {0}</value>
+  </data>
+  <data name="CallFlowView_AddNewOption" xml:space="preserve">
+    <value>Hinzufügen einer neuen Option...</value>
+  </data>
+  <data name="CallFlowView_AddRemoveLanguages" xml:space="preserve">
+    <value>Hinzufügen/Entfernen von Sprachen...</value>
+  </data>
+  <data name="CallFlowView_AskChooseLanguage" xml:space="preserve">
+    <value>Anrufer kann die Sprache auswählen</value>
+  </data>
+  <data name="CallFlowView_CallerDials" xml:space="preserve">
+    <value>Der Anrufer wählt eine Option aus</value>
+  </data>
+  <data name="CallFlowView_Change" xml:space="preserve">
+    <value>Ändern...</value>
+  </data>
+  <data name="CallFlowView_ChooseLanguage" xml:space="preserve">
+    <value>Sprache auswählen</value>
+  </data>
+  <data name="CallFlowView_ConfirmDeleteDepartment" xml:space="preserve">
+    <value>Sind Sie sicher, dass Sie die Abteilung löschen wollen?</value>
+  </data>
+  <data name="CallFlowView_CustomScript" xml:space="preserve">
+    <value>Ausführen eines kundenspezifischen Skripts</value>
+  </data>
+  <data name="CallFlowView_Dial" xml:space="preserve">
+    <value>Wähle {0} für {1}</value>
+  </data>
+  <data name="CallFlowView_DialAnOption" xml:space="preserve">
+    <value>Wähle eine Option</value>
+  </data>
+  <data name="CallFlowView_ExplainOptions" xml:space="preserve">
+    <value>Erkläre die verfügbaren Optionen</value>
+  </data>
+  <data name="CallFlowView_ExtDeleted" xml:space="preserve">
+    <value>Durchwahlen scheinen gelöscht zu sein</value>
+  </data>
+  <data name="CallFlowView_ForDepartment" xml:space="preserve">
+    <value>Für {0}, drücke {1}.</value>
+  </data>
+  <data name="CallFlowView_ForDirectory" xml:space="preserve">
+    <value>Für das Firmenverzeichnis, drücken Sie bitte die Taste "&amp;".
+
+Um ins Menü zu gelangen, drücken Sie bitte die Taste "*".</value>
+  </data>
+  <data name="CallFlowView_KnowParty" xml:space="preserve">
+    <value>Wenn Sie die gewünschte Durchwahl Ihres Ansprechpartners kennen, können Sie diese jederzeit direkt wählen.</value>
+  </data>
+  <data name="CallFlowView_LanguageChanges" xml:space="preserve">
+    <value>Bei Änderungen von Sprach-Optionen, empfehlen wir auch die entsprechende Änderung der Begrüssung in der jeweiligen Sprache.</value>
+  </data>
+  <data name="CallFlowView_MainMenu" xml:space="preserve">
+    <value>Hauptmenü</value>
+  </data>
+  <data name="CallFlowView_MainMenuGreeting" xml:space="preserve">
+    <value>Hauptmenü Begrüssung</value>
+  </data>
+  <data name="CallFlowView_MenuOptionChanges" xml:space="preserve">
+    <value>Wenn Sie in den Menü-Optionen Änderungen vorgenommen haben, empfehlen wir die Anpassung im Hauptmenü Begrüssung vorzunehmen.</value>
+  </data>
+  <data name="CallFlowView_NewDepartment" xml:space="preserve">
+    <value>Neue Abteilung</value>
+  </data>
+  <data name="CallFlowView_PickUpCall" xml:space="preserve">
+    <value>Anruf annehmen</value>
+  </data>
+  <data name="CallFlowView_PlayGreeting" xml:space="preserve">
+    <value>Begrüssung abspielen</value>
+  </data>
+  <data name="CallFlowView_TransferExt" xml:space="preserve">
+    <value>Weiterleiten zur Durchwahl {0}</value>
+  </data>
+  <data name="CallFlowView_TransferNum" xml:space="preserve">
+    <value>Weiterleiten zu {0}</value>
+  </data>
+  <data name="CallFlowView_UnknownExt" xml:space="preserve">
+    <value>Unbekannte Durchwahl</value>
+  </data>
+  <data name="CallFlowView_WelcomeCaller" xml:space="preserve">
+    <value>Begrüssen des Anrufers</value>
+  </data>
+  <data name="CallFlowView_WelcomeGreeting" xml:space="preserve">
+    <value>Willkommensgruß</value>
+  </data>
+  <data name="CallFlowView_WelcomeTo" xml:space="preserve">
+    <value>Willkommen bei [Ihr Firmenname]</value>
+  </data>
+  <data name="CallHistoryView_ConfirmClear" xml:space="preserve">
+    <value>Sind Sie sicher, dass Sie die Anrufliste löschen möchten?</value>
+  </data>
+  <data name="CallHistoryView_ContactNotFound" xml:space="preserve">
+    <value>Es ist nicht möglich, den zugehörigen Outlook-Kontakt des Anrufers zu ermitteln.  Möchten Sie einen neuen Kontakt mit allen Informationen anlegen?</value>
+  </data>
+  <data name="CallHistoryView_NoContactFound" xml:space="preserve">
+    <value>keine Kontaktdaten gefunden</value>
+  </data>
+  <data name="Common_Close" xml:space="preserve">
+    <value>Schließen
+</value>
+  </data>
+  <data name="Common_ConfirmDelete" xml:space="preserve">
+    <value>Bestätigen Sie das Löschen.</value>
+  </data>
+  <data name="Common_Delete" xml:space="preserve">
+    <value>Löschen</value>
+  </data>
+  <data name="Common_Edit" xml:space="preserve">
+    <value>Ändern...
+</value>
+  </data>
+  <data name="Common_EmailError" xml:space="preserve">
+    <value>E-Mail Fehler</value>
+  </data>
+  <data name="Common_EmailProblem" xml:space="preserve">
+    <value>Beim E-Mailversand zu {0} ist ein Fehler aufgetreten
+
+Bitte prüfen Sie Ihre E-Maileinstellungen und versuchen Sie es nochmals.
+
+Fehler-Info:
+{1}</value>
+  </data>
+  <data name="Common_EmailSent" xml:space="preserve">
+    <value>Email versendet</value>
+  </data>
+  <data name="Common_EmailSentTo" xml:space="preserve">
+    <value>Email wurde erfolgreich versendet an</value>
+  </data>
+  <data name="Common_EnterValidEmail" xml:space="preserve">
+    <value>Bitte geben Sie eine gültige Email-Adresse an</value>
+  </data>
+  <data name="Common_InvalidEmail" xml:space="preserve">
+    <value>ungültige EMail-Adresse</value>
+  </data>
+  <data name="Common_No" xml:space="preserve">
+    <value>Nein</value>
+  </data>
+  <data name="Common_PasswordMismatch" xml:space="preserve">
+    <value>Passwortfehler</value>
+  </data>
+  <data name="Common_PasswordsDoNotMatch" xml:space="preserve">
+    <value>Die Passwörter stimmen nicht überein.  Bitte geben Sie das Passwort erneut ein und bestätigen Sie dieses.</value>
+  </data>
+  <data name="Common_PermissionDenied" xml:space="preserve">
+    <value>Zugriff verweigert</value>
+  </data>
+  <data name="Common_Yes" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+  <data name="DepartmentForm_ExtensionSettings" xml:space="preserve">
+    <value>Durchwahl-Einstellungen</value>
+  </data>
+  <data name="DepartmentForm_MessageSettings" xml:space="preserve">
+    <value>Nachrichten-Einstellung</value>
+  </data>
+  <data name="DepartmentForm_NumberSettings" xml:space="preserve">
+    <value>Ziffern-Einstellungen</value>
+  </data>
+  <data name="DepartmentForm_ScriptSettings" xml:space="preserve">
+    <value>Skript-Einstellungen</value>
+  </data>
+  <data name="EmailUtils_EmailSuccess" xml:space="preserve">
+    <value>Eine Test-Email wurde erfolgreich versendet an {0}
+
+Rufen Sie ihre EMail in ein paar Minuten ab, um den Empfang der Nachricht zu bestätigen.</value>
+  </data>
+  <data name="EmailUtils_TestEmail" xml:space="preserve">
+    <value>Dies ist eine von CallButler versendete Testnachricht.
+
+Wenn Sie das EMail empfangen haben, sind die SMTP-Email-Einstellungen richtig.</value>
+  </data>
+  <data name="EmailUtils_TestEmailSubject" xml:space="preserve">
+    <value>Callbutler Testnachricht</value>
+  </data>
+  <data name="ExtensionEditorForm_ContactAdmin" xml:space="preserve">
+    <value>Kontaktieren Sie Ihren Administrator</value>
+  </data>
+  <data name="ExtensionEditorForm_EmailConfiguration" xml:space="preserve">
+    <value>EMail-Konfiguration</value>
+  </data>
+  <data name="ExtensionEditorForm_EnterSMTP" xml:space="preserve">
+    <value>Um EMails versenden zu können, müssen Sie in CallButler den SMTP EMail-Server konfigurieren.
+
+Möchten Sie dies nun tun?</value>
+  </data>
+  <data name="ExtensionEditorForm_PleaseSpecifyEmail" xml:space="preserve">
+    <value>Bitte legen Sie eine EMail-Adresse fest, wohin gesendet werden soll</value>
+  </data>
+  <data name="ExtensionEditorForm_YourNewExtension" xml:space="preserve">
+    <value>Ihre neue Telefondurchwahl</value>
+  </data>
+  <data name="ExtensionsView_ExtLimit" xml:space="preserve">
+    <value>Diese Version von CallButler lässt nicht mehr als {0} Durchwahlen zu.
+Wenn Sie gerne mehr Durchwahlen haben möchte, benötigen Sie ein Upgrade.</value>
+  </data>
+  <data name="ExtensionView_ConfirmDelete" xml:space="preserve">
+    <value>Sind Sie sicher, dass Sie die Durchwahl löschen möchten?
+
+Dies löscht auch die Voicebox-Nachrichten, die mit dieser Durchwahl verbunden sind.</value>
+  </data>
+  <data name="ExtensionView_ExtConflict" xml:space="preserve">
+    <value>Durchwahlnummern-Konflikt</value>
+  </data>
+  <data name="ExtensionView_ExtTaken" xml:space="preserve">
+    <value>Diese Durchwahlnummer {0} ist schon vergeben. Diese Durchwahlnummer muß nach {1} geändert werden.</value>
+  </data>
+  <data name="GreetingUtils_GettingSounds" xml:space="preserve">
+    <value>Klänge finden</value>
+  </data>
+  <data name="GreetingUtils_SavingSounds" xml:space="preserve">
+    <value>Klänge speichern</value>
+  </data>
+  <data name="LoginForm_InvalidLogin" xml:space="preserve">
+    <value>Der Benutzername und/oder das Passwort ist falsch. Bitte versuchen Sie es nochmals.</value>
+  </data>
+  <data name="LoginForm_InvalidLoginTitle" xml:space="preserve">
+    <value>ungültiger Login</value>
+  </data>
+  <data name="MainForm_CallButlerService" xml:space="preserve">
+    <value>CallButler Dienst</value>
+  </data>
+  <data name="MainForm_ChangesSaved" xml:space="preserve">
+    <value>Änderungen sind gespeichert</value>
+  </data>
+  <data name="MainForm_ConnectedTo" xml:space="preserve">
+    <value>Verbunden mit {0}</value>
+  </data>
+  <data name="MainForm_ConnectingTo" xml:space="preserve">
+    <value>Verbinden mit {0}</value>
+  </data>
+  <data name="MainForm_EnteredBadLicense" xml:space="preserve">
+    <value>Sie haben einen ungültigen Lizenzkey eingegeben. Bitte versuchen Sie es nochmals.</value>
+  </data>
+  <data name="MainForm_EnteredExpiredLicense" xml:space="preserve">
+    <value>Sie haben einen abgelaufenen Testlizenzkey eingegeben. Bitte versuchen Sie es nochmals</value>
+  </data>
+  <data name="MainForm_Expired" xml:space="preserve">
+    <value>Die CallButler-Testversion ist abgelaufen und wird nun keine weiteren Anrufe mehr annehmen</value>
+  </data>
+  <data name="MainForm_ExpireOnDate" xml:space="preserve">
+    <value>Die Testversion läuft aus am {0}</value>
+  </data>
+  <data name="MainForm_Expires" xml:space="preserve">
+    <value>Diese Testversion von CallButler wird in {0} Tagen ablaufen</value>
+  </data>
+  <data name="MainForm_InvalidLicenseKey" xml:space="preserve">
+    <value>Ungültiger Lizenzkey</value>
+  </data>
+  <data name="MainForm_LicenseValidated" xml:space="preserve">
+    <value>Lizenz ist gültig</value>
+  </data>
+  <data name="MainForm_LoadingData" xml:space="preserve">
+    <value>Lade Daten...</value>
+  </data>
+  <data name="MainForm_NoConnection" xml:space="preserve">
+    <value>Keine Verbindung</value>
+  </data>
+  <data name="MainForm_SavingChanges" xml:space="preserve">
+    <value>Änderungen speichern...
+</value>
+  </data>
+  <data name="MainForm_ServiceNotRunning" xml:space="preserve">
+    <value>Der CallButler-Dienst scheint nicht zu laufen.
+
+Möchten Sie den CallButler-Dienst starten?</value>
+  </data>
+  <data name="MainForm_StartingService" xml:space="preserve">
+    <value>Starten des CallButler-Dienstes</value>
+  </data>
+  <data name="MainForm_ThankYouForReg" xml:space="preserve">
+    <value>Herzlichen Dank für die Registrierung des CallButler-Lizenz.</value>
+  </data>
+  <data name="MainForm_TrialLicense" xml:space="preserve">
+    <value>Testlizenz</value>
+  </data>
+  <data name="PersonalizedGreetingView_ConfirmDelete" xml:space="preserve">
+    <value>Sind Sie sicher, dass Sie die Anruf-Personalisierung löschen möchten?</value>
+  </data>
+  <data name="PrebuiltConfigForm_Finish" xml:space="preserve">
+    <value>&amp;Ende</value>
+  </data>
+  <data name="PrebuiltConfigForm_Next" xml:space="preserve">
+    <value>&amp;Weiter &gt;</value>
+  </data>
+  <data name="Program_Initializing" xml:space="preserve">
+    <value>Initialisiere CallButler...</value>
+  </data>
+  <data name="ProvidersView_ConfirmDelete" xml:space="preserve">
+    <value>Sind Sie sicher, dass Sie den Providereintrag löschen möchten?</value>
+  </data>
+  <data name="ReportPrinter_PrintError" xml:space="preserve">
+    <value>Fehler beim Drucken</value>
+  </data>
+  <data name="ReportPrinter_UnableToPrint" xml:space="preserve">
+    <value>kein Berichtdruck möglich.</value>
+  </data>
+  <data name="ScriptScheduleView_ConfirmDelete" xml:space="preserve">
+    <value>Sind Sie sicher, dass Sie den Skript-Zeitplan löschen möchten?</value>
+  </data>
+  <data name="ScriptScheduleView_NewSchedule" xml:space="preserve">
+    <value>Neuen Skript-Zeitplan</value>
+  </data>
+  <data name="SummaryView_UnkownCaller" xml:space="preserve">
+    <value>Unbekannter Anrufer</value>
+  </data>
+  <data name="TestDriveView_CallTransfer" xml:space="preserve">
+    <value>Anrufweiterleitung</value>
+  </data>
+  <data name="TestDriveView_CBTestCall" xml:space="preserve">
+    <value>CallButler Testanruf</value>
+  </data>
+  <data name="TestDriveView_Connected" xml:space="preserve">
+    <value>Verbunden</value>
+  </data>
+  <data name="TestDriveView_PressToCall" xml:space="preserve">
+    <value>Drücken Sie um zu beginnen, die Anruf-Taste</value>
+  </data>
+  <data name="TestDriveView_ReadyForCall" xml:space="preserve">
+    <value>Bereit für einen Anruf</value>
+  </data>
+  <data name="TestDriveView_TransferSim" xml:space="preserve">
+    <value>Dieser Anruf würde nun zu {0} weitergeleitet werden, was aber in der Testversion nicht möglich ist.
+
+Der Anruf wird nun beendet.</value>
+  </data>
+  <data name="VersionCheckeForm_FinishedDownload" xml:space="preserve">
+    <value>Die neue Version des CallButlers ist soeben heruntergeladen worden.</value>
+  </data>
+  <data name="VersionCheckerForm_DownloadComplete" xml:space="preserve">
+    <value>Download beendet</value>
+  </data>
+  <data name="VersionCheckerForm_DownloadError" xml:space="preserve">
+    <value>Downloadfehler</value>
+  </data>
+  <data name="VersionCheckerForm_Downloading" xml:space="preserve">
+    <value>Laden Sie sich die aktuellste Version von CallButler herunter</value>
+  </data>
+  <data name="VersionCheckerForm_NotOnLatest" xml:space="preserve">
+    <value>Sie verwenden nicht die neueste Version von CallButler.
+Wir empfehlen Ihnen die neueste Version herunterzuladen und zu installieren.</value>
+  </data>
+  <data name="VersionCheckerForm_ProblemDownloading" xml:space="preserve">
+    <value>Beim Download der neuen CallButler-Version gab es ein Problem.  Bitte verständigen Sie den support@callbutler.com</value>
+  </data>
+  <data name="VersionCheckerForm_RunningLatest" xml:space="preserve">
+    <value>Sie verwenden bereits die aktuellste Version von CallButler</value>
+  </data>
+</root>

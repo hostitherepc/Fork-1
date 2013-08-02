@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="wizardPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>170, 0</value>
+  </data>
+  <data name="wizardPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 520</value>
+  </data>
+  <data name="wizardPage2.Text" xml:space="preserve">
+    <value>Personalisierungs-Einstellungen</value>
+  </data>
+  <data name="wizardPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>170, 0</value>
+  </data>
+  <data name="wizardPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 520</value>
+  </data>
+  <data name="wizardPage1.Text" xml:space="preserve">
+    <value>Personalisierte Nachricht</value>
+  </data>
+  <data name="pgGeneral.Location" type="System.Drawing.Point, System.Drawing">
+    <value>170, 0</value>
+  </data>
+  <data name="pgGeneral.Size" type="System.Drawing.Size, System.Drawing">
+    <value>464, 520</value>
+  </data>
+  <data name="pgGeneral.Text" xml:space="preserve">
+    <value>Anrufer-Identifizierung</value>
+  </data>
+  <data name="wizard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>650, 568</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="wizard.TabPanelWidth" type="System.Int32, mscorlib">
+    <value>170</value>
+  </data>
+  <data name="wizard.TabWidth" type="System.Int32, mscorlib">
+    <value>170</value>
+  </data>
+  <data name="lblScript.HelpText" xml:space="preserve">
+    <value>Benutzen Sie dies, wenn Sie ein individuelles Skript nach einer personalisierten Begrüssung starten wollen.  Mit einem individuellen Skript können Sie Ihren eigenen Anruf-Ablaufplan nebst Schnittstellen mit Datenbanken und Programmen definieren.
+
+Um ein individuelles Skript zu schreiben, können Sie den TeliScript Editor von CallButler verwenden. Schauen Sie sich hierzu die CallButler Dokumentation an, welche Sie über das Erstellen und Benutzen von Skripten informiert.</value>
+  </data>
+  <data name="lblScript.HelpTitle" xml:space="preserve">
+    <value>starten eines individuellen Skripts</value>
+  </data>
+  <data name="lblScript.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 13</value>
+  </data>
+  <data name="lblScript.Text" xml:space="preserve">
+    <value>starten eines individuellen Skripts (für Fortgeschrittene)</value>
+  </data>
+  <data name="lblHangUp.HelpText" xml:space="preserve">
+    <value>Wählen Sie dies, wenn Sie möchten, dass nach Abspielen der personalisierten Ansage direkt aufgelegt wird.
+
+Sie können diese Personalisierungs-Option für folgenden Zweck verwenden:
+
+- Ungewünschte Anrufer informieren, dass deren Anrufe nicht entgegen genommen werden</value>
+  </data>
+  <data name="lblHangUp.HelpTitle" xml:space="preserve">
+    <value>Anruf beenden</value>
+  </data>
+  <data name="lblHangUp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 13</value>
+  </data>
+  <data name="lblHangUp.Text" xml:space="preserve">
+    <value>Anruf beenden</value>
+  </data>
+  <data name="lblTransfer.HelpText" xml:space="preserve">
+    <value>Wählen Sie dies, wenn Sie möchten, dass ein spezieller Anrufer nach personalisierter Begrüssung direkt an eine bestimmte Durchwahl verbunden wird.
+
+Sie können diese Option hierfür verwenden:
+
+- Weiterleiten von wichtigen Anrufern direkt an den Firmeninhaber</value>
+  </data>
+  <data name="lblTransfer.HelpTitle" xml:space="preserve">
+    <value>Anruf an eine Durchwahl weiterleiten</value>
+  </data>
+  <data name="lblTransfer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 13</value>
+  </data>
+  <data name="lblTransfer.Text" xml:space="preserve">
+    <value>Anruf an eine Durchwahl weiterleiten</value>
+  </data>
+  <data name="lblContinueCall.HelpText" xml:space="preserve">
+    <value>Wähle dies, wenn Sie möchten, dass ein bestimmter Anrufer genauso wie jeder andere Anrufer den Anruf fortsetzt (z.B: nachdem die personalisierte Begrüssung abgespielt ist, wird der Anrufer ins Hauptmenü geleitet).
+
+Sie können dies Option hierfür verwenden:
+
+- Um Anrufern in einem bestimmten Gebiet über eine Veranstaltung zu informieren</value>
+  </data>
+  <data name="lblContinueCall.HelpTitle" xml:space="preserve">
+    <value>den Anruf normal fortsetzen</value>
+  </data>
+  <data name="lblContinueCall.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 13</value>
+  </data>
+  <data name="lblContinueCall.Text" xml:space="preserve">
+    <value>den Anruf normal fortsetzen</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 13</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>eine Durchwahl auswählen</value>
+  </data>
+  <data name="customerIDDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>KundenID</value>
+  </data>
+  <data name="extensionIDDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>DurchwahlID</value>
+  </data>
+  <data name="extensionNumberDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Durchwahlnummer</value>
+  </data>
+  <data name="extensionNumberDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="firstNameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Vorname</value>
+  </data>
+  <data name="firstNameDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="lastNameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Nachname</value>
+  </data>
+  <data name="searchNumberDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Suche Nummer</value>
+  </data>
+  <data name="enableSearchDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve">
+    <value>Suche aktivieren</value>
+  </data>
+  <data name="passwordDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Passwort</value>
+  </data>
+  <data name="enableManagementDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve">
+    <value>Aktiviere Verwaltung</value>
+  </data>
+  <data name="doNotDisturbDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve">
+    <value>Nicht stören</value>
+  </data>
+  <data name="emailNotificationDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve">
+    <value>EMail-Benachrichtigung</value>
+  </data>
+  <data name="emailAddressDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>EMail-Adresse</value>
+  </data>
+  <data name="emailAttachmentDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve">
+    <value>EMail-Anhang</value>
+  </data>
+  <data name="smoothLabel3.HelpText" xml:space="preserve">
+    <value>Definieren Sie einen Pfad zu einem individuellen Skript. Callbutler wird dieses Skript ausführen, sobald die personalisierte Begrüssung abgespielt ist.
+
+Bitte beachten Sie, wenn Sie den CallButler Dienst von einem anderen PC verwalten, dass Sie den Pfad für das Skript definieren, das auf diesem Computer gespeichert ist.</value>
+  </data>
+  <data name="smoothLabel3.HelpTitle" xml:space="preserve">
+    <value>individueller Skript-Pfad</value>
+  </data>
+  <data name="smoothLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
+  </data>
+  <data name="smoothLabel3.Text" xml:space="preserve">
+    <value>Skript-Pfad</value>
+  </data>
+  <data name="btnScriptBrowse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 48</value>
+  </data>
+  <data name="btnScriptBrowse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 21</value>
+  </data>
+  <data name="btnScriptBrowse.Text" xml:space="preserve">
+    <value>Blättern...</value>
+  </data>
+  <data name="wizardHeader3.Description" xml:space="preserve">
+    <value>Definieren Sie die allgemeinen Einstellungen für die Personalisierung.</value>
+  </data>
+  <data name="wizardHeader3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 108</value>
+  </data>
+  <data name="wizardHeader3.SubTitle" xml:space="preserve">
+    <value>Personalisierungs-Einstellungen</value>
+  </data>
+  <data name="wizardHeader3.Title" xml:space="preserve">
+    <value>Anruf-Personalisierung</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 13</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Nachdem die personalisierte Nachricht abgespielt ist</value>
+  </data>
+  <data name="greetingControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 121</value>
+  </data>
+  <data name="greetingControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>453, 381</value>
+  </data>
+  <data name="wizardHeader2.Description" xml:space="preserve">
+    <value>Bitte definieren Sie eine personalisierte Nachricht, die für diesen Anrufer abgespielt werden soll.</value>
+  </data>
+  <data name="wizardHeader2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 108</value>
+  </data>
+  <data name="wizardHeader2.SubTitle" xml:space="preserve">
+    <value>Personalisierte Nachricht</value>
+  </data>
+  <data name="wizardHeader2.Title" xml:space="preserve">
+    <value>Anruf Personalisierung</value>
+  </data>
+  <data name="smoothLabel5.HelpText" xml:space="preserve">
+    <value>Definieren Sie hier einen Wert, wenn Sie mehrere eingehende Rufnummern haben und möchten das CallButler die gewählte Rufnummer prüft.
+
+Sie können den * für Joker-Suche verwenden. Z.B. wenn sie alle Nummern mit Vorwahl 206 filtern wollen, dann müssten Sie den Wert auf "1206*" oder "*206*" (ohne die Anführungszeichen) definieren.
+
+Beachten Sie: Bei CallButler für Skype-Editionen, kann mit Nummer auch der Skype-Name gemeint sein.</value>
+  </data>
+  <data name="smoothLabel5.HelpTitle" xml:space="preserve">
+    <value>gewählte Telefonnummer
+</value>
+  </data>
+  <data name="smoothLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 13</value>
+  </data>
+  <data name="smoothLabel5.Text" xml:space="preserve">
+    <value>gewählte Telefonnummer</value>
+  </data>
+  <data name="smoothLabel4.HelpText" xml:space="preserve">
+    <value>Sie können einen einzelnen Wert für AnruferID/Name, Anrufernummer und gewählte Telefonnummer definieren oder alle mit einem Wert versehen.
+
+z.B.  Wenn Sie alle Anrufer, die mit J beginnen, filtern möchten, geben Sie "J*" bei AnruferID/Name ein und lassen Sie die Anrufer-Telefonnummer leer.
+
+Wenn Sie alle Anrufer, die mit J beginnen UND in dem Vorwahlbereich 206 sind, geben Sie "J*" bei AnruferID/Name ein und "*206*" bei der Anrufer-Telefonnummer ein.
+</value>
+  </data>
+  <data name="smoothLabel4.HelpTitle" xml:space="preserve">
+    <value>Anrufer ID/NAme und Telefonnummer</value>
+  </data>
+  <data name="smoothLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 13</value>
+  </data>
+  <data name="smoothLabel4.Text" xml:space="preserve">
+    <value>Tragen Sie ein oder mehrere ein:</value>
+  </data>
+  <data name="smoothLabel2.HelpText" xml:space="preserve">
+    <value>Benutzen Sie dieses freie Feld zur Erläuterung der Anruf-Personalisierung. Dies ist nur für interne Zwecke und hat keine Einwirkungen auf die Anruf-Personalisierung.</value>
+  </data>
+  <data name="smoothLabel2.HelpTitle" xml:space="preserve">
+    <value>Notizen</value>
+  </data>
+  <data name="smoothLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 13</value>
+  </data>
+  <data name="smoothLabel2.Text" xml:space="preserve">
+    <value>Notizen</value>
+  </data>
+  <data name="lblOneTime.HelpText" xml:space="preserve">
+    <value>Wenn Sie dies auswählen, wird CallButler die Anrufpersonalisierung nur beim ersten Anruf dieser Person verwenden.</value>
+  </data>
+  <data name="lblOneTime.HelpTitle" xml:space="preserve">
+    <value>Nur einmal nutzen</value>
+  </data>
+  <data name="lblOneTime.Text" xml:space="preserve">
+    <value>nur einmal nutzen</value>
+  </data>
+  <data name="lblRegex.HelpText" xml:space="preserve">
+    <value>Mit regulären Ausdrücken können Sie komplexe Suchalgorithmen erstellen.  Markieren Sie dieses Kästchen, wenn Sie möchten, dass CallButler die Werte von AnruferID und Telefonnummer als reguläre Ausdrücke verwenden soll.
+
+Wenn Sie mit den regulären Ausdrücken nicht vertraut sind, finden Sie zahlreiche Quellen für Dokumentationen und Anleitungen im Internet. </value>
+  </data>
+  <data name="lblRegex.HelpTitle" xml:space="preserve">
+    <value>Benutzerdefinierte reguläre Ausdrücke für Datenabgleich</value>
+  </data>
+  <data name="lblRegex.Size" type="System.Drawing.Size, System.Drawing">
+    <value>351, 13</value>
+  </data>
+  <data name="lblRegex.Text" xml:space="preserve">
+    <value>Benutze reguläre Ausdrücke für Datenabgleich (für Fortgeschrittene)</value>
+  </data>
+  <data name="smoothLabel1.HelpText" xml:space="preserve">
+    <value>Legen Sie hier einen Wert fest, wenn Sie möchten, dass CallButler die Anrufer-Telefonnummer herausfindet, um zu entscheiden, ob und wie der Anruf personalisiert werden soll.
+
+Sie können den * für die Jokersuche verwenden. z.B. wenn Sie alle Anrufer aus dem Vorwahlbereich 206 finden wollen, müssen Sie den Wert auf "1206*" oder "*206*" (ohne Anführungszeichen) festlegen.
+
+Achtung: Bei Skype-Versionen von CallButler, kann die Nummer auch der Skype-Name sein</value>
+  </data>
+  <data name="smoothLabel1.HelpTitle" xml:space="preserve">
+    <value>Anrufer-Telefonnummer</value>
+  </data>
+  <data name="smoothLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 13</value>
+  </data>
+  <data name="smoothLabel1.Text" xml:space="preserve">
+    <value>Anrufer-Telefonnummer</value>
+  </data>
+  <data name="lblCallerID.HelpText" xml:space="preserve">
+    <value>Legen Sie hier einen Wert fest, wenn Sie möchten, dass Callbutler nach der AnruferID oder dem Namen des Anrufers sucht, um festzulegen ob und wie der Anruf personalisiert wird.
+
+Sie können den * für die Jokersuche verwenden. z.B. wenn Sie nach Anrufernamen, die mit J beginnen suchen wollen, müssen Sie einen Wert "J*" (ohne Anführungszeichen) definieren.
+
+Achtung: Bei SKYPE-Version von CallButler kann auch der Skype-Name als Wert verwenden werden.</value>
+  </data>
+  <data name="lblCallerID.HelpTitle" xml:space="preserve">
+    <value>AnruferID/Name
+</value>
+  </data>
+  <data name="lblCallerID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 13</value>
+  </data>
+  <data name="lblCallerID.Text" xml:space="preserve">
+    <value>AnruferID/Name</value>
+  </data>
+  <data name="btnImportOutlook.Location" type="System.Drawing.Point, System.Drawing">
+    <value>253, 126</value>
+  </data>
+  <data name="btnImportOutlook.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 24</value>
+  </data>
+  <data name="btnImportOutlook.Text" xml:space="preserve">
+    <value>Kontakt aus Outlook importieren</value>
+  </data>
+  <data name="wizardHeader1.Description" xml:space="preserve">
+    <value>Legen Sie fest, wie CallButler die Anrufer identifizieren soll.</value>
+  </data>
+  <data name="wizardHeader1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>464, 110</value>
+  </data>
+  <data name="wizardHeader1.SubTitle" xml:space="preserve">
+    <value>Anrufer-Identifizierung</value>
+  </data>
+  <data name="wizardHeader1.Title" xml:space="preserve">
+    <value>Anrufpersonalisierung</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>650, 568</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>CallButler</value>
+  </data>
+</root>

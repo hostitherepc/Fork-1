@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblErrors.HelpText" xml:space="preserve">
+    <value>Wenn aktiviert, dann sendet CallButler automatisch Fehlerreports an Works Out Software, Inc.
+
+Wenn Sie dies aktiviert lassen, helfen Sie  uns bei der Analyse von auftretenden Problemen und bei der Qualitätsverbesserung.</value>
+  </data>
+  <data name="lblErrors.HelpTitle" xml:space="preserve">
+    <value>Automatischer Fehlerversand</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblErrors.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 13</value>
+  </data>
+  <data name="lblErrors.Text" xml:space="preserve">
+    <value>Automatische Mitteilung und Versand von Serverfehlern</value>
+  </data>
+  <data name="smoothLabel12.HelpText" xml:space="preserve">
+    <value>Definieren Sie, wieviel Logging-Informationen CallButler sammeln und speichern soll.
+
+Nur Fehler - Nur Logfehler, wenn Sie auftreten.
+
+Basic Information - speichert auch wer wann angerufen hat.
+
+Detaillierte Information - speichert detaillierte Informationen über den Anruff inclusive allem was während des Anrufes so passiert.</value>
+  </data>
+  <data name="smoothLabel11.HelpText" xml:space="preserve">
+    <value>Hier wird definiert, wo CallButler the Logging-Informationen speichert.
+
+Log-Dateien nicht speichern - CallButler wird keine Log-Dateien speichern.
+
+Log-Dateien als Textdatei speichern -  CallButler wird Logging-Informationen in Textdateien auf die Festplatte speichern.
+
+Log-Dateien als Windows SystemEventLog speichern - CallButler wird die Logging-Informationen im Windows EventLog speichern.</value>
+  </data>
+  <data name="smoothLabel11.HelpTitle" xml:space="preserve">
+    <value>Speicherort der Logdatei</value>
+  </data>
+  <data name="smoothLabel11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 13</value>
+  </data>
+  <data name="smoothLabel11.Text" xml:space="preserve">
+    <value>Speicherort der Logdatei</value>
+  </data>
+  <data name="cboLogLevel.Items" xml:space="preserve">
+    <value>Nur Fehler</value>
+  </data>
+  <data name="cboLogLevel.Items1" xml:space="preserve">
+    <value>Basis Informationen</value>
+  </data>
+  <data name="cboLogLevel.Items2" xml:space="preserve">
+    <value>Detaillierte Informationen</value>
+  </data>
+  <data name="cboLogStorage.Items" xml:space="preserve">
+    <value>keine Logdateien speichern</value>
+  </data>
+  <data name="cboLogStorage.Items1" xml:space="preserve">
+    <value>Logs in Textdateien speichern</value>
+  </data>
+  <data name="cboLogStorage.Items2" xml:space="preserve">
+    <value>Logs im Windows SystemEventLog speichern</value>
+  </data>
+  <data name="header6.Description" xml:space="preserve">
+    <value>Verwaltung der Logging-Einstellungen</value>
+  </data>
+  <data name="header6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 47</value>
+  </data>
+  <data name="header6.Title" xml:space="preserve">
+    <value>Logging-Einstellungen</value>
+  </data>
+  <data name="pgLoggingSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 0</value>
+  </data>
+  <data name="pgLoggingSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>477, 258</value>
+  </data>
+  <data name="pgLoggingSettings.Text" xml:space="preserve">
+    <value>Logging-Einstellungen</value>
+  </data>
+  <data name="chkNotifyofProductVersions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 17</value>
+  </data>
+  <data name="chkNotifyofProductVersions.Text" xml:space="preserve">
+    <value>Informieren Sie mich sobald Updates verfügbar sind</value>
+  </data>
+  <data name="header8.Description" xml:space="preserve">
+    <value>Produkt-Update-Benachrichtigungen verwalten</value>
+  </data>
+  <data name="header8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 47</value>
+  </data>
+  <data name="header8.Title" xml:space="preserve">
+    <value>Update-Einstellungen</value>
+  </data>
+  <data name="pgUpdateSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 0</value>
+  </data>
+  <data name="pgUpdateSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>477, 258</value>
+  </data>
+  <data name="pgUpdateSettings.Text" xml:space="preserve">
+    <value>Update-Einstellungen</value>
+  </data>
+  <data name="lblSTUN.HelpText" xml:space="preserve">
+    <value>STUN ermöglicht dem CallButler die öffentliche IP-Adresse feststellen, wenn Sie hinter einem NAT-Router/Firewall sind. In den meisten Fällen sollen Sie STUN aktiviert lassen, es sei denn es gibt Probleme damit und Sie können keine Verbindung aufbauen oder niemanden hören.</value>
+  </data>
+  <data name="lblSTUN.HelpTitle" xml:space="preserve">
+    <value>Benutze STUN</value>
+  </data>
+  <data name="lblSTUN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 13</value>
+  </data>
+  <data name="lblSTUN.Text" xml:space="preserve">
+    <value>Benutze STUN</value>
+  </data>
+  <data name="smoothLabel14.HelpText" xml:space="preserve">
+    <value>Das Wert legt die Anzahl der Gespräche fest, die CallButler gleichzeitig verwalten kann.</value>
+  </data>
+  <data name="smoothLabel14.HelpTitle" xml:space="preserve">
+    <value>Concurrent Line Count
+</value>
+  </data>
+  <data name="smoothLabel9.HelpText" xml:space="preserve">
+    <value>Dies ist der Netwerkport, den CallButler nutzt um mit dem VoIP-Provider zu kommunizieren.   Meistens ist es auf 5060 voreingestellt, aber natürlich können Sie dies ändern, falls es Netzwerk/Firewall-Probleme gibt.</value>
+  </data>
+  <data name="smoothLabel10.HelpText" xml:space="preserve">
+    <value>Wenn das Feld leer bleibt, nutzt CallButler standardmäßig den STUN-Server. Wenn Sie Ihren eigenen STUN-Server definieren möchten, können Sie dies hier tun.</value>
+  </data>
+  <data name="smoothLabel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 13</value>
+  </data>
+  <data name="smoothLabel10.Text" xml:space="preserve">
+    <value>STUn Server</value>
+  </data>
+  <data name="header3.Description" xml:space="preserve">
+    <value>Verwaltung der Server-Netzwerkeinstellungen</value>
+  </data>
+  <data name="header3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 47</value>
+  </data>
+  <data name="header3.Title" xml:space="preserve">
+    <value>Netzwerkeinstellungen</value>
+  </data>
+  <data name="pgNetworkSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 0</value>
+  </data>
+  <data name="pgNetworkSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>477, 258</value>
+  </data>
+  <data name="pgNetworkSettings.Text" xml:space="preserve">
+    <value>Netzwerkeinstellungen</value>
+  </data>
+  <data name="btnMoveCodecDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 140</value>
+  </data>
+  <data name="btnMoveCodecDown.Text" xml:space="preserve">
+    <value>Herunterblättern</value>
+  </data>
+  <data name="btnMoveCodecUp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 118</value>
+  </data>
+  <data name="btnMoveCodecUp.Text" xml:space="preserve">
+    <value>Heraufblättern</value>
+  </data>
+  <data name="lbCodecs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 118</value>
+  </data>
+  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>437, 54</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>Unten können Sie die Reihenfolge der Audio-Codecs festlegen, deaktivieren und anpassen. Oben genannte Audio-Codecs haben höchste Priorität.</value>
+  </data>
+  <data name="header9.Description" xml:space="preserve">
+    <value>Verwaltung der AudioCodec-Einstellungen</value>
+  </data>
+  <data name="header9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 47</value>
+  </data>
+  <data name="header9.Title" xml:space="preserve">
+    <value>AudioCodec Einstellungen</value>
+  </data>
+  <data name="pgCodecSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 0</value>
+  </data>
+  <data name="pgCodecSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>477, 258</value>
+  </data>
+  <data name="pgCodecSettings.Text" xml:space="preserve">
+    <value>Codec-Einstellungen</value>
+  </data>
+  <data name="smoothLabel8.HelpText" xml:space="preserve">
+    <value>Das ist die Lautstärke mit der die "Text-To-Speech" Begrüssung abgespielt wird. Einen zu hohen Wert zu definieren führt zu Störungen und die Begrüssung ist schlechter verständlich.</value>
+  </data>
+  <data name="smoothLabel8.HelpTitle" xml:space="preserve">
+    <value>Lautstärke Sprache</value>
+  </data>
+  <data name="smoothLabel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 13</value>
+  </data>
+  <data name="smoothLabel8.Text" xml:space="preserve">
+    <value>Lautstärke Sprache</value>
+  </data>
+  <data name="smoothLabel7.HelpText" xml:space="preserve">
+    <value>Mit dieser Lautstärke werden Sprachnachrichten aufgenommen.</value>
+  </data>
+  <data name="smoothLabel7.HelpTitle" xml:space="preserve">
+    <value>Aufnahmelautstärke</value>
+  </data>
+  <data name="smoothLabel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 13</value>
+  </data>
+  <data name="smoothLabel7.Text" xml:space="preserve">
+    <value>Aufnahmelautstärke</value>
+  </data>
+  <data name="smoothLabel6.HelpText" xml:space="preserve">
+    <value>Mit dieser Lautstärke werden die musikbasierten Begrüssungstexte und Wartemusik abgespielt. Einen zu hohen Wert zu definiert führt zu Qualitätsverlust und erschwert es die Begrüssungstexte zu verstehen-</value>
+  </data>
+  <data name="smoothLabel6.HelpTitle" xml:space="preserve">
+    <value>Lautstärke Ton</value>
+  </data>
+  <data name="smoothLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 13</value>
+  </data>
+  <data name="smoothLabel6.Text" xml:space="preserve">
+    <value>Lautstärke Ton</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 13</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>MAx</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 13</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>MAx</value>
+  </data>
+  <data name="header2.Description" xml:space="preserve">
+    <value>Audioeinstellungen verwalten</value>
+  </data>
+  <data name="header2.Title" xml:space="preserve">
+    <value>Audioeinstellungen</value>
+  </data>
+  <data name="pgAudioSettings.Text" xml:space="preserve">
+    <value>Audio-Einstellungen</value>
+  </data>
+  <data name="smoothLabel5.HelpText" xml:space="preserve">
+    <value>Insofern CallButler den "Text-Zu-Sprache-Modus" nutzt, um die Begrüssung zu sprechen,  wird es die definierte Stimme nutzen, es sei denn die Begrüssung ist anders definiert.</value>
+  </data>
+  <data name="smoothLabel5.HelpTitle" xml:space="preserve">
+    <value>Standard Stimme</value>
+  </data>
+  <data name="smoothLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 13</value>
+  </data>
+  <data name="smoothLabel5.Text" xml:space="preserve">
+    <value>Standard Stimme</value>
+  </data>
+  <data name="header7.Description" xml:space="preserve">
+    <value>"Text-zu-Sprache"-Einstellungen verwalten</value>
+  </data>
+  <data name="header7.Title" xml:space="preserve">
+    <value>Spracheinstellungen</value>
+  </data>
+  <data name="pgSpeechSettings.Text" xml:space="preserve">
+    <value>Spracheinstellungen</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>Um Wartemusik hinzuzufügen, kopieren Sie MP3 oder Wav-Dateien ins [Installationsverzeichnis]\Service\Music</value>
+  </data>
+  <data name="header5.Description" xml:space="preserve">
+    <value>Wartemusik verwalten</value>
+  </data>
+  <data name="header5.Title" xml:space="preserve">
+    <value>Wartemusik</value>
+  </data>
+  <data name="pgMusicSettings.Text" xml:space="preserve">
+    <value>Musikeinstellungen</value>
+  </data>
+  <data name="lblSSL.HelpText" xml:space="preserve">
+    <value>Markieren Sie hier, wenn Ihr SMTP-Server SSL-Verschlüsselung für die Verbindung benötigt. In den meisten Fällen wird dies nicht benötigt, aber bei einigen neueren SMTP-Servers wird dies möglicherweise benötigt.</value>
+  </data>
+  <data name="lblSSL.HelpTitle" xml:space="preserve">
+    <value>Server benötigt SSL</value>
+  </data>
+  <data name="lblSSL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 13</value>
+  </data>
+  <data name="lblSSL.Text" xml:space="preserve">
+    <value>Server benötigt SSL</value>
+  </data>
+  <data name="smoothLabel4.HelpText" xml:space="preserve">
+    <value>Definieren Sie das Passwort für den SMTP Server. Die meisten SMTP-Server benötigen dies.</value>
+  </data>
+  <data name="smoothLabel4.HelpTitle" xml:space="preserve">
+    <value>SMTP Passwort</value>
+  </data>
+  <data name="smoothLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 13</value>
+  </data>
+  <data name="smoothLabel4.Text" xml:space="preserve">
+    <value>SMTP Passwort</value>
+  </data>
+  <data name="smoothLabel2.HelpText" xml:space="preserve">
+    <value>Definieren Sie den Benutzernamen für den SMTP-Server. Die meisten SMTP-Server benötigen dies.</value>
+  </data>
+  <data name="smoothLabel2.HelpTitle" xml:space="preserve">
+    <value>SMTP-Benutzername</value>
+  </data>
+  <data name="smoothLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 13</value>
+  </data>
+  <data name="smoothLabel2.Text" xml:space="preserve">
+    <value>SMTP Benutzername</value>
+  </data>
+  <data name="smoothLabel1.HelpText" xml:space="preserve">
+    <value>Definieren Sie den Netzwerkport, der vom STMP-Server benutzt wird. In den meisten Fällen ist es Port 25 und sollte auch nicht geändert werden, wenn Sie nicht sicher sind, dass es ein anderer Port ist.
+</value>
+  </data>
+  <data name="smoothLabel3.HelpText" xml:space="preserve">
+    <value>Definieren Sie den Namen Ihres SMTP-Mailservers hier. In den meisten Fällen wird er in etwa so aussehen: mail.yourdomain.com or smtp.yourdomain.com.</value>
+  </data>
+  <data name="smoothLabel3.HelpTitle" xml:space="preserve">
+    <value>SMTP Servername
+</value>
+  </data>
+  <data name="smoothLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 13</value>
+  </data>
+  <data name="smoothLabel3.Text" xml:space="preserve">
+    <value>SMTP Servername</value>
+  </data>
+  <data name="btnSendTestEmail.Text" xml:space="preserve">
+    <value>Eine Test-Email senden...</value>
+  </data>
+  <data name="header1.Description" xml:space="preserve">
+    <value>SMTP-Server-Einstellungen verwalten</value>
+  </data>
+  <data name="header1.Title" xml:space="preserve">
+    <value>EMail-Einstellungen</value>
+  </data>
+  <data name="pgEmailSettings.Text" xml:space="preserve">
+    <value>Email-Einstellungen</value>
+  </data>
+  <data name="lblRemoteManagement.HelpText" xml:space="preserve">
+    <value>Markieren Sie dies, wenn Sie erlauben möchten, dass der CallButler-Dienst von einem Remote-Computer verwaltet werden kann. Wenn dies nicht markiert ist,  kann CallButler nur auf dem installierten PC verwaltet werden.</value>
+  </data>
+  <data name="lblRemoteManagement.HelpTitle" xml:space="preserve">
+    <value>Remote-Verwaltung zulassen</value>
+  </data>
+  <data name="lblRemoteManagement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 13</value>
+  </data>
+  <data name="lblRemoteManagement.Text" xml:space="preserve">
+    <value>Die Verwaltung von anderen PCs zulassen</value>
+  </data>
+  <data name="smoothLabel13.HelpText" xml:space="preserve">
+    <value>Definieren Sie hier ein Passwort, wenn Sie möchten, dass eines erforderlich ist, um sich als Benutzer mit dem CallButler-Dienst zu verbinden.</value>
+  </data>
+  <data name="smoothLabel13.HelpTitle" xml:space="preserve">
+    <value>Verwaltungs-Passwort
+</value>
+  </data>
+  <data name="smoothLabel13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 13</value>
+  </data>
+  <data name="smoothLabel13.Text" xml:space="preserve">
+    <value>Verwaltungs-Passwort</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 13</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Bestätigen Sie das Passwort</value>
+  </data>
+  <data name="header4.Description" xml:space="preserve">
+    <value>Verwaltung der Sicherheitseinstellungen</value>
+  </data>
+  <data name="header4.Title" xml:space="preserve">
+    <value>Sicherheitseinstellungen</value>
+  </data>
+  <data name="pgSecurity.Text" xml:space="preserve">
+    <value>Sicherheitseinstellungen</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="wizard.TabPanelWidth" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="wizard.TabWidth" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>&amp;Abbrechen</value>
+  </data>
+  <data name="btnApply.Text" xml:space="preserve">
+    <value>&amp;Anwenden</value>
+  </data>
+  <data name="$this.HeaderCaption" xml:space="preserve">
+    <value>generelle Systemeinstellungen verwalten</value>
+  </data>
+  <data name="$this.HeaderTitle" xml:space="preserve">
+    <value>Einstellungen</value>
+  </data>
+</root>

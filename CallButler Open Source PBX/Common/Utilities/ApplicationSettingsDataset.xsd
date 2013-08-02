@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ApplicationSettingsDataset" targetNamespace="http://tempuri.org/ApplicationSettingsDataset.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ApplicationSettingsDataset.xsd"
+	xmlns:mstns="http://tempuri.org/ApplicationSettingsDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ApplicationSettingsDataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="SettingsGroup">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="GroupName" type="xs:string" minOccurs="0" />
+							<xs:element name="Setting">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Name" type="xs:string" minOccurs="0" />
+										<xs:element name="Value" type="xs:string" minOccurs="0" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RecentlyUsedFiles">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Filename" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:key name="ApplicationSettingsDatasetKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:SettingsGroup" />
+			<xs:field xpath="mstns:GroupName" />
+		</xs:key>
+		<xs:key name="ApplicationSettingsDatasetKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RecentlyUsedFiles" />
+			<xs:field xpath="mstns:Filename" />
+		</xs:key>
+	</xs:element>
+</xs:schema>

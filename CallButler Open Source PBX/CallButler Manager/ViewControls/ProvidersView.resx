@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="callButlerDataset.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>126, 17</value>
+  </metadata>
+  <metadata name="bsProviders.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="customerIDDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>CustomerID</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="customerIDDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>ProviderID</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="nameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Telephone Provider Name</value>
+  </data>
+  <data name="displayNameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>DisplayName</value>
+  </data>
+  <data name="displayNameDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="usernameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="usernameDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="authUsernameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>AuthUsername</value>
+  </data>
+  <data name="authUsernameDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="authPasswordDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>AuthPassword</value>
+  </data>
+  <data name="authPasswordDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="domainDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Domain</value>
+  </data>
+  <data name="domainDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="sIPProxyDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>SIPProxy</value>
+  </data>
+  <data name="sIPProxyDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="sIPRegistrarDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>SIPRegistrar</value>
+  </data>
+  <data name="sIPRegistrarDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="expiresDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Expires</value>
+  </data>
+  <data name="expiresDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="statusDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="statusDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="isEnabledDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="isEnabledDataGridViewCheckBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="IsDefault.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="IsDefault.HeaderText" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="IsDefault.Width" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="providerGrid.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="providerGrid.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 22</value>
+  </data>
+  <data name="providerGrid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>554, 407</value>
+  </data>
+  <data name="providerGrid.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;providerGrid.Name" xml:space="preserve">
+    <value>providerGrid</value>
+  </data>
+  <data name="&gt;&gt;providerGrid.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.CallButlerEditDataGrid, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;providerGrid.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;providerGrid.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnAddNewProvider.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="btnAddNewProvider.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="btnAddNewProvider.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btnAddNewProvider.LinkImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAK7wAA
+        Cu8BfXaKSAAAA2VJREFUOE9V0ntMk1cYBvBT0apLYBRFWDY257gYskxxWUjckpEJWYJOB0KGIVHHH2sn
+        zMtAudcxoWNl2NaisOG4FWjB2yq6UOmAIDAtXqCALtSyFudIy9jaFUylwrP3ayBhJ/nlO1/yPm/OeXN4
+        bNlSWZ0BjrEF0V07dv41Mxf69JmTzc84zYIZm87U/3PDaHflEyr3ECzPefdGt3tX3tCxf97XtCKhcxdi
+        247gJbkNPqUmMPEINp/4dSp6X9WnVOpPfP7XoM/9bE/mUJpHNByMnJt9OGWORdbQB9itdmGj0ooVEgtY
+        tgWBud/OvRGTf5TCQWSFt0nrgCsw507ZtHBEgEJDO34cAFQPzRCPfo4TOje210whuKoCfGkp2DdvY9uh
+        C9Mr/TYlUlRAeKzoqrnowL1A7P1pEFkPPkLjfQ80w26ojR5IbroQp5pGSFUd1lbsBjvWhQilAEFRGbUU
+        3kL47ODlssGPu2IRr5lEsbEN7WOA+e8F3JucQ/ujp1AanIhvdoBfpgRT8LDhLEPkJ0eGKZxC1rEEdfZs
+        Un8QvvztTZyfSkfXSBs6u3vwQ60KV290oUmrQ0PHXagGJxBWFwbByZ3YIhS6KJxDXmM7ajNnY/TrkWbY
+        ijuOdpypkEOr1WJp9fb2QiaTIbswGy23ryH53BVEJtdxDUpJKNteVmoM0zLE6V+GeqIYlSo5xsfH0dGh
+        R319AywWKx4//gNjpnF8V34Grb9cw4df5JkoLPU2iMvokTLpYayRaiAZuATZ+TooFAo0Nbfgz0k7rFYb
+        TI8mYNG/A0t/GiTl51Cj6eZmcIpsYpExWREh+cUOVlCJVJUT5TWXIRKJYLO74Db4YdYYjaHRCfQoX6Rb
+        pcBwKYo73S0KF3hnQGv1W3ur033Fe577S4TQ3NchPeMwntj+ha6YAa4E2A07cLbkKPrk9I8S3Kh+fWBx
+        iK9yDXgkIORd8fHw44mO1OvvQXW9HyeLvoamUY0reQwLdiH0TUnI2J8431zg46kuCp+kTO7SCbgm3NsO
+        XukfmhwUdbA+V/797xfbOp9/VXJ64bN9SchP9p0XZx6wreKvafTjsypfPpNR/SHyivc5Ly6uSQCJIqmk
+        kJQTxaLTi8eOp2802UxeWN5g6TqrabOebCThJGIZbmh+hKtZRXj/AW4636y/s+X3AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnAddNewProvider.Location" type="System.Drawing.Point, System.Drawing">
+    <value>379, 10</value>
+  </data>
+  <data name="btnAddNewProvider.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 19</value>
+  </data>
+  <data name="btnAddNewProvider.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnAddNewProvider.Text" xml:space="preserve">
+    <value>Connect to a provider...</value>
+  </data>
+  <data name="&gt;&gt;btnAddNewProvider.Name" xml:space="preserve">
+    <value>btnAddNewProvider</value>
+  </data>
+  <data name="&gt;&gt;btnAddNewProvider.Type" xml:space="preserve">
+    <value>Controls.LinkButton, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnAddNewProvider.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnAddNewProvider.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 429</value>
+  </data>
+  <data name="panel1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 10, 0, 0</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>554, 29</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.HeaderCaption" xml:space="preserve">
+    <value>Manage your Internet telephone number providers</value>
+  </data>
+  <data name="$this.HeaderTitle" xml:space="preserve">
+    <value>Phone Numbers</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>554, 458</value>
+  </data>
+  <data name="&gt;&gt;callButlerDataset.Name" xml:space="preserve">
+    <value>callButlerDataset</value>
+  </data>
+  <data name="&gt;&gt;callButlerDataset.Type" xml:space="preserve">
+    <value>WOSI.CallButler.Data.CallButlerDataset, WOSI.CallButler.Data, Version=0.5.5.3, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bsProviders.Name" xml:space="preserve">
+    <value>bsProviders</value>
+  </data>
+  <data name="&gt;&gt;bsProviders.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;customerIDDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>customerIDDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;customerIDDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>dataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nameDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>nameDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;nameDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;displayNameDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>displayNameDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;displayNameDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;usernameDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>usernameDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;usernameDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;authUsernameDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>authUsernameDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;authUsernameDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;authPasswordDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>authPasswordDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;authPasswordDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;domainDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>domainDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;domainDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sIPProxyDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>sIPProxyDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;sIPProxyDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sIPRegistrarDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>sIPRegistrarDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;sIPRegistrarDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;expiresDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>expiresDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;expiresDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>statusDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;statusDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;isEnabledDataGridViewCheckBoxColumn.Name" xml:space="preserve">
+    <value>isEnabledDataGridViewCheckBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;isEnabledDataGridViewCheckBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IsDefault.Name" xml:space="preserve">
+    <value>IsDefault</value>
+  </data>
+  <data name="&gt;&gt;IsDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ProvidersView</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>CallButler.Manager.ViewControls.ViewControlBase, CallButler Manager, Version=1.9.11.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

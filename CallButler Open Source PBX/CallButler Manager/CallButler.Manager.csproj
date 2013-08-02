@@ -1,0 +1,1073 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6B96D269-9885-4007-9B04-3E15909C335D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CallButler.Manager</RootNamespace>
+    <AssemblyName>CallButler Manager</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ApplicationIcon>CallButler.ico</ApplicationIcon>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>Distribution\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>Distribution\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release Hosted|AnyCPU' ">
+    <OutputPath>Distribution\</OutputPath>
+    <DefineConstants>TRACE;HOSTED</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug Hosted|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>Distribution\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;HOSTED</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WOSI.NET.inTELIPhone, Version=1.1.13.0, Culture=neutral, PublicKeyToken=779a13b744b0a8d9, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\WOSI.NET.inTELIPhone.dll</HintPath>
+    </Reference>
+    <Reference Include="WOSI.Utilities.Sound, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\WOSI.Utilities.Sound.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\AddOnModuleChooserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AddOnModuleChooserControl.Designer.cs">
+      <DependentUpon>AddOnModuleChooserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\QuickTipsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\QuickTipsControl.Designer.cs">
+      <DependentUpon>QuickTipsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\PrebuiltConfigData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrebuiltConfigData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AnsweringMachineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AnsweringMachineForm.Designer.cs">
+      <DependentUpon>AnsweringMachineForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CallAnswerSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CallAnswerSettingsForm.Designer.cs">
+      <DependentUpon>CallAnswerSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditionChooserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditionChooserForm.Designer.cs">
+      <DependentUpon>EditionChooserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NagForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NagForm.Designer.cs">
+      <DependentUpon>NagForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PrebuiltConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PrebuiltConfigForm.Designer.cs">
+      <DependentUpon>PrebuiltConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StartInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StartInfoForm.Designer.cs">
+      <DependentUpon>StartInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PluginManager.cs" />
+    <Compile Include="Properties\LocalizedStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocalizedStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\PrivateLabelUtils.cs" />
+    <Compile Include="Utils\ServiceUtils.cs" />
+    <Compile Include="Utils\VoIPProviderInterface.cs" />
+    <Compile Include="ViewControls\NoPluginFoundView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\NoPluginFoundView.Designer.cs">
+      <DependentUpon>NoPluginFoundView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\PBXView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\PBXView.Designer.cs">
+      <DependentUpon>PBXView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\PluginView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\PluginView.Designer.cs">
+      <DependentUpon>PluginView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\PrebuiltConfigControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\PrebuiltConfigControl.Designer.cs">
+      <DependentUpon>PrebuiltConfigControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AssignPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AssignPasswordForm.Designer.cs">
+      <DependentUpon>AssignPasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DepartmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DepartmentForm.Designer.cs">
+      <DependentUpon>DepartmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditorWizardFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditorWizardFormBase.Designer.cs">
+      <DependentUpon>EditorWizardFormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ExtensionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ExtensionEditorForm.Designer.cs">
+      <DependentUpon>ExtensionEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GreetingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GreetingForm.Designer.cs">
+      <DependentUpon>GreetingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HelpForm.Designer.cs">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InitialProviderDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InitialProviderDialog.Designer.cs">
+      <DependentUpon>InitialProviderDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LangageSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LangageSelectionForm.Designer.cs">
+      <DependentUpon>LangageSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OutlookContactForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OutlookContactForm.Designer.cs">
+      <DependentUpon>OutlookContactForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PersonalizedGreetingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PersonalizedGreetingForm.Designer.cs">
+      <DependentUpon>PersonalizedGreetingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReportDialog.Designer.cs">
+      <DependentUpon>ReportDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptScheduleForm.Designer.cs">
+      <DependentUpon>ScriptScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ShutownForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShutownForm.Designer.cs">
+      <DependentUpon>ShutownForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SMTPServerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SMTPServerForm.Designer.cs">
+      <DependentUpon>SMTPServerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VersionCheckerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VersionCheckerForm.Designer.cs">
+      <DependentUpon>VersionCheckerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormUIFunctions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementInterfaceClient.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RemotingExceptionManager.cs" />
+    <Compile Include="Utils\EmailUtils.cs" />
+    <Compile Include="Utils\GreetingUtils.cs" />
+    <Compile Include="Utils\ReportPrinter.cs" />
+    <Compile Include="Utils\TableUtils.cs" />
+    <Compile Include="ViewControls\CallFlowView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\CallFlowView.Designer.cs">
+      <DependentUpon>CallFlowView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\CallHistoryView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\CallHistoryView.Designer.cs">
+      <DependentUpon>CallHistoryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\ExtensionsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\ExtensionsView.Designer.cs">
+      <DependentUpon>ExtensionsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\GettingStartedView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\GettingStartedView.Designer.cs">
+      <DependentUpon>GettingStartedView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\HelpView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\HelpView.Designer.cs">
+      <DependentUpon>HelpView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\NoConnectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\NoConnectionView.Designer.cs">
+      <DependentUpon>NoConnectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\PersonalizedGreetingView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\PersonalizedGreetingView.Designer.cs">
+      <DependentUpon>PersonalizedGreetingView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\ProvidersView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\ProvidersView.Designer.cs">
+      <DependentUpon>ProvidersView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QuickStartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QuickStartForm.Designer.cs">
+      <DependentUpon>QuickStartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\ReceptionistView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\ReceptionistView.Designer.cs">
+      <DependentUpon>ReceptionistView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\ScriptScheduleView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\ScriptScheduleView.Designer.cs">
+      <DependentUpon>ScriptScheduleView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\SettingsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\SettingsView.Designer.cs">
+      <DependentUpon>SettingsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\SummaryView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\SummaryView.Designer.cs">
+      <DependentUpon>SummaryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\TestDriveView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\TestDriveView.Designer.cs">
+      <DependentUpon>TestDriveView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\ViewControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\ViewControlBase.Designer.cs">
+      <DependentUpon>ViewControlBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\AddOnModuleChooserControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddOnModuleChooserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\QuickTipsControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QuickTipsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutForm.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AnsweringMachineForm.de.resx">
+      <DependentUpon>AnsweringMachineForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AnsweringMachineForm.resx">
+      <DependentUpon>AnsweringMachineForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AssignPasswordForm.de.resx">
+      <DependentUpon>AssignPasswordForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CallAnswerSettingsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CallAnswerSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DepartmentForm.de.resx">
+      <DependentUpon>DepartmentForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditionChooserForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EditionChooserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditorWizardFormBase.de.resx">
+      <DependentUpon>EditorWizardFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ExtensionEditorForm.de.resx">
+      <DependentUpon>ExtensionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GreetingForm.de.resx">
+      <DependentUpon>GreetingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HelpForm.de.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InitialProviderDialog.de.resx">
+      <DependentUpon>InitialProviderDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LangageSelectionForm.de.resx">
+      <DependentUpon>LangageSelectionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForm.de.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NagForm.de.resx">
+      <DependentUpon>NagForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NagForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NagForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OutlookContactForm.de.resx">
+      <DependentUpon>OutlookContactForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PersonalizedGreetingForm.de.resx">
+      <DependentUpon>PersonalizedGreetingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PrebuiltConfigForm.de.resx">
+      <DependentUpon>PrebuiltConfigForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PrebuiltConfigForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrebuiltConfigForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuickStartForm.de.resx">
+      <DependentUpon>QuickStartForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReportDialog.de.resx">
+      <DependentUpon>ReportDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptScheduleForm.de.resx">
+      <DependentUpon>ScriptScheduleForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ShutownForm.de.resx">
+      <DependentUpon>ShutownForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SMTPServerForm.de.resx">
+      <DependentUpon>SMTPServerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StartInfoForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StartInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\VersionCheckerForm.de.resx">
+      <DependentUpon>VersionCheckerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.de.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\LocalizedStrings.de.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\LocalizedStrings.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LocalizedStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\CallFlowView.de.resx">
+      <DependentUpon>CallFlowView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\CallHistoryView.de.resx">
+      <DependentUpon>CallHistoryView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\ExtensionsView.de.resx">
+      <DependentUpon>ExtensionsView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\GettingStartedView.de.resx">
+      <DependentUpon>GettingStartedView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\HelpView.de.resx">
+      <DependentUpon>HelpView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\NoConnectionView.de.resx">
+      <DependentUpon>NoConnectionView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\NoPluginFoundView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NoPluginFoundView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\PBXView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PBXView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\PersonalizedGreetingView.de.resx">
+      <DependentUpon>PersonalizedGreetingView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\PluginView.de.resx">
+      <DependentUpon>PluginView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\PluginView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PluginView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\PrebuiltConfigControl.de.resx">
+      <DependentUpon>PrebuiltConfigControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\PrebuiltConfigControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrebuiltConfigControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AssignPasswordForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AssignPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DepartmentForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DepartmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditorWizardFormBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EditorWizardFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ExtensionEditorForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExtensionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GreetingForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GreetingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HelpForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InitialProviderDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InitialProviderDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LangageSelectionForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LangageSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OutlookContactForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OutlookContactForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PersonalizedGreetingForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PersonalizedGreetingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReportDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReportDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptScheduleForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ScriptScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ShutownForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ShutownForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SMTPServerForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SMTPServerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\VersionCheckerForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VersionCheckerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CallHistoryReport.rdlc" />
+    <EmbeddedResource Include="ViewControls\CallFlowView.resx">
+      <DependentUpon>CallFlowView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\CallHistoryView.resx">
+      <DependentUpon>CallHistoryView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\ExtensionsView.resx">
+      <DependentUpon>ExtensionsView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\GettingStartedView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GettingStartedView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\HelpView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HelpView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\NoConnectionView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NoConnectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\PersonalizedGreetingView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PersonalizedGreetingView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\ProvidersView.de.resx">
+      <DependentUpon>ProvidersView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\ProvidersView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProvidersView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuickStartForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QuickStartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\ReceptionistView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReceptionistView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\ScriptScheduleView.de.resx">
+      <DependentUpon>ScriptScheduleView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\ScriptScheduleView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ScriptScheduleView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\SettingsView.de.resx">
+      <DependentUpon>SettingsView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\SettingsView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SettingsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\SummaryView.de.resx">
+      <DependentUpon>SummaryView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\SummaryView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\TestDriveView.de.resx">
+      <DependentUpon>TestDriveView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\TestDriveView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TestDriveView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\ViewControlBase.de.resx">
+      <DependentUpon>ViewControlBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\ViewControlBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewControlBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plug_delete_48_shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\connection_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\gear_find_48_shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Controls.Diagram\Controls.Diagram.csproj">
+      <Project>{7F536F29-7BB7-49BD-B920-6448B8D4BAB9}</Project>
+      <Name>Controls.Diagram</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Controls\Controls.csproj">
+      <Project>{DBB6EEEC-0447-4F03-ABCE-0B4B6DDEEF67}</Project>
+      <Name>Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Utilities.ContactManagement\Utilities.ContactManagement.csproj">
+      <Project>{0305C3BE-C55E-4519-AEE3-5166195A0F6A}</Project>
+      <Name>Utilities.ContactManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Utilities.PluginManagement\Utilities.PluginManagement.csproj">
+      <Project>{FF49FF23-15B9-4FB9-82CA-E69527A9D99A}</Project>
+      <Name>Utilities.PluginManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Utilities\Utilities.csproj">
+      <Project>{48E06473-9007-4DA4-AD30-C97B702EFCC2}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\CallButler.Data\CallButler.Data.csproj">
+      <Project>{D1AE6677-AEA4-4D16-9EA1-BCEA0C4B13BA}</Project>
+      <Name>CallButler.Data</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\CallButler.ExceptionManagement\CallButler.ExceptionManagement.csproj">
+      <Project>{3D19D5D5-D1DE-4BD2-AF09-B285429D1DCA}</Project>
+      <Name>CallButler.ExceptionManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\CallButler.ManagementInterface\CallButler.ManagementInterface.csproj">
+      <Project>{B1DE2AA9-A6B7-4B85-A4C1-A62B8C6140FF}</Project>
+      <Name>CallButler.ManagementInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\CallButler.Manager.Controls\CallButler.Manager.Controls.csproj">
+      <Project>{852CA2FA-FA8E-43CA-ACAE-20AE01AB4186}</Project>
+      <Name>CallButler.Manager.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\CallButler.Manager.Plugin\CallButler.Manager.Plugin.csproj">
+      <Project>{02C97E24-ACD3-495A-B3F2-C48C05B255E5}</Project>
+      <Name>CallButler.Manager.Plugin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telephone_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telephone_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\column_chart_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mailbox_full_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wizard_header.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\import_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id_card_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id_card_32_shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_up_blue_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_down_blue_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select_all_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select_none_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select_inverse_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mailbox_full_48_shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mailbox_full_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loudspeaker_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_loudspeaker_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_music_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\media_stop_red_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\media_record_red_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\media_play_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail_earth_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\media_step_back_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\media_step_forward_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disk_blue_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\branch_48_shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gauge_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divider_line.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\provider_connection_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\branch_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telephone_48_shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\date_time_48_shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\call_greeting_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone_button_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\office_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scroll_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\earth_add_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate_right_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate_right2_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate_left2_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate_left_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\earth2_32_shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\earth2_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plug_32_shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CallButler Manager.exe.manifest" />
+    <None Include="Data\PrebuiltConfigData.xsc">
+      <DependentUpon>PrebuiltConfigData.xsd</DependentUpon>
+    </None>
+    <None Include="Data\PrebuiltConfigData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PrebuiltConfigData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\PrebuiltConfigData.xss">
+      <DependentUpon>PrebuiltConfigData.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\folder_16.png" />
+    <None Include="Resources\Help\CallFlowHelp.rtf" />
+    <None Include="Resources\Help\CallPersonalizationHelp.rtf" />
+    <None Include="Resources\Help\ExtensionsHelp.rtf" />
+    <None Include="Resources\Help\ProviderHelp.rtf" />
+    <None Include="Resources\Help\ScriptScheduleHelp.rtf" />
+    <None Include="Resources\Help\TestDriveHelp.rtf" />
+    <None Include="Resources\outlook_16.png" />
+    <None Include="Resources\nut_and_bolt_48_shadow.png" />
+    <None Include="Resources\mail_earth_32_shadow.png" />
+    <None Include="Resources\earth_network_16.png" />
+    <None Include="Resources\loudspeaker_32_shadow.png" />
+    <None Include="Resources\earth_network_32_shadow.png" />
+    <None Include="Resources\outlook_32.png" />
+    <None Include="Resources\office_building_48_shadow.png" />
+    <None Include="Resources\gauge_48_shadow.png" />
+    <None Include="Resources\view_previous_16.png" />
+    <None Include="Resources\nut_and_bolt_24.png" />
+    <None Include="Resources\senior_citizen_48_shadow.png" />
+    <None Include="Resources\senior_citizen_16.png" />
+    <None Include="Resources\senior_citizen_24.png" />
+    <None Include="Resources\phone_pick_up.png" />
+    <None Include="Resources\phone_hang_up.png" />
+    <None Include="Resources\microphone2_16.png" />
+    <None Include="Resources\lock_16.png" />
+    <None Include="Resources\lock_32_shadow.png" />
+    <None Include="Resources\keys_32_shadow.png" />
+    <None Include="Resources\shoppingcart_full_16.png" />
+    <None Include="Resources\stopwatch_16.png" />
+    <None Include="Resources\date_time_24.png" />
+    <None Include="Resources\date_time_16.png" />
+    <None Include="Resources\music_16.png" />
+    <None Include="Resources\music_32_shadow.png" />
+    <None Include="Resources\cabinet_32_shadow.png" />
+    <None Include="Resources\cabinet_16.png" />
+    <None Include="Resources\history2_shadow_42.png" />
+    <None Include="Resources\trafficlight_on_48_shadow.png" />
+    <None Include="Resources\hand_offer_32_shadow.png" />
+    <None Include="Resources\hand_offer_16.png" />
+    <None Include="Resources\about_16.png" />
+    <None Include="Resources\branch_16.png" />
+    <None Include="Resources\gauge_16.png" />
+    <None Include="Resources\flag_checkered_16.png" />
+    <None Include="Resources\phone_conference_16.png" />
+    <None Include="Resources\hand_offer_48.png" />
+    <None Include="Resources\phone_conference_48_shadow.png" />
+    <None Include="Resources\flag_checkered_48_shadow.png" />
+    <None Include="Resources\earth_connection_48_shadow.png" />
+    <None Include="Resources\toolbox_24.png" />
+    <None Include="Resources\toolbox_48_shadow.png" />
+    <None Include="Resources\toolbox_16.png" />
+    <Content Include="CallButler.ico" />
+    <Content Include="Distribution\Data\Configs\Simple Real Estate Agent.xml" />
+    <Content Include="Distribution\Data\Configs\Simple Restaurant.xml" />
+    <Content Include="Distribution\Data\Configs\Simple Store.xml" />
+    <Content Include="Distribution\Data\Configs\PrebuiltConfigCatalog.xml" />
+    <Content Include="Distribution\Data\Configs\Simple Voicemail.xml" />
+    <None Include="Resources\about_32.png" />
+    <None Include="Resources\download_16.png" />
+    <None Include="Resources\phone_pick_up_48.png" />
+    <None Include="Resources\cb_header.jpg" />
+    <None Include="Resources\gauge_128_shadow.png" />
+    <None Include="Resources\Phone_back_down.png" />
+    <None Include="Resources\phone_back_up.png" />
+    <None Include="Resources\phone_redirect_128_shadow.png" />
+    <None Include="Resources\office_building_128_shadow.png" />
+    <None Include="Resources\step_127_shadow.png" />
+    <None Include="Resources\sportscar_24.png" />
+    <None Include="Resources\sportscar_48_shadow.png" />
+    <None Include="Resources\cb_header_small.jpg" />
+    <None Include="Resources\node_24.png" />
+    <None Include="Resources\office_chair_24.png" />
+    <None Include="Resources\office_chair_48_shadow.png" />
+    <None Include="Resources\node_48_shadow.png" />
+    <Content Include="Resources\t2logo.png" />
+    <None Include="Resources\user1_mobilephone_128_shadow.png" />
+    <Content Include="Resources\user1_telephone_16.png" />
+    <Content Include="Resources\user1_telephone_24.png" />
+    <Content Include="Resources\user1_telephone_48_shadow.png" />
+    <None Include="Resources\user1_message_32_shadow.png" />
+    <None Include="Resources\keys_16.png" />
+    <None Include="Resources\gear_connection_48.png" />
+    <None Include="Resources\gear_connection_24.png" />
+    <None Include="Resources\nut_and_bolt_16.png" />
+    <None Include="Resources\voip_service_logo.gif" />
+    <None Include="Resources\loading.gif" />
+    <None Include="Resources\flag_green_16.png" />
+    <None Include="Resources\flag_green_48_shadow.png" />
+    <None Include="Resources\window_error_16.png" />
+    <None Include="Resources\windows_16.png" />
+    <None Include="Resources\help2_32.png" />
+    <None Include="Resources\photo_scenery_16.png" />
+    <None Include="Resources\refresh_16.png" />
+    <None Include="Resources\oszillograph_32_shadow.png" />
+    <None Include="Resources\oszillograph_16.png" />
+    <None Include="Resources\gear_information_32.png" />
+    <None Include="Resources\import1.png" />
+    <None Include="Resources\text_loudspeaker_32_shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

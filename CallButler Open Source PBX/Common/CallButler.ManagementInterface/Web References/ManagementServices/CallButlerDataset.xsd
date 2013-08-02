@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" xmlns="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" id="CallButlerDataset" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="CallButlerDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Greetings">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustomerID" type="xs:int" />
+              <xs:element msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GreetingID" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="LocalizedGreetings">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" minOccurs="0" name="GreetingID" type="xs:string" />
+                    <xs:element msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="LocalizedGreetingID" type="xs:string" />
+                    <xs:element minOccurs="0" name="Data" type="xs:string" />
+                    <xs:element minOccurs="0" name="Voice" type="xs:string" />
+                    <xs:element minOccurs="0" name="LanguageID" type="xs:string" />
+                    <xs:element minOccurs="0" name="Type" type="xs:short" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CallHistory">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustomerID" type="xs:int" />
+              <xs:element msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="CallID" type="xs:string" />
+              <xs:element minOccurs="0" name="Timestamp" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="CallerDisplayName" type="xs:string" />
+              <xs:element minOccurs="0" name="CallerUsername" type="xs:string" />
+              <xs:element minOccurs="0" name="CallerHost" type="xs:string" />
+              <xs:element minOccurs="0" name="CallDuration" type="xs:duration" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Departments">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustomerID" type="xs:int" />
+              <xs:element msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="DepartmentID" type="xs:string" />
+              <xs:element minOccurs="0" name="Name" type="xs:string" />
+              <xs:element minOccurs="0" name="Type" type="xs:short" />
+              <xs:element minOccurs="0" name="Data1" type="xs:string" />
+              <xs:element minOccurs="0" name="Data2" type="xs:string" />
+              <xs:element minOccurs="0" default="true" name="Enabled" type="xs:boolean" />
+              <xs:element minOccurs="0" name="OptionNumber" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Extensions">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustomerID" type="xs:int" />
+              <xs:element msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="ExtensionID" type="xs:string" />
+              <xs:element name="ExtensionNumber" type="xs:short" />
+              <xs:element minOccurs="0" name="FirstName" type="xs:string" />
+              <xs:element minOccurs="0" name="LastName" type="xs:string" />
+              <xs:element minOccurs="0" name="SearchNumber" type="xs:string" />
+              <xs:element minOccurs="0" default="true" name="EnableSearch" type="xs:boolean" />
+              <xs:element minOccurs="0" name="Password" type="xs:string" />
+              <xs:element minOccurs="0" default="false" name="EnableManagement" type="xs:boolean" />
+              <xs:element minOccurs="0" default="false" name="DoNotDisturb" type="xs:boolean" />
+              <xs:element minOccurs="0" default="false" name="EmailNotification" type="xs:boolean" />
+              <xs:element minOccurs="0" name="EmailAddress" type="xs:string" />
+              <xs:element minOccurs="0" default="false" name="EmailAttachment" type="xs:boolean" />
+              <xs:element msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" minOccurs="0" name="AlternativeExtensionID" type="xs:string" />
+              <xs:element minOccurs="0" default="false" name="UseFindMePlugin" type="xs:boolean" />
+              <xs:element minOccurs="0" name="FindMePluginData" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="ExtensionContactNumbers">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="ExtensionID" type="xs:string" />
+                    <xs:element msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="ExtensionContactNumberID" type="xs:string" />
+                    <xs:element minOccurs="0" name="ContactNumber" type="xs:string" />
+                    <xs:element minOccurs="0" name="Priority" type="xs:short" />
+                    <xs:element minOccurs="0" name="HoursOfOperation" type="xs:string" />
+                    <xs:element minOccurs="0" name="Timeout" type="xs:short" />
+                    <xs:element minOccurs="0" default="false" name="HasHoursOfOperation" type="xs:boolean" />
+                    <xs:element minOccurs="0" default="true" name="Online" type="xs:boolean" />
+                    <xs:element minOccurs="0" name="HoursOfOperationUTCOffset" type="xs:duration" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="Voicemails">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="VoicemailID" type="xs:string" />
+                    <xs:element msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="ExtensionID" type="xs:string" />
+                    <xs:element minOccurs="0" name="Timestamp" type="xs:dateTime" />
+                    <xs:element minOccurs="0" name="CallerDisplayName" type="xs:string" />
+                    <xs:element minOccurs="0" name="CallerUsername" type="xs:string" />
+                    <xs:element minOccurs="0" name="CallerHost" type="xs:string" />
+                    <xs:element minOccurs="0" default="true" name="IsNew" type="xs:boolean" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PersonalizedGreetings">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="CustomerID" type="xs:int" />
+              <xs:element msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="PersonalizedGreetingID" type="xs:string" />
+              <xs:element minOccurs="0" name="CallerDisplayName" type="xs:string" />
+              <xs:element minOccurs="0" name="CallerUsername" type="xs:string" />
+              <xs:element minOccurs="0" name="CallerHost" type="xs:string" />
+              <xs:element minOccurs="0" name="DialedUsername" type="xs:string" />
+              <xs:element minOccurs="0" name="DialedHost" type="xs:string" />
+              <xs:element minOccurs="0" default="false" name="UseRegex" type="xs:boolean" />
+              <xs:element minOccurs="0" name="Type" type="xs:short" />
+              <xs:element minOccurs="0" name="Data" type="xs:string" />
+              <xs:element minOccurs="0" default="false" name="PlayOnce" type="xs:boolean" />
+              <xs:element minOccurs="0" default="false" name="HasPlayed" type="xs:boolean" />
+              <xs:element minOccurs="0" name="Notes" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Providers">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="CustomerID" type="xs:int" />
+              <xs:element msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="ProviderID" type="xs:string" />
+              <xs:element minOccurs="0" name="Name" type="xs:string" />
+              <xs:element minOccurs="0" name="DisplayName" type="xs:string" />
+              <xs:element minOccurs="0" name="Username" type="xs:string" />
+              <xs:element minOccurs="0" name="AuthUsername" type="xs:string" />
+              <xs:element minOccurs="0" name="AuthPassword" type="xs:string" />
+              <xs:element minOccurs="0" name="Domain" type="xs:string" />
+              <xs:element minOccurs="0" name="SIPProxy" type="xs:string" />
+              <xs:element minOccurs="0" name="SIPRegistrar" type="xs:string" />
+              <xs:element minOccurs="0" name="Expires" type="xs:int" />
+              <xs:element minOccurs="0" default="true" name="IsEnabled" type="xs:boolean" />
+              <xs:element minOccurs="0" name="Status" type="xs:string" />
+              <xs:element minOccurs="0" default="false" name="IsDefault" type="xs:boolean" />
+              <xs:element minOccurs="0" default="true" name="EnableRegistration" type="xs:boolean" />
+              <xs:element minOccurs="0" name="ExtraData" type="xs:string" />
+              <xs:element minOccurs="0" name="PluginID" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ScriptSchedules">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="CustomerID" type="xs:int" />
+              <xs:element msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="ScriptScheduleID" type="xs:string" />
+              <xs:element minOccurs="0" name="ScriptLocation" type="xs:string" />
+              <xs:element minOccurs="0" name="Priority" type="xs:int" />
+              <xs:element minOccurs="0" default="false" name="HasHoursOfOperation" type="xs:boolean" />
+              <xs:element minOccurs="0" name="HoursOfOperation" type="xs:string" />
+              <xs:element minOccurs="0" name="Name" type="xs:string" />
+              <xs:element minOccurs="0" default="true" name="Enabled" type="xs:boolean" />
+              <xs:element minOccurs="0" name="HoursOfOperationUTCOffset" type="xs:duration" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="LocalizedGreetings_Constraint1">
+      <xs:selector xpath=".//mstns:LocalizedGreetings" />
+      <xs:field xpath="mstns:LocalizedGreetingID" />
+    </xs:unique>
+    <xs:unique msdata:PrimaryKey="true" name="Constraint1">
+      <xs:selector xpath=".//mstns:Greetings" />
+      <xs:field xpath="mstns:GreetingID" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="CallHistory_Constraint1">
+      <xs:selector xpath=".//mstns:CallHistory" />
+      <xs:field xpath="mstns:CallID" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="Departments_Constraint1">
+      <xs:selector xpath=".//mstns:Departments" />
+      <xs:field xpath="mstns:DepartmentID" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="ExtensionContactNumbers_Constraint1">
+      <xs:selector xpath=".//mstns:ExtensionContactNumbers" />
+      <xs:field xpath="mstns:ExtensionContactNumberID" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="Voicemails_Constraint1">
+      <xs:selector xpath=".//mstns:Voicemails" />
+      <xs:field xpath="mstns:VoicemailID" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="Extensions_Constraint1">
+      <xs:selector xpath=".//mstns:Extensions" />
+      <xs:field xpath="mstns:ExtensionID" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="PersonalizedGreetings_Constraint1">
+      <xs:selector xpath=".//mstns:PersonalizedGreetings" />
+      <xs:field xpath="mstns:PersonalizedGreetingID" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="Providers_Constraint1">
+      <xs:selector xpath=".//mstns:Providers" />
+      <xs:field xpath="mstns:ProviderID" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="ScriptSchedules_Constraint1">
+      <xs:selector xpath=".//mstns:ScriptSchedules" />
+      <xs:field xpath="mstns:ScriptScheduleID" />
+    </xs:unique>
+    <xs:keyref msdata:IsNested="true" name="FK_Extensions_Voicemails" refer="mstns:Extensions_Constraint1">
+      <xs:selector xpath=".//mstns:Voicemails" />
+      <xs:field xpath="mstns:ExtensionID" />
+    </xs:keyref>
+    <xs:keyref msdata:IsNested="true" name="FK_Extensions_ExtensionContactNumbers" refer="mstns:Extensions_Constraint1">
+      <xs:selector xpath=".//mstns:ExtensionContactNumbers" />
+      <xs:field xpath="mstns:ExtensionID" />
+    </xs:keyref>
+    <xs:keyref msdata:IsNested="true" name="FK_Greetings_LocalizedGreetings" refer="mstns:Constraint1">
+      <xs:selector xpath=".//mstns:LocalizedGreetings" />
+      <xs:field xpath="mstns:GreetingID" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

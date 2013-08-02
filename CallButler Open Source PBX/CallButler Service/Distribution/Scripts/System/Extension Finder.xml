@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IML Description="Extension Finder" AutoStop="false">
+	<GlobalPage>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_OtherCallerHungUp">
+			<HangupCall />
+			<StopScript />
+		</ExternalEvent>
+	</GlobalPage>
+	<Page ID="97406219-0469-455e-8259-5cd28c9200d4" Description="Get Next Number">
+		<ExternalAction Action="CALLBUTLERINTERNAL_GetNextNumber" Async="false" />
+		<Delay DelayTime="1000" />
+		<GotoPage PageID="430b60b3-16f6-4929-a2f6-718a34d0d853" />
+		<HangupEvent>
+			<GotoPage PageID="97406219-0469-455e-8259-5cd28c9200d4" />
+		</HangupEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_NoMoreNumbers">
+			<ExternalAction Action="CALLBUTLERINTERNAL_SendToVoicemail" Async="false" />
+			<StopScript />
+		</ExternalEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_GetNextNumber">
+			<GotoPage PageID="97406219-0469-455e-8259-5cd28c9200d4" />
+		</ExternalEvent>
+		<CallFailed>
+			<GotoPage PageID="97406219-0469-455e-8259-5cd28c9200d4" />
+		</CallFailed>
+		<CallConnected>
+			<GotoPage PageID="fbd0309e-6739-47cc-91fd-f50e22f2f535" />
+		</CallConnected>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_SendToVoicemail">
+			<HangupCall />
+			<ExternalAction Action="CALLBUTLERINTERNAL_SendToVoicemail" Async="false" />
+			<StopScript />
+		</ExternalEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_ForwardCall">
+			<HangupCall />
+			<ExternalAction Action="CALLBUTLERINTERNAL_ForwardCall" Async="false" />
+			<StopScript />
+		</ExternalEvent>
+		<TimeoutEvent Duration="#ExtensionTimeout#" WaitForPageActions="false">
+			<GotoPage PageID="97406219-0469-455e-8259-5cd28c9200d4" />
+		</TimeoutEvent>
+	</Page>
+	<Page ID="430b60b3-16f6-4929-a2f6-718a34d0d853" Description="Place Call">
+		<Call Number="#NumberToCall#" RequestAutoAnswer="false" FromCallerID="#FromCallerID#" FromCallerNumber="#FromNumber#" Profile="#CallProfile#" />
+		<CallFailed>
+			<GotoPage PageID="97406219-0469-455e-8259-5cd28c9200d4" />
+		</CallFailed>
+		<CallConnected>
+			<GotoPage PageID="fbd0309e-6739-47cc-91fd-f50e22f2f535" />
+		</CallConnected>
+		<HangupEvent>
+			<GotoPage PageID="97406219-0469-455e-8259-5cd28c9200d4" />
+		</HangupEvent>
+		<TimeoutEvent Duration="#ExtensionTimeout#" WaitForPageActions="false">
+			<GotoPage PageID="97406219-0469-455e-8259-5cd28c9200d4" />
+		</TimeoutEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_SendToVoicemail">
+			<HangupCall />
+			<ExternalAction Action="CALLBUTLERINTERNAL_SendToVoicemail" Async="false" />
+			<StopScript />
+		</ExternalEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_ForwardCall">
+			<HangupCall />
+			<ExternalAction Action="CALLBUTLERINTERNAL_ForwardCall" Async="false">#TransferNumber#</ExternalAction>
+			<StopScript />
+		</ExternalEvent>
+	</Page>
+	<Page ID="fbd0309e-6739-47cc-91fd-f50e22f2f535" Description="Confirm Transfer">
+		<Delay DelayTime="1000" />
+		<ExternalAction Action="CALLBUTLERINTERNAL_ConfirmingTransfer" Async="false" />
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Call from.snd</ExternalAction>
+		<SpeakText>#CallFrom#</SpeakText>
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Transfer Options.snd</ExternalAction>
+		<TimeoutEvent Duration="#ExtensionTimeout#" WaitForPageActions="true">
+			<GotoPage PageID="97406219-0469-455e-8259-5cd28c9200d4" />
+		</TimeoutEvent>
+		<DTMFEvent Digits="^1$">
+			<GotoPage PageID="8c5a8912-7064-4fe7-9bda-35f4fe4983c0" />
+		</DTMFEvent>
+		<DTMFEvent Digits="^2$">
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Goodbye.snd</ExternalAction>
+			<HangupCall />
+			<ExternalAction Action="CALLBUTLERINTERNAL_SendToVoicemail" Async="false" />
+			<StopScript />
+		</DTMFEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_SkipConfirmation">
+			<GotoPage PageID="8c5a8912-7064-4fe7-9bda-35f4fe4983c0" />
+		</ExternalEvent>
+		<InvalidInputEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Not understood.snd</ExternalAction>
+			<GotoPage PageID="fbd0309e-6739-47cc-91fd-f50e22f2f535" />
+		</InvalidInputEvent>
+		<HangupEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_SendToVoicemail" Async="false" />
+			<StopScript />
+		</HangupEvent>
+	</Page>
+	<Page ID="8c5a8912-7064-4fe7-9bda-35f4fe4983c0" Description="Connect Calls">
+		<ExternalAction Action="CALLBUTLERINTERNAL_ConnectCalls" Async="false" />
+		<Delay DelayTime="3000" />
+		<StopScript />
+		<TransferFailedEvent>
+			<HangupCall />
+			<StopScript />
+		</TransferFailedEvent>
+	</Page>
+</IML>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IML Description="CallButler Conference Bridge Script" AutoStop="true">
+	<GlobalPage>
+		<HangupEvent>
+			<ExternalAction Action="LeaveConference" Async="false">#ConferenceID#</ExternalAction>
+			<LeaveConference />
+			<StopScript />
+		</HangupEvent>
+		<ExternalEvent Event="PersonJoining">
+			<GotoPage PageID="9fde64ea-71c0-4ab9-8143-524a1c823f9f" PageName="Person Joining" />
+		</ExternalEvent>
+		<ExternalEvent Event="PersonLeaving">
+			<GotoPage PageID="4fcb5af1-8bbe-46a4-99a0-7c51d060f6cc" PageName="Person Leaving" />
+		</ExternalEvent>
+	</GlobalPage>
+	<Page ID="1ca38cb2-6d17-4db3-af34-8f4da7507dc8" Description="Enter Conference ID">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Enter a conference number.snd</ExternalAction>
+		<DTMFEvent Digits="^(?&lt;ConferenceID&gt;\d{1,9})$">
+			<GotoPage PageID="d57d8f15-c9db-4ee5-8c7d-5739ff94e1cd" PageName="Confirm Join" />
+		</DTMFEvent>
+		<InvalidInputEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Invalid Conference.snd</ExternalAction>
+			<GotoPage PageID="1ca38cb2-6d17-4db3-af34-8f4da7507dc8" PageName="Enter Conference ID" />
+		</InvalidInputEvent>
+		<TimeoutEvent Duration="60" WaitForPageActions="true">
+			<HangupCall />
+		</TimeoutEvent>
+	</Page>
+	<Page ID="d57d8f15-c9db-4ee5-8c7d-5739ff94e1cd" Description="Confirm Join">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Confirm Conference Number.snd</ExternalAction>
+		<SpeakText>&lt;spell&gt;#ConferenceID#&lt;/spell&gt;</SpeakText>
+		<SpeakText>Do you want to join this conference?</SpeakText>
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Press 1 for yes.snd</ExternalAction>
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Press 2 for no.snd</ExternalAction>
+		<DTMFEvent Digits="^1$">
+			<GotoPage PageID="ddff6ca1-0b70-410d-9a88-33a6090f4bf7" PageName="Join Conference" />
+		</DTMFEvent>
+		<DTMFEvent Digits="^2$">
+			<GotoPage PageID="1ca38cb2-6d17-4db3-af34-8f4da7507dc8" PageName="Enter Conference ID" />
+		</DTMFEvent>
+		<InvalidInputEvent>
+			<GotoPage PageID="d57d8f15-c9db-4ee5-8c7d-5739ff94e1cd" PageName="Confirm Join" />
+		</InvalidInputEvent>
+		<TimeoutEvent Duration="60" WaitForPageActions="true">
+			<HangupCall />
+		</TimeoutEvent>
+	</Page>
+	<Page ID="ddff6ca1-0b70-410d-9a88-33a6090f4bf7" Description="Join Conference">
+		<ExternalAction Action="JoinConference" Async="false">#ConferenceID#</ExternalAction>
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">There are.snd</ExternalAction>
+		<SpeakText>#NumberInConference#</SpeakText>
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">People in conference.snd</ExternalAction>
+		<JoinConference ConferenceID="#ConferenceID#" />
+		<ExternalAction Action="PersonJoining" Async="false">#ConferenceID#</ExternalAction>
+		<GotoPage PageID="e8fb28a6-36e0-4da6-af9f-b7eee927ddef" PageName="Main" />
+	</Page>
+	<Page ID="e8fb28a6-36e0-4da6-af9f-b7eee927ddef" Description="Main" />
+	<Page ID="9fde64ea-71c0-4ab9-8143-524a1c823f9f" Description="Person Joining">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Join Beep.snd</ExternalAction>
+		<GotoPage PageID="e8fb28a6-36e0-4da6-af9f-b7eee927ddef" PageName="Main" />
+	</Page>
+	<Page ID="4fcb5af1-8bbe-46a4-99a0-7c51d060f6cc" Description="Person Leaving">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Leave Beep.snd</ExternalAction>
+		<GotoPage PageID="e8fb28a6-36e0-4da6-af9f-b7eee927ddef" PageName="Main" />
+	</Page>
+</IML>

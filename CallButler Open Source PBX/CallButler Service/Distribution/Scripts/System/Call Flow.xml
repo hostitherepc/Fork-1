@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IML Description="Call Flow Script" AutoStop="true">
+	<GlobalPage>
+		<DTMFEvent Digits="^\*$">
+			<GotoPreviousPage />
+		</DTMFEvent>
+		<DTMFEvent Digits="^(?&lt;Extension&gt;\d{3,})$">
+			<GotoPage PageID="d32f6f65-f71d-417f-8155-d2b0ed855830" PageName="Extension Transfer" />
+		</DTMFEvent>
+		<TimeoutEvent Duration="20" WaitForPageActions="true">
+			<GotoPage PageID="6b8b2440-ca79-45f5-9cef-81a2bc311839" PageName="Timeout Page" />
+		</TimeoutEvent>
+		<DTMFEvent Digits="^0$">
+			<SetVariable Name="Extension" EnableEval="false">0</SetVariable>
+			<GotoPage PageID="d32f6f65-f71d-417f-8155-d2b0ed855830" PageName="Extension Transfer" />
+		</DTMFEvent>
+	</GlobalPage>
+	<Page ID="ca1d5555-4097-4e03-9e7d-e0f6aec803a4" Description="Main Greeting">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlayGreeting" Async="false">11111111111111111111111111111111</ExternalAction>
+		<GotoPage PageID="710f1398-9d99-438c-9f8c-67e3f64140a4" PageName="Language Selection" />
+		<DTMFEvent Digits="^(?&lt;MenuOptionNumber&gt;[^0*#]{1,2})$">
+			<GotoPage PageID="ba20ce5f-7619-4b4d-82e8-56c4165db4d0" PageName="Process Main Menu" />
+		</DTMFEvent>
+		<InvalidInputEvent>
+			<GotoPage PageID="MainMenuPage" PageName="Main Menu" />
+		</InvalidInputEvent>
+	</Page>
+	<Page ID="710f1398-9d99-438c-9f8c-67e3f64140a4" Description="Language Selection">
+		<ExternalAction Action="CALLBUTLERINTERNAL_ChooseLanguage" Async="false" />
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlayGreeting" Async="false">22222222222222222222222222222222</ExternalAction>
+		<DTMFEvent Digits="(?&lt;LanguageNumber&gt;\d+)">
+			<GotoPage PageID="276d6b34-9ed9-40b8-8ad8-2cda5116fc4c" PageName=" Process Language" />
+		</DTMFEvent>
+		<InvalidInputEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Not Understood.snd</ExternalAction>
+			<GotoPage PageID="710f1398-9d99-438c-9f8c-67e3f64140a4" PageName="Language Selection" />
+		</InvalidInputEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_NotMultilingual">
+			<GotoPage PageID="MainMenuPage" PageName="Main Menu" />
+		</ExternalEvent>
+		<TimeoutEvent Duration="10" WaitForPageActions="true">
+			<GotoPage PageID="MainMenuPage" PageName="Main Menu" />
+		</TimeoutEvent>
+	</Page>
+	<Page ID="276d6b34-9ed9-40b8-8ad8-2cda5116fc4c" Description=" Process Language">
+		<ExternalAction Action="CALLBUTLERINTERNAL_SetLanguageID" Async="false">#LanguageNumber#</ExternalAction>
+		<GotoPage PageID="MainMenuPage" PageName="Main Menu" />
+		<ExternalEvent Event="CALLBUTLERINTERNAL_InvalidLanguage">
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Not Understood.snd</ExternalAction>
+			<GotoPage PageID="710f1398-9d99-438c-9f8c-67e3f64140a4" PageName="Language Selection" />
+		</ExternalEvent>
+	</Page>
+	<Page ID="MainMenuPage" Description="Main Menu">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlayGreeting" Async="false">33333333333333333333333333333333</ExternalAction>
+		<DTMFEvent Digits="^(?&lt;MenuOptionNumber&gt;[^0*#]{1,2})$">
+			<GotoPage PageID="ba20ce5f-7619-4b4d-82e8-56c4165db4d0" PageName="Process Main Menu" />
+		</DTMFEvent>
+		<DTMFEvent Digits="^\#$">
+			<GotoPage PageID="e98968a3-df1b-42e2-9a8d-bc06bbe5be07" PageName="Dial By Name" />
+		</DTMFEvent>
+		<InvalidInputEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Not Understood.snd</ExternalAction>
+			<GotoPage PageID="MainMenuPage" PageName="Main Menu" />
+		</InvalidInputEvent>
+	</Page>
+	<Page ID="ba20ce5f-7619-4b4d-82e8-56c4165db4d0" Description="Process Main Menu">
+		<ExternalAction Action="CALLBUTLERINTERNAL_ProcessMainMenuOption" Async="false">#MenuOptionNumber#</ExternalAction>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_InvalidMenuOption">
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Not Understood.snd</ExternalAction>
+			<GotoPage PageID="MainMenuPage" PageName="Main Menu" />
+		</ExternalEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_GreetingMenuOption">
+			<GotoPage PageID="d32355a3-e120-411d-8a64-11e333b92828" PageName="Main Menu Greeting Option" />
+		</ExternalEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_ExtensionMenuOption">
+			<GotoPage PageID="d32f6f65-f71d-417f-8155-d2b0ed855830" PageName="Extension Transfer" />
+		</ExternalEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_ScriptMenuOption">
+			<GotoPage PageID="" PageName="Extension Transfer" Location="#CustomScriptPath#" />
+		</ExternalEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_NumberTransferMenuOption">
+			<GotoPage PageID="7599c7b3-5a4e-425a-bcac-2df0c4daa3d9" PageName="Main Menu Number Transfer Option" />
+		</ExternalEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_AddonModuleMenuOption">
+			<GotoPage PageID="69812e79-ea48-4b52-b987-b28287edae8e" PageName="Add-on Module" />
+		</ExternalEvent>
+	</Page>
+	<Page ID="d32355a3-e120-411d-8a64-11e333b92828" Description="Main Menu Greeting Option">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlayGreeting" Async="false">#MainMenuOptionGreetingID#</ExternalAction>
+		<GotoPage PageID="MainMenuPage" PageName="Main Menu" />
+		<InvalidInputEvent>
+			<GotoPage PageID="MainMenuPage" PageName="Main Menu" />
+		</InvalidInputEvent>
+	</Page>
+	<Page ID="7599c7b3-5a4e-425a-bcac-2df0c4daa3d9" Description="Main Menu Number Transfer Option">
+		<TransferCall TransferTo="#TransferToNumber#" IsExtension="false" UseBridge="false" />
+		<TransferFailedEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Number cannot be reached.snd</ExternalAction>
+			<GotoPage PageID="MainMenuPage" PageName="Main Menu" />
+		</TransferFailedEvent>
+	</Page>
+	<Page ID="d32f6f65-f71d-417f-8155-d2b0ed855830" Description="Extension Transfer">
+		<TransferCall TransferTo="#Extension#" IsExtension="true" UseBridge="false" />
+		<TransferFailedEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Number cannot be reached.snd</ExternalAction>
+			<GotoPage PageID="MainMenuPage" PageName="Main Menu" />
+		</TransferFailedEvent>
+	</Page>
+	<Page ID="6b8b2440-ca79-45f5-9cef-81a2bc311839" Description="Timeout Page">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Continue this call.snd</ExternalAction>
+		<DTMFEvent Digits="^1$">
+			<GotoPage PageID="MainMenuPage" PageName="Main Menu" />
+		</DTMFEvent>
+		<InvalidInputEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Not understood.snd</ExternalAction>
+			<GotoPage PageID="6b8b2440-ca79-45f5-9cef-81a2bc311839" PageName="Timeout Page" />
+		</InvalidInputEvent>
+		<TimeoutEvent Duration="10" WaitForPageActions="true">
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Goodbye.snd</ExternalAction>
+			<HangupCall />
+		</TimeoutEvent>
+	</Page>
+	<Page ID="e98968a3-df1b-42e2-9a8d-bc06bbe5be07" Description="Dial By Name Main">
+		<SetVariable Name="ExtensionSearchIndex" EnableEval="false">-1</SetVariable>
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">First Three Letters.snd</ExternalAction>
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Return to Main Menu.snd</ExternalAction>
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Press Star.snd</ExternalAction>
+		<DTMFEvent Digits="(?&lt;DirectorySearchString&gt;\d+)">
+			<GotoPage PageID="c837b703-2359-4fd1-8c8a-30ef7b0bcd7b" PageName="Dial By Name Search" />
+		</DTMFEvent>
+		<DTMFEvent Digits="^\*$">
+			<GotoPage PageID="MainMenuPage" PageName="Main Menu" />
+		</DTMFEvent>
+		<InvalidInputEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Not Understood.snd</ExternalAction>
+			<GotoPage PageID="e98968a3-df1b-42e2-9a8d-bc06bbe5be07" PageName="Dial By Name Main" />
+		</InvalidInputEvent>
+	</Page>
+	<Page ID="c837b703-2359-4fd1-8c8a-30ef7b0bcd7b" Description="Dial By Name Search">
+		<ExternalAction Action="CALLBUTLERINTERNAL_DialByNameSearch" Async="false">#DirectorySearchString#</ExternalAction>
+		<GotoPage PageID="b5e69ce0-e3d3-4b17-9e70-49a0d80b4631" PageName="Dial By Name Chooser" />
+		<ExternalEvent Event="CALLBUTLERINTERNAL_ExtensionNotFound">
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Name not found.snd</ExternalAction>
+			<GotoPage PageID="e98968a3-df1b-42e2-9a8d-bc06bbe5be07" PageName="Dial By Name Main" />
+		</ExternalEvent>
+	</Page>
+	<Page ID="b5e69ce0-e3d3-4b17-9e70-49a0d80b4631" Description="Dial By Name Chooser">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Are you looking for.snd</ExternalAction>
+		<SpeakText>#ExtensionName#</SpeakText>
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Press 1 for yes.snd</ExternalAction>
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Press 2 for no.snd</ExternalAction>
+		<DTMFEvent Digits="^1$">
+			<GotoPage PageID="d32f6f65-f71d-417f-8155-d2b0ed855830" PageName="Extension Transfer" />
+		</DTMFEvent>
+		<DTMFEvent Digits="^2$">
+			<GotoPage PageID="c837b703-2359-4fd1-8c8a-30ef7b0bcd7b" PageName="Dial By Name Search" />
+		</DTMFEvent>
+		<InvalidInputEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Not Understood.snd</ExternalAction>
+			<GotoPage PageID="b5e69ce0-e3d3-4b17-9e70-49a0d80b4631" PageName="Dial By Name Chooser" />
+		</InvalidInputEvent>
+	</Page>
+	<Page ID="69812e79-ea48-4b52-b987-b28287edae8e" Description="Add-on Module">
+		<ExternalAction Action="CALLBUTLERINTERNAL_StartAddonModule" Async="false">#AddonModuleID#</ExternalAction>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_AddonModuleFailed">
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Number cannot be reached.snd</ExternalAction>
+			<GotoPage PageID="MainMenuPage" PageName="Main Menu" />
+		</ExternalEvent>
+	</Page>
+</IML>

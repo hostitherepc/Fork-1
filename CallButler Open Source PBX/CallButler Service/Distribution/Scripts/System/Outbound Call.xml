@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IML Description="Outbound Call Script" AutoStop="true">
+	<GlobalPage>
+		<CallFailed>
+			<GotoPage PageID="3339f777-156f-4b3f-a3bd-c8a79adccfb8" />
+		</CallFailed>
+		<HangupEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_CallEnded" Async="false" />
+		</HangupEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_ConferenceStarted">
+			<GotoPage PageID="576a5b1d-ef8a-4243-83a0-b8065876d06d" />
+		</ExternalEvent>
+		<CallOnHoldEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_HoldCaller" Async="false" />
+			<GotoPage PageID="576a5b1d-ef8a-4243-83a0-b8065876d06d" />
+		</CallOnHoldEvent>
+		<CallOffHoldEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_UnholdCaller" Async="false" />
+			<GotoPage PageID="576a5b1d-ef8a-4243-83a0-b8065876d06d" />
+		</CallOffHoldEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_TransferCaller">
+			<GotoPage PageID="4f60525a-b45c-414c-9b14-24d461cc1f61" />
+		</ExternalEvent>
+	</GlobalPage>
+	<Page ID="ae1c838d-f45e-4c93-ad9c-0abc5f7e6d60" Description="Start Page">
+		<Delay DelayTime="1000" />
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">ring.snd</ExternalAction>
+	</Page>
+	<Page ID="3339f777-156f-4b3f-a3bd-c8a79adccfb8" Description="Unable to Make Call">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Number cannot be reached.snd</ExternalAction>
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Goodbye.snd</ExternalAction>
+		<HangupCall />
+	</Page>
+	<Page ID="576a5b1d-ef8a-4243-83a0-b8065876d06d" Description="Main" />
+	<Page ID="4f60525a-b45c-414c-9b14-24d461cc1f61" Description="Transfer Caller">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Transferring Call.snd</ExternalAction>
+		<ExternalAction Action="CALLBUTLERINTERNAL_TransferCaller" Async="false">#TransferNumber#</ExternalAction>
+		<HangupCall />
+	</Page>
+</IML>

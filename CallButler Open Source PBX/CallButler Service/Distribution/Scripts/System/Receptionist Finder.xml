@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IML Description="Receptionist Finder">
+	<GlobalPage>
+		<TransferFailedEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_SendToAutoAttendant" Async="false" />
+		</TransferFailedEvent>
+		<HangupEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_EndExtensionFinder" Async="false" />
+		</HangupEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_ExtensionNotAvailable">
+			<ExternalAction Action="CALLBUTLERINTERNAL_SendToAutoAttendant" Async="false" />
+		</ExternalEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_ConnectCalls">
+			<ExternalAction Action="CALLBUTLERINTERNAL_AnswerCall" Async="false" />
+		</ExternalEvent>
+	</GlobalPage>
+	<Page ID="72056bd1-bae2-4c44-aa7c-87eca2c1e266" Description="Start" />
+</IML>

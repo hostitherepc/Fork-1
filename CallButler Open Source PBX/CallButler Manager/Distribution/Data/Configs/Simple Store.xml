@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<CallButlerDataset xmlns="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd">
+  <Departments>
+    <CustomerID>1</CustomerID>
+    <DepartmentID>7d24c3ee-3165-4a74-9c19-8a19a6d34be2</DepartmentID>
+    <Name>Store Hours</Name>
+    <Type>0</Type>
+    <Enabled>true</Enabled>
+    <OptionNumber>1</OptionNumber>
+  </Departments>
+  <Departments>
+    <CustomerID>1</CustomerID>
+    <DepartmentID>6dde9796-573c-453d-a7f0-8f79542b9da1</DepartmentID>
+    <Name>Store Directions</Name>
+    <Type>0</Type>
+    <Enabled>true</Enabled>
+    <OptionNumber>2</OptionNumber>
+  </Departments>
+</CallButlerDataset>

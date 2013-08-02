@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IML Description="Outbound Callee Script" AutoStop="true">
+	<GlobalPage>
+		<HangupEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_Reset" Async="false" />
+			<ExternalAction Action="CALLBUTLERINTERNAL_CallEnded" Async="false" />
+		</HangupEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_HoldCaller">
+			<GotoPage PageID="3ed4b708-4781-4496-a6ea-84c0d0ee7b50" />
+		</ExternalEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_UnholdCaller">
+			<GotoPage PageID="07beee8c-6e0f-4e29-b0bd-babd0385bd89" />
+		</ExternalEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_TransferCall">
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Transferring Call.snd</ExternalAction>
+			<GotoPage PageID="b401a280-cc13-4221-ac42-8820b53d7c1a" />
+		</ExternalEvent>
+	</GlobalPage>
+	<Page ID="9b8799f1-d465-4fe1-a5bc-1a3b82c08820" Description="Make Outbound Call">
+		<Call Number="#NumberToCall#" RequestAutoAnswer="false" IsLinkedCall="false" LinkedCallScript="" LinkedCallID="" FromCallerID="#FromCallerID#" FromCallerNumber="#FromCallerNumber#" ChannelDriver="" Profile="#CallProfile#" />
+		<CallFailed>
+			<ExternalAction Action="CALLBUTLERINTERNAL_Reset" Async="false" />
+			<ExternalAction Action="CALLBUTLERINTERNAL_CallFailed" Async="false" />
+			<HangupCall />
+		</CallFailed>
+		<CallConnected>
+			<ExternalAction Action="CALLBUTLERINTERNAL_CallConnected" Async="false" />
+			<GotoPage PageID="0c25a8fb-b2f7-4db4-93a3-d6f211f1fdfe" />
+		</CallConnected>
+	</Page>
+	<Page ID="0c25a8fb-b2f7-4db4-93a3-d6f211f1fdfe" Description="Main" />
+	<Page ID="3ed4b708-4781-4496-a6ea-84c0d0ee7b50" Description="Hold">
+		<PlayMusic Location="#HoldMusicLocation#" IncludeSubFolders="true" />
+	</Page>
+	<Page ID="07beee8c-6e0f-4e29-b0bd-babd0385bd89" Description="Unhold" />
+	<Page ID="b401a280-cc13-4221-ac42-8820b53d7c1a" Description="Transfer Call">
+		<IfCondition>
+			<GotoPage PageID="17d7b7cd-69f0-4e30-9f68-fb6886f393db" Location="" />"#TransferNumber#".length &gt; 3</IfCondition>
+		<IfCondition>
+			<GotoPage PageID="3ee427b2-bb05-40bc-8972-8bc86b583cb0" Location="" />"#TransferNumber#".length &lt;= 3</IfCondition>
+	</Page>
+	<Page ID="3ee427b2-bb05-40bc-8972-8bc86b583cb0" Description="Transfer (Extension)">
+		<TransferCall TransferTo="#TransferNumber#" FromCallerName="" FromCallerNumber="" OutboundBridgeProfileName="" IsExtension="true" UseBridge="false" />
+		<TransferFailedEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Unable To Transfer.snd</ExternalAction>
+			<ExternalAction Action="CALLBUTLERINTERNAL_ReturnToCallFlowMainMenu" Async="false" />
+		</TransferFailedEvent>
+		<HangupEvent>
+			<Delay DelayTime="5000" />
+		</HangupEvent>
+	</Page>
+	<Page ID="17d7b7cd-69f0-4e30-9f68-fb6886f393db" Description="Transfer (Number)">
+		<TransferCall TransferTo="#TransferNumber#" FromCallerName="" FromCallerNumber="" OutboundBridgeProfileName="" IsExtension="false" UseBridge="false" />
+		<TransferFailedEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Unable To Transfer.snd</ExternalAction>
+			<ExternalAction Action="CALLBUTLERINTERNAL_ReturnToCallFlowMainMenu" Async="false" />
+		</TransferFailedEvent>
+		<HangupEvent>
+			<Delay DelayTime="5000" />
+		</HangupEvent>
+	</Page>
+</IML>

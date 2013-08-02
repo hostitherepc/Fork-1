@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IML Description="Transfer Conference" AutoStop="true">
+	<GlobalPage>
+		<HangupEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_EndConference" Async="false" />
+			<GotoPage PageID="c61c0176-0120-408e-b4d8-80d250d4f00c" />
+		</HangupEvent>
+		<DTMFEvent Digits="^0$">
+			<GotoPage PageID="aab23d31-58c9-4e51-a628-713eeda28476" />
+		</DTMFEvent>
+		<DTMFEvent Digits="^1$">
+			<GotoPage PageID="38e4cf52-5bbf-414b-be87-f2cec8f316f7" />
+		</DTMFEvent>
+		<DTMFEvent Digits="^5$">
+			<GotoPage PageID="bc6a7745-8e3d-4ad8-97ff-80aa11c48ef8" />
+		</DTMFEvent>
+		<InvalidInputEvent>
+			<GotoPage PageID="bddb8451-62d1-4228-914f-b2908b7b0ec0" />
+		</InvalidInputEvent>
+		<CallOnHoldEvent>
+			<SetVariable Name="Holding" EnableEval="false">1</SetVariable>
+			<ExternalAction Action="CALLBUTLERINTERNAL_HoldCaller" Async="false" />
+			<GotoPage PageID="b25f1d08-45e4-4269-b17a-56ce3a9a3f96" />
+		</CallOnHoldEvent>
+		<CallOffHoldEvent>
+			<SetVariable Name="Holding" EnableEval="false">0</SetVariable>
+			<ExternalAction Action="CALLBUTLERINTERNAL_UnholdCaller" Async="false" />
+			<GotoPage PageID="b25f1d08-45e4-4269-b17a-56ce3a9a3f96" />
+		</CallOffHoldEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_TransferCall">
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Transferring Call.snd</ExternalAction>
+			<GotoPage PageID="d0d6e531-d917-44bc-a6f8-8030004682d3" />
+		</ExternalEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_TransferCaller">
+			<GotoPage PageID="1f4de676-d19c-49da-a38b-ef7af23006ab" />
+		</ExternalEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_HoldCall">
+			<GotoPage PageID="425f9442-137c-4e42-b46b-440060b9b77d" />
+		</ExternalEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_UnholdCall">
+			<GotoPage PageID="48bb8ab3-22f3-4eeb-a5ab-1fdf02df0828" />
+		</ExternalEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_RecordingStarted">
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Recording Started.snd</ExternalAction>
+			<GotoPage PageID="b25f1d08-45e4-4269-b17a-56ce3a9a3f96" />
+		</ExternalEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_RecordingFinished">
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Recording Finished.snd</ExternalAction>
+			<GotoPage PageID="b25f1d08-45e4-4269-b17a-56ce3a9a3f96" />
+		</ExternalEvent>
+	</GlobalPage>
+	<Page ID="0e87129d-65bb-46ac-9770-cb84f45e07c0" Description="Start">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Call Connected.snd</ExternalAction>
+		<SetVariable Name="Recording" EnableEval="false">0</SetVariable>
+		<SetVariable Name="Holding" EnableEval="false">0</SetVariable>
+		<GotoPage PageID="b25f1d08-45e4-4269-b17a-56ce3a9a3f96" />
+	</Page>
+	<Page ID="b25f1d08-45e4-4269-b17a-56ce3a9a3f96" Description="Main Options">
+		<Trace IsError="false">Main Options</Trace>
+	</Page>
+	<Page ID="bddb8451-62d1-4228-914f-b2908b7b0ec0" Description="Help Menu">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">To Transfer.snd</ExternalAction>
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Press 1.snd</ExternalAction>
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">To Record.snd</ExternalAction>
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Press 5.snd</ExternalAction>
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">To Hold.snd</ExternalAction>
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Press 0.snd</ExternalAction>
+	</Page>
+	<Page ID="38e4cf52-5bbf-414b-be87-f2cec8f316f7" Description="Transfer Menu">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Enter Number.snd</ExternalAction>
+		<DTMFEvent Digits="^(?&lt;TransferNumber&gt;\d+)$">
+			<GotoPage PageID="69577a63-13dd-4209-a4d7-4c41b74ea38a" />
+		</DTMFEvent>
+		<InvalidInputEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Unable To Transfer.snd</ExternalAction>
+			<GotoPage PageID="b25f1d08-45e4-4269-b17a-56ce3a9a3f96" />
+		</InvalidInputEvent>
+		<TimeoutEvent Duration="30" WaitForPageActions="false">
+			<GotoPage PageID="b25f1d08-45e4-4269-b17a-56ce3a9a3f96" />
+		</TimeoutEvent>
+	</Page>
+	<Page ID="69577a63-13dd-4209-a4d7-4c41b74ea38a" Description="Transfer Confirmation">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Confirm Transfer.snd</ExternalAction>
+		<SpeakText>&lt;spell&gt;#TransferNumber#&lt;/spell&gt;</SpeakText>
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Press 1 for Yes.snd</ExternalAction>
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Press 2 for No.snd</ExternalAction>
+		<DTMFEvent Digits="^1$">
+			<GotoPage PageID="1f4de676-d19c-49da-a38b-ef7af23006ab" />
+		</DTMFEvent>
+		<DTMFEvent Digits="^2$">
+			<GotoPage PageID="b25f1d08-45e4-4269-b17a-56ce3a9a3f96" />
+		</DTMFEvent>
+		<InvalidInputEvent>
+			<GotoPage PageID="69577a63-13dd-4209-a4d7-4c41b74ea38a" />
+		</InvalidInputEvent>
+	</Page>
+	<Page ID="1f4de676-d19c-49da-a38b-ef7af23006ab" Description="Transfer Caller">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Transferring Call.snd</ExternalAction>
+		<ExternalAction Action="CALLBUTLERINTERNAL_TransferCaller" Async="false">#TransferNumber#</ExternalAction>
+		<HangupCall />
+	</Page>
+	<Page ID="bc6a7745-8e3d-4ad8-97ff-80aa11c48ef8" Description="Record Options">
+		<IfCondition>
+			<GotoPage PageID="da2eec33-f245-4feb-aace-5186ba2a9cef" />"#Recording#" == "0"</IfCondition>
+		<IfCondition>
+			<GotoPage PageID="a680ae6c-f6d4-4b52-9594-3573a197bb69" />"#Recording#" == "1"</IfCondition>
+	</Page>
+	<Page ID="da2eec33-f245-4feb-aace-5186ba2a9cef" Description="Record Start">
+		<SetVariable Name="Recording" EnableEval="false">1</SetVariable>
+		<SetVariable Name="RecordingFilename" EnableEval="false">#RecordingPath#\#ExtensionID#\@FileTime@.mp3</SetVariable>
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Recording Started.snd</ExternalAction>
+		<ExternalAction Action="CALLBUTLERINTERNAL_RecordingStarted" Async="false" />
+		<StartRecording Location="#RecordingFilename#" Format="MP3" />
+	</Page>
+	<Page ID="a680ae6c-f6d4-4b52-9594-3573a197bb69" Description="Record End">
+		<SetVariable Name="Recording" EnableEval="false">0</SetVariable>
+		<StopRecording>From: @CallerDisplayName@ - @CallerHost@</StopRecording>
+		<ExternalAction Action="CALLBUTLERINTERNAL_RecordingFinished" Async="false" />
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Recording Finished.snd</ExternalAction>
+	</Page>
+	<Page ID="aab23d31-58c9-4e51-a628-713eeda28476" Description="Hold Options">
+		<IfCondition>
+			<SetVariable Name="Holding" EnableEval="false">1</SetVariable>
+			<ExternalAction Action="CALLBUTLERINTERNAL_HoldCaller" Async="false" />
+			<GotoPage PageID="b25f1d08-45e4-4269-b17a-56ce3a9a3f96" />"#Holding#" == "0"</IfCondition>
+		<IfCondition>
+			<SetVariable Name="Holding" EnableEval="false">0</SetVariable>
+			<ExternalAction Action="CALLBUTLERINTERNAL_UnholdCaller" Async="false" />
+			<GotoPage PageID="b25f1d08-45e4-4269-b17a-56ce3a9a3f96" />"#Holding#" == "1"</IfCondition>
+	</Page>
+	<Page ID="c61c0176-0120-408e-b4d8-80d250d4f00c" Description="Process Hangup">
+		<IfCondition>
+			<StopRecording>From: @CallerDisplayName@ - @CallerHost@</StopRecording>
+			<ExternalAction Action="CALLBUTLERINTERNAL_RecordingFinished" Async="false" />"#Recording#" == "1"</IfCondition>
+	</Page>
+	<Page ID="d0d6e531-d917-44bc-a6f8-8030004682d3" Description="Transfer Call">
+		<IfCondition>
+			<GotoPage PageID="547fe663-c882-44a9-ac3e-e81267b804dc" />"#TransferNumber#".length &gt; 3</IfCondition>
+		<IfCondition>
+			<GotoPage PageID="35aec875-59ac-461f-abb9-726d80fcd997" />"#TransferNumber#".length &lt;= 3</IfCondition>
+	</Page>
+	<Page ID="35aec875-59ac-461f-abb9-726d80fcd997" Description="Transfer (Extension)">
+		<TransferCall TransferTo="#TransferNumber#" IsExtension="true" UseBridge="false" />
+		<TransferFailedEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Unable To Transfer.snd</ExternalAction>
+			<ExternalAction Action="CALLBUTLERINTERNAL_ReturnToCallFlowMainMenu" Async="false" />
+		</TransferFailedEvent>
+		<HangupEvent>
+			<Delay DelayTime="5000" />
+		</HangupEvent>
+	</Page>
+	<Page ID="547fe663-c882-44a9-ac3e-e81267b804dc" Description="Transfer (Number)">
+		<TransferCall TransferTo="#TransferNumber#" IsExtension="false" UseBridge="false" />
+		<TransferFailedEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Unable To Transfer.snd</ExternalAction>
+			<ExternalAction Action="CALLBUTLERINTERNAL_ReturnToCallFlowMainMenu" Async="false" />
+		</TransferFailedEvent>
+		<HangupEvent>
+			<Delay DelayTime="5000" />
+		</HangupEvent>
+	</Page>
+	<Page ID="425f9442-137c-4e42-b46b-440060b9b77d" Description="Hold">
+		<PlayMusic Location="#HoldMusicLocation#" IncludeSubFolders="true" />
+	</Page>
+	<Page ID="48bb8ab3-22f3-4eeb-a5ab-1fdf02df0828" Description="Unhold" />
+</IML>

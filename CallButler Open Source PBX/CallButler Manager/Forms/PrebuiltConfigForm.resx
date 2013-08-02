@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnCancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>547, 346</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnNext.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnNext.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnNext.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnNext.Location" type="System.Drawing.Point, System.Drawing">
+    <value>466, 346</value>
+  </data>
+  <data name="btnNext.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnNext.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="btnNext.Text" xml:space="preserve">
+    <value>&amp;Next &gt;</value>
+  </data>
+  <data name="&gt;&gt;btnNext.Name" xml:space="preserve">
+    <value>btnNext</value>
+  </data>
+  <data name="&gt;&gt;btnNext.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnNext.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnNext.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnBack.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnBack.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnBack.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnBack.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 346</value>
+  </data>
+  <data name="btnBack.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnBack.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="btnBack.Text" xml:space="preserve">
+    <value>&lt; &amp;Back</value>
+  </data>
+  <data name="&gt;&gt;btnBack.Name" xml:space="preserve">
+    <value>btnBack</value>
+  </data>
+  <data name="&gt;&gt;btnBack.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnBack.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnBack.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="smoothLabel5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="smoothLabel5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Blue Highway, 24pt</value>
+  </data>
+  <data name="smoothLabel5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="smoothLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 337</value>
+  </data>
+  <data name="smoothLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 32</value>
+  </data>
+  <data name="smoothLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="smoothLabel5.Text" xml:space="preserve">
+    <value>Business Helper</value>
+  </data>
+  <data name="smoothLabel5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.Name" xml:space="preserve">
+    <value>smoothLabel5</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 93</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>342, 98</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>The Business Helper configuration wizard now has enough information to configure CallButler.
+
+Please press the Finish button to complete and save this configuration.</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>pgFinish</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pgFinish.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgFinish.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pgFinish.Size" type="System.Drawing.Size, System.Drawing">
+    <value>409, 267</value>
+  </data>
+  <data name="pgFinish.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;pgFinish.Name" xml:space="preserve">
+    <value>pgFinish</value>
+  </data>
+  <data name="&gt;&gt;pgFinish.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgFinish.Parent" xml:space="preserve">
+    <value>wizMain</value>
+  </data>
+  <data name="&gt;&gt;pgFinish.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblGreetingTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
+  <data name="lblGreetingTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblGreetingTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-2, -1</value>
+  </data>
+  <data name="lblGreetingTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>408, 16</value>
+  </data>
+  <data name="lblGreetingTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="lblGreetingTitle.Text" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;lblGreetingTitle.Name" xml:space="preserve">
+    <value>lblGreetingTitle</value>
+  </data>
+  <data name="&gt;&gt;lblGreetingTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblGreetingTitle.Parent" xml:space="preserve">
+    <value>pgGreeting</value>
+  </data>
+  <data name="&gt;&gt;lblGreetingTitle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblGreetingDescription.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblGreetingDescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 14</value>
+  </data>
+  <data name="lblGreetingDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>406, 44</value>
+  </data>
+  <data name="lblGreetingDescription.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblGreetingDescription.Text" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="lblGreetingDescription.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lblGreetingDescription.Name" xml:space="preserve">
+    <value>lblGreetingDescription</value>
+  </data>
+  <data name="&gt;&gt;lblGreetingDescription.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblGreetingDescription.Parent" xml:space="preserve">
+    <value>pgGreeting</value>
+  </data>
+  <data name="&gt;&gt;lblGreetingDescription.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="greetingControl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="greetingControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 61</value>
+  </data>
+  <data name="greetingControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>405, 232</value>
+  </data>
+  <data name="greetingControl.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;greetingControl.Name" xml:space="preserve">
+    <value>greetingControl</value>
+  </data>
+  <data name="&gt;&gt;greetingControl.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.GreetingControl, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;greetingControl.Parent" xml:space="preserve">
+    <value>pgGreeting</value>
+  </data>
+  <data name="&gt;&gt;greetingControl.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pgGreeting.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgGreeting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pgGreeting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>409, 267</value>
+  </data>
+  <data name="pgGreeting.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;pgGreeting.Name" xml:space="preserve">
+    <value>pgGreeting</value>
+  </data>
+  <data name="&gt;&gt;pgGreeting.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgGreeting.Parent" xml:space="preserve">
+    <value>wizMain</value>
+  </data>
+  <data name="&gt;&gt;pgGreeting.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblTextTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
+  <data name="lblTextTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTextTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 0</value>
+  </data>
+  <data name="lblTextTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>395, 16</value>
+  </data>
+  <data name="lblTextTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="lblTextTitle.Text" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;lblTextTitle.Name" xml:space="preserve">
+    <value>lblTextTitle</value>
+  </data>
+  <data name="&gt;&gt;lblTextTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTextTitle.Parent" xml:space="preserve">
+    <value>pgDetails</value>
+  </data>
+  <data name="&gt;&gt;lblTextTitle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblTextDescription.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTextDescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 20</value>
+  </data>
+  <data name="lblTextDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>395, 40</value>
+  </data>
+  <data name="lblTextDescription.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblTextDescription.Text" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="lblTextDescription.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lblTextDescription.Name" xml:space="preserve">
+    <value>lblTextDescription</value>
+  </data>
+  <data name="&gt;&gt;lblTextDescription.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTextDescription.Parent" xml:space="preserve">
+    <value>pgDetails</value>
+  </data>
+  <data name="&gt;&gt;lblTextDescription.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblTextDisplayName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblTextDisplayName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTextDisplayName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 71</value>
+  </data>
+  <data name="lblTextDisplayName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="lblTextDisplayName.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblTextDisplayName.Text" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;lblTextDisplayName.Name" xml:space="preserve">
+    <value>lblTextDisplayName</value>
+  </data>
+  <data name="&gt;&gt;lblTextDisplayName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTextDisplayName.Parent" xml:space="preserve">
+    <value>pgDetails</value>
+  </data>
+  <data name="&gt;&gt;lblTextDisplayName.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtTextValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 87</value>
+  </data>
+  <data name="txtTextValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>392, 21</value>
+  </data>
+  <data name="txtTextValue.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtTextValue.Name" xml:space="preserve">
+    <value>txtTextValue</value>
+  </data>
+  <data name="&gt;&gt;txtTextValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtTextValue.Parent" xml:space="preserve">
+    <value>pgDetails</value>
+  </data>
+  <data name="&gt;&gt;txtTextValue.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pgDetails.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgDetails.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pgDetails.Size" type="System.Drawing.Size, System.Drawing">
+    <value>409, 267</value>
+  </data>
+  <data name="pgDetails.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pgDetails.Name" xml:space="preserve">
+    <value>pgDetails</value>
+  </data>
+  <data name="&gt;&gt;pgDetails.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgDetails.Parent" xml:space="preserve">
+    <value>wizMain</value>
+  </data>
+  <data name="&gt;&gt;pgDetails.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="prebuiltConfigControl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="prebuiltConfigControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 51</value>
+  </data>
+  <data name="prebuiltConfigControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>406, 241</value>
+  </data>
+  <data name="prebuiltConfigControl.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;prebuiltConfigControl.Name" xml:space="preserve">
+    <value>prebuiltConfigControl</value>
+  </data>
+  <data name="&gt;&gt;prebuiltConfigControl.Type" xml:space="preserve">
+    <value>CallButler.Manager.ViewControls.PrebuiltConfigControl, CallButler Manager, Version=1.0.625.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;prebuiltConfigControl.Parent" xml:space="preserve">
+    <value>pgChooseConfig</value>
+  </data>
+  <data name="&gt;&gt;prebuiltConfigControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-3, 0</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>426, 33</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Please choose a business category and configuration from the list below to begin the setup process.</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>pgChooseConfig</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pgChooseConfig.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgChooseConfig.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pgChooseConfig.Size" type="System.Drawing.Size, System.Drawing">
+    <value>409, 267</value>
+  </data>
+  <data name="pgChooseConfig.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pgChooseConfig.Name" xml:space="preserve">
+    <value>pgChooseConfig</value>
+  </data>
+  <data name="&gt;&gt;pgChooseConfig.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgChooseConfig.Parent" xml:space="preserve">
+    <value>wizMain</value>
+  </data>
+  <data name="&gt;&gt;pgChooseConfig.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="wizMain.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="wizMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>213, 35</value>
+  </data>
+  <data name="wizMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>409, 315</value>
+  </data>
+  <data name="wizMain.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="wizMain.TablPanelTopMargin" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="wizMain.TabPanelWidth" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="wizMain.TabWidth" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;wizMain.Name" xml:space="preserve">
+    <value>wizMain</value>
+  </data>
+  <data name="&gt;&gt;wizMain.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.Wizard, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;wizMain.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="reflectionPicture1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="reflectionPicture1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 191</value>
+  </data>
+  <data name="reflectionPicture1.Offset" type="System.Int32, mscorlib">
+    <value>-5</value>
+  </data>
+  <data name="reflectionPicture1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 143</value>
+  </data>
+  <data name="reflectionPicture1.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;reflectionPicture1.Name" xml:space="preserve">
+    <value>reflectionPicture1</value>
+  </data>
+  <data name="&gt;&gt;reflectionPicture1.Type" xml:space="preserve">
+    <value>Controls.ReflectionPicture, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;reflectionPicture1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;reflectionPicture1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>634, 381</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Business Helper</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>PrebuiltConfigForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

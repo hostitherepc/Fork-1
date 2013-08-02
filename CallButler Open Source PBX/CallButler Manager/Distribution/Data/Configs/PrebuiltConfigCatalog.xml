@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PrebuiltConfigData xmlns="http://tempuri.org/PrebuiltConfigData.xsd">
+  <ConfigurationCategory>
+    <CategoryID>0</CategoryID>
+    <Name>General</Name>
+    <Description>Simple general configurations.</Description>
+    <Configuration>
+      <CategoryID>0</CategoryID>
+      <ConfigurationID>0</ConfigurationID>
+      <Name>Greeting with Voicemail</Name>
+      <Description>A simple greeting with the option to leave a voicemail.</Description>
+      <Filename>Simple Voicemail.xml</Filename>
+      <Input>
+        <ConfigurationID>0</ConfigurationID>
+        <Name>IntroMessage</Name>
+        <Type>Greeting</Type>
+        <DisplayName>[Your message].
+If you'd like to leave a voicemail, please press 1.
+        </DisplayName>
+        <Description>Please define an intro message for your callers. This message will be played and will allow the caller to leave a voicemail message by pressing 1.</Description>
+        <Value>11111111-1111-1111-1111-111111111111</Value>
+        <Display>true</Display>
+        <Title>Intro Message</Title>
+      </Input>
+    </Configuration>
+  </ConfigurationCategory>
+  <ConfigurationCategory>
+    <CategoryID>1</CategoryID>
+    <Name>Storefront Business</Name>
+    <Description>Configurations for businesses with storefronts.</Description>
+    <Configuration>
+      <CategoryID>1</CategoryID>
+      <ConfigurationID>1</ConfigurationID>
+      <Name>Hours and Directions</Name>
+      <Description>Allow callers to find out your hours of business and directions to your store.</Description>
+      <Filename>Simple Store.xml</Filename>
+      <Input>
+        <ConfigurationID>1</ConfigurationID>
+        <Name>WelcomeGreeting</Name>
+        <Type>Greeting</Type>
+        <DisplayName>Thank you for calling [Your business name].</DisplayName>
+        <Description>Please define a welcome greeting for your callers. Your callers will hear this greeting first.</Description>
+        <Value>11111111-1111-1111-1111-111111111111</Value>
+        <Display>true</Display>
+        <Title>Welcome Greeting</Title>
+      </Input>
+      <Input>
+        <ConfigurationID>1</ConfigurationID>
+        <Name>MainMenuGreeting</Name>
+        <Type>Greeting</Type>
+        <DisplayName>For our hours of business, press 1.
+For directions to our store, press 2.
+To repeat this menu, press star.
+        </DisplayName>
+        <Description>Please define a main menu greeting for your callers. This greeting will be played after your main menu greeting and should give your callers a list of options they may choose from.</Description>
+        <Value>33333333-3333-3333-3333-333333333333</Value>
+        <Display>true</Display>
+        <Title>Main Menu Greeting</Title>
+      </Input>
+      <Input>
+        <ConfigurationID>1</ConfigurationID>
+        <Name>StoreHours</Name>
+        <Type>Greeting</Type>
+        <DisplayName>Our store hours are [Your store hours].
+        </DisplayName>
+        <Description>Please define a recording of your store hours.</Description>
+        <Value>7d24c3ee-3165-4a74-9c19-8a19a6d34be2</Value>
+        <Display>true</Display>
+        <Title>Store Hours</Title>
+      </Input>
+      <Input>
+        <ConfigurationID>1</ConfigurationID>
+        <Name>StoreDirections</Name>
+        <Type>Greeting</Type>
+        <DisplayName>Our store is located at [Your store directions].</DisplayName>
+        <Description>Please define a recording of your store directions.</Description>
+        <Value>6dde9796-573c-453d-a7f0-8f79542b9da1</Value>
+        <Display>true</Display>
+        <Title>Store Directions</Title>
+      </Input>
+    </Configuration>
+  </ConfigurationCategory>
+  <ConfigurationCategory>
+    <CategoryID>2</CategoryID>
+    <Name>Restaurant</Name>
+    <Description>Configurations for restaurants.</Description>
+    <Configuration>
+      <CategoryID>2</CategoryID>
+      <ConfigurationID>3</ConfigurationID>
+      <Name>Simple Restaurant</Name>
+      <Description>Hours, directions and a voicemail box for reservations.</Description>
+      <Filename>Simple Restaurant.xml</Filename>
+      <Input>
+        <ConfigurationID>3</ConfigurationID>
+        <Name>WelcomeGreeting</Name>
+        <Type>Greeting</Type>
+        <DisplayName>Thank you for calling [Your business name].</DisplayName>
+        <Description>Please define a welcome greeting for your callers. Your callers will hear this greeting first.</Description>
+        <Value>11111111-1111-1111-1111-111111111111</Value>
+        <Display>true</Display>
+        <Title>Welcome Greeting</Title>
+      </Input>
+      <Input>
+        <ConfigurationID>3</ConfigurationID>
+        <Name>MainMenuGreeting</Name>
+        <Type>Greeting</Type>
+        <DisplayName>For our hours of business, press 1.
+For directions, press 2.
+To make a reservation, press 3.
+To repeat this menu, press star.
+        </DisplayName>
+        <Description>Please define a main menu greeting for your callers. This greeting will be played after your main menu greeting and should give your callers a list of options they may choose from.</Description>
+        <Value>33333333-3333-3333-3333-333333333333</Value>
+        <Display>true</Display>
+        <Title>Main Menu Greeting</Title>
+      </Input>
+      <Input>
+        <ConfigurationID>3</ConfigurationID>
+        <Name>StoreHours</Name>
+        <Type>Greeting</Type>
+        <DisplayName>Our hours of business are [your business hours].</DisplayName>
+        <Description>Please define a recording of your business hours.</Description>
+        <Value>7d24c3ee-3165-4a74-9c19-8a19a6d34be2</Value>
+        <Display>true</Display>
+        <Title>Business Hours</Title>
+      </Input>
+      <Input>
+        <ConfigurationID>3</ConfigurationID>
+        <Name>StoreDirections</Name>
+        <Type>Greeting</Type>
+        <DisplayName>We are located at [your location and directions].</DisplayName>
+        <Description>Please define a recording of your location and directions.</Description>
+        <Value>6dde9796-573c-453d-a7f0-8f79542b9da1</Value>
+        <Display>true</Display>
+        <Title>Location</Title>
+      </Input>
+      <Input>
+        <ConfigurationID>3</ConfigurationID>
+        <Name>ReservationMessage</Name>
+        <Type>Greeting</Type>
+        <DisplayName>Please leave us a message with the details for your reservation. This should include the date, time, number of people and a number we can reach you at. We will return your call shortly to confirm the availability of your reservation. Thank you.</DisplayName>
+        <Description>Define the greeting and instructions you want played when a person chooses to make a reservation.</Description>
+        <Value>404B2E55-212B-442b-BC69-9E03093AB171</Value>
+        <Display>true</Display>
+        <Title>Reservation Greeting and Instructions</Title>
+      </Input>
+    </Configuration>
+  </ConfigurationCategory>
+  <ConfigurationCategory>
+    <CategoryID>3</CategoryID>
+    <Name>Real Estate</Name>
+    <Description>Configurations for real estate brokers and agents.</Description>
+    <Configuration>
+      <CategoryID>3</CategoryID>
+      <ConfigurationID>4</ConfigurationID>
+      <Name>Real Estate Agent</Name>
+      <Description>Allow callers to listen to featured listings and to make an appointment.</Description>
+      <Filename>Simple Real Estate Agent.xml</Filename>
+      <Input>
+        <ConfigurationID>4</ConfigurationID>
+        <Name>WelcomeGreeting</Name>
+        <Type>Greeting</Type>
+        <DisplayName>Thank you for calling [your agency name]. [Mention your featured listing].</DisplayName>
+        <Description>Please define a welcome greeting for your callers. Your callers will hear this greeting first.</Description>
+        <Value>11111111-1111-1111-1111-111111111111</Value>
+        <Display>true</Display>
+        <Title>Welcome Greeting</Title>
+      </Input>
+      <Input>
+        <ConfigurationID>4</ConfigurationID>
+        <Name>MainMenuGreeting</Name>
+        <Type>Greeting</Type>
+        <DisplayName>To hear more information about our featured listing, please press 1.
+To list your home or to schedule an appointment for a showing, please press 2.
+To repeat this menu, press star.
+        </DisplayName>
+        <Description>Please define a main menu greeting for your callers. This greeting will be played after your main menu greeting and should give your callers a list of options they may choose from.</Description>
+        <Value>33333333-3333-3333-3333-333333333333</Value>
+        <Display>true</Display>
+        <Title>Main Menu Greeting</Title>
+      </Input>
+      <Input>
+        <ConfigurationID>4</ConfigurationID>
+        <Name>FeaturedListing</Name>
+        <Type>Greeting</Type>
+        <DisplayName>Our featured listing is... [more information about your featured listing].
+If you would like to schedule an appointment for this amazing property, please press 2.</DisplayName>
+        <Description>Give your callers more information about your featured listing.</Description>
+        <Value>7d24c3ee-3165-4a74-9c19-8a19a6d34be2</Value>
+        <Display>true</Display>
+        <Title>Featured Listing Details</Title>
+      </Input>
+      <Input>
+        <ConfigurationID>4</ConfigurationID>
+        <Name>AppointmentNumber</Name>
+        <Type>Text</Type>
+        <DisplayName>Your Mobile/Telephone Number</DisplayName>
+        <Description>Enter a number to reach you at when the caller chooses to make an appointment.</Description>
+        <Value></Value>
+        <Display>true</Display>
+        <Title>Appointment Telephone Number</Title>
+      </Input>
+      <Input>
+        <ConfigurationID>4</ConfigurationID>
+        <Name>AppointmentMessage</Name>
+        <Type>Greeting</Type>
+        <DisplayName>I'm sorry I wasn't able to take your call in person. If you leave your name and number, I will get back to you as soon as possible.</DisplayName>
+        <Description>If you can't be reached at the phone number you defined earlier your callers can leave you a message. You can record your voicemail greeting here.</Description>
+        <Value>404B2E55-212B-442b-BC69-9E03093AB171</Value>
+        <Display>true</Display>
+        <Title>Appointment Voicemail Message</Title>
+      </Input>
+    </Configuration>
+  </ConfigurationCategory>
+</PrebuiltConfigData>

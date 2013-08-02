@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="pgAboutExtensions.Text" xml:space="preserve">
+    <value>Über Durchwahlen</value>
+  </data>
+  <data name="pgHeadStart.Text" xml:space="preserve">
+    <value>Beginn</value>
+  </data>
+  <data name="pgWelcome.Text" xml:space="preserve">
+    <value>Willkommen</value>
+  </data>
+  <data name="pgExtensions.Text" xml:space="preserve">
+    <value>Einrichten der Durchwahlen</value>
+  </data>
+  <data name="pgAboutCallFlow.Text" xml:space="preserve">
+    <value>Über den Anruf-Ablauf</value>
+  </data>
+  <data name="pgCallFlow.Text" xml:space="preserve">
+    <value>Konfigurieren Sie Ihre Anrufsteuerung</value>
+  </data>
+  <data name="pgTestDrive.Text" xml:space="preserve">
+    <value>Einen Test machen</value>
+  </data>
+  <data name="pgProviders.Text" xml:space="preserve">
+    <value>Telefonnummer erhalten</value>
+  </data>
+  <data name="pgFinish.Text" xml:space="preserve">
+    <value>Beenden</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnEmailSetup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>291, 22</value>
+  </data>
+  <data name="btnEmailSetup.Text" xml:space="preserve">
+    <value>Konfigurieren Sie die Einstellungen Ihres E-Mail-Servers</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 13</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>weitere Möglichkeiten:</value>
+  </data>
+  <data name="btnSetupPassword.Text" xml:space="preserve">
+    <value>Aktivieren Sie ein Passwort, um sich vor unbefugtem Zugriff zu schützen...</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>In den meisten Fällen ist CallButler dann schon bereit, um Anrufe anzunehmen. Dennoch möchten wir Ihnen empfehlen, noch ein paar optionale Punkte zu vervollständigen.
+
+Wenn Sie bereit sind, um weiterzumachen, dann klicken Sie auf "Beenden"</value>
+  </data>
+  <data name="smoothLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 25</value>
+  </data>
+  <data name="smoothLabel4.Text" xml:space="preserve">
+    <value>Beenden</value>
+  </data>
+  <data name="btnOtherVoIP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 249</value>
+  </data>
+  <data name="btnOtherVoIP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>469, 22</value>
+  </data>
+  <data name="btnOtherVoIP.Text" xml:space="preserve">
+    <value>Nein danke, ich habe bereits einen VoIP-Dienst ausgewählt und möchte diesen benutzen...</value>
+  </data>
+  <data name="btnCallButlerVoIP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 221</value>
+  </data>
+  <data name="btnCallButlerVoIP.Text" xml:space="preserve">
+    <value>Ja, informieren Sie mich über den CallButler VoIP-Dienst ...</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>CallButler  ergänzt die Fähigkeiten von VoIP, um Ihr Telefonsystem ohne herkömmliche Telefonleitungen nutzbar zu machen. Alles, was Sie benötigen ist eine Breitband-Internetverbindung und ein VoIP-Dienst. Über den VoIP-Dienst erhalten Sie eine regionale Rufnummer oder auch 0800er-Rufnummern, so dass Sie weltweit erreichbar sind.
+
+CallButler ist für den Einsatz mit sip-kompatiblen VoIP-Diensten konzipiert; aber falls Sie noch keinen VoIP-Provider haben, empfehlen wir Ihnen unseren CallButler VoIP-Dienst. Dieser ist schnell und einfach zu aktivieren.
+
+Möchten Sie mehr über den CallButler VoIP-Dienst erfahren?</value>
+  </data>
+  <data name="smoothLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 25</value>
+  </data>
+  <data name="smoothLabel3.Text" xml:space="preserve">
+    <value>Telefonnummer erhalten</value>
+  </data>
+  <data name="testDriveView.HeaderCaption" xml:space="preserve">
+    <value>Hören, was Ihre Anrufer hören werden</value>
+  </data>
+  <data name="testDriveView.HeaderIcon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="testDriveView.HeaderTitle" xml:space="preserve">
+    <value>Funktionstest</value>
+  </data>
+  <data name="callFlowView.HeaderCaption" xml:space="preserve">
+    <value>Anrufablauf verwalten</value>
+  </data>
+  <data name="callFlowView.HeaderIcon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAK7wAA
+        Cu8BfXaKSAAABoRJREFUaEPtWGtMU2cYflEUVAQEUauiTKcyBRUvNbg4MyfqvGcTRQUFscoUqtNJbbmW
+        O3KRq7cpGt1iskTR/dFkZluYd9SWFqiCGJSBVhPBX9bp8uw9pWbMqNnCOXUmnOTJ4QD9zvO83/M939eX
+        qOvqqsB7WwEHZt4ZvCPhk/Zsogklj8h/Txv5lzL4Pp4xwYaJwu9L2sivuI3GFbXR2MI28s1vozF5bTQ6
+        l5FjpmFfb2D27ozu9lfBRNWl15ByxIDYfdexqaAS4dlXsDztMhYlX8KchIuYqbmIQNVFyHdewuSdlzFZ
+        XYnJmkrIk3T4aOM50LDEBiYexHCztwAHGldiyfuhFkXl9dB+Z8L2gzVQlBqxcrcBS3ZVISijCjNSqyBP
+        MSBAW43xKbXwT7sF/8x6BOQ1YvSOa6DB8WYmHssYZhcBp083B+3a9dM5pfKIkfxKLKnHjEg9fgvbD9Vg
+        fakBK/KrsCBLj5mpOkzlKvvF6zFKUwUfjRHecTXwTrgJ7+R6DM9ohEx5FTQoVhCQwfhQcgEVFU+DT536
+        /UVh4XkolYebaWyRRXPICPVRE6L2VWNVgQELs9vJT0rQYYxah2GxegxWGTBIXYOBcSYMTKzDQG0DBmXc
+        g2d0JcjrG0FAll0ElJXpdfv3X0Na2hlERha10Oh8y7Z9emw9ZMLaYiOW5hrwaZoekxN1GLVTh6FMflCs
+        AQN21qC/xgTP+Dp4JjbAU9uI/pnNcI9mC3lue62AzkSa8NnXXnFxJ25oNCeweXMZgoPTW2jkLkt0qQ5R
+        B0xYXlCNuVkGTNNWwTdOz+SrmLwRXqoaeKhNcI+rg1tCA1yTGuGW2gT3rAfoG3Md5LqlgwBpY80hIEB1
+        NDS0ECEhOZg3T9VCPukWRZEOEftMWJJfjZkZRkxIMmC42gCZislz5T3UN+GmqYNLfAP6JDait/Ye+qQ1
+        wyX7Ifoob4B6b+ogQNJYiwgjUjyTyRYflstDf5XLw400JMUSUaBH6N6bmJ9Xi8D0GvgmVmOIuhoD1LXw
+        0DD5uHor+V4JjXBKakLPlBb0TDfDOacVTsoqkPOGDgLEizUVe2i4bXflW8Q8og1Piebm8oPwtxjGFpIl
+        W8J26xGytw5B+TcxJd2EEYm1kPFi9Yq7Bff4evRNuINeXPkeTL6bthkOqQ/QLeMRHPOeoMcWA8hR0UGA
+        SLF29Kj+zoEDV85t3162iOjLT5h8G9HSg0xayfiCMYoxlAYkWsKKjFjx7R18VngbAdn18NHWQ5Z8G17J
+        d+DGi7UP+90p5T66MXFKfwTKegzKeQKHoqfovs0EcgjvOAPFosTa2bMPW8vL7yE/v+K5r2/8Y6Lgk3zU
+        EaoeYpuZHtbZGRD/eMbmM5geewF+yt/gE1UBr/UVcIusgEvkefSKvABnxUU4Kq7AgUEbOHWi2Peb9CBl
+        Dbov+pEFrL5t2wdGEo0pECXW9u+/2voyLoODc+7zMUXI6XBbVgvk2y9PhZI8tjWR61Yz9Y0xk0s0Y7OZ
+        evHCdP7KTE4bzdRzPSPSTI7rzO3VXmtDKN9D7xJ5H+GRdjC8eS/LFSXWVKrjrS/jcv58dS0PnsOYwnB6
+        JV/78fPnDLWtipl8F8T+Gwj/K+zAwjFiFoPPQh9kihJrq1fntq5ZU4jly7NfyGQRJh48mTHCapt/XsIJ
+        UhAhLHjhKPBfwbaxnoGEgxyPNTRNlFibPVt5a9q00F/69Zv0PVHkM6K+STZyb9rkRNo4ZVqxYu0YE04l
+        ctzKEfqIaGopP099jYVemZDOPooXa7uZygwGL6wQnoUVl/nnJQyPzlJ8++fFjTXBz+zLRZz7iudsdSFG
+        O2xuUkgRPdaERTvEk2jdA6LAYnvYSORYs1bZkWhVGVup0h42EjnWrAJ4Fhaz/wUbeQhHCYlt1G5NkWLt
+        pc/d3dlGLUTTS+xhIylWF8/sygOMa2+wkcgFE18CE1y4oN1GnoKNfKyzLO0XKLFVeLiyjZqIPt5js5Gz
+        0MB6n/pCbKNVTH7VDRawlNH/fesLsY3mz5k4MfPPHTuOXY2OPlj93vWFysvvhp482QShLxQTc6irL/S2
+        vpDYK9g6nvR9IUlo/z3osmUJq8PCCv+Qri8ksQAe3tXXd5YiMDD8Z7k8QoK+kPQChLOWF2MmI0r8vpD0
+        AoQ3dGO4MAaL3xeyj4CXb5GgL2RfARL0hewtoL2lImJfyP4CpPgCZX8V1qN15/BOSHe9tKsC/7cK/AU4
+        4ioc0hungQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="callFlowView.HeaderTitle" xml:space="preserve">
+    <value>Anrufablauf</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 68</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>430, 243</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Der Anruf-Ablauf ist eine vereinfachte grafische Darstellung des Verlaufes, den Ihrer Anrufer gehen, wenn Sie mit Ihrem Telefonsystem verbunden sind. Der Anruf-Ablauf wird von links nach rechts gelesen und beginnt mit der Begrüssung und endet mit der Auswahlmöglichkeit einer Option bzw. Abteilung.
+
+Zu Beginn, sollten Sie die Begrüßung aufnehmen. Die Begrüssung kann natürlich von einer Computerstimme, aber auch mit Ihrer eigenen Stimme aufgezeichnet werden. Um dies zu tun, klicken Sie auf den Auswahlbutton unterhalb der Begrüssung.
+
+Nach der Aufzeichnung der Begrüssung, sollten Sie die Abteilung oder Menüoptionen definieren. Bei den Abteilungsinformationen können Sie für Ihre Anrufe auch die Geschäftszeiten, Anfahrtsbeschreibung usw. hinterlegen oder die Anrufer an eine bestimmte Durchwahl weiterleiten.
+
+Danach sollten Sie die Hauptmenü-Begrüssung aufzeichnen und die Auswahlmöglichkeiten für die Anrufer erläutern. Dies kann auf dieselbe Art und Weise wie bei der Begrüssung gemacht werden.</value>
+  </data>
+  <data name="smoothLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 25</value>
+  </data>
+  <data name="smoothLabel2.Text" xml:space="preserve">
+    <value>Anruf-Ablauf</value>
+  </data>
+  <data name="extensionsView.HeaderCaption" xml:space="preserve">
+    <value>Mitarbeiter-Durchwahlen verwalten</value>
+  </data>
+  <data name="extensionsView.HeaderIcon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="extensionsView.HeaderTitle" xml:space="preserve">
+    <value>Durchwahlen</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Durchwahlen sind ein wichtiger und entscheidender Bestandteil des Callbutler-Systems. Mit einer Durchwahl können Sie Nachrichten aufzeichnen oder Anrufe an Personen im Fest/Handynetz irgendwo in der Welt weiterleiten. Anrufer können die Durchwahl entweder direkt wählen oder über die Suchfunktion finden.
+
+In den meisten Fällen, werden Sie für jeden Mitarbeiter/in im Unternehmen eine Durchwahl einrichten, insofern er von außen telefonisch erreichbar sein muss. Jedoch müssen Durchwahlen nicht auf bestimmte Personen festgelegt sein. In manchen Fällen werden Sie eine Durchwahl für allgemeine Sprachnachrichten oder für andere Zwecke definieren.
+
+Um Durchwahlen hinzuzufügen, klicken Sie auf "Weiter", dann klicken Sie auf "eine neue Durchwahl hinzufügen" </value>
+  </data>
+  <data name="smoothLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 25</value>
+  </data>
+  <data name="smoothLabel1.Text" xml:space="preserve">
+    <value>Durchwahlen</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Wenn Sie beginnen möchten, klicken Sie auf "Weiter".</value>
+  </data>
+  <data name="btnPreBuilt.Text" xml:space="preserve">
+    <value>Ja, ich möchte mit der voreingestellten Konfiguration starten...</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Dieser Hilfsassistent ermöglicht die einfache Konfiguration des Callbutler durch die Auswahl von ein paar vordefinierten Konfigurationen.
+
+Möchten Sie eine Konfiguration auswählen und mit dieser starten?</value>
+  </data>
+  <data name="smoothLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 25</value>
+  </data>
+  <data name="smoothLabel5.Text" xml:space="preserve">
+    <value>Beginn</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>418, 13</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Ihr neues Telefonsystem ist in weniger als 10 Minuten für Sie startbereit!</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Dieser Einführungsassistent dient der Konfigurationshilfe Ihrs CallButler-Systems. Mit den Schritt-für-Schritt-Anweisungen können Sie Ihr CallButler-System in weniger als 10 Minuten nutzen.
+
+Um zu beginnen, folgen Sie jedem Schritt und klicken Sie auf "Weiter", wenn Sie fertig sind. Wenn Sie etwas ändern möchten, gehen Sie auf "Zurück" oder klicken Sie auf die entsprechenden Menüpunkte.  Wenn Sie diese Schritte überspringen möchten, klicken Siebitte auf "Abbrechen".
+
+Wenn Sie startbereit sind, klicken Sie auf "Weiter".</value>
+  </data>
+  <data name="lblTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>301, 32</value>
+  </data>
+  <data name="lblTitle.Text" xml:space="preserve">
+    <value>Willkommen bei CallButler</value>
+  </data>
+  <data name="$this.HeaderCaption" xml:space="preserve">
+    <value>CallButler zum ersten Mal konfigurieren</value>
+  </data>
+  <data name="$this.HeaderTitle" xml:space="preserve">
+    <value>Los geht´s</value>
+  </data>
+</root>

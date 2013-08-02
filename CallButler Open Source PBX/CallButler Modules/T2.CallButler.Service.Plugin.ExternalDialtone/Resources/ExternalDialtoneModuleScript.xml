@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IML Description="CallButler External Dialtone Module">
+	<GlobalPage />
+	<Page ID="ae5fdec6-fc02-4e3f-8707-16e575d46b93" Description="Enter Passcode">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Enter Passcode.snd</ExternalAction>
+		<TimeoutEvent Duration="30" WaitForPageActions="true">
+			<ExternalAction Action="CALLBUTLERINTERNAL_ReturnToCallFlowMainMenu" Async="false" />
+		</TimeoutEvent>
+		<DTMFEvent Digits="(?&lt;Passcode&gt;\d+)">
+			<GotoPage PageID="6d458770-94eb-4912-bb97-be897c3a1cb4" PageName="Validate Passcode" />
+		</DTMFEvent>
+	</Page>
+	<Page ID="6d458770-94eb-4912-bb97-be897c3a1cb4" Description="Validate Passcode">
+		<ExternalAction Action="ValidatePasscode" Async="false">#Passcode#</ExternalAction>
+		<ExternalEvent Event="InvalidPasscode">
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Bad Passcode.snd</ExternalAction>
+			<GotoPage PageID="ae5fdec6-fc02-4e3f-8707-16e575d46b93" PageName="Enter Passcode" />
+		</ExternalEvent>
+		<ExternalEvent Event="ValidPasscode">
+			<GotoPage PageID="d6fcf392-0360-4904-a098-7d9c72d4dd10" PageName="Main Options" />
+		</ExternalEvent>
+	</Page>
+	<Page ID="d6fcf392-0360-4904-a098-7d9c72d4dd10" Description="Main Options">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Enter Number.snd</ExternalAction>
+		<DTMFEvent Digits="(?&lt;TelephoneNumber&gt;.+)">
+			<GotoPage PageID="39937e28-c63c-40da-9366-c35662d22f9e" PageName="Dial Number" />
+		</DTMFEvent>
+		<TimeoutEvent Duration="30" WaitForPageActions="true">
+			<ExternalAction Action="CALLBUTLERINTERNAL_ReturnToCallFlowMainMenu" Async="false" />
+		</TimeoutEvent>
+	</Page>
+	<Page ID="39937e28-c63c-40da-9366-c35662d22f9e" Description="Dial Number">
+		<TransferCall TransferTo="#TelephoneNumber#" IsExtension="false" UseBridge="true" />
+		<TransferFailedEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Number cannot be reached.snd</ExternalAction>
+			<GotoPage PageID="d6fcf392-0360-4904-a098-7d9c72d4dd10" PageName="Main Options" />
+		</TransferFailedEvent>
+	</Page>
+</IML>

@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="smoothLabel5.HelpTitle" xml:space="preserve">
+    <value>Schedule Name / Description</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnScriptBrowse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>354, 203</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader1.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="scheduleControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>353, 115</value>
+  </data>
+  <data name="&gt;&gt;btnSelectNone.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="smoothLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 163</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pgGeneral.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="scheduleControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="&gt;&gt;pgGeneral.Name" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;wizard.Name" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="smoothLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 13</value>
+  </data>
+  <data name="&gt;&gt;cbHasHours.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="wizardHeader3.Description" xml:space="preserve">
+    <value>Define hours of operation for this script</value>
+  </data>
+  <data name="&gt;&gt;btnSelectInverse.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtScriptFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 179</value>
+  </data>
+  <data name="openFileDialog.Filter" xml:space="preserve">
+    <value>CallButler XML Script File (*.xml)|*.xml</value>
+  </data>
+  <data name="btnSelectAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 17</value>
+  </data>
+  <data name="wizardHeader3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>449, 105</value>
+  </data>
+  <data name="&gt;&gt;pgHours.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="lblHours.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 127</value>
+  </data>
+  <data name="wizard.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnScriptBrowse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 21</value>
+  </data>
+  <data name="&gt;&gt;lblHours.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;scheduleControl.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblHours.Parent" xml:space="preserve">
+    <value>pgHours</value>
+  </data>
+  <data name="&gt;&gt;pgGeneral.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblHours.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 21</value>
+  </data>
+  <data name="pgHours.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 0</value>
+  </data>
+  <data name="btnSelectNone.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="wizard.TabPanelWidth" type="System.Int32, mscorlib">
+    <value>160</value>
+  </data>
+  <data name="&gt;&gt;cbEnabled.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txtName.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="wizard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;cboTimeZone.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pgHours.Size" type="System.Drawing.Size, System.Drawing">
+    <value>449, 351</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ScriptScheduleForm</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;pgHours.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="cboTimeZone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>288, 21</value>
+  </data>
+  <data name="&gt;&gt;pnlSchedule.Name" xml:space="preserve">
+    <value>pnlSchedule</value>
+  </data>
+  <data name="wizardHeader1.Title" xml:space="preserve">
+    <value>Script Schedule</value>
+  </data>
+  <data name="wizardHeader1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="wizardHeader3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 10, 20, 0</value>
+  </data>
+  <data name="&gt;&gt;btnSelectNone.Parent" xml:space="preserve">
+    <value>pnlSchedule</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;wizard.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.Wizard, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="pnlSchedule.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 161</value>
+  </data>
+  <data name="wizardHeader1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="scheduleControl.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="lblHours.Text" xml:space="preserve">
+    <value>Only run this script during the following hours</value>
+  </data>
+  <data name="btnSelectNone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 17</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader3.Name" xml:space="preserve">
+    <value>wizardHeader3</value>
+  </data>
+  <data name="smoothLabel5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;cbEnabled.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="wizard.TablPanelTopMargin" type="System.Int32, mscorlib">
+    <value>175</value>
+  </data>
+  <data name="smoothLabel3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="wizardHeader3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;scheduleControl.Parent" xml:space="preserve">
+    <value>pnlSchedule</value>
+  </data>
+  <data name="&gt;&gt;txtScriptFile.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnScriptBrowse.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>CallButler.Manager.Forms.EditorWizardFormBase, CallButler Manager, Version=1.0.619.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtScriptFile.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="pnlSchedule.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pnlSchedule.Parent" xml:space="preserve">
+    <value>pgHours</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="cbEnabled.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 17</value>
+  </data>
+  <data name="cboTimeZone.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;cboTimeZone.Name" xml:space="preserve">
+    <value>cboTimeZone</value>
+  </data>
+  <data name="txtScriptFile.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;btnSelectInverse.Type" xml:space="preserve">
+    <value>Controls.LinkButton, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="smoothLabel3.Text" xml:space="preserve">
+    <value>Script File Path</value>
+  </data>
+  <data name="smoothLabel5.HelpText" xml:space="preserve">
+    <value>Specify a name for this script schedule. This name is for your reference only and will not affect the operation of the script schedule.</value>
+  </data>
+  <data name="btnSelectAll.Text" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="&gt;&gt;btnScriptBrowse.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="wizardHeader3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader3.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.WizardHeader, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbEnabled.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cbHasHours.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="lblHours.HelpTitle" xml:space="preserve">
+    <value>Script Hours</value>
+  </data>
+  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;btnSelectAll.Name" xml:space="preserve">
+    <value>btnSelectAll</value>
+  </data>
+  <data name="wizardHeader1.Description" xml:space="preserve">
+    <value>Please specify a name and a path to custom script file</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel3.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="wizardHeader1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>449, 105</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Time Zone</value>
+  </data>
+  <data name="&gt;&gt;cboTimeZone.Parent" xml:space="preserve">
+    <value>pnlSchedule</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel3.Name" xml:space="preserve">
+    <value>smoothLabel3</value>
+  </data>
+  <data name="&gt;&gt;pgHours.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pgGeneral.Size" type="System.Drawing.Size, System.Drawing">
+    <value>449, 351</value>
+  </data>
+  <data name="&gt;&gt;btnSelectAll.Type" xml:space="preserve">
+    <value>Controls.LinkButton, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbEnabled.Name" xml:space="preserve">
+    <value>cbEnabled</value>
+  </data>
+  <data name="&gt;&gt;btnSelectAll.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnScriptBrowse.Type" xml:space="preserve">
+    <value>Controls.LinkButton, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="txtName.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="pgHours.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="wizardHeader1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 10, 20, 0</value>
+  </data>
+  <data name="smoothLabel5.Text" xml:space="preserve">
+    <value>Schedule Name / Description</value>
+  </data>
+  <data name="btnSelectInverse.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="wizard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>609, 399</value>
+  </data>
+  <data name="wizardHeader3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lblHours.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="txtName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 139</value>
+  </data>
+  <data name="wizardHeader3.SubTitle" xml:space="preserve">
+    <value>Hours of Operation</value>
+  </data>
+  <data name="&gt;&gt;scheduleControl.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.ScheduleControl, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbHasHours.Parent" xml:space="preserve">
+    <value>pgHours</value>
+  </data>
+  <data name="btnSelectNone.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 151</value>
+  </data>
+  <data name="wizardHeader1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pgHours.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;lblHours.Name" xml:space="preserve">
+    <value>lblHours</value>
+  </data>
+  <data name="&gt;&gt;scheduleControl.Name" xml:space="preserve">
+    <value>scheduleControl</value>
+  </data>
+  <data name="cboTimeZone.Location" type="System.Drawing.Point, System.Drawing">
+    <value>65, 3</value>
+  </data>
+  <data name="btnSelectInverse.Text" xml:space="preserve">
+    <value>Select Inverse</value>
+  </data>
+  <data name="wizardHeader1.SubTitle" xml:space="preserve">
+    <value>General Settings</value>
+  </data>
+  <data name="pgGeneral.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 0</value>
+  </data>
+  <data name="txtScriptFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 21</value>
+  </data>
+  <data name="&gt;&gt;txtName.Name" xml:space="preserve">
+    <value>txtName</value>
+  </data>
+  <data name="&gt;&gt;cboTimeZone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel3.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="pgGeneral.Text" xml:space="preserve">
+    <value>General Settings</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader1.Name" xml:space="preserve">
+    <value>wizardHeader1</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlSchedule.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="btnSelectInverse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 151</value>
+  </data>
+  <data name="smoothLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 13</value>
+  </data>
+  <data name="&gt;&gt;wizard.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cbEnabled.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblHours.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnScriptBrowse.Name" xml:space="preserve">
+    <value>btnScriptBrowse</value>
+  </data>
+  <data name="btnScriptBrowse.Text" xml:space="preserve">
+    <value>Browse...</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader3.Parent" xml:space="preserve">
+    <value>pgHours</value>
+  </data>
+  <data name="&gt;&gt;pnlSchedule.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pgHours.Text" xml:space="preserve">
+    <value>Hours of Operation</value>
+  </data>
+  <data name="smoothLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="lblHours.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 13</value>
+  </data>
+  <data name="scheduleControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 30</value>
+  </data>
+  <data name="&gt;&gt;txtName.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>pnlSchedule</value>
+  </data>
+  <data name="&gt;&gt;btnSelectNone.Type" xml:space="preserve">
+    <value>Controls.LinkButton, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="btnSelectInverse.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;cbHasHours.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cbHasHours.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;pgGeneral.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;btnScriptBrowse.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.Name" xml:space="preserve">
+    <value>smoothLabel5</value>
+  </data>
+  <data name="&gt;&gt;pgGeneral.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="btnSelectAll.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog.Name" xml:space="preserve">
+    <value>openFileDialog</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 13</value>
+  </data>
+  <data name="pgGeneral.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="btnSelectNone.Text" xml:space="preserve">
+    <value>Select None</value>
+  </data>
+  <data name="&gt;&gt;btnSelectNone.Name" xml:space="preserve">
+    <value>btnSelectNone</value>
+  </data>
+  <data name="&gt;&gt;txtName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="smoothLabel3.HelpTitle" xml:space="preserve">
+    <value>Custom Script File Path</value>
+  </data>
+  <data name="cbHasHours.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="&gt;&gt;btnSelectInverse.Parent" xml:space="preserve">
+    <value>pnlSchedule</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="pnlSchedule.Size" type="System.Drawing.Size, System.Drawing">
+    <value>364, 179</value>
+  </data>
+  <data name="&gt;&gt;pgHours.Name" xml:space="preserve">
+    <value>pgHours</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 7</value>
+  </data>
+  <data name="cbEnabled.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 230</value>
+  </data>
+  <data name="wizardHeader3.Title" xml:space="preserve">
+    <value>Script Schedule</value>
+  </data>
+  <data name="&gt;&gt;wizard.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnSelectInverse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 17</value>
+  </data>
+  <data name="&gt;&gt;btnSelectInverse.Name" xml:space="preserve">
+    <value>btnSelectInverse</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cbEnabled.Text" xml:space="preserve">
+    <value>Enable this script schedule</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>609, 399</value>
+  </data>
+  <data name="wizard.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="btnSelectNone.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="btnSelectAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 151</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Script Schedule</value>
+  </data>
+  <data name="scheduleControl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 6.75pt</value>
+  </data>
+  <data name="&gt;&gt;txtScriptFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtScriptFile.Name" xml:space="preserve">
+    <value>txtScriptFile</value>
+  </data>
+  <data name="lblHours.HelpText" xml:space="preserve">
+    <value>Check this if you want CallButler to only use this script during certain hours of the day or week. You can specify the hours for this script below by clicking on specific hours or by clicking and dragging the mouse over a range of hours.
+
+If this option is not checked CallButler will always use this script no matter what time of day or week.</value>
+  </data>
+  <data name="&gt;&gt;cbHasHours.Name" xml:space="preserve">
+    <value>cbHasHours</value>
+  </data>
+  <data name="btnSelectAll.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="cbHasHours.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 127</value>
+  </data>
+  <data name="wizard.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="smoothLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 123</value>
+  </data>
+  <data name="&gt;&gt;btnSelectAll.Parent" xml:space="preserve">
+    <value>pnlSchedule</value>
+  </data>
+  <data name="smoothLabel3.HelpText" xml:space="preserve">
+    <value>Specify a path to a custom script file. CallButler will execute this custom script during the hours defined for this script schedule.
+
+Please note that if you are managing a CallButler service on another computer, you will need to specify a path to a script that is saved on that computer.</value>
+  </data>
+  <data name="cbEnabled.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;pnlSchedule.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="wizard.TabWidth" type="System.Int32, mscorlib">
+    <value>135</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader1.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.WizardHeader, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="openFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+</root>

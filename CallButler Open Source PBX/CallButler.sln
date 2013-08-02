@@ -1,0 +1,294 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CallButler Service", "CallButler Service", "{49721C8B-5BC7-49EA-9EA4-E096D4F5F2AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallButler.Service", "CallButler Service\CallButler.Service.csproj", "{EEE21BD8-26BD-49D4-A7A5-1355FC46D4D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{F2F75AB6-B3E3-4157-A118-C8007D0D6AA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallButler.ExceptionManagement", "Common\CallButler.ExceptionManagement\CallButler.ExceptionManagement.csproj", "{3D19D5D5-D1DE-4BD2-AF09-B285429D1DCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallButler.ManagementInterface", "Common\CallButler.ManagementInterface\CallButler.ManagementInterface.csproj", "{B1DE2AA9-A6B7-4B85-A4C1-A62B8C6140FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "Common\Utilities\Utilities.csproj", "{48E06473-9007-4DA4-AD30-C97B702EFCC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Remoting", "Common\Remoting\Remoting.csproj", "{03E5F206-275B-4965-A60C-647C70E6A33F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallButler.Service.Plugin", "Common\CallButler.Service.Plugin\CallButler.Service.Plugin.csproj", "{33E3D43D-D0C2-4C3D-B7B4-070F9DD88C75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallButler.Telecom", "Common\CallButler.Telecom\CallButler.Telecom.csproj", "{9476BA53-8D98-43D9-84D9-439AC02BD435}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities.PluginManagement", "Common\Utilities.PluginManagement\Utilities.PluginManagement.csproj", "{FF49FF23-15B9-4FB9-82CA-E69527A9D99A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{51BFDCE2-C8C0-4C31-A6A4-BB8BE0FDF43D}"
+	ProjectSection(SolutionItems) = preProject
+		Libraries\Interop.NCTAUDIOCOMPRESS2Lib.dll = Libraries\Interop.NCTAUDIOCOMPRESS2Lib.dll
+		Libraries\Interop.NCTAUDIOFILE2Lib.dll = Libraries\Interop.NCTAUDIOFILE2Lib.dll
+		Libraries\Interop.NCTAUDIOPLAYER2Lib.dll = Libraries\Interop.NCTAUDIOPLAYER2Lib.dll
+		Libraries\Interop.NCTAUDIORECORD2Lib.dll = Libraries\Interop.NCTAUDIORECORD2Lib.dll
+		Libraries\Interop.SpeechLib.dll = Libraries\Interop.SpeechLib.dll
+		Libraries\NCTAudioCompress2.dll = Libraries\NCTAudioCompress2.dll
+		Libraries\NCTAudioFile2.dll = Libraries\NCTAudioFile2.dll
+		Libraries\NCTAudioInformation2.dll = Libraries\NCTAudioInformation2.dll
+		Libraries\NCTAudioPlayer2.dll = Libraries\NCTAudioPlayer2.dll
+		Libraries\NCTAudioRecord2.dll = Libraries\NCTAudioRecord2.dll
+		Libraries\secman.dll = Libraries\secman.dll
+		Libraries\ToneDecoder.dll = Libraries\ToneDecoder.dll
+		Libraries\ToneEncoder.dll = Libraries\ToneEncoder.dll
+		Libraries\WaveExCtrl.dll = Libraries\WaveExCtrl.dll
+		Libraries\WOSI.Controls.dll = Libraries\WOSI.Controls.dll
+		Libraries\WOSI.IVR.IML.dll = Libraries\WOSI.IVR.IML.dll
+		Libraries\WOSI.NET.inTELIPhone.dll = Libraries\WOSI.NET.inTELIPhone.dll
+		Libraries\WOSI.NET.RTP.dll = Libraries\WOSI.NET.RTP.dll
+		Libraries\WOSI.Utilities.Sound.dll = Libraries\WOSI.Utilities.Sound.dll
+		Libraries\WOSI.Utilities.SoundConversion.dll = Libraries\WOSI.Utilities.SoundConversion.dll
+		Libraries\WOSISpAudio.dll = Libraries\WOSISpAudio.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CallButler Manager", "CallButler Manager", "{19FAE47A-5BE8-4A23-ADB8-E5A2D85B4F35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallButler.Data", "Common\CallButler.Data\CallButler.Data.csproj", "{D1AE6677-AEA4-4D16-9EA1-BCEA0C4B13BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F06DB130-06FD-436F-8EE6-4591699D31FA}"
+	ProjectSection(SolutionItems) = preProject
+		License.txt = License.txt
+		Readme.txt = Readme.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallButler.Manager", "CallButler Manager\CallButler.Manager.csproj", "{6B96D269-9885-4007-9B04-3E15909C335D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallButler.Manager.Controls", "Common\CallButler.Manager.Controls\CallButler.Manager.Controls.csproj", "{852CA2FA-FA8E-43CA-ACAE-20AE01AB4186}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controls", "Common\Controls\Controls.csproj", "{DBB6EEEC-0447-4F03-ABCE-0B4B6DDEEF67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controls.Diagram", "Common\Controls.Diagram\Controls.Diagram.csproj", "{7F536F29-7BB7-49BD-B920-6448B8D4BAB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities.ContactManagement", "Common\Utilities.ContactManagement\Utilities.ContactManagement.csproj", "{0305C3BE-C55E-4519-AEE3-5166195A0F6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallButler.Manager.Plugin", "Common\CallButler.Manager.Plugin\CallButler.Manager.Plugin.csproj", "{02C97E24-ACD3-495A-B3F2-C48C05B255E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Management Plugins", "Management Plugins", "{0C933695-DEFC-4A5A-94B5-C5E5559C7095}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallButler.Manager.DefaultFindMePlugin", "Management Plugins\CallButler.Manager.DefaultFindMePlugin\CallButler.Manager.DefaultFindMePlugin.csproj", "{5F902F64-1A98-47D7-86D8-511966E50134}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallButler.Manager.GenericSIPProviderPlugin", "Management Plugins\CallButler.Manager.GenericSIPProviderPlugin\CallButler.Manager.GenericSIPProviderPlugin.csproj", "{8929D476-6E40-481A-B50A-61EC002E45FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CallButler Modules", "CallButler Modules", "{2CD0DED2-17D9-4B95-BE82-7577D8326F41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T2.CallButler.Manager.Plugin.ConferenceBridge", "CallButler Modules\T2.CallButler.Manager.Plugin.ConferenceBridge\T2.CallButler.Manager.Plugin.ConferenceBridge.csproj", "{86E1E99A-0846-4BA2-A8AE-0EA113F849BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T2.CallButler.Service.Plugin.ConferenceBridge", "CallButler Modules\T2.CallButler.Service.Plugin.ConferenceBridge\T2.CallButler.Service.Plugin.ConferenceBridge.csproj", "{588F2125-720C-429B-9FD0-AEB0B87D4D53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T2.CallButler.Manager.Plugin.ExternalDialtone", "CallButler Modules\T2.CallButler.Manager.Plugin.ExternalDialtone\T2.CallButler.Manager.Plugin.ExternalDialtone.csproj", "{31041131-AF42-459B-B51E-59D1A7FB3A39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T2.CallButler.Service.Plugin.ExternalDialtone", "CallButler Modules\T2.CallButler.Service.Plugin.ExternalDialtone\T2.CallButler.Service.Plugin.ExternalDialtone.csproj", "{A89A5981-5F7E-4B7C-AF39-ACFD511E4450}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 22
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs01.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CallButler\u0020Modules\\T2.CallButler.Manager.Plugin.ConferenceBridge\\T2.CallButler.Manager.Plugin.ConferenceBridge.csproj
+		SccProjectTopLevelParentUniqueName1 = CallButler.sln
+		SccProjectName1 = CallButler\u0020Modules/T2.CallButler.Manager.Plugin.ConferenceBridge
+		SccLocalPath1 = CallButler\u0020Modules\\T2.CallButler.Manager.Plugin.ConferenceBridge
+		SccProjectUniqueName2 = CallButler\u0020Modules\\T2.CallButler.Manager.Plugin.ExternalDialtone\\T2.CallButler.Manager.Plugin.ExternalDialtone.csproj
+		SccProjectTopLevelParentUniqueName2 = CallButler.sln
+		SccProjectName2 = CallButler\u0020Modules/T2.CallButler.Manager.Plugin.ExternalDialtone
+		SccLocalPath2 = CallButler\u0020Modules\\T2.CallButler.Manager.Plugin.ExternalDialtone
+		SccProjectUniqueName3 = CallButler\u0020Modules\\T2.CallButler.Service.Plugin.ConferenceBridge\\T2.CallButler.Service.Plugin.ConferenceBridge.csproj
+		SccProjectTopLevelParentUniqueName3 = CallButler.sln
+		SccProjectName3 = CallButler\u0020Modules/T2.CallButler.Service.Plugin.ConferenceBridge
+		SccLocalPath3 = CallButler\u0020Modules\\T2.CallButler.Service.Plugin.ConferenceBridge
+		SccProjectUniqueName4 = CallButler\u0020Modules\\T2.CallButler.Service.Plugin.ExternalDialtone\\T2.CallButler.Service.Plugin.ExternalDialtone.csproj
+		SccProjectTopLevelParentUniqueName4 = CallButler.sln
+		SccProjectName4 = CallButler\u0020Modules/T2.CallButler.Service.Plugin.ExternalDialtone
+		SccLocalPath4 = CallButler\u0020Modules\\T2.CallButler.Service.Plugin.ExternalDialtone
+		SccProjectUniqueName5 = Common\\CallButler.Manager.Controls\\CallButler.Manager.Controls.csproj
+		SccProjectTopLevelParentUniqueName5 = CallButler.sln
+		SccProjectName5 = Common/CallButler.Manager.Controls
+		SccLocalPath5 = Common\\CallButler.Manager.Controls
+		SccProjectUniqueName6 = Common\\CallButler.Service.Plugin\\CallButler.Service.Plugin.csproj
+		SccProjectTopLevelParentUniqueName6 = CallButler.sln
+		SccProjectName6 = Common/CallButler.Service.Plugin
+		SccLocalPath6 = Common\\CallButler.Service.Plugin
+		SccProjectUniqueName7 = Management\u0020Plugins\\CallButler.Manager.DefaultFindMePlugin\\CallButler.Manager.DefaultFindMePlugin.csproj
+		SccProjectTopLevelParentUniqueName7 = CallButler.sln
+		SccProjectName7 = Management\u0020Plugins/CallButler.Manager.DefaultFindMePlugin
+		SccLocalPath7 = Management\u0020Plugins\\CallButler.Manager.DefaultFindMePlugin
+		SccProjectUniqueName8 = Common\\Controls\\Controls.csproj
+		SccProjectTopLevelParentUniqueName8 = CallButler.sln
+		SccProjectName8 = Common/Controls
+		SccLocalPath8 = Common\\Controls
+		SccProjectUniqueName9 = Management\u0020Plugins\\CallButler.Manager.GenericSIPProviderPlugin\\CallButler.Manager.GenericSIPProviderPlugin.csproj
+		SccProjectTopLevelParentUniqueName9 = CallButler.sln
+		SccProjectName9 = Management\u0020Plugins/CallButler.Manager.GenericSIPProviderPlugin
+		SccLocalPath9 = Management\u0020Plugins\\CallButler.Manager.GenericSIPProviderPlugin
+		SccProjectUniqueName10 = Common\\Controls.Diagram\\Controls.Diagram.csproj
+		SccProjectTopLevelParentUniqueName10 = CallButler.sln
+		SccProjectName10 = Common/Controls.Diagram
+		SccLocalPath10 = Common\\Controls.Diagram
+		SccProjectUniqueName11 = Common\\CallButler.Manager.Plugin\\CallButler.Manager.Plugin.csproj
+		SccProjectTopLevelParentUniqueName11 = CallButler.sln
+		SccProjectName11 = Common/CallButler.Manager.Plugin
+		SccLocalPath11 = Common\\CallButler.Manager.Plugin
+		SccProjectUniqueName12 = Common\\CallButler.Telecom\\CallButler.Telecom.csproj
+		SccProjectTopLevelParentUniqueName12 = CallButler.sln
+		SccProjectName12 = Common/CallButler.Telecom
+		SccLocalPath12 = Common\\CallButler.Telecom
+		SccProjectUniqueName13 = CallButler\u0020Manager\\CallButler.Manager.csproj
+		SccProjectTopLevelParentUniqueName13 = CallButler.sln
+		SccProjectName13 = CallButler\u0020Manager
+		SccLocalPath13 = CallButler\u0020Manager
+		SccProjectUniqueName14 = Common\\Utilities.PluginManagement\\Utilities.PluginManagement.csproj
+		SccProjectTopLevelParentUniqueName14 = CallButler.sln
+		SccProjectName14 = Common/Utilities.PluginManagement
+		SccLocalPath14 = Common\\Utilities.PluginManagement
+		SccProjectUniqueName15 = Common\\Remoting\\Remoting.csproj
+		SccProjectTopLevelParentUniqueName15 = CallButler.sln
+		SccProjectName15 = Common/Remoting
+		SccLocalPath15 = Common\\Remoting
+		SccProjectUniqueName16 = Common\\Utilities\\Utilities.csproj
+		SccProjectTopLevelParentUniqueName16 = CallButler.sln
+		SccProjectName16 = Common/Utilities
+		SccLocalPath16 = Common\\Utilities
+		SccProjectUniqueName17 = Common\\Utilities.ContactManagement\\Utilities.ContactManagement.csproj
+		SccProjectTopLevelParentUniqueName17 = CallButler.sln
+		SccProjectName17 = Common/Utilities.ContactManagement
+		SccLocalPath17 = Common\\Utilities.ContactManagement
+		SccProjectUniqueName18 = Common\\CallButler.Data\\CallButler.Data.csproj
+		SccProjectTopLevelParentUniqueName18 = CallButler.sln
+		SccProjectName18 = Common/CallButler.Data
+		SccLocalPath18 = Common\\CallButler.Data
+		SccProjectUniqueName19 = CallButler\u0020Service\\CallButler.Service.csproj
+		SccProjectTopLevelParentUniqueName19 = CallButler.sln
+		SccProjectName19 = CallButler\u0020Service
+		SccLocalPath19 = CallButler\u0020Service
+		SccProjectUniqueName20 = Common\\CallButler.ExceptionManagement\\CallButler.ExceptionManagement.csproj
+		SccProjectTopLevelParentUniqueName20 = CallButler.sln
+		SccProjectName20 = Common/CallButler.ExceptionManagement
+		SccLocalPath20 = Common\\CallButler.ExceptionManagement
+		SccProjectUniqueName21 = Common\\CallButler.ManagementInterface\\CallButler.ManagementInterface.csproj
+		SccProjectTopLevelParentUniqueName21 = CallButler.sln
+		SccProjectName21 = Common/CallButler.ManagementInterface
+		SccLocalPath21 = Common\\CallButler.ManagementInterface
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEE21BD8-26BD-49D4-A7A5-1355FC46D4D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEE21BD8-26BD-49D4-A7A5-1355FC46D4D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEE21BD8-26BD-49D4-A7A5-1355FC46D4D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEE21BD8-26BD-49D4-A7A5-1355FC46D4D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D19D5D5-D1DE-4BD2-AF09-B285429D1DCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D19D5D5-D1DE-4BD2-AF09-B285429D1DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D19D5D5-D1DE-4BD2-AF09-B285429D1DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D19D5D5-D1DE-4BD2-AF09-B285429D1DCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1DE2AA9-A6B7-4B85-A4C1-A62B8C6140FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1DE2AA9-A6B7-4B85-A4C1-A62B8C6140FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1DE2AA9-A6B7-4B85-A4C1-A62B8C6140FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1DE2AA9-A6B7-4B85-A4C1-A62B8C6140FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48E06473-9007-4DA4-AD30-C97B702EFCC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48E06473-9007-4DA4-AD30-C97B702EFCC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48E06473-9007-4DA4-AD30-C97B702EFCC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48E06473-9007-4DA4-AD30-C97B702EFCC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03E5F206-275B-4965-A60C-647C70E6A33F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03E5F206-275B-4965-A60C-647C70E6A33F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03E5F206-275B-4965-A60C-647C70E6A33F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03E5F206-275B-4965-A60C-647C70E6A33F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33E3D43D-D0C2-4C3D-B7B4-070F9DD88C75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33E3D43D-D0C2-4C3D-B7B4-070F9DD88C75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33E3D43D-D0C2-4C3D-B7B4-070F9DD88C75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33E3D43D-D0C2-4C3D-B7B4-070F9DD88C75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9476BA53-8D98-43D9-84D9-439AC02BD435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9476BA53-8D98-43D9-84D9-439AC02BD435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9476BA53-8D98-43D9-84D9-439AC02BD435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9476BA53-8D98-43D9-84D9-439AC02BD435}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF49FF23-15B9-4FB9-82CA-E69527A9D99A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF49FF23-15B9-4FB9-82CA-E69527A9D99A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF49FF23-15B9-4FB9-82CA-E69527A9D99A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF49FF23-15B9-4FB9-82CA-E69527A9D99A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1AE6677-AEA4-4D16-9EA1-BCEA0C4B13BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1AE6677-AEA4-4D16-9EA1-BCEA0C4B13BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1AE6677-AEA4-4D16-9EA1-BCEA0C4B13BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1AE6677-AEA4-4D16-9EA1-BCEA0C4B13BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B96D269-9885-4007-9B04-3E15909C335D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B96D269-9885-4007-9B04-3E15909C335D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B96D269-9885-4007-9B04-3E15909C335D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B96D269-9885-4007-9B04-3E15909C335D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{852CA2FA-FA8E-43CA-ACAE-20AE01AB4186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{852CA2FA-FA8E-43CA-ACAE-20AE01AB4186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{852CA2FA-FA8E-43CA-ACAE-20AE01AB4186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{852CA2FA-FA8E-43CA-ACAE-20AE01AB4186}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBB6EEEC-0447-4F03-ABCE-0B4B6DDEEF67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBB6EEEC-0447-4F03-ABCE-0B4B6DDEEF67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBB6EEEC-0447-4F03-ABCE-0B4B6DDEEF67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBB6EEEC-0447-4F03-ABCE-0B4B6DDEEF67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F536F29-7BB7-49BD-B920-6448B8D4BAB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F536F29-7BB7-49BD-B920-6448B8D4BAB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F536F29-7BB7-49BD-B920-6448B8D4BAB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F536F29-7BB7-49BD-B920-6448B8D4BAB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0305C3BE-C55E-4519-AEE3-5166195A0F6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0305C3BE-C55E-4519-AEE3-5166195A0F6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0305C3BE-C55E-4519-AEE3-5166195A0F6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0305C3BE-C55E-4519-AEE3-5166195A0F6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02C97E24-ACD3-495A-B3F2-C48C05B255E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02C97E24-ACD3-495A-B3F2-C48C05B255E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02C97E24-ACD3-495A-B3F2-C48C05B255E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02C97E24-ACD3-495A-B3F2-C48C05B255E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F902F64-1A98-47D7-86D8-511966E50134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F902F64-1A98-47D7-86D8-511966E50134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F902F64-1A98-47D7-86D8-511966E50134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F902F64-1A98-47D7-86D8-511966E50134}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8929D476-6E40-481A-B50A-61EC002E45FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8929D476-6E40-481A-B50A-61EC002E45FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8929D476-6E40-481A-B50A-61EC002E45FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8929D476-6E40-481A-B50A-61EC002E45FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86E1E99A-0846-4BA2-A8AE-0EA113F849BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86E1E99A-0846-4BA2-A8AE-0EA113F849BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86E1E99A-0846-4BA2-A8AE-0EA113F849BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86E1E99A-0846-4BA2-A8AE-0EA113F849BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{588F2125-720C-429B-9FD0-AEB0B87D4D53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{588F2125-720C-429B-9FD0-AEB0B87D4D53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{588F2125-720C-429B-9FD0-AEB0B87D4D53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{588F2125-720C-429B-9FD0-AEB0B87D4D53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31041131-AF42-459B-B51E-59D1A7FB3A39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31041131-AF42-459B-B51E-59D1A7FB3A39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31041131-AF42-459B-B51E-59D1A7FB3A39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31041131-AF42-459B-B51E-59D1A7FB3A39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A89A5981-5F7E-4B7C-AF39-ACFD511E4450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A89A5981-5F7E-4B7C-AF39-ACFD511E4450}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A89A5981-5F7E-4B7C-AF39-ACFD511E4450}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A89A5981-5F7E-4B7C-AF39-ACFD511E4450}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EEE21BD8-26BD-49D4-A7A5-1355FC46D4D6} = {49721C8B-5BC7-49EA-9EA4-E096D4F5F2AF}
+		{3D19D5D5-D1DE-4BD2-AF09-B285429D1DCA} = {F2F75AB6-B3E3-4157-A118-C8007D0D6AA2}
+		{B1DE2AA9-A6B7-4B85-A4C1-A62B8C6140FF} = {F2F75AB6-B3E3-4157-A118-C8007D0D6AA2}
+		{48E06473-9007-4DA4-AD30-C97B702EFCC2} = {F2F75AB6-B3E3-4157-A118-C8007D0D6AA2}
+		{03E5F206-275B-4965-A60C-647C70E6A33F} = {F2F75AB6-B3E3-4157-A118-C8007D0D6AA2}
+		{33E3D43D-D0C2-4C3D-B7B4-070F9DD88C75} = {F2F75AB6-B3E3-4157-A118-C8007D0D6AA2}
+		{9476BA53-8D98-43D9-84D9-439AC02BD435} = {F2F75AB6-B3E3-4157-A118-C8007D0D6AA2}
+		{FF49FF23-15B9-4FB9-82CA-E69527A9D99A} = {F2F75AB6-B3E3-4157-A118-C8007D0D6AA2}
+		{D1AE6677-AEA4-4D16-9EA1-BCEA0C4B13BA} = {F2F75AB6-B3E3-4157-A118-C8007D0D6AA2}
+		{852CA2FA-FA8E-43CA-ACAE-20AE01AB4186} = {F2F75AB6-B3E3-4157-A118-C8007D0D6AA2}
+		{DBB6EEEC-0447-4F03-ABCE-0B4B6DDEEF67} = {F2F75AB6-B3E3-4157-A118-C8007D0D6AA2}
+		{7F536F29-7BB7-49BD-B920-6448B8D4BAB9} = {F2F75AB6-B3E3-4157-A118-C8007D0D6AA2}
+		{0305C3BE-C55E-4519-AEE3-5166195A0F6A} = {F2F75AB6-B3E3-4157-A118-C8007D0D6AA2}
+		{02C97E24-ACD3-495A-B3F2-C48C05B255E5} = {F2F75AB6-B3E3-4157-A118-C8007D0D6AA2}
+		{6B96D269-9885-4007-9B04-3E15909C335D} = {19FAE47A-5BE8-4A23-ADB8-E5A2D85B4F35}
+		{5F902F64-1A98-47D7-86D8-511966E50134} = {0C933695-DEFC-4A5A-94B5-C5E5559C7095}
+		{8929D476-6E40-481A-B50A-61EC002E45FE} = {0C933695-DEFC-4A5A-94B5-C5E5559C7095}
+		{86E1E99A-0846-4BA2-A8AE-0EA113F849BF} = {2CD0DED2-17D9-4B95-BE82-7577D8326F41}
+		{588F2125-720C-429B-9FD0-AEB0B87D4D53} = {2CD0DED2-17D9-4B95-BE82-7577D8326F41}
+		{31041131-AF42-459B-B51E-59D1A7FB3A39} = {2CD0DED2-17D9-4B95-BE82-7577D8326F41}
+		{A89A5981-5F7E-4B7C-AF39-ACFD511E4450} = {2CD0DED2-17D9-4B95-BE82-7577D8326F41}
+	EndGlobalSection
+EndGlobal

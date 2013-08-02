@@ -1,0 +1,102 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{03E5F206-275B-4965-A60C-647C70E6A33F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NET.Remoting</RootNamespace>
+    <AssemblyName>NET.Remoting</AssemblyName>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GenuineChannels, Version=2.5.9.9, Culture=neutral, PublicKeyToken=65fda4a3fde44959, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Genuine Channels TRIAL\DLL\Framework 2.0\Release\GenuineChannels.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChannelSinks\CryptoHelper.cs" />
+    <Compile Include="ChannelSinks\Messages.cs" />
+    <Compile Include="ChannelSinks\SecureClientChannelSink.cs" />
+    <Compile Include="ChannelSinks\SecureClientChannelSinkProvider.cs" />
+    <Compile Include="ChannelSinks\SecureRemotingException.cs" />
+    <Compile Include="ChannelSinks\SecureServerChannelSink.cs" />
+    <Compile Include="ChannelSinks\SecureServerChannelSinkProvider.cs" />
+    <Compile Include="Channels\Authenticate.cs" />
+    <Compile Include="Channels\CryptoHelper.cs" />
+    <Compile Include="Channels\Messages.cs" />
+    <Compile Include="Channels\PipeChannel.cs" />
+    <Compile Include="Channels\PipeClientChannel.cs" />
+    <Compile Include="Channels\PipeConnection.cs" />
+    <Compile Include="Channels\PipeServerChannel.cs" />
+    <Compile Include="Channels\RijndaelHelper.cs" />
+    <Compile Include="Channels\SecureClientChannelSink.cs" />
+    <Compile Include="Channels\SecureClientChannelSinkProvider.cs" />
+    <Compile Include="Channels\SecureRemotingException.cs" />
+    <Compile Include="Channels\SecureServerChannelSink.cs" />
+    <Compile Include="Channels\SecureServerChannelSinkProvider.cs" />
+    <Compile Include="IpcRemotingClient.cs" />
+    <Compile Include="IpcRemotingServer.cs" />
+    <Compile Include="PipeRemotingClient.cs" />
+    <Compile Include="PipeRemotingServer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TcpRemotingClient.cs" />
+    <Compile Include="TcpRemotingServer.cs" />
+    <Compile Include="TwoWay\EventArgs.cs" />
+    <Compile Include="TwoWay\HTTPTwoWayRemotingClient.cs" />
+    <Compile Include="TwoWay\HTTPTwoWayRemotingServer.cs" />
+    <Compile Include="TwoWay\ITwoWayRemotingClient.cs" />
+    <Compile Include="TwoWay\ITwoWayRemotingServer.cs" />
+    <Compile Include="TwoWay\TwoWayRemotingClientBase.cs" />
+    <Compile Include="TwoWay\TwoWayRemotingClientConnectionInfo.cs" />
+    <Compile Include="TwoWay\TwoWayRemotingServerBase.cs" />
+    <Compile Include="TwoWay\TwoWayRemotingTrackingHandler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{48E06473-9007-4DA4-AD30-C97B702EFCC2}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

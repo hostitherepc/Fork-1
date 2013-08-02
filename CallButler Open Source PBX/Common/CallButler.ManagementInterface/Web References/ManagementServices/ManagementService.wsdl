@@ -1,0 +1,3004 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://services.callbutler.com/" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://services.callbutler.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://services.callbutler.com/">
+      <s:import namespace="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" />
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:import schemaLocation="http://localhost:53668/Hosted/ManagementService.asmx?schema=CallButlerDataset" namespace="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" />
+      <s:element name="SendEmail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="sendTo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subject" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="message" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CallButlerAuthInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CustomerID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExtensionNumber" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SendEmailResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SendTestEmail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="sendTo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subject" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="message" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="smtpServer" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="smtpPort" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="useSSL" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="smtpUsername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="smtpPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendTestEmailResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetTTSVoices">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetTTSVoicesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTTSVoicesResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetMultilingual">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMultilingualResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetMultilingualResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetMultilingual">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="isMultilingual" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetMultilingualResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetDefaultLanguage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDefaultLanguageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDefaultLanguageResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetDefaultLanguage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="defaultLanguage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetDefaultLanguageResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetLanguages">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLanguagesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLanguagesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetLanguages">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="languages" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetLanguagesResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetApplicationPermissions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApplicationPermissionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetApplicationPermissionsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetManagementPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetManagementPasswordResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetManagementPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetManagementPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetManagementPasswordResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFirstTimeRun">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFirstTimeRunResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetFirstTimeRunResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetFirstTimeRun">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="val" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetFirstTimeRunResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAudioCodecs">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAudioCodecsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAudioCodecsResult" type="tns:ArrayOfAudioCodecInformation" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAudioCodecInformation">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AudioCodecInformation" nillable="true" type="tns:AudioCodecInformation" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AudioCodecInformation">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Enabled" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tag" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SetAudioCodecs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codecs" type="tns:ArrayOfAudioCodecInformation" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetAudioCodecsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ClearCallHistory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearCallHistoryResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCallHistory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCallHistoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCallHistoryResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="CallHistoryDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRecentCalls">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRecentCallsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRecentCallsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="CallHistoryDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExtension">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="extensionID" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExtensionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetExtensionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="ExtensionsDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExtensionNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="extensionNumber" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExtensionNumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetExtensionNumberResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="ExtensionsDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExtensions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExtensionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetExtensionsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="ExtensionsDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExtensionVoicemailGreeting">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="extensionID" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExtensionVoicemailGreetingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetExtensionVoicemailGreetingResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="LocalizedGreetingsDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExtensionContactNumbers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="extensionID" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExtensionContactNumbersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetExtensionContactNumbersResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="ExtensionContactNumbersDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersistExtensionContactNumbers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="changes">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="ExtensionContactNumbersDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersistExtensionContactNumbersResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="PersistExtension">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="extension">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="ExtensionsDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersistExtensionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DeleteExtension">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="extensionID" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExtensionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DeleteExtensionContactNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="extensionId" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="extensionContactNumberId" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExtensionContactNumberResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x0029_">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x0029_Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x0029_Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="VoicemailsDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_extensionID_x0029_">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="extensionID" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_extensionID_x0029_Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_extensionID_x0029_Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="VoicemailsDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersistVoicemail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="voicemail">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="VoicemailsDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersistVoicemailResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="PersistVoicemailSound">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="extensionID" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="extensions">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="ExtensionsDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="soundBytes" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersistVoicemailSoundResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DeleteVoicemail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="extensionID" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="voicemailID" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteVoicemailResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetVoicemailSound">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="extensionID" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="voicemailId" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVoicemailSoundResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVoicemailSoundResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDepartments">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDepartmentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDepartmentsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="DepartmentsDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersistDepartment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="department">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="DepartmentsDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersistDepartmentResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DeleteDepartment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="departmentID" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteDepartmentResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetEmployeeExtension">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="extension" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeExtensionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployeeExtensionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="ExtensionsDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DoesEmployeeHaveNewVoicemails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="extensionId" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DoesEmployeeHaveNewVoicemailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DoesEmployeeHaveNewVoicemailsResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNewEmployeeVoicemails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="extensionId" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNewEmployeeVoicemailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNewEmployeeVoicemailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="VoicemailsDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_string_x0020_languageID_x0029_">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="greetingID" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="languageID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_string_x0020_languageID_x0029_Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_string_x0020_languageID_x0029_Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="LocalizedGreetingsDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_Guid_x0020_localizedGreetingID_x0029_">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="greetingID" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="localizedGreetingID" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_Guid_x0020_localizedGreetingID_x0029_Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_Guid_x0020_localizedGreetingID_x0029_Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="LocalizedGreetingsDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLocalizedGreetingInDefaultLanguage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="greetingID" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLocalizedGreetingInDefaultLanguageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLocalizedGreetingInDefaultLanguageResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="LocalizedGreetingsDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_x005B_void_x005D__x0020_PersistLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_CallButlerDataset.LocalizedGreetingsDataTable_x0020_localizedGreeting_x0029_">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="localizedGreeting">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="LocalizedGreetingsDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_x005B_void_x005D__x0020_PersistLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_CallButlerDataset.LocalizedGreetingsDataTable_x0020_localizedGreeting_x0029_Response">
+        <s:complexType />
+      </s:element>
+      <s:element name="DeleteGreeting">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="greetingID" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteGreetingResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetLocalizedGreetingSound">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="greetingID" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="localizedGreetingID" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLocalizedGreetingSoundResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLocalizedGreetingSoundResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersistLocalizedGreetingSound">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="greetingID" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="localizedGreetingID" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="soundBytes" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersistLocalizedGreetingSoundResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetPersonalizedGreetings">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPersonalizedGreetingsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPersonalizedGreetingsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="PersonalizedGreetingsDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersistPersonalizedGreeting">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="personalizedGreeting">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="PersonalizedGreetingsDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersistPersonalizedGreetingResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DeletePersonalizedGreeting">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="personalizedGreetingID" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeletePersonalizedGreetingResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetProviders">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProvidersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProvidersResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="ProvidersDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersistProviders">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="providers">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="ProvidersDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersistProvidersResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DeleteProvider">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="providerID" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteProviderResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetScriptSchedules">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetScriptSchedulesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetScriptSchedulesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="ScriptSchedulesDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersistScriptSchedule">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="scriptSchedules">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd" name="namespace" />
+                <s:attribute fixed="ScriptSchedulesDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersistScriptScheduleResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DeleteScriptSchedule">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="scriptScheduleID" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteScriptScheduleResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCustomerLogin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="managementPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerLoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetCustomerLoginResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRecordVolume">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRecordVolumeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetRecordVolumeResult" type="s:unsignedByte" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetRecordVolume">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="recordVolume" type="s:unsignedByte" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetRecordVolumeResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSoundVolume">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSoundVolumeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetSoundVolumeResult" type="s:unsignedByte" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetSoundVolume">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="soundVolume" type="s:unsignedByte" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetSoundVolumeResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSpeechVolume">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSpeechVolumeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetSpeechVolumeResult" type="s:unsignedByte" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetSpeechVolume">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="speechVolume" type="s:unsignedByte" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetSpeechVolumeResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetDefaultVoice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDefaultVoiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDefaultVoiceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetDefaultVoice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="defaultVoice" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetDefaultVoiceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetHostedTestAddress">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authInfo" type="tns:CallButlerAuthInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHostedTestAddressResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHostedTestAddressResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="guid">
+        <s:restriction base="s:string">
+          <s:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SendEmailSoapIn">
+    <wsdl:part name="parameters" element="tns:SendEmail" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailSoapOut">
+    <wsdl:part name="parameters" element="tns:SendEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendTestEmailSoapIn">
+    <wsdl:part name="parameters" element="tns:SendTestEmail" />
+  </wsdl:message>
+  <wsdl:message name="SendTestEmailSoapOut">
+    <wsdl:part name="parameters" element="tns:SendTestEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTTSVoicesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTTSVoices" />
+  </wsdl:message>
+  <wsdl:message name="GetTTSVoicesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTTSVoicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMultilingualSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMultilingual" />
+  </wsdl:message>
+  <wsdl:message name="GetMultilingualSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMultilingualResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetMultilingualSoapIn">
+    <wsdl:part name="parameters" element="tns:SetMultilingual" />
+  </wsdl:message>
+  <wsdl:message name="SetMultilingualSoapOut">
+    <wsdl:part name="parameters" element="tns:SetMultilingualResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDefaultLanguageSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDefaultLanguage" />
+  </wsdl:message>
+  <wsdl:message name="GetDefaultLanguageSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDefaultLanguageResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetDefaultLanguageSoapIn">
+    <wsdl:part name="parameters" element="tns:SetDefaultLanguage" />
+  </wsdl:message>
+  <wsdl:message name="SetDefaultLanguageSoapOut">
+    <wsdl:part name="parameters" element="tns:SetDefaultLanguageResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLanguagesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLanguages" />
+  </wsdl:message>
+  <wsdl:message name="GetLanguagesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLanguagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetLanguagesSoapIn">
+    <wsdl:part name="parameters" element="tns:SetLanguages" />
+  </wsdl:message>
+  <wsdl:message name="SetLanguagesSoapOut">
+    <wsdl:part name="parameters" element="tns:SetLanguagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetApplicationPermissionsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetApplicationPermissions" />
+  </wsdl:message>
+  <wsdl:message name="GetApplicationPermissionsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetApplicationPermissionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetManagementPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:SetManagementPassword" />
+  </wsdl:message>
+  <wsdl:message name="SetManagementPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:SetManagementPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetManagementPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:GetManagementPassword" />
+  </wsdl:message>
+  <wsdl:message name="GetManagementPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:GetManagementPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFirstTimeRunSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFirstTimeRun" />
+  </wsdl:message>
+  <wsdl:message name="GetFirstTimeRunSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFirstTimeRunResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetFirstTimeRunSoapIn">
+    <wsdl:part name="parameters" element="tns:SetFirstTimeRun" />
+  </wsdl:message>
+  <wsdl:message name="SetFirstTimeRunSoapOut">
+    <wsdl:part name="parameters" element="tns:SetFirstTimeRunResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAudioCodecsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAudioCodecs" />
+  </wsdl:message>
+  <wsdl:message name="GetAudioCodecsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAudioCodecsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetAudioCodecsSoapIn">
+    <wsdl:part name="parameters" element="tns:SetAudioCodecs" />
+  </wsdl:message>
+  <wsdl:message name="SetAudioCodecsSoapOut">
+    <wsdl:part name="parameters" element="tns:SetAudioCodecsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClearCallHistorySoapIn">
+    <wsdl:part name="parameters" element="tns:ClearCallHistory" />
+  </wsdl:message>
+  <wsdl:message name="ClearCallHistorySoapOut">
+    <wsdl:part name="parameters" element="tns:ClearCallHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCallHistorySoapIn">
+    <wsdl:part name="parameters" element="tns:GetCallHistory" />
+  </wsdl:message>
+  <wsdl:message name="GetCallHistorySoapOut">
+    <wsdl:part name="parameters" element="tns:GetCallHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRecentCallsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRecentCalls" />
+  </wsdl:message>
+  <wsdl:message name="GetRecentCallsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRecentCallsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExtensionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetExtension" />
+  </wsdl:message>
+  <wsdl:message name="GetExtensionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetExtensionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExtensionNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:GetExtensionNumber" />
+  </wsdl:message>
+  <wsdl:message name="GetExtensionNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:GetExtensionNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExtensionsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetExtensions" />
+  </wsdl:message>
+  <wsdl:message name="GetExtensionsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetExtensionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExtensionVoicemailGreetingSoapIn">
+    <wsdl:part name="parameters" element="tns:GetExtensionVoicemailGreeting" />
+  </wsdl:message>
+  <wsdl:message name="GetExtensionVoicemailGreetingSoapOut">
+    <wsdl:part name="parameters" element="tns:GetExtensionVoicemailGreetingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExtensionContactNumbersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetExtensionContactNumbers" />
+  </wsdl:message>
+  <wsdl:message name="GetExtensionContactNumbersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetExtensionContactNumbersResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersistExtensionContactNumbersSoapIn">
+    <wsdl:part name="parameters" element="tns:PersistExtensionContactNumbers" />
+  </wsdl:message>
+  <wsdl:message name="PersistExtensionContactNumbersSoapOut">
+    <wsdl:part name="parameters" element="tns:PersistExtensionContactNumbersResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersistExtensionSoapIn">
+    <wsdl:part name="parameters" element="tns:PersistExtension" />
+  </wsdl:message>
+  <wsdl:message name="PersistExtensionSoapOut">
+    <wsdl:part name="parameters" element="tns:PersistExtensionResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExtensionSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteExtension" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExtensionSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteExtensionResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExtensionContactNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteExtensionContactNumber" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExtensionContactNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteExtensionContactNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x0029_SoapIn">
+    <wsdl:part name="parameters" element="tns:_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x0029_" />
+  </wsdl:message>
+  <wsdl:message name="_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x0029_SoapOut">
+    <wsdl:part name="parameters" element="tns:_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x0029_Response" />
+  </wsdl:message>
+  <wsdl:message name="_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_extensionID_x0029_SoapIn">
+    <wsdl:part name="parameters" element="tns:_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_extensionID_x0029_" />
+  </wsdl:message>
+  <wsdl:message name="_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_extensionID_x0029_SoapOut">
+    <wsdl:part name="parameters" element="tns:_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_extensionID_x0029_Response" />
+  </wsdl:message>
+  <wsdl:message name="PersistVoicemailSoapIn">
+    <wsdl:part name="parameters" element="tns:PersistVoicemail" />
+  </wsdl:message>
+  <wsdl:message name="PersistVoicemailSoapOut">
+    <wsdl:part name="parameters" element="tns:PersistVoicemailResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersistVoicemailSoundSoapIn">
+    <wsdl:part name="parameters" element="tns:PersistVoicemailSound" />
+  </wsdl:message>
+  <wsdl:message name="PersistVoicemailSoundSoapOut">
+    <wsdl:part name="parameters" element="tns:PersistVoicemailSoundResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteVoicemailSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteVoicemail" />
+  </wsdl:message>
+  <wsdl:message name="DeleteVoicemailSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteVoicemailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetVoicemailSoundSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVoicemailSound" />
+  </wsdl:message>
+  <wsdl:message name="GetVoicemailSoundSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVoicemailSoundResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDepartmentsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDepartments" />
+  </wsdl:message>
+  <wsdl:message name="GetDepartmentsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDepartmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersistDepartmentSoapIn">
+    <wsdl:part name="parameters" element="tns:PersistDepartment" />
+  </wsdl:message>
+  <wsdl:message name="PersistDepartmentSoapOut">
+    <wsdl:part name="parameters" element="tns:PersistDepartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteDepartmentSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteDepartment" />
+  </wsdl:message>
+  <wsdl:message name="DeleteDepartmentSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteDepartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeExtensionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployeeExtension" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeExtensionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployeeExtensionResponse" />
+  </wsdl:message>
+  <wsdl:message name="DoesEmployeeHaveNewVoicemailsSoapIn">
+    <wsdl:part name="parameters" element="tns:DoesEmployeeHaveNewVoicemails" />
+  </wsdl:message>
+  <wsdl:message name="DoesEmployeeHaveNewVoicemailsSoapOut">
+    <wsdl:part name="parameters" element="tns:DoesEmployeeHaveNewVoicemailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNewEmployeeVoicemailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNewEmployeeVoicemails" />
+  </wsdl:message>
+  <wsdl:message name="GetNewEmployeeVoicemailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNewEmployeeVoicemailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_string_x0020_languageID_x0029_SoapIn">
+    <wsdl:part name="parameters" element="tns:_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_string_x0020_languageID_x0029_" />
+  </wsdl:message>
+  <wsdl:message name="_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_string_x0020_languageID_x0029_SoapOut">
+    <wsdl:part name="parameters" element="tns:_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_string_x0020_languageID_x0029_Response" />
+  </wsdl:message>
+  <wsdl:message name="_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_Guid_x0020_localizedGreetingID_x0029_SoapIn">
+    <wsdl:part name="parameters" element="tns:_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_Guid_x0020_localizedGreetingID_x0029_" />
+  </wsdl:message>
+  <wsdl:message name="_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_Guid_x0020_localizedGreetingID_x0029_SoapOut">
+    <wsdl:part name="parameters" element="tns:_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_Guid_x0020_localizedGreetingID_x0029_Response" />
+  </wsdl:message>
+  <wsdl:message name="GetLocalizedGreetingInDefaultLanguageSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLocalizedGreetingInDefaultLanguage" />
+  </wsdl:message>
+  <wsdl:message name="GetLocalizedGreetingInDefaultLanguageSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLocalizedGreetingInDefaultLanguageResponse" />
+  </wsdl:message>
+  <wsdl:message name="_x005B_void_x005D__x0020_PersistLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_CallButlerDataset.LocalizedGreetingsDataTable_x0020_localizedGreeting_x0029_SoapIn">
+    <wsdl:part name="parameters" element="tns:_x005B_void_x005D__x0020_PersistLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_CallButlerDataset.LocalizedGreetingsDataTable_x0020_localizedGreeting_x0029_" />
+  </wsdl:message>
+  <wsdl:message name="_x005B_void_x005D__x0020_PersistLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_CallButlerDataset.LocalizedGreetingsDataTable_x0020_localizedGreeting_x0029_SoapOut">
+    <wsdl:part name="parameters" element="tns:_x005B_void_x005D__x0020_PersistLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_CallButlerDataset.LocalizedGreetingsDataTable_x0020_localizedGreeting_x0029_Response" />
+  </wsdl:message>
+  <wsdl:message name="DeleteGreetingSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteGreeting" />
+  </wsdl:message>
+  <wsdl:message name="DeleteGreetingSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteGreetingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLocalizedGreetingSoundSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLocalizedGreetingSound" />
+  </wsdl:message>
+  <wsdl:message name="GetLocalizedGreetingSoundSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLocalizedGreetingSoundResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersistLocalizedGreetingSoundSoapIn">
+    <wsdl:part name="parameters" element="tns:PersistLocalizedGreetingSound" />
+  </wsdl:message>
+  <wsdl:message name="PersistLocalizedGreetingSoundSoapOut">
+    <wsdl:part name="parameters" element="tns:PersistLocalizedGreetingSoundResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPersonalizedGreetingsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPersonalizedGreetings" />
+  </wsdl:message>
+  <wsdl:message name="GetPersonalizedGreetingsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPersonalizedGreetingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersistPersonalizedGreetingSoapIn">
+    <wsdl:part name="parameters" element="tns:PersistPersonalizedGreeting" />
+  </wsdl:message>
+  <wsdl:message name="PersistPersonalizedGreetingSoapOut">
+    <wsdl:part name="parameters" element="tns:PersistPersonalizedGreetingResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeletePersonalizedGreetingSoapIn">
+    <wsdl:part name="parameters" element="tns:DeletePersonalizedGreeting" />
+  </wsdl:message>
+  <wsdl:message name="DeletePersonalizedGreetingSoapOut">
+    <wsdl:part name="parameters" element="tns:DeletePersonalizedGreetingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProvidersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProviders" />
+  </wsdl:message>
+  <wsdl:message name="GetProvidersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProvidersResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersistProvidersSoapIn">
+    <wsdl:part name="parameters" element="tns:PersistProviders" />
+  </wsdl:message>
+  <wsdl:message name="PersistProvidersSoapOut">
+    <wsdl:part name="parameters" element="tns:PersistProvidersResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteProviderSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteProvider" />
+  </wsdl:message>
+  <wsdl:message name="DeleteProviderSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteProviderResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetScriptSchedulesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetScriptSchedules" />
+  </wsdl:message>
+  <wsdl:message name="GetScriptSchedulesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetScriptSchedulesResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersistScriptScheduleSoapIn">
+    <wsdl:part name="parameters" element="tns:PersistScriptSchedule" />
+  </wsdl:message>
+  <wsdl:message name="PersistScriptScheduleSoapOut">
+    <wsdl:part name="parameters" element="tns:PersistScriptScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteScriptScheduleSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteScriptSchedule" />
+  </wsdl:message>
+  <wsdl:message name="DeleteScriptScheduleSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteScriptScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerLoginSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomerLogin" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerLoginSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomerLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRecordVolumeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRecordVolume" />
+  </wsdl:message>
+  <wsdl:message name="GetRecordVolumeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRecordVolumeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetRecordVolumeSoapIn">
+    <wsdl:part name="parameters" element="tns:SetRecordVolume" />
+  </wsdl:message>
+  <wsdl:message name="SetRecordVolumeSoapOut">
+    <wsdl:part name="parameters" element="tns:SetRecordVolumeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSoundVolumeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSoundVolume" />
+  </wsdl:message>
+  <wsdl:message name="GetSoundVolumeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSoundVolumeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetSoundVolumeSoapIn">
+    <wsdl:part name="parameters" element="tns:SetSoundVolume" />
+  </wsdl:message>
+  <wsdl:message name="SetSoundVolumeSoapOut">
+    <wsdl:part name="parameters" element="tns:SetSoundVolumeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSpeechVolumeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSpeechVolume" />
+  </wsdl:message>
+  <wsdl:message name="GetSpeechVolumeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSpeechVolumeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetSpeechVolumeSoapIn">
+    <wsdl:part name="parameters" element="tns:SetSpeechVolume" />
+  </wsdl:message>
+  <wsdl:message name="SetSpeechVolumeSoapOut">
+    <wsdl:part name="parameters" element="tns:SetSpeechVolumeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDefaultVoiceSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDefaultVoice" />
+  </wsdl:message>
+  <wsdl:message name="GetDefaultVoiceSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDefaultVoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetDefaultVoiceSoapIn">
+    <wsdl:part name="parameters" element="tns:SetDefaultVoice" />
+  </wsdl:message>
+  <wsdl:message name="SetDefaultVoiceSoapOut">
+    <wsdl:part name="parameters" element="tns:SetDefaultVoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetHostedTestAddressSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHostedTestAddress" />
+  </wsdl:message>
+  <wsdl:message name="GetHostedTestAddressSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHostedTestAddressResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ManagementInterfaceServiceSoap">
+    <wsdl:operation name="SendEmail">
+      <wsdl:input message="tns:SendEmailSoapIn" />
+      <wsdl:output message="tns:SendEmailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendTestEmail">
+      <wsdl:input message="tns:SendTestEmailSoapIn" />
+      <wsdl:output message="tns:SendTestEmailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTTSVoices">
+      <wsdl:input message="tns:GetTTSVoicesSoapIn" />
+      <wsdl:output message="tns:GetTTSVoicesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMultilingual">
+      <wsdl:input message="tns:GetMultilingualSoapIn" />
+      <wsdl:output message="tns:GetMultilingualSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetMultilingual">
+      <wsdl:input message="tns:SetMultilingualSoapIn" />
+      <wsdl:output message="tns:SetMultilingualSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultLanguage">
+      <wsdl:input message="tns:GetDefaultLanguageSoapIn" />
+      <wsdl:output message="tns:GetDefaultLanguageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDefaultLanguage">
+      <wsdl:input message="tns:SetDefaultLanguageSoapIn" />
+      <wsdl:output message="tns:SetDefaultLanguageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLanguages">
+      <wsdl:input message="tns:GetLanguagesSoapIn" />
+      <wsdl:output message="tns:GetLanguagesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetLanguages">
+      <wsdl:input message="tns:SetLanguagesSoapIn" />
+      <wsdl:output message="tns:SetLanguagesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationPermissions">
+      <wsdl:input message="tns:GetApplicationPermissionsSoapIn" />
+      <wsdl:output message="tns:GetApplicationPermissionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetManagementPassword">
+      <wsdl:input message="tns:SetManagementPasswordSoapIn" />
+      <wsdl:output message="tns:SetManagementPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetManagementPassword">
+      <wsdl:input message="tns:GetManagementPasswordSoapIn" />
+      <wsdl:output message="tns:GetManagementPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFirstTimeRun">
+      <wsdl:input message="tns:GetFirstTimeRunSoapIn" />
+      <wsdl:output message="tns:GetFirstTimeRunSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetFirstTimeRun">
+      <wsdl:input message="tns:SetFirstTimeRunSoapIn" />
+      <wsdl:output message="tns:SetFirstTimeRunSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAudioCodecs">
+      <wsdl:input message="tns:GetAudioCodecsSoapIn" />
+      <wsdl:output message="tns:GetAudioCodecsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetAudioCodecs">
+      <wsdl:input message="tns:SetAudioCodecsSoapIn" />
+      <wsdl:output message="tns:SetAudioCodecsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearCallHistory">
+      <wsdl:input message="tns:ClearCallHistorySoapIn" />
+      <wsdl:output message="tns:ClearCallHistorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCallHistory">
+      <wsdl:input message="tns:GetCallHistorySoapIn" />
+      <wsdl:output message="tns:GetCallHistorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRecentCalls">
+      <wsdl:input message="tns:GetRecentCallsSoapIn" />
+      <wsdl:output message="tns:GetRecentCallsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExtension">
+      <wsdl:input message="tns:GetExtensionSoapIn" />
+      <wsdl:output message="tns:GetExtensionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExtensionNumber">
+      <wsdl:input message="tns:GetExtensionNumberSoapIn" />
+      <wsdl:output message="tns:GetExtensionNumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExtensions">
+      <wsdl:input message="tns:GetExtensionsSoapIn" />
+      <wsdl:output message="tns:GetExtensionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExtensionVoicemailGreeting">
+      <wsdl:input message="tns:GetExtensionVoicemailGreetingSoapIn" />
+      <wsdl:output message="tns:GetExtensionVoicemailGreetingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExtensionContactNumbers">
+      <wsdl:input message="tns:GetExtensionContactNumbersSoapIn" />
+      <wsdl:output message="tns:GetExtensionContactNumbersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersistExtensionContactNumbers">
+      <wsdl:input message="tns:PersistExtensionContactNumbersSoapIn" />
+      <wsdl:output message="tns:PersistExtensionContactNumbersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersistExtension">
+      <wsdl:input message="tns:PersistExtensionSoapIn" />
+      <wsdl:output message="tns:PersistExtensionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExtension">
+      <wsdl:input message="tns:DeleteExtensionSoapIn" />
+      <wsdl:output message="tns:DeleteExtensionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExtensionContactNumber">
+      <wsdl:input message="tns:DeleteExtensionContactNumberSoapIn" />
+      <wsdl:output message="tns:DeleteExtensionContactNumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVoicemails">
+      <wsdl:input name="_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x0029_" message="tns:_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x0029_SoapIn" />
+      <wsdl:output name="_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x0029_" message="tns:_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x0029_SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVoicemails">
+      <wsdl:input name="_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_extensionID_x0029_" message="tns:_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_extensionID_x0029_SoapIn" />
+      <wsdl:output name="_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_extensionID_x0029_" message="tns:_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_extensionID_x0029_SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersistVoicemail">
+      <wsdl:input message="tns:PersistVoicemailSoapIn" />
+      <wsdl:output message="tns:PersistVoicemailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersistVoicemailSound">
+      <wsdl:input message="tns:PersistVoicemailSoundSoapIn" />
+      <wsdl:output message="tns:PersistVoicemailSoundSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteVoicemail">
+      <wsdl:input message="tns:DeleteVoicemailSoapIn" />
+      <wsdl:output message="tns:DeleteVoicemailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVoicemailSound">
+      <wsdl:input message="tns:GetVoicemailSoundSoapIn" />
+      <wsdl:output message="tns:GetVoicemailSoundSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartments">
+      <wsdl:input message="tns:GetDepartmentsSoapIn" />
+      <wsdl:output message="tns:GetDepartmentsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersistDepartment">
+      <wsdl:input message="tns:PersistDepartmentSoapIn" />
+      <wsdl:output message="tns:PersistDepartmentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDepartment">
+      <wsdl:input message="tns:DeleteDepartmentSoapIn" />
+      <wsdl:output message="tns:DeleteDepartmentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeExtension">
+      <wsdl:input message="tns:GetEmployeeExtensionSoapIn" />
+      <wsdl:output message="tns:GetEmployeeExtensionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DoesEmployeeHaveNewVoicemails">
+      <wsdl:input message="tns:DoesEmployeeHaveNewVoicemailsSoapIn" />
+      <wsdl:output message="tns:DoesEmployeeHaveNewVoicemailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNewEmployeeVoicemails">
+      <wsdl:input message="tns:GetNewEmployeeVoicemailsSoapIn" />
+      <wsdl:output message="tns:GetNewEmployeeVoicemailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalizedGreeting">
+      <wsdl:input name="_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_string_x0020_languageID_x0029_" message="tns:_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_string_x0020_languageID_x0029_SoapIn" />
+      <wsdl:output name="_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_string_x0020_languageID_x0029_" message="tns:_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_string_x0020_languageID_x0029_SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalizedGreeting">
+      <wsdl:input name="_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_Guid_x0020_localizedGreetingID_x0029_" message="tns:_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_Guid_x0020_localizedGreetingID_x0029_SoapIn" />
+      <wsdl:output name="_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_Guid_x0020_localizedGreetingID_x0029_" message="tns:_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_Guid_x0020_localizedGreetingID_x0029_SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalizedGreetingInDefaultLanguage">
+      <wsdl:input message="tns:GetLocalizedGreetingInDefaultLanguageSoapIn" />
+      <wsdl:output message="tns:GetLocalizedGreetingInDefaultLanguageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersistLocalizedGreeting">
+      <wsdl:input name="_x005B_void_x005D__x0020_PersistLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_CallButlerDataset.LocalizedGreetingsDataTable_x0020_localizedGreeting_x0029_" message="tns:_x005B_void_x005D__x0020_PersistLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_CallButlerDataset.LocalizedGreetingsDataTable_x0020_localizedGreeting_x0029_SoapIn" />
+      <wsdl:output name="_x005B_void_x005D__x0020_PersistLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_CallButlerDataset.LocalizedGreetingsDataTable_x0020_localizedGreeting_x0029_" message="tns:_x005B_void_x005D__x0020_PersistLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_CallButlerDataset.LocalizedGreetingsDataTable_x0020_localizedGreeting_x0029_SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGreeting">
+      <wsdl:input message="tns:DeleteGreetingSoapIn" />
+      <wsdl:output message="tns:DeleteGreetingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalizedGreetingSound">
+      <wsdl:input message="tns:GetLocalizedGreetingSoundSoapIn" />
+      <wsdl:output message="tns:GetLocalizedGreetingSoundSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersistLocalizedGreetingSound">
+      <wsdl:input message="tns:PersistLocalizedGreetingSoundSoapIn" />
+      <wsdl:output message="tns:PersistLocalizedGreetingSoundSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonalizedGreetings">
+      <wsdl:input message="tns:GetPersonalizedGreetingsSoapIn" />
+      <wsdl:output message="tns:GetPersonalizedGreetingsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersistPersonalizedGreeting">
+      <wsdl:input message="tns:PersistPersonalizedGreetingSoapIn" />
+      <wsdl:output message="tns:PersistPersonalizedGreetingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePersonalizedGreeting">
+      <wsdl:input message="tns:DeletePersonalizedGreetingSoapIn" />
+      <wsdl:output message="tns:DeletePersonalizedGreetingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProviders">
+      <wsdl:input message="tns:GetProvidersSoapIn" />
+      <wsdl:output message="tns:GetProvidersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersistProviders">
+      <wsdl:input message="tns:PersistProvidersSoapIn" />
+      <wsdl:output message="tns:PersistProvidersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProvider">
+      <wsdl:input message="tns:DeleteProviderSoapIn" />
+      <wsdl:output message="tns:DeleteProviderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScriptSchedules">
+      <wsdl:input message="tns:GetScriptSchedulesSoapIn" />
+      <wsdl:output message="tns:GetScriptSchedulesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersistScriptSchedule">
+      <wsdl:input message="tns:PersistScriptScheduleSoapIn" />
+      <wsdl:output message="tns:PersistScriptScheduleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteScriptSchedule">
+      <wsdl:input message="tns:DeleteScriptScheduleSoapIn" />
+      <wsdl:output message="tns:DeleteScriptScheduleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerLogin">
+      <wsdl:input message="tns:GetCustomerLoginSoapIn" />
+      <wsdl:output message="tns:GetCustomerLoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRecordVolume">
+      <wsdl:input message="tns:GetRecordVolumeSoapIn" />
+      <wsdl:output message="tns:GetRecordVolumeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetRecordVolume">
+      <wsdl:input message="tns:SetRecordVolumeSoapIn" />
+      <wsdl:output message="tns:SetRecordVolumeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSoundVolume">
+      <wsdl:input message="tns:GetSoundVolumeSoapIn" />
+      <wsdl:output message="tns:GetSoundVolumeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetSoundVolume">
+      <wsdl:input message="tns:SetSoundVolumeSoapIn" />
+      <wsdl:output message="tns:SetSoundVolumeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSpeechVolume">
+      <wsdl:input message="tns:GetSpeechVolumeSoapIn" />
+      <wsdl:output message="tns:GetSpeechVolumeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetSpeechVolume">
+      <wsdl:input message="tns:SetSpeechVolumeSoapIn" />
+      <wsdl:output message="tns:SetSpeechVolumeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultVoice">
+      <wsdl:input message="tns:GetDefaultVoiceSoapIn" />
+      <wsdl:output message="tns:GetDefaultVoiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDefaultVoice">
+      <wsdl:input message="tns:SetDefaultVoiceSoapIn" />
+      <wsdl:output message="tns:SetDefaultVoiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHostedTestAddress">
+      <wsdl:input message="tns:GetHostedTestAddressSoapIn" />
+      <wsdl:output message="tns:GetHostedTestAddressSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ManagementInterfaceServiceSoap" type="tns:ManagementInterfaceServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendEmail">
+      <soap:operation soapAction="http://services.callbutler.com/SendEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendTestEmail">
+      <soap:operation soapAction="http://services.callbutler.com/SendTestEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTTSVoices">
+      <soap:operation soapAction="http://services.callbutler.com/GetTTSVoices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMultilingual">
+      <soap:operation soapAction="http://services.callbutler.com/GetMultilingual" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetMultilingual">
+      <soap:operation soapAction="http://services.callbutler.com/SetMultilingual" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultLanguage">
+      <soap:operation soapAction="http://services.callbutler.com/GetDefaultLanguage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDefaultLanguage">
+      <soap:operation soapAction="http://services.callbutler.com/SetDefaultLanguage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLanguages">
+      <soap:operation soapAction="http://services.callbutler.com/GetLanguages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetLanguages">
+      <soap:operation soapAction="http://services.callbutler.com/SetLanguages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationPermissions">
+      <soap:operation soapAction="http://services.callbutler.com/GetApplicationPermissions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetManagementPassword">
+      <soap:operation soapAction="http://services.callbutler.com/SetManagementPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetManagementPassword">
+      <soap:operation soapAction="http://services.callbutler.com/GetManagementPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFirstTimeRun">
+      <soap:operation soapAction="http://services.callbutler.com/GetFirstTimeRun" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetFirstTimeRun">
+      <soap:operation soapAction="http://services.callbutler.com/SetFirstTimeRun" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAudioCodecs">
+      <soap:operation soapAction="http://services.callbutler.com/GetAudioCodecs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetAudioCodecs">
+      <soap:operation soapAction="http://services.callbutler.com/SetAudioCodecs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearCallHistory">
+      <soap:operation soapAction="http://services.callbutler.com/ClearCallHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCallHistory">
+      <soap:operation soapAction="http://services.callbutler.com/GetCallHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRecentCalls">
+      <soap:operation soapAction="http://services.callbutler.com/GetRecentCalls" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExtension">
+      <soap:operation soapAction="http://services.callbutler.com/GetExtension" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExtensionNumber">
+      <soap:operation soapAction="http://services.callbutler.com/GetExtensionNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExtensions">
+      <soap:operation soapAction="http://services.callbutler.com/GetExtensions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExtensionVoicemailGreeting">
+      <soap:operation soapAction="http://services.callbutler.com/GetExtensionVoicemailGreeting" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExtensionContactNumbers">
+      <soap:operation soapAction="http://services.callbutler.com/GetExtensionContactNumbers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersistExtensionContactNumbers">
+      <soap:operation soapAction="http://services.callbutler.com/PersistExtensionContactNumbers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersistExtension">
+      <soap:operation soapAction="http://services.callbutler.com/PersistExtension" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExtension">
+      <soap:operation soapAction="http://services.callbutler.com/DeleteExtension" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExtensionContactNumber">
+      <soap:operation soapAction="http://services.callbutler.com/DeleteExtensionContactNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVoicemails">
+      <soap:operation soapAction="http://services.callbutler.com/[CallButlerDataset.VoicemailsDataTable] GetVoicemails(CallButlerAuthInfo authInfo)" style="document" />
+      <wsdl:input name="_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x0029_">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x0029_">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVoicemails">
+      <soap:operation soapAction="http://services.callbutler.com/[CallButlerDataset.VoicemailsDataTable] GetVoicemails(CallButlerAuthInfo authInfo, Guid extensionID)" style="document" />
+      <wsdl:input name="_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_extensionID_x0029_">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_extensionID_x0029_">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersistVoicemail">
+      <soap:operation soapAction="http://services.callbutler.com/PersistVoicemail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersistVoicemailSound">
+      <soap:operation soapAction="http://services.callbutler.com/PersistVoicemailSound" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteVoicemail">
+      <soap:operation soapAction="http://services.callbutler.com/DeleteVoicemail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVoicemailSound">
+      <soap:operation soapAction="http://services.callbutler.com/GetVoicemailSound" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartments">
+      <soap:operation soapAction="http://services.callbutler.com/GetDepartments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersistDepartment">
+      <soap:operation soapAction="http://services.callbutler.com/PersistDepartment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDepartment">
+      <soap:operation soapAction="http://services.callbutler.com/DeleteDepartment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeExtension">
+      <soap:operation soapAction="http://services.callbutler.com/GetEmployeeExtension" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DoesEmployeeHaveNewVoicemails">
+      <soap:operation soapAction="http://services.callbutler.com/DoesEmployeeHaveNewVoicemails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewEmployeeVoicemails">
+      <soap:operation soapAction="http://services.callbutler.com/GetNewEmployeeVoicemails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalizedGreeting">
+      <soap:operation soapAction="http://services.callbutler.com/[CallButlerDataset.LocalizedGreetingsDataTable] GetLocalizedGreeting(CallButlerAuthInfo authInfo, Guid greetingID, string languageID)" style="document" />
+      <wsdl:input name="_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_string_x0020_languageID_x0029_">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_string_x0020_languageID_x0029_">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalizedGreeting">
+      <soap:operation soapAction="http://services.callbutler.com/[CallButlerDataset.LocalizedGreetingsDataTable] GetLocalizedGreeting(CallButlerAuthInfo authInfo, Guid greetingID, Guid localizedGreetingID)" style="document" />
+      <wsdl:input name="_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_Guid_x0020_localizedGreetingID_x0029_">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_Guid_x0020_localizedGreetingID_x0029_">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalizedGreetingInDefaultLanguage">
+      <soap:operation soapAction="http://services.callbutler.com/GetLocalizedGreetingInDefaultLanguage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersistLocalizedGreeting">
+      <soap:operation soapAction="http://services.callbutler.com/[void] PersistLocalizedGreeting(CallButlerAuthInfo authInfo, CallButlerDataset.LocalizedGreetingsDataTable localizedGreeting)" style="document" />
+      <wsdl:input name="_x005B_void_x005D__x0020_PersistLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_CallButlerDataset.LocalizedGreetingsDataTable_x0020_localizedGreeting_x0029_">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="_x005B_void_x005D__x0020_PersistLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_CallButlerDataset.LocalizedGreetingsDataTable_x0020_localizedGreeting_x0029_">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGreeting">
+      <soap:operation soapAction="http://services.callbutler.com/DeleteGreeting" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalizedGreetingSound">
+      <soap:operation soapAction="http://services.callbutler.com/GetLocalizedGreetingSound" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersistLocalizedGreetingSound">
+      <soap:operation soapAction="http://services.callbutler.com/PersistLocalizedGreetingSound" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonalizedGreetings">
+      <soap:operation soapAction="http://services.callbutler.com/GetPersonalizedGreetings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersistPersonalizedGreeting">
+      <soap:operation soapAction="http://services.callbutler.com/PersistPersonalizedGreeting" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePersonalizedGreeting">
+      <soap:operation soapAction="http://services.callbutler.com/DeletePersonalizedGreeting" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProviders">
+      <soap:operation soapAction="http://services.callbutler.com/GetProviders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersistProviders">
+      <soap:operation soapAction="http://services.callbutler.com/PersistProviders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProvider">
+      <soap:operation soapAction="http://services.callbutler.com/DeleteProvider" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScriptSchedules">
+      <soap:operation soapAction="http://services.callbutler.com/GetScriptSchedules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersistScriptSchedule">
+      <soap:operation soapAction="http://services.callbutler.com/PersistScriptSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteScriptSchedule">
+      <soap:operation soapAction="http://services.callbutler.com/DeleteScriptSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerLogin">
+      <soap:operation soapAction="http://services.callbutler.com/GetCustomerLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRecordVolume">
+      <soap:operation soapAction="http://services.callbutler.com/GetRecordVolume" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetRecordVolume">
+      <soap:operation soapAction="http://services.callbutler.com/SetRecordVolume" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSoundVolume">
+      <soap:operation soapAction="http://services.callbutler.com/GetSoundVolume" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetSoundVolume">
+      <soap:operation soapAction="http://services.callbutler.com/SetSoundVolume" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSpeechVolume">
+      <soap:operation soapAction="http://services.callbutler.com/GetSpeechVolume" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetSpeechVolume">
+      <soap:operation soapAction="http://services.callbutler.com/SetSpeechVolume" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultVoice">
+      <soap:operation soapAction="http://services.callbutler.com/GetDefaultVoice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDefaultVoice">
+      <soap:operation soapAction="http://services.callbutler.com/SetDefaultVoice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHostedTestAddress">
+      <soap:operation soapAction="http://services.callbutler.com/GetHostedTestAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ManagementInterfaceServiceSoap12" type="tns:ManagementInterfaceServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendEmail">
+      <soap12:operation soapAction="http://services.callbutler.com/SendEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendTestEmail">
+      <soap12:operation soapAction="http://services.callbutler.com/SendTestEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTTSVoices">
+      <soap12:operation soapAction="http://services.callbutler.com/GetTTSVoices" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMultilingual">
+      <soap12:operation soapAction="http://services.callbutler.com/GetMultilingual" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetMultilingual">
+      <soap12:operation soapAction="http://services.callbutler.com/SetMultilingual" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultLanguage">
+      <soap12:operation soapAction="http://services.callbutler.com/GetDefaultLanguage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDefaultLanguage">
+      <soap12:operation soapAction="http://services.callbutler.com/SetDefaultLanguage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLanguages">
+      <soap12:operation soapAction="http://services.callbutler.com/GetLanguages" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetLanguages">
+      <soap12:operation soapAction="http://services.callbutler.com/SetLanguages" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationPermissions">
+      <soap12:operation soapAction="http://services.callbutler.com/GetApplicationPermissions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetManagementPassword">
+      <soap12:operation soapAction="http://services.callbutler.com/SetManagementPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetManagementPassword">
+      <soap12:operation soapAction="http://services.callbutler.com/GetManagementPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFirstTimeRun">
+      <soap12:operation soapAction="http://services.callbutler.com/GetFirstTimeRun" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetFirstTimeRun">
+      <soap12:operation soapAction="http://services.callbutler.com/SetFirstTimeRun" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAudioCodecs">
+      <soap12:operation soapAction="http://services.callbutler.com/GetAudioCodecs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetAudioCodecs">
+      <soap12:operation soapAction="http://services.callbutler.com/SetAudioCodecs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearCallHistory">
+      <soap12:operation soapAction="http://services.callbutler.com/ClearCallHistory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCallHistory">
+      <soap12:operation soapAction="http://services.callbutler.com/GetCallHistory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRecentCalls">
+      <soap12:operation soapAction="http://services.callbutler.com/GetRecentCalls" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExtension">
+      <soap12:operation soapAction="http://services.callbutler.com/GetExtension" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExtensionNumber">
+      <soap12:operation soapAction="http://services.callbutler.com/GetExtensionNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExtensions">
+      <soap12:operation soapAction="http://services.callbutler.com/GetExtensions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExtensionVoicemailGreeting">
+      <soap12:operation soapAction="http://services.callbutler.com/GetExtensionVoicemailGreeting" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExtensionContactNumbers">
+      <soap12:operation soapAction="http://services.callbutler.com/GetExtensionContactNumbers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersistExtensionContactNumbers">
+      <soap12:operation soapAction="http://services.callbutler.com/PersistExtensionContactNumbers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersistExtension">
+      <soap12:operation soapAction="http://services.callbutler.com/PersistExtension" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExtension">
+      <soap12:operation soapAction="http://services.callbutler.com/DeleteExtension" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExtensionContactNumber">
+      <soap12:operation soapAction="http://services.callbutler.com/DeleteExtensionContactNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVoicemails">
+      <soap12:operation soapAction="http://services.callbutler.com/[CallButlerDataset.VoicemailsDataTable] GetVoicemails(CallButlerAuthInfo authInfo)" style="document" />
+      <wsdl:input name="_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x0029_">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x0029_">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVoicemails">
+      <soap12:operation soapAction="http://services.callbutler.com/[CallButlerDataset.VoicemailsDataTable] GetVoicemails(CallButlerAuthInfo authInfo, Guid extensionID)" style="document" />
+      <wsdl:input name="_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_extensionID_x0029_">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="_x005B_CallButlerDataset.VoicemailsDataTable_x005D__x0020_GetVoicemails_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_extensionID_x0029_">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersistVoicemail">
+      <soap12:operation soapAction="http://services.callbutler.com/PersistVoicemail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersistVoicemailSound">
+      <soap12:operation soapAction="http://services.callbutler.com/PersistVoicemailSound" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteVoicemail">
+      <soap12:operation soapAction="http://services.callbutler.com/DeleteVoicemail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVoicemailSound">
+      <soap12:operation soapAction="http://services.callbutler.com/GetVoicemailSound" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartments">
+      <soap12:operation soapAction="http://services.callbutler.com/GetDepartments" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersistDepartment">
+      <soap12:operation soapAction="http://services.callbutler.com/PersistDepartment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDepartment">
+      <soap12:operation soapAction="http://services.callbutler.com/DeleteDepartment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeExtension">
+      <soap12:operation soapAction="http://services.callbutler.com/GetEmployeeExtension" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DoesEmployeeHaveNewVoicemails">
+      <soap12:operation soapAction="http://services.callbutler.com/DoesEmployeeHaveNewVoicemails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewEmployeeVoicemails">
+      <soap12:operation soapAction="http://services.callbutler.com/GetNewEmployeeVoicemails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalizedGreeting">
+      <soap12:operation soapAction="http://services.callbutler.com/[CallButlerDataset.LocalizedGreetingsDataTable] GetLocalizedGreeting(CallButlerAuthInfo authInfo, Guid greetingID, string languageID)" style="document" />
+      <wsdl:input name="_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_string_x0020_languageID_x0029_">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_string_x0020_languageID_x0029_">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalizedGreeting">
+      <soap12:operation soapAction="http://services.callbutler.com/[CallButlerDataset.LocalizedGreetingsDataTable] GetLocalizedGreeting(CallButlerAuthInfo authInfo, Guid greetingID, Guid localizedGreetingID)" style="document" />
+      <wsdl:input name="_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_Guid_x0020_localizedGreetingID_x0029_">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="_x005B_CallButlerDataset.LocalizedGreetingsDataTable_x005D__x0020_GetLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_Guid_x0020_greetingID_x002C__x0020_Guid_x0020_localizedGreetingID_x0029_">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalizedGreetingInDefaultLanguage">
+      <soap12:operation soapAction="http://services.callbutler.com/GetLocalizedGreetingInDefaultLanguage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersistLocalizedGreeting">
+      <soap12:operation soapAction="http://services.callbutler.com/[void] PersistLocalizedGreeting(CallButlerAuthInfo authInfo, CallButlerDataset.LocalizedGreetingsDataTable localizedGreeting)" style="document" />
+      <wsdl:input name="_x005B_void_x005D__x0020_PersistLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_CallButlerDataset.LocalizedGreetingsDataTable_x0020_localizedGreeting_x0029_">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="_x005B_void_x005D__x0020_PersistLocalizedGreeting_x0028_CallButlerAuthInfo_x0020_authInfo_x002C__x0020_CallButlerDataset.LocalizedGreetingsDataTable_x0020_localizedGreeting_x0029_">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGreeting">
+      <soap12:operation soapAction="http://services.callbutler.com/DeleteGreeting" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalizedGreetingSound">
+      <soap12:operation soapAction="http://services.callbutler.com/GetLocalizedGreetingSound" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersistLocalizedGreetingSound">
+      <soap12:operation soapAction="http://services.callbutler.com/PersistLocalizedGreetingSound" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonalizedGreetings">
+      <soap12:operation soapAction="http://services.callbutler.com/GetPersonalizedGreetings" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersistPersonalizedGreeting">
+      <soap12:operation soapAction="http://services.callbutler.com/PersistPersonalizedGreeting" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePersonalizedGreeting">
+      <soap12:operation soapAction="http://services.callbutler.com/DeletePersonalizedGreeting" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProviders">
+      <soap12:operation soapAction="http://services.callbutler.com/GetProviders" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersistProviders">
+      <soap12:operation soapAction="http://services.callbutler.com/PersistProviders" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProvider">
+      <soap12:operation soapAction="http://services.callbutler.com/DeleteProvider" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScriptSchedules">
+      <soap12:operation soapAction="http://services.callbutler.com/GetScriptSchedules" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersistScriptSchedule">
+      <soap12:operation soapAction="http://services.callbutler.com/PersistScriptSchedule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteScriptSchedule">
+      <soap12:operation soapAction="http://services.callbutler.com/DeleteScriptSchedule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerLogin">
+      <soap12:operation soapAction="http://services.callbutler.com/GetCustomerLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRecordVolume">
+      <soap12:operation soapAction="http://services.callbutler.com/GetRecordVolume" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetRecordVolume">
+      <soap12:operation soapAction="http://services.callbutler.com/SetRecordVolume" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSoundVolume">
+      <soap12:operation soapAction="http://services.callbutler.com/GetSoundVolume" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetSoundVolume">
+      <soap12:operation soapAction="http://services.callbutler.com/SetSoundVolume" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSpeechVolume">
+      <soap12:operation soapAction="http://services.callbutler.com/GetSpeechVolume" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetSpeechVolume">
+      <soap12:operation soapAction="http://services.callbutler.com/SetSpeechVolume" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultVoice">
+      <soap12:operation soapAction="http://services.callbutler.com/GetDefaultVoice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDefaultVoice">
+      <soap12:operation soapAction="http://services.callbutler.com/SetDefaultVoice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHostedTestAddress">
+      <soap12:operation soapAction="http://services.callbutler.com/GetHostedTestAddress" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ManagementInterfaceService">
+    <wsdl:port name="ManagementInterfaceServiceSoap" binding="tns:ManagementInterfaceServiceSoap">
+      <soap:address location="http://localhost:53668/Hosted/ManagementService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ManagementInterfaceServiceSoap12" binding="tns:ManagementInterfaceServiceSoap12">
+      <soap12:address location="http://localhost:53668/Hosted/ManagementService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,1434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="extensionsView.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="extensionsView.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="extensionsView.HeaderCaption" xml:space="preserve">
+    <value>Manage your employee extensions</value>
+  </data>
+  <data name="extensionsView.HeaderIcon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="extensionsView.HeaderTitle" xml:space="preserve">
+    <value>Extensions</value>
+  </data>
+  <data name="extensionsView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 111</value>
+  </data>
+  <data name="extensionsView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 323</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="extensionsView.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;extensionsView.Name" xml:space="preserve">
+    <value>extensionsView</value>
+  </data>
+  <data name="&gt;&gt;extensionsView.Type" xml:space="preserve">
+    <value>CallButler.Manager.ViewControls.ExtensionsView, CallButler Manager, Version=1.9.8.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;extensionsView.Parent" xml:space="preserve">
+    <value>pgExtensionSelector</value>
+  </data>
+  <data name="&gt;&gt;extensionsView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="wizardHeader2.Description" xml:space="preserve">
+    <value>Select an extension from the list below</value>
+  </data>
+  <data name="wizardHeader2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="wizardHeader2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardHeader2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 10, 20, 0</value>
+  </data>
+  <data name="wizardHeader2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>489, 105</value>
+  </data>
+  <data name="wizardHeader2.SubTitle" xml:space="preserve">
+    <value>Extension Settings</value>
+  </data>
+  <data name="wizardHeader2.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="wizardHeader2.Title" xml:space="preserve">
+    <value>Department / Menu Option</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader2.Name" xml:space="preserve">
+    <value>wizardHeader2</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader2.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.WizardHeader, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader2.Parent" xml:space="preserve">
+    <value>pgExtensionSelector</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pgExtensionSelector.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgExtensionSelector.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pgExtensionSelector.Size" type="System.Drawing.Size, System.Drawing">
+    <value>489, 398</value>
+  </data>
+  <data name="pgExtensionSelector.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pgExtensionSelector.Name" xml:space="preserve">
+    <value>pgExtensionSelector</value>
+  </data>
+  <data name="&gt;&gt;pgExtensionSelector.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgExtensionSelector.Parent" xml:space="preserve">
+    <value>wzdDepartmentDetails</value>
+  </data>
+  <data name="&gt;&gt;pgExtensionSelector.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblNumberDescription.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblNumberDescription.HelpText" xml:space="preserve">
+    <value>This is the telephone number CallButler will call when this department is selected.
+
+This phone number should include all country and area codes. You may or may not include punctuation. Examples of valid numbers are: 1-555-1234 and 15551234
+
+Note: For CallButler for Skype editions, this number may also be a Skype Name.
+</value>
+  </data>
+  <data name="lblNumberDescription.HelpTitle" xml:space="preserve">
+    <value>Telephone Number</value>
+  </data>
+  <data name="lblNumberDescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 131</value>
+  </data>
+  <data name="lblNumberDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 13</value>
+  </data>
+  <data name="lblNumberDescription.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="lblNumberDescription.Text" xml:space="preserve">
+    <value>Telephone Number</value>
+  </data>
+  <data name="&gt;&gt;lblNumberDescription.Name" xml:space="preserve">
+    <value>lblNumberDescription</value>
+  </data>
+  <data name="&gt;&gt;lblNumberDescription.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblNumberDescription.Parent" xml:space="preserve">
+    <value>wizardPage5</value>
+  </data>
+  <data name="&gt;&gt;lblNumberDescription.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="wizardHeader3.Description" xml:space="preserve">
+    <value>Specify a number to which to transfer the call</value>
+  </data>
+  <data name="wizardHeader3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="wizardHeader3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardHeader3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 10, 20, 0</value>
+  </data>
+  <data name="wizardHeader3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>489, 105</value>
+  </data>
+  <data name="wizardHeader3.SubTitle" xml:space="preserve">
+    <value>Telephone Number Settings</value>
+  </data>
+  <data name="wizardHeader3.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="wizardHeader3.Title" xml:space="preserve">
+    <value>Department / Menu Option</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader3.Name" xml:space="preserve">
+    <value>wizardHeader3</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader3.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.WizardHeader, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader3.Parent" xml:space="preserve">
+    <value>wizardPage5</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnImportOutlook.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 174</value>
+  </data>
+  <data name="btnImportOutlook.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 19</value>
+  </data>
+  <data name="btnImportOutlook.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="btnImportOutlook.Text" xml:space="preserve">
+    <value>Import a contact from Outlook...</value>
+  </data>
+  <data name="&gt;&gt;btnImportOutlook.Name" xml:space="preserve">
+    <value>btnImportOutlook</value>
+  </data>
+  <data name="&gt;&gt;btnImportOutlook.Type" xml:space="preserve">
+    <value>Controls.LinkButton, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnImportOutlook.Parent" xml:space="preserve">
+    <value>wizardPage5</value>
+  </data>
+  <data name="&gt;&gt;btnImportOutlook.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtTelephoneNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 147</value>
+  </data>
+  <data name="txtTelephoneNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>422, 21</value>
+  </data>
+  <data name="txtTelephoneNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;txtTelephoneNumber.Name" xml:space="preserve">
+    <value>txtTelephoneNumber</value>
+  </data>
+  <data name="&gt;&gt;txtTelephoneNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtTelephoneNumber.Parent" xml:space="preserve">
+    <value>wizardPage5</value>
+  </data>
+  <data name="&gt;&gt;txtTelephoneNumber.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="wizardPage5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizardPage5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardPage5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>489, 398</value>
+  </data>
+  <data name="wizardPage5.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;wizardPage5.Name" xml:space="preserve">
+    <value>wizardPage5</value>
+  </data>
+  <data name="&gt;&gt;wizardPage5.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardPage5.Parent" xml:space="preserve">
+    <value>wzdDepartmentDetails</value>
+  </data>
+  <data name="&gt;&gt;wizardPage5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="smoothLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel1.HelpText" xml:space="preserve">
+    <value>Specify a path to a custom script file. CallButler will execute this custom script when this department is selected.
+
+Please note that if you are managing a CallButler service on another computer, you will need to specify a path to a script that is saved on that computer.</value>
+  </data>
+  <data name="smoothLabel1.HelpTitle" xml:space="preserve">
+    <value>Custom Script File Path</value>
+  </data>
+  <data name="smoothLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 127</value>
+  </data>
+  <data name="smoothLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 13</value>
+  </data>
+  <data name="smoothLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="smoothLabel1.Text" xml:space="preserve">
+    <value>Script File Path</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel1.Name" xml:space="preserve">
+    <value>smoothLabel1</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel1.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel1.Parent" xml:space="preserve">
+    <value>wizardPage7</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="wizardHeader4.Description" xml:space="preserve">
+    <value>Please provide a path to a script file below</value>
+  </data>
+  <data name="wizardHeader4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="wizardHeader4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardHeader4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 10, 20, 0</value>
+  </data>
+  <data name="wizardHeader4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>489, 105</value>
+  </data>
+  <data name="wizardHeader4.SubTitle" xml:space="preserve">
+    <value>Custom Script Settings</value>
+  </data>
+  <data name="wizardHeader4.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="wizardHeader4.Title" xml:space="preserve">
+    <value>Department / Menu Option</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader4.Name" xml:space="preserve">
+    <value>wizardHeader4</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader4.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.WizardHeader, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader4.Parent" xml:space="preserve">
+    <value>wizardPage7</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtScriptFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 143</value>
+  </data>
+  <data name="txtScriptFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>422, 21</value>
+  </data>
+  <data name="txtScriptFile.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;txtScriptFile.Name" xml:space="preserve">
+    <value>txtScriptFile</value>
+  </data>
+  <data name="&gt;&gt;txtScriptFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtScriptFile.Parent" xml:space="preserve">
+    <value>wizardPage7</value>
+  </data>
+  <data name="&gt;&gt;txtScriptFile.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnScriptBrowse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 167</value>
+  </data>
+  <data name="btnScriptBrowse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 21</value>
+  </data>
+  <data name="btnScriptBrowse.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="btnScriptBrowse.Text" xml:space="preserve">
+    <value>Browse...</value>
+  </data>
+  <data name="&gt;&gt;btnScriptBrowse.Name" xml:space="preserve">
+    <value>btnScriptBrowse</value>
+  </data>
+  <data name="&gt;&gt;btnScriptBrowse.Type" xml:space="preserve">
+    <value>Controls.LinkButton, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnScriptBrowse.Parent" xml:space="preserve">
+    <value>wizardPage7</value>
+  </data>
+  <data name="&gt;&gt;btnScriptBrowse.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="wizardPage7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizardPage7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardPage7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>489, 398</value>
+  </data>
+  <data name="wizardPage7.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;wizardPage7.Name" xml:space="preserve">
+    <value>wizardPage7</value>
+  </data>
+  <data name="&gt;&gt;wizardPage7.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardPage7.Parent" xml:space="preserve">
+    <value>wzdDepartmentDetails</value>
+  </data>
+  <data name="&gt;&gt;wizardPage7.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="addOnModuleChooserControl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="addOnModuleChooserControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 111</value>
+  </data>
+  <data name="addOnModuleChooserControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>449, 284</value>
+  </data>
+  <data name="addOnModuleChooserControl.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;addOnModuleChooserControl.Name" xml:space="preserve">
+    <value>addOnModuleChooserControl</value>
+  </data>
+  <data name="&gt;&gt;addOnModuleChooserControl.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.AddOnModuleChooserControl, CallButler Manager, Version=1.9.8.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;addOnModuleChooserControl.Parent" xml:space="preserve">
+    <value>pgAddonModule</value>
+  </data>
+  <data name="&gt;&gt;addOnModuleChooserControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="wizardHeader6.Description" xml:space="preserve">
+    <value>Select an add-on module below and modify the settings</value>
+  </data>
+  <data name="wizardHeader6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="wizardHeader6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardHeader6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 10, 20, 0</value>
+  </data>
+  <data name="wizardHeader6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>489, 105</value>
+  </data>
+  <data name="wizardHeader6.SubTitle" xml:space="preserve">
+    <value>Add-On Module Settings</value>
+  </data>
+  <data name="wizardHeader6.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="wizardHeader6.Title" xml:space="preserve">
+    <value>Department / Menu Option</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader6.Name" xml:space="preserve">
+    <value>wizardHeader6</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader6.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.WizardHeader, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader6.Parent" xml:space="preserve">
+    <value>pgAddonModule</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pgAddonModule.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgAddonModule.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pgAddonModule.Size" type="System.Drawing.Size, System.Drawing">
+    <value>489, 398</value>
+  </data>
+  <data name="pgAddonModule.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;pgAddonModule.Name" xml:space="preserve">
+    <value>pgAddonModule</value>
+  </data>
+  <data name="&gt;&gt;pgAddonModule.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgAddonModule.Parent" xml:space="preserve">
+    <value>wzdDepartmentDetails</value>
+  </data>
+  <data name="&gt;&gt;pgAddonModule.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="wizardHeader1.Description" xml:space="preserve">
+    <value>Specify how you would like this message to be played</value>
+  </data>
+  <data name="wizardHeader1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="wizardHeader1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardHeader1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 10, 20, 0</value>
+  </data>
+  <data name="wizardHeader1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>489, 105</value>
+  </data>
+  <data name="wizardHeader1.SubTitle" xml:space="preserve">
+    <value>Message Settings</value>
+  </data>
+  <data name="wizardHeader1.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="wizardHeader1.Title" xml:space="preserve">
+    <value>Department / Menu Option</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader1.Name" xml:space="preserve">
+    <value>wizardHeader1</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader1.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.WizardHeader, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader1.Parent" xml:space="preserve">
+    <value>wizardPage3</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="greetingControl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="greetingControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 115</value>
+  </data>
+  <data name="greetingControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>431, 253</value>
+  </data>
+  <data name="greetingControl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;greetingControl.Name" xml:space="preserve">
+    <value>greetingControl</value>
+  </data>
+  <data name="&gt;&gt;greetingControl.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.GreetingControl, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;greetingControl.Parent" xml:space="preserve">
+    <value>wizardPage3</value>
+  </data>
+  <data name="&gt;&gt;greetingControl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="wizardPage3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizardPage3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>489, 398</value>
+  </data>
+  <data name="wizardPage3.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;wizardPage3.Name" xml:space="preserve">
+    <value>wizardPage3</value>
+  </data>
+  <data name="&gt;&gt;wizardPage3.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardPage3.Parent" xml:space="preserve">
+    <value>wzdDepartmentDetails</value>
+  </data>
+  <data name="&gt;&gt;wizardPage3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="wzdDepartmentDetails.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wzdDepartmentDetails.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="wzdDepartmentDetails.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wzdDepartmentDetails.Size" type="System.Drawing.Size, System.Drawing">
+    <value>489, 446</value>
+  </data>
+  <data name="wzdDepartmentDetails.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="wzdDepartmentDetails.TablPanelTopMargin" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="wzdDepartmentDetails.TabPanelWidth" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="wzdDepartmentDetails.TabWidth" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;wzdDepartmentDetails.Name" xml:space="preserve">
+    <value>wzdDepartmentDetails</value>
+  </data>
+  <data name="&gt;&gt;wzdDepartmentDetails.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.Wizard, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wzdDepartmentDetails.Parent" xml:space="preserve">
+    <value>pgSpecificSettings</value>
+  </data>
+  <data name="&gt;&gt;wzdDepartmentDetails.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pgSpecificSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgSpecificSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 0</value>
+  </data>
+  <data name="pgSpecificSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>489, 446</value>
+  </data>
+  <data name="pgSpecificSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pgSpecificSettings.Name" xml:space="preserve">
+    <value>pgSpecificSettings</value>
+  </data>
+  <data name="&gt;&gt;pgSpecificSettings.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgSpecificSettings.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pgSpecificSettings.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="numOptionNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 127</value>
+  </data>
+  <data name="numOptionNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 21</value>
+  </data>
+  <data name="numOptionNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;numOptionNumber.Name" xml:space="preserve">
+    <value>numOptionNumber</value>
+  </data>
+  <data name="&gt;&gt;numOptionNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numOptionNumber.Parent" xml:space="preserve">
+    <value>pgGeneralSettings</value>
+  </data>
+  <data name="&gt;&gt;numOptionNumber.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="smoothLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel2.HelpText" xml:space="preserve">
+    <value>Specify a name for this department here. The name you give this department is for your reference only and will not have any affect on what the caller hears.</value>
+  </data>
+  <data name="smoothLabel2.HelpTitle" xml:space="preserve">
+    <value>Department Name</value>
+  </data>
+  <data name="smoothLabel2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="smoothLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 111</value>
+  </data>
+  <data name="smoothLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 13</value>
+  </data>
+  <data name="smoothLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="smoothLabel2.Text" xml:space="preserve">
+    <value>Department Option Number</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel2.Name" xml:space="preserve">
+    <value>smoothLabel2</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel2.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel2.Parent" xml:space="preserve">
+    <value>pgGeneralSettings</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblDepartmentName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblDepartmentName.HelpText" xml:space="preserve">
+    <value>Specify a name for this department here. The name you give this department is for your reference only and will not have any affect on what the caller hears.</value>
+  </data>
+  <data name="lblDepartmentName.HelpTitle" xml:space="preserve">
+    <value>Department Name</value>
+  </data>
+  <data name="lblDepartmentName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 151</value>
+  </data>
+  <data name="lblDepartmentName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 13</value>
+  </data>
+  <data name="lblDepartmentName.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="lblDepartmentName.Text" xml:space="preserve">
+    <value>Department Name</value>
+  </data>
+  <data name="&gt;&gt;lblDepartmentName.Name" xml:space="preserve">
+    <value>lblDepartmentName</value>
+  </data>
+  <data name="&gt;&gt;lblDepartmentName.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblDepartmentName.Parent" xml:space="preserve">
+    <value>pgGeneralSettings</value>
+  </data>
+  <data name="&gt;&gt;lblDepartmentName.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblAddon.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblAddon.HelpText" xml:space="preserve">
+    <value>Use this if you want to run an add-on module.
+
+You can select the add-on module by pressing the Next button below.</value>
+  </data>
+  <data name="lblAddon.HelpTitle" xml:space="preserve">
+    <value>Run Add-On Module</value>
+  </data>
+  <data name="lblAddon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblAddon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 92</value>
+  </data>
+  <data name="lblAddon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 13</value>
+  </data>
+  <data name="lblAddon.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="lblAddon.Text" xml:space="preserve">
+    <value>Run an add-on module</value>
+  </data>
+  <data name="&gt;&gt;lblAddon.Name" xml:space="preserve">
+    <value>lblAddon</value>
+  </data>
+  <data name="&gt;&gt;lblAddon.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblAddon.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lblAddon.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblScript.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblScript.HelpText" xml:space="preserve">
+    <value>Use this if you want to run a custom-built script when this department is selected. With a custom script you can create your own call flows and even interface with databases and other applications.
+
+To create a custom script you may want to use the inTeliScript editor included with CallButler. See the CallButler documentation for information on creating and using custom scripts.
+
+You can browse for a custom script by pressing the Next button below.</value>
+  </data>
+  <data name="lblScript.HelpTitle" xml:space="preserve">
+    <value>Run a Custom Script</value>
+  </data>
+  <data name="lblScript.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 120</value>
+  </data>
+  <data name="lblScript.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 13</value>
+  </data>
+  <data name="lblScript.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="lblScript.Text" xml:space="preserve">
+    <value>Run a custom script (For advanced users)</value>
+  </data>
+  <data name="&gt;&gt;lblScript.Name" xml:space="preserve">
+    <value>lblScript</value>
+  </data>
+  <data name="&gt;&gt;lblScript.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblScript.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lblScript.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rbScript.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="rbScript.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 112</value>
+  </data>
+  <data name="rbScript.Size" type="System.Drawing.Size, System.Drawing">
+    <value>405, 28</value>
+  </data>
+  <data name="rbScript.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;rbScript.Name" xml:space="preserve">
+    <value>rbScript</value>
+  </data>
+  <data name="&gt;&gt;rbScript.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbScript.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;rbScript.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="rbAddon.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="rbAddon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rbAddon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 84</value>
+  </data>
+  <data name="rbAddon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>405, 28</value>
+  </data>
+  <data name="rbAddon.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;rbAddon.Name" xml:space="preserve">
+    <value>rbAddon</value>
+  </data>
+  <data name="&gt;&gt;rbAddon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbAddon.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;rbAddon.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblNumber.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblNumber.HelpText" xml:space="preserve">
+    <value>Use this if you want to transfer the caller to another telephone number when this department is selected.
+
+You might use this type of department to:
+
+- Transfer callers to a fax machine
+- Transfer callers to another company or division
+
+You can specify a telephone number by pressing the Next button below.
+
+Note: CallButler for Skype Edition users may also transfer the caller to a Skype Name.</value>
+  </data>
+  <data name="lblNumber.HelpTitle" xml:space="preserve">
+    <value>Transfer the Call to a Telephone Number</value>
+  </data>
+  <data name="lblNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 63</value>
+  </data>
+  <data name="lblNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 13</value>
+  </data>
+  <data name="lblNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="lblNumber.Text" xml:space="preserve">
+    <value>Transfer the call to a </value>
+  </data>
+  <data name="&gt;&gt;lblNumber.Name" xml:space="preserve">
+    <value>lblNumber</value>
+  </data>
+  <data name="&gt;&gt;lblNumber.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblNumber.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lblNumber.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblExtension.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblExtension.HelpText" xml:space="preserve">
+    <value>Use this if you want to transfer the caller to a specific extension when this department is selected.
+
+You might use this type of department to:
+
+- Transfer callers wanting to talk to someone in sales to your sales manager's extension
+- Transfer callers to an extension with a voicemail box used for general messages
+
+You can specify a specific extension by pressing the Next button below.</value>
+  </data>
+  <data name="lblExtension.HelpTitle" xml:space="preserve">
+    <value>Transfer the Call to an Extension</value>
+  </data>
+  <data name="lblExtension.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 35</value>
+  </data>
+  <data name="lblExtension.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 13</value>
+  </data>
+  <data name="lblExtension.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="lblExtension.Text" xml:space="preserve">
+    <value>Transfer the call to an extension</value>
+  </data>
+  <data name="&gt;&gt;lblExtension.Name" xml:space="preserve">
+    <value>lblExtension</value>
+  </data>
+  <data name="&gt;&gt;lblExtension.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblExtension.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lblExtension.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblMessage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblMessage.HelpText" xml:space="preserve">
+    <value>Use this if you want to play a pre-recorded message to callers when this department is selected.
+
+You might use this type of department for:
+
+- Store hours and directions
+- Monthly specials
+- Listing of products and services
+
+You can record a new message or select an exising sound for the message by pressing the Next button below.</value>
+  </data>
+  <data name="lblMessage.HelpTitle" xml:space="preserve">
+    <value>Play a message</value>
+  </data>
+  <data name="lblMessage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 7</value>
+  </data>
+  <data name="lblMessage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 13</value>
+  </data>
+  <data name="lblMessage.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="lblMessage.Text" xml:space="preserve">
+    <value>Play a message</value>
+  </data>
+  <data name="&gt;&gt;lblMessage.Name" xml:space="preserve">
+    <value>lblMessage</value>
+  </data>
+  <data name="&gt;&gt;lblMessage.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblMessage.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lblMessage.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="rbTransferNumber.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="rbTransferNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 56</value>
+  </data>
+  <data name="rbTransferNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>405, 28</value>
+  </data>
+  <data name="rbTransferNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;rbTransferNumber.Name" xml:space="preserve">
+    <value>rbTransferNumber</value>
+  </data>
+  <data name="&gt;&gt;rbTransferNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbTransferNumber.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;rbTransferNumber.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="rbTransferExtension.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="rbTransferExtension.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 28</value>
+  </data>
+  <data name="rbTransferExtension.Size" type="System.Drawing.Size, System.Drawing">
+    <value>405, 28</value>
+  </data>
+  <data name="rbTransferExtension.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;rbTransferExtension.Name" xml:space="preserve">
+    <value>rbTransferExtension</value>
+  </data>
+  <data name="&gt;&gt;rbTransferExtension.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbTransferExtension.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;rbTransferExtension.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="rbPlayMessage.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="rbPlayMessage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="rbPlayMessage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>405, 28</value>
+  </data>
+  <data name="rbPlayMessage.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;rbPlayMessage.Name" xml:space="preserve">
+    <value>rbPlayMessage</value>
+  </data>
+  <data name="&gt;&gt;rbPlayMessage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbPlayMessage.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;rbPlayMessage.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 232</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>405, 159</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>pgGeneralSettings</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="wizardHeader5.Description" xml:space="preserve">
+    <value>Give this department a name and select the type of information that will be relayed to the caller when this department is selected</value>
+  </data>
+  <data name="wizardHeader5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="wizardHeader5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardHeader5.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 10, 20, 0</value>
+  </data>
+  <data name="wizardHeader5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>489, 105</value>
+  </data>
+  <data name="wizardHeader5.SubTitle" xml:space="preserve">
+    <value>General Settings</value>
+  </data>
+  <data name="wizardHeader5.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="wizardHeader5.Title" xml:space="preserve">
+    <value>Department / Menu Option</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader5.Name" xml:space="preserve">
+    <value>wizardHeader5</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader5.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.WizardHeader, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader5.Parent" xml:space="preserve">
+    <value>pgGeneralSettings</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader5.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 204</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>When a caller chooses this deparment, I want to...</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>pgGeneralSettings</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtDepartmentName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 167</value>
+  </data>
+  <data name="txtDepartmentName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>422, 21</value>
+  </data>
+  <data name="txtDepartmentName.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;txtDepartmentName.Name" xml:space="preserve">
+    <value>txtDepartmentName</value>
+  </data>
+  <data name="&gt;&gt;txtDepartmentName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtDepartmentName.Parent" xml:space="preserve">
+    <value>pgGeneralSettings</value>
+  </data>
+  <data name="&gt;&gt;txtDepartmentName.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="pgGeneralSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgGeneralSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 0</value>
+  </data>
+  <data name="pgGeneralSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>489, 446</value>
+  </data>
+  <data name="pgGeneralSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="pgGeneralSettings.Text" xml:space="preserve">
+    <value>General Settings</value>
+  </data>
+  <data name="&gt;&gt;pgGeneralSettings.Name" xml:space="preserve">
+    <value>pgGeneralSettings</value>
+  </data>
+  <data name="&gt;&gt;pgGeneralSettings.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgGeneralSettings.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pgGeneralSettings.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="wizard.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizard.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="wizard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>649, 494</value>
+  </data>
+  <data name="wizard.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="wizard.TablPanelTopMargin" type="System.Int32, mscorlib">
+    <value>175</value>
+  </data>
+  <data name="wizard.TabPanelWidth" type="System.Int32, mscorlib">
+    <value>160</value>
+  </data>
+  <data name="wizard.TabWidth" type="System.Int32, mscorlib">
+    <value>135</value>
+  </data>
+  <data name="&gt;&gt;wizard.Name" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;wizard.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.Wizard, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizard.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;wizard.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="callButlerDataset.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="bsMailboxes.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>258, 17</value>
+  </metadata>
+  <metadata name="openFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>369, 17</value>
+  </metadata>
+  <data name="openFileDialog.Filter" xml:space="preserve">
+    <value>CallButler XML Script File (*.xml)|*.xml</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>649, 494</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Department / Menu Option</value>
+  </data>
+  <data name="&gt;&gt;callButlerDataset.Name" xml:space="preserve">
+    <value>callButlerDataset</value>
+  </data>
+  <data name="&gt;&gt;callButlerDataset.Type" xml:space="preserve">
+    <value>WOSI.CallButler.Data.CallButlerDataset, WOSI.CallButler.Data, Version=0.5.5.3, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bsMailboxes.Name" xml:space="preserve">
+    <value>bsMailboxes</value>
+  </data>
+  <data name="&gt;&gt;bsMailboxes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog.Name" xml:space="preserve">
+    <value>openFileDialog</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>DepartmentForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>CallButler.Manager.Forms.EditorWizardFormBase, CallButler Manager, Version=1.9.8.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

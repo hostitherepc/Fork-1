@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <ConnectionProperties>
+        <ConnectString />
+        <DataProvider>SQL</DataProvider>
+      </ConnectionProperties>
+      <rd:DataSourceID>b4b1ef20-6c51-4222-83a3-0e55179a32ef</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <BottomMargin>1in</BottomMargin>
+  <RightMargin>1in</RightMargin>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <Body>
+    <ReportItems>
+      <Table Name="table1">
+        <DataSetName>CallButlerDataset_CallHistory</DataSetName>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Timestamp">
+                      <rd:DefaultName>Timestamp</rd:DefaultName>
+                      <ZIndex>3</ZIndex>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontSize>8.25pt</FontSize>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!Timestamp.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="CallerDisplayName">
+                      <rd:DefaultName>CallerDisplayName</rd:DefaultName>
+                      <ZIndex>2</ZIndex>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontSize>8.25pt</FontSize>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!CallerDisplayName.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="CallerUsername">
+                      <rd:DefaultName>CallerUsername</rd:DefaultName>
+                      <ZIndex>1</ZIndex>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontSize>8.25pt</FontSize>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=System.Text.RegularExpressions.Regex.Replace(Fields!CallerUsername.Value, "(\d{3})[ -.]*(\d{3})[ -.]*(\d{4})", "($1) $2-$3")</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox4">
+                      <rd:DefaultName>textbox4</rd:DefaultName>
+                      <Style>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!CallDuration.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.25in</Height>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <Header>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox2">
+                      <rd:DefaultName>textbox2</rd:DefaultName>
+                      <ZIndex>7</ZIndex>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderWidth>
+                          <Default>0.25pt</Default>
+                        </BorderWidth>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontWeight>600</FontWeight>
+                        <FontSize>9.5pt</FontSize>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <BackgroundColor>#6eaaec</BackgroundColor>
+                        <Color>White</Color>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Time</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox1">
+                      <rd:DefaultName>textbox1</rd:DefaultName>
+                      <ZIndex>6</ZIndex>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderWidth>
+                          <Default>0.25pt</Default>
+                        </BorderWidth>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontWeight>600</FontWeight>
+                        <FontSize>9.5pt</FontSize>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <BackgroundColor>#6eaaec</BackgroundColor>
+                        <Color>White</Color>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Caller Id</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox3">
+                      <rd:DefaultName>textbox3</rd:DefaultName>
+                      <ZIndex>5</ZIndex>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderWidth>
+                          <Default>0.25pt</Default>
+                        </BorderWidth>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontWeight>600</FontWeight>
+                        <FontSize>9.5pt</FontSize>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <BackgroundColor>#6eaaec</BackgroundColor>
+                        <Color>White</Color>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Phone Number</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox5">
+                      <rd:DefaultName>textbox5</rd:DefaultName>
+                      <ZIndex>4</ZIndex>
+                      <Style>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderWidth>
+                          <Default>0.25pt</Default>
+                        </BorderWidth>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontWeight>600</FontWeight>
+                        <FontSize>9.5pt</FontSize>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <BackgroundColor>#6eaaec</BackgroundColor>
+                        <Color>White</Color>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Call Length</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.25in</Height>
+            </TableRow>
+          </TableRows>
+          <RepeatOnNewPage>true</RepeatOnNewPage>
+        </Header>
+        <TableColumns>
+          <TableColumn>
+            <Width>1.9375in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>2.08654in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.63942in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>2.08654in</Width>
+          </TableColumn>
+        </TableColumns>
+      </Table>
+    </ReportItems>
+    <Height>0.5in</Height>
+  </Body>
+  <PageHeader>
+    <ReportItems>
+      <Image Name="Logo">
+        <Sizing>AutoSize</Sizing>
+        <MIMEType>image/png</MIMEType>
+        <ZIndex>1</ZIndex>
+        <Width>1.09375in</Width>
+        <Source>Embedded</Source>
+        <Style />
+        <Height>0.60417in</Height>
+        <Value>logo</Value>
+      </Image>
+      <Textbox Name="textbox6">
+        <Left>1.25in</Left>
+        <Top>0.11458in</Top>
+        <rd:DefaultName>textbox6</rd:DefaultName>
+        <Width>5.125in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Blue Highway</FontFamily>
+          <FontSize>26.25pt</FontSize>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.375in</Height>
+        <Value>Call History Report</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>0.75in</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+  </PageHeader>
+  <rd:ReportID>d6d853cd-28f1-4c81-af79-16fac2aed78b</rd:ReportID>
+  <LeftMargin>1in</LeftMargin>
+  <EmbeddedImages>
+    <EmbeddedImage Name="logo">
+      <ImageData>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</ImageData>
+      <MIMEType>image/png</MIMEType>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <DataSets>
+    <DataSet Name="CallButlerDataset_CallHistory">
+      <rd:DataSetInfo>
+        <rd:ObjectDataSourceSelectMethod>CallHistory</rd:ObjectDataSourceSelectMethod>
+        <rd:DataSetName>CallButlerDataset</rd:DataSetName>
+        <rd:ObjectDataSourceType>WOSI.CallButler.Data.CallButlerDataset, WOSI.CallButler.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=332bdbd574967b5d</rd:ObjectDataSourceType>
+        <rd:TableName>CallHistory</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText />
+        <DataSourceName>DummyDataSource</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="CustomerID">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>CustomerID</DataField>
+        </Field>
+        <Field Name="CallID">
+          <rd:TypeName>System.Guid</rd:TypeName>
+          <DataField>CallID</DataField>
+        </Field>
+        <Field Name="Timestamp">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>Timestamp</DataField>
+        </Field>
+        <Field Name="CallerDisplayName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CallerDisplayName</DataField>
+        </Field>
+        <Field Name="CallerUsername">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CallerUsername</DataField>
+        </Field>
+        <Field Name="CallerHost">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CallerHost</DataField>
+        </Field>
+        <Field Name="CallDuration">
+          <rd:TypeName>System.TimeSpan</rd:TypeName>
+          <DataField>CallDuration</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <Width>7.75in</Width>
+  <InteractiveHeight>11in</InteractiveHeight>
+  <Language>en-US</Language>
+  <PageFooter>
+    <ReportItems>
+      <Textbox Name="textbox8">
+        <Style>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Tahoma</FontFamily>
+          <FontWeight>600</FontWeight>
+          <FontSize>8.25pt</FontSize>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Value>="Page " &amp; Globals!PageNumber &amp; " of " &amp; Globals!TotalPages</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>0.25in</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+  </PageFooter>
+  <TopMargin>1in</TopMargin>
+</Report>

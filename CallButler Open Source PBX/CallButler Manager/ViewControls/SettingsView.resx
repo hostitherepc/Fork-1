@@ -1,0 +1,2545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="txtBusyRedirectServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>183, 232</value>
+  </data>
+  <data name="txtBusyRedirectServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 21</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtBusyRedirectServer.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;txtBusyRedirectServer.Name" xml:space="preserve">
+    <value>txtBusyRedirectServer</value>
+  </data>
+  <data name="&gt;&gt;txtBusyRedirectServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtBusyRedirectServer.Parent" xml:space="preserve">
+    <value>pgNetworkSettings</value>
+  </data>
+  <data name="&gt;&gt;txtBusyRedirectServer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblBusyRedirectServer.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblBusyRedirectServer.HelpText" xml:space="preserve">
+    <value>If all of the lines are in use, CallButler will forward incoming calls to another location.
+
+This value may be a name or IP address of another CallButler server, or a SIP URI.</value>
+  </data>
+  <data name="lblBusyRedirectServer.HelpTitle" xml:space="preserve">
+    <value>Busy Redirect Server</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblBusyRedirectServer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblBusyRedirectServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 235</value>
+  </data>
+  <data name="lblBusyRedirectServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 13</value>
+  </data>
+  <data name="lblBusyRedirectServer.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="lblBusyRedirectServer.Text" xml:space="preserve">
+    <value>If lines are busy, forward calls to</value>
+  </data>
+  <data name="&gt;&gt;lblBusyRedirectServer.Name" xml:space="preserve">
+    <value>lblBusyRedirectServer</value>
+  </data>
+  <data name="&gt;&gt;lblBusyRedirectServer.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblBusyRedirectServer.Parent" xml:space="preserve">
+    <value>pgNetworkSettings</value>
+  </data>
+  <data name="&gt;&gt;lblBusyRedirectServer.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="smoothLabel15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel15.HelpText" xml:space="preserve">
+    <value>When checked, CallButler will use the computers internal address for all SIP messages.</value>
+  </data>
+  <data name="smoothLabel15.HelpTitle" xml:space="preserve">
+    <value>Use Internal Address</value>
+  </data>
+  <data name="smoothLabel15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="smoothLabel15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 79</value>
+  </data>
+  <data name="smoothLabel15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 13</value>
+  </data>
+  <data name="smoothLabel15.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="smoothLabel15.Text" xml:space="preserve">
+    <value>Use Internal IP Address for SIP Messages</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel15.Name" xml:space="preserve">
+    <value>smoothLabel15</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel15.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel15.Parent" xml:space="preserve">
+    <value>pgNetworkSettings</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel15.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cbUseInternalIPForSIP.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbUseInternalIPForSIP.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbUseInternalIPForSIP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 79</value>
+  </data>
+  <data name="cbUseInternalIPForSIP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="cbUseInternalIPForSIP.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;cbUseInternalIPForSIP.Name" xml:space="preserve">
+    <value>cbUseInternalIPForSIP</value>
+  </data>
+  <data name="&gt;&gt;cbUseInternalIPForSIP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbUseInternalIPForSIP.Parent" xml:space="preserve">
+    <value>pgNetworkSettings</value>
+  </data>
+  <data name="&gt;&gt;cbUseInternalIPForSIP.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblSTUN.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblSTUN.HelpText" xml:space="preserve">
+    <value>STUN enables CallButler to determine your public IP address if you are behind a NAT enabled router or firewall. In most cases you should leave this turned on, but you may try turning this off if you have trouble connecting to or hearing CallButler when you make a call.</value>
+  </data>
+  <data name="lblSTUN.HelpTitle" xml:space="preserve">
+    <value>Use STUN</value>
+  </data>
+  <data name="lblSTUN.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblSTUN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 107</value>
+  </data>
+  <data name="lblSTUN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 13</value>
+  </data>
+  <data name="lblSTUN.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="lblSTUN.Text" xml:space="preserve">
+    <value>Use STUN</value>
+  </data>
+  <data name="&gt;&gt;lblSTUN.Name" xml:space="preserve">
+    <value>lblSTUN</value>
+  </data>
+  <data name="&gt;&gt;lblSTUN.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblSTUN.Parent" xml:space="preserve">
+    <value>pgNetworkSettings</value>
+  </data>
+  <data name="&gt;&gt;lblSTUN.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="smoothLabel14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel14.HelpText" xml:space="preserve">
+    <value>This value specifies the number of concurrent calls that CallButler can handle at one time.</value>
+  </data>
+  <data name="smoothLabel14.HelpTitle" xml:space="preserve">
+    <value>Concurrent Line Count</value>
+  </data>
+  <data name="smoothLabel14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="smoothLabel14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 184</value>
+  </data>
+  <data name="smoothLabel14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 13</value>
+  </data>
+  <data name="smoothLabel14.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="smoothLabel14.Text" xml:space="preserve">
+    <value>Concurrent Line Count</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel14.Name" xml:space="preserve">
+    <value>smoothLabel14</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel14.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel14.Parent" xml:space="preserve">
+    <value>pgNetworkSettings</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel14.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="smoothLabel9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel9.HelpText" xml:space="preserve">
+    <value>This is the network port CallButler will use to communicate with your VoIP provider. In most cases this should be set to 5060, but it can be changed if you run into network or firewall conflicts.</value>
+  </data>
+  <data name="smoothLabel9.HelpTitle" xml:space="preserve">
+    <value>SIP Port</value>
+  </data>
+  <data name="smoothLabel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 61</value>
+  </data>
+  <data name="smoothLabel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="smoothLabel9.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="smoothLabel9.Text" xml:space="preserve">
+    <value>SIP Port</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel9.Name" xml:space="preserve">
+    <value>smoothLabel9</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel9.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel9.Parent" xml:space="preserve">
+    <value>pgNetworkSettings</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel9.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="smoothLabel10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel10.HelpText" xml:space="preserve">
+    <value>If this is left blank, CallButler will use a default STUN server. If you would like to specify your own STUN server, you may do it here.</value>
+  </data>
+  <data name="smoothLabel10.HelpTitle" xml:space="preserve">
+    <value>STUN Server</value>
+  </data>
+  <data name="smoothLabel10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 0</value>
+  </data>
+  <data name="smoothLabel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 13</value>
+  </data>
+  <data name="smoothLabel10.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="smoothLabel10.Text" xml:space="preserve">
+    <value>STUN Server</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel10.Name" xml:space="preserve">
+    <value>smoothLabel10</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel10.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel10.Parent" xml:space="preserve">
+    <value>pnlSTUN</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel10.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtSTUNServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 16</value>
+  </data>
+  <data name="txtSTUNServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 21</value>
+  </data>
+  <data name="txtSTUNServer.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txtSTUNServer.Name" xml:space="preserve">
+    <value>txtSTUNServer</value>
+  </data>
+  <data name="&gt;&gt;txtSTUNServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtSTUNServer.Parent" xml:space="preserve">
+    <value>pnlSTUN</value>
+  </data>
+  <data name="&gt;&gt;txtSTUNServer.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnlSTUN.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="pnlSTUN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 128</value>
+  </data>
+  <data name="pnlSTUN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>364, 42</value>
+  </data>
+  <data name="pnlSTUN.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;pnlSTUN.Name" xml:space="preserve">
+    <value>pnlSTUN</value>
+  </data>
+  <data name="&gt;&gt;pnlSTUN.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlSTUN.Parent" xml:space="preserve">
+    <value>pgNetworkSettings</value>
+  </data>
+  <data name="&gt;&gt;pnlSTUN.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="cbSTUN.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbSTUN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 107</value>
+  </data>
+  <data name="cbSTUN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="cbSTUN.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;cbSTUN.Name" xml:space="preserve">
+    <value>cbSTUN</value>
+  </data>
+  <data name="&gt;&gt;cbSTUN.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbSTUN.Parent" xml:space="preserve">
+    <value>pgNetworkSettings</value>
+  </data>
+  <data name="&gt;&gt;cbSTUN.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="numLineCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 200</value>
+  </data>
+  <data name="numLineCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 21</value>
+  </data>
+  <data name="numLineCount.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;numLineCount.Name" xml:space="preserve">
+    <value>numLineCount</value>
+  </data>
+  <data name="&gt;&gt;numLineCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numLineCount.Parent" xml:space="preserve">
+    <value>pgNetworkSettings</value>
+  </data>
+  <data name="&gt;&gt;numLineCount.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="numSIPPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 77</value>
+  </data>
+  <data name="numSIPPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 21</value>
+  </data>
+  <data name="numSIPPort.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;numSIPPort.Name" xml:space="preserve">
+    <value>numSIPPort</value>
+  </data>
+  <data name="&gt;&gt;numSIPPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numSIPPort.Parent" xml:space="preserve">
+    <value>pgNetworkSettings</value>
+  </data>
+  <data name="&gt;&gt;numSIPPort.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="header3.Description" xml:space="preserve">
+    <value>Manage your server's network settings.</value>
+  </data>
+  <data name="header3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="header3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 0</value>
+  </data>
+  <data name="header3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>492, 47</value>
+  </data>
+  <data name="header3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="header3.Title" xml:space="preserve">
+    <value>Network Settings</value>
+  </data>
+  <data name="&gt;&gt;header3.Name" xml:space="preserve">
+    <value>header3</value>
+  </data>
+  <data name="&gt;&gt;header3.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.Header, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;header3.Parent" xml:space="preserve">
+    <value>pgNetworkSettings</value>
+  </data>
+  <data name="&gt;&gt;header3.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="pgNetworkSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgNetworkSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 0</value>
+  </data>
+  <data name="pgNetworkSettings.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 0, 0</value>
+  </data>
+  <data name="pgNetworkSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 305</value>
+  </data>
+  <data name="pgNetworkSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="pgNetworkSettings.Text" xml:space="preserve">
+    <value>Network</value>
+  </data>
+  <data name="&gt;&gt;pgNetworkSettings.Name" xml:space="preserve">
+    <value>pgNetworkSettings</value>
+  </data>
+  <data name="&gt;&gt;pgNetworkSettings.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgNetworkSettings.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pgNetworkSettings.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chkNotifyofProductVersions.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkNotifyofProductVersions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 68</value>
+  </data>
+  <data name="chkNotifyofProductVersions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 17</value>
+  </data>
+  <data name="chkNotifyofProductVersions.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="chkNotifyofProductVersions.Text" xml:space="preserve">
+    <value>Notify me when new updates are available</value>
+  </data>
+  <data name="&gt;&gt;chkNotifyofProductVersions.Name" xml:space="preserve">
+    <value>chkNotifyofProductVersions</value>
+  </data>
+  <data name="&gt;&gt;chkNotifyofProductVersions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkNotifyofProductVersions.Parent" xml:space="preserve">
+    <value>pgUpdateSettings</value>
+  </data>
+  <data name="&gt;&gt;chkNotifyofProductVersions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="header8.Description" xml:space="preserve">
+    <value>Manage your product update notifications.</value>
+  </data>
+  <data name="header8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="header8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 0</value>
+  </data>
+  <data name="header8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>492, 47</value>
+  </data>
+  <data name="header8.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="header8.Title" xml:space="preserve">
+    <value>Update Settings</value>
+  </data>
+  <data name="&gt;&gt;header8.Name" xml:space="preserve">
+    <value>header8</value>
+  </data>
+  <data name="&gt;&gt;header8.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.Header, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;header8.Parent" xml:space="preserve">
+    <value>pgUpdateSettings</value>
+  </data>
+  <data name="&gt;&gt;header8.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pgUpdateSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgUpdateSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 0</value>
+  </data>
+  <data name="pgUpdateSettings.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 0, 0</value>
+  </data>
+  <data name="pgUpdateSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 305</value>
+  </data>
+  <data name="pgUpdateSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="pgUpdateSettings.Text" xml:space="preserve">
+    <value>Software Updates</value>
+  </data>
+  <data name="&gt;&gt;pgUpdateSettings.Name" xml:space="preserve">
+    <value>pgUpdateSettings</value>
+  </data>
+  <data name="&gt;&gt;pgUpdateSettings.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgUpdateSettings.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pgUpdateSettings.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtLogErrorEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 23</value>
+  </data>
+  <data name="txtLogErrorEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>335, 21</value>
+  </data>
+  <data name="txtLogErrorEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtLogErrorEmail.Name" xml:space="preserve">
+    <value>txtLogErrorEmail</value>
+  </data>
+  <data name="&gt;&gt;txtLogErrorEmail.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtLogErrorEmail.Parent" xml:space="preserve">
+    <value>pnlLogErrorEmail</value>
+  </data>
+  <data name="&gt;&gt;txtLogErrorEmail.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 7</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>286, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Email address (Separate multiple addresses with a comma)</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>pnlLogErrorEmail</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnlLogErrorEmail.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="pnlLogErrorEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 214</value>
+  </data>
+  <data name="pnlLogErrorEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>372, 60</value>
+  </data>
+  <data name="pnlLogErrorEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;pnlLogErrorEmail.Name" xml:space="preserve">
+    <value>pnlLogErrorEmail</value>
+  </data>
+  <data name="&gt;&gt;pnlLogErrorEmail.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlLogErrorEmail.Parent" xml:space="preserve">
+    <value>pgLoggingSettings</value>
+  </data>
+  <data name="&gt;&gt;pnlLogErrorEmail.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="smoothLabel16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel16.HelpText" xml:space="preserve">
+    <value>If this is turned on, CallButler will automatically send any error messages to the Email addres you provide below.</value>
+  </data>
+  <data name="smoothLabel16.HelpTitle" xml:space="preserve">
+    <value>Send Error Emails</value>
+  </data>
+  <data name="smoothLabel16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="smoothLabel16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 195</value>
+  </data>
+  <data name="smoothLabel16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 13</value>
+  </data>
+  <data name="smoothLabel16.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="smoothLabel16.Text" xml:space="preserve">
+    <value>Send me an Email when errors occur</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel16.Name" xml:space="preserve">
+    <value>smoothLabel16</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel16.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel16.Parent" xml:space="preserve">
+    <value>pgLoggingSettings</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel16.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cbSendLogErrorEmail.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbSendLogErrorEmail.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbSendLogErrorEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 195</value>
+  </data>
+  <data name="cbSendLogErrorEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="cbSendLogErrorEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;cbSendLogErrorEmail.Name" xml:space="preserve">
+    <value>cbSendLogErrorEmail</value>
+  </data>
+  <data name="&gt;&gt;cbSendLogErrorEmail.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbSendLogErrorEmail.Parent" xml:space="preserve">
+    <value>pgLoggingSettings</value>
+  </data>
+  <data name="&gt;&gt;cbSendLogErrorEmail.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblErrors.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblErrors.HelpText" xml:space="preserve">
+    <value>If this is turned on, CallButler will automatically send error reports to Telephony2.
+
+Leaving this on will greatly help us in debugging any problems that you may encounter and enable us to improve overall product quality.</value>
+  </data>
+  <data name="lblErrors.HelpTitle" xml:space="preserve">
+    <value>Auto Send Errors</value>
+  </data>
+  <data name="lblErrors.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 160</value>
+  </data>
+  <data name="lblErrors.Size" type="System.Drawing.Size, System.Drawing">
+    <value>302, 13</value>
+  </data>
+  <data name="lblErrors.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="lblErrors.Text" xml:space="preserve">
+    <value>Automatically report and send server errors to Telephony2</value>
+  </data>
+  <data name="&gt;&gt;lblErrors.Name" xml:space="preserve">
+    <value>lblErrors</value>
+  </data>
+  <data name="&gt;&gt;lblErrors.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblErrors.Parent" xml:space="preserve">
+    <value>pgLoggingSettings</value>
+  </data>
+  <data name="&gt;&gt;lblErrors.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="smoothLabel12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel12.HelpText" xml:space="preserve">
+    <value>Specify how much logging information CallButler should collect and store.
+
+Errors only - Only log errors when they occur.
+
+Basic information - Log basic information like who called and when they called.
+
+Detailed information - Log extremely detailed information about the call including what happend during the call.</value>
+  </data>
+  <data name="smoothLabel12.HelpTitle" xml:space="preserve">
+    <value>Logging Level</value>
+  </data>
+  <data name="smoothLabel12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 106</value>
+  </data>
+  <data name="smoothLabel12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 13</value>
+  </data>
+  <data name="smoothLabel12.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="smoothLabel12.Text" xml:space="preserve">
+    <value>Logging Level</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel12.Name" xml:space="preserve">
+    <value>smoothLabel12</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel12.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel12.Parent" xml:space="preserve">
+    <value>pgLoggingSettings</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel12.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="smoothLabel11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel11.HelpText" xml:space="preserve">
+    <value>Specify where CallButler will store logging information.
+
+Do not store logs - CallButler will not store any logging information.
+
+Store logs in text files - CallButler will write logging information to a series of text files on the hard drive.
+
+Store logs in Windows system event log - CallButler will store logging information in the Windows Event Log.</value>
+  </data>
+  <data name="smoothLabel11.HelpTitle" xml:space="preserve">
+    <value>Log Storage Location</value>
+  </data>
+  <data name="smoothLabel11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 60</value>
+  </data>
+  <data name="smoothLabel11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 13</value>
+  </data>
+  <data name="smoothLabel11.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="smoothLabel11.Text" xml:space="preserve">
+    <value>Log Storage Location</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel11.Name" xml:space="preserve">
+    <value>smoothLabel11</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel11.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel11.Parent" xml:space="preserve">
+    <value>pgLoggingSettings</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel11.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="chkSendErrorReports.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkSendErrorReports.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 160</value>
+  </data>
+  <data name="chkSendErrorReports.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="chkSendErrorReports.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;chkSendErrorReports.Name" xml:space="preserve">
+    <value>chkSendErrorReports</value>
+  </data>
+  <data name="&gt;&gt;chkSendErrorReports.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkSendErrorReports.Parent" xml:space="preserve">
+    <value>pgLoggingSettings</value>
+  </data>
+  <data name="&gt;&gt;chkSendErrorReports.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cboLogLevel.Items" xml:space="preserve">
+    <value>Errors only</value>
+  </data>
+  <data name="cboLogLevel.Items1" xml:space="preserve">
+    <value>Basic information</value>
+  </data>
+  <data name="cboLogLevel.Items2" xml:space="preserve">
+    <value>Detailed information</value>
+  </data>
+  <data name="cboLogLevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 122</value>
+  </data>
+  <data name="cboLogLevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 21</value>
+  </data>
+  <data name="cboLogLevel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;cboLogLevel.Name" xml:space="preserve">
+    <value>cboLogLevel</value>
+  </data>
+  <data name="&gt;&gt;cboLogLevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboLogLevel.Parent" xml:space="preserve">
+    <value>pgLoggingSettings</value>
+  </data>
+  <data name="&gt;&gt;cboLogLevel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="cboLogStorage.Items" xml:space="preserve">
+    <value>Do not store logs</value>
+  </data>
+  <data name="cboLogStorage.Items1" xml:space="preserve">
+    <value>Store logs in text files</value>
+  </data>
+  <data name="cboLogStorage.Items2" xml:space="preserve">
+    <value>Store logs in Windows system event log</value>
+  </data>
+  <data name="cboLogStorage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 76</value>
+  </data>
+  <data name="cboLogStorage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 21</value>
+  </data>
+  <data name="cboLogStorage.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;cboLogStorage.Name" xml:space="preserve">
+    <value>cboLogStorage</value>
+  </data>
+  <data name="&gt;&gt;cboLogStorage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboLogStorage.Parent" xml:space="preserve">
+    <value>pgLoggingSettings</value>
+  </data>
+  <data name="&gt;&gt;cboLogStorage.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="header6.Description" xml:space="preserve">
+    <value>Manage your server's logging settings.</value>
+  </data>
+  <data name="header6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="header6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 0</value>
+  </data>
+  <data name="header6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>492, 47</value>
+  </data>
+  <data name="header6.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="header6.Title" xml:space="preserve">
+    <value>Logging Settings</value>
+  </data>
+  <data name="&gt;&gt;header6.Name" xml:space="preserve">
+    <value>header6</value>
+  </data>
+  <data name="&gt;&gt;header6.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.Header, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;header6.Parent" xml:space="preserve">
+    <value>pgLoggingSettings</value>
+  </data>
+  <data name="&gt;&gt;header6.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="pgLoggingSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgLoggingSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 0</value>
+  </data>
+  <data name="pgLoggingSettings.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 0, 0</value>
+  </data>
+  <data name="pgLoggingSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 305</value>
+  </data>
+  <data name="pgLoggingSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="pgLoggingSettings.Text" xml:space="preserve">
+    <value>Logging</value>
+  </data>
+  <data name="&gt;&gt;pgLoggingSettings.Name" xml:space="preserve">
+    <value>pgLoggingSettings</value>
+  </data>
+  <data name="&gt;&gt;pgLoggingSettings.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgLoggingSettings.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pgLoggingSettings.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnMoveCodecDown.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnMoveCodecDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 122</value>
+  </data>
+  <data name="btnMoveCodecDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 16</value>
+  </data>
+  <data name="btnMoveCodecDown.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="btnMoveCodecDown.Text" xml:space="preserve">
+    <value>Move Down</value>
+  </data>
+  <data name="&gt;&gt;btnMoveCodecDown.Name" xml:space="preserve">
+    <value>btnMoveCodecDown</value>
+  </data>
+  <data name="&gt;&gt;btnMoveCodecDown.Type" xml:space="preserve">
+    <value>Controls.LinkButton, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnMoveCodecDown.Parent" xml:space="preserve">
+    <value>pgCodecSettings</value>
+  </data>
+  <data name="&gt;&gt;btnMoveCodecDown.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnMoveCodecUp.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnMoveCodecUp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 100</value>
+  </data>
+  <data name="btnMoveCodecUp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 16</value>
+  </data>
+  <data name="btnMoveCodecUp.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="btnMoveCodecUp.Text" xml:space="preserve">
+    <value>Move Up</value>
+  </data>
+  <data name="&gt;&gt;btnMoveCodecUp.Name" xml:space="preserve">
+    <value>btnMoveCodecUp</value>
+  </data>
+  <data name="&gt;&gt;btnMoveCodecUp.Type" xml:space="preserve">
+    <value>Controls.LinkButton, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnMoveCodecUp.Parent" xml:space="preserve">
+    <value>pgCodecSettings</value>
+  </data>
+  <data name="&gt;&gt;btnMoveCodecUp.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbCodecs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 100</value>
+  </data>
+  <data name="lbCodecs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 132</value>
+  </data>
+  <data name="lbCodecs.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lbCodecs.Name" xml:space="preserve">
+    <value>lbCodecs</value>
+  </data>
+  <data name="&gt;&gt;lbCodecs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbCodecs.Parent" xml:space="preserve">
+    <value>pgCodecSettings</value>
+  </data>
+  <data name="&gt;&gt;lbCodecs.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label19.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 61</value>
+  </data>
+  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>462, 36</value>
+  </data>
+  <data name="label19.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>You may enable, disable and adjust the priority of audio codecs below. Audio codecs at the top have the highest priority.</value>
+  </data>
+  <data name="&gt;&gt;label19.Name" xml:space="preserve">
+    <value>label19</value>
+  </data>
+  <data name="&gt;&gt;label19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
+    <value>pgCodecSettings</value>
+  </data>
+  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="header9.Description" xml:space="preserve">
+    <value>Manage your servers audio codec settings.</value>
+  </data>
+  <data name="header9.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="header9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 0</value>
+  </data>
+  <data name="header9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>492, 47</value>
+  </data>
+  <data name="header9.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="header9.Title" xml:space="preserve">
+    <value>Audio Codec Settings</value>
+  </data>
+  <data name="&gt;&gt;header9.Name" xml:space="preserve">
+    <value>header9</value>
+  </data>
+  <data name="&gt;&gt;header9.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.Header, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;header9.Parent" xml:space="preserve">
+    <value>pgCodecSettings</value>
+  </data>
+  <data name="&gt;&gt;header9.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="pgCodecSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgCodecSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 0</value>
+  </data>
+  <data name="pgCodecSettings.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 0, 0</value>
+  </data>
+  <data name="pgCodecSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 305</value>
+  </data>
+  <data name="pgCodecSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="pgCodecSettings.Text" xml:space="preserve">
+    <value>Codecs</value>
+  </data>
+  <data name="&gt;&gt;pgCodecSettings.Name" xml:space="preserve">
+    <value>pgCodecSettings</value>
+  </data>
+  <data name="&gt;&gt;pgCodecSettings.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgCodecSettings.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pgCodecSettings.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="smoothLabel8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel8.HelpText" xml:space="preserve">
+    <value>This is volume that Text-To-Speech greetings will be played at. Specifying too high of a value here can result in distortion and make your greetings harder to understand.</value>
+  </data>
+  <data name="smoothLabel8.HelpTitle" xml:space="preserve">
+    <value>Speech Volume</value>
+  </data>
+  <data name="smoothLabel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 190</value>
+  </data>
+  <data name="smoothLabel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 13</value>
+  </data>
+  <data name="smoothLabel8.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="smoothLabel8.Text" xml:space="preserve">
+    <value>Speech Volume</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel8.Name" xml:space="preserve">
+    <value>smoothLabel8</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel8.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel8.Parent" xml:space="preserve">
+    <value>pgAudioSettings</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="smoothLabel7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel7.HelpText" xml:space="preserve">
+    <value>This is volume that voicemails will be recorded at.</value>
+  </data>
+  <data name="smoothLabel7.HelpTitle" xml:space="preserve">
+    <value>Record Volume</value>
+  </data>
+  <data name="smoothLabel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 126</value>
+  </data>
+  <data name="smoothLabel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 13</value>
+  </data>
+  <data name="smoothLabel7.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="smoothLabel7.Text" xml:space="preserve">
+    <value>Record Volume</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel7.Name" xml:space="preserve">
+    <value>smoothLabel7</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel7.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel7.Parent" xml:space="preserve">
+    <value>pgAudioSettings</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="smoothLabel6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel6.HelpText" xml:space="preserve">
+    <value>This is volume that sound based greetings and hold music will be played at. Specifying too high of a value here can result in distortion and make your greetings harder to understand.</value>
+  </data>
+  <data name="smoothLabel6.HelpTitle" xml:space="preserve">
+    <value>Sound Volume</value>
+  </data>
+  <data name="smoothLabel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 62</value>
+  </data>
+  <data name="smoothLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 13</value>
+  </data>
+  <data name="smoothLabel6.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="smoothLabel6.Text" xml:space="preserve">
+    <value>Sound Volume</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel6.Name" xml:space="preserve">
+    <value>smoothLabel6</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel6.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel6.Parent" xml:space="preserve">
+    <value>pgAudioSettings</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel6.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 219</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>pgAudioSettings</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="trkSpeechVolume.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 206</value>
+  </data>
+  <data name="trkSpeechVolume.Size" type="System.Drawing.Size, System.Drawing">
+    <value>336, 45</value>
+  </data>
+  <data name="trkSpeechVolume.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;trkSpeechVolume.Name" xml:space="preserve">
+    <value>trkSpeechVolume</value>
+  </data>
+  <data name="&gt;&gt;trkSpeechVolume.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trkSpeechVolume.Parent" xml:space="preserve">
+    <value>pgAudioSettings</value>
+  </data>
+  <data name="&gt;&gt;trkSpeechVolume.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 155</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>pgAudioSettings</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="trkRecordVolume.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 142</value>
+  </data>
+  <data name="trkRecordVolume.Size" type="System.Drawing.Size, System.Drawing">
+    <value>336, 45</value>
+  </data>
+  <data name="trkRecordVolume.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;trkRecordVolume.Name" xml:space="preserve">
+    <value>trkRecordVolume</value>
+  </data>
+  <data name="&gt;&gt;trkRecordVolume.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trkRecordVolume.Parent" xml:space="preserve">
+    <value>pgAudioSettings</value>
+  </data>
+  <data name="&gt;&gt;trkRecordVolume.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 91</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>pgAudioSettings</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="trkSoundVolume.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 78</value>
+  </data>
+  <data name="trkSoundVolume.Size" type="System.Drawing.Size, System.Drawing">
+    <value>336, 45</value>
+  </data>
+  <data name="trkSoundVolume.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;trkSoundVolume.Name" xml:space="preserve">
+    <value>trkSoundVolume</value>
+  </data>
+  <data name="&gt;&gt;trkSoundVolume.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trkSoundVolume.Parent" xml:space="preserve">
+    <value>pgAudioSettings</value>
+  </data>
+  <data name="&gt;&gt;trkSoundVolume.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="header2.Description" xml:space="preserve">
+    <value>Manage your server's audio settings.</value>
+  </data>
+  <data name="header2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="header2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 0</value>
+  </data>
+  <data name="header2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>492, 47</value>
+  </data>
+  <data name="header2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="header2.Title" xml:space="preserve">
+    <value>Audio Settings</value>
+  </data>
+  <data name="&gt;&gt;header2.Name" xml:space="preserve">
+    <value>header2</value>
+  </data>
+  <data name="&gt;&gt;header2.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.Header, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;header2.Parent" xml:space="preserve">
+    <value>pgAudioSettings</value>
+  </data>
+  <data name="&gt;&gt;header2.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="pgAudioSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgAudioSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 0</value>
+  </data>
+  <data name="pgAudioSettings.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 0, 0</value>
+  </data>
+  <data name="pgAudioSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 305</value>
+  </data>
+  <data name="pgAudioSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="pgAudioSettings.Text" xml:space="preserve">
+    <value>Audio</value>
+  </data>
+  <data name="&gt;&gt;pgAudioSettings.Name" xml:space="preserve">
+    <value>pgAudioSettings</value>
+  </data>
+  <data name="&gt;&gt;pgAudioSettings.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgAudioSettings.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pgAudioSettings.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="smoothLabel5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel5.HelpText" xml:space="preserve">
+    <value>When CallButler uses Text-To-Speech to speak a greeting it will use the voice defined here unless otherwise specified by the greeting itself.</value>
+  </data>
+  <data name="smoothLabel5.HelpTitle" xml:space="preserve">
+    <value>Default Voice</value>
+  </data>
+  <data name="smoothLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 60</value>
+  </data>
+  <data name="smoothLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 13</value>
+  </data>
+  <data name="smoothLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="smoothLabel5.Text" xml:space="preserve">
+    <value>Default Voice</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.Name" xml:space="preserve">
+    <value>smoothLabel5</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.Parent" xml:space="preserve">
+    <value>pgSpeechSettings</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cboDefaultVoice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 76</value>
+  </data>
+  <data name="cboDefaultVoice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 21</value>
+  </data>
+  <data name="cboDefaultVoice.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cboDefaultVoice.Name" xml:space="preserve">
+    <value>cboDefaultVoice</value>
+  </data>
+  <data name="&gt;&gt;cboDefaultVoice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboDefaultVoice.Parent" xml:space="preserve">
+    <value>pgSpeechSettings</value>
+  </data>
+  <data name="&gt;&gt;cboDefaultVoice.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="header7.Description" xml:space="preserve">
+    <value>Manage your Text-To-Speech Settings.</value>
+  </data>
+  <data name="header7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="header7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 0</value>
+  </data>
+  <data name="header7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>492, 47</value>
+  </data>
+  <data name="header7.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="header7.Title" xml:space="preserve">
+    <value>Speech Settings</value>
+  </data>
+  <data name="&gt;&gt;header7.Name" xml:space="preserve">
+    <value>header7</value>
+  </data>
+  <data name="&gt;&gt;header7.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.Header, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;header7.Parent" xml:space="preserve">
+    <value>pgSpeechSettings</value>
+  </data>
+  <data name="&gt;&gt;header7.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pgSpeechSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgSpeechSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 0</value>
+  </data>
+  <data name="pgSpeechSettings.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 0, 0</value>
+  </data>
+  <data name="pgSpeechSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 305</value>
+  </data>
+  <data name="pgSpeechSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="pgSpeechSettings.Text" xml:space="preserve">
+    <value>Speech</value>
+  </data>
+  <data name="&gt;&gt;pgSpeechSettings.Name" xml:space="preserve">
+    <value>pgSpeechSettings</value>
+  </data>
+  <data name="&gt;&gt;pgSpeechSettings.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgSpeechSettings.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pgSpeechSettings.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnAddMusic.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnAddMusic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>289, 278</value>
+  </data>
+  <data name="btnAddMusic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 21</value>
+  </data>
+  <data name="btnAddMusic.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="btnAddMusic.Text" xml:space="preserve">
+    <value>Add Music...</value>
+  </data>
+  <data name="&gt;&gt;btnAddMusic.Name" xml:space="preserve">
+    <value>btnAddMusic</value>
+  </data>
+  <data name="&gt;&gt;btnAddMusic.Type" xml:space="preserve">
+    <value>Controls.LinkButton, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnAddMusic.Parent" xml:space="preserve">
+    <value>pgMusicSettings</value>
+  </data>
+  <data name="&gt;&gt;btnAddMusic.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnRemoveMusic.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnRemoveMusic.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnRemoveMusic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 278</value>
+  </data>
+  <data name="btnRemoveMusic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 21</value>
+  </data>
+  <data name="btnRemoveMusic.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="btnRemoveMusic.Text" xml:space="preserve">
+    <value>Remove Selected</value>
+  </data>
+  <data name="&gt;&gt;btnRemoveMusic.Name" xml:space="preserve">
+    <value>btnRemoveMusic</value>
+  </data>
+  <data name="&gt;&gt;btnRemoveMusic.Type" xml:space="preserve">
+    <value>Controls.LinkButton, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnRemoveMusic.Parent" xml:space="preserve">
+    <value>pgMusicSettings</value>
+  </data>
+  <data name="&gt;&gt;btnRemoveMusic.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbMusic.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="lbMusic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 65</value>
+  </data>
+  <data name="lbMusic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>463, 208</value>
+  </data>
+  <data name="lbMusic.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lbMusic.Name" xml:space="preserve">
+    <value>lbMusic</value>
+  </data>
+  <data name="&gt;&gt;lbMusic.Type" xml:space="preserve">
+    <value>Controls.ListBoxEx, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lbMusic.Parent" xml:space="preserve">
+    <value>pgMusicSettings</value>
+  </data>
+  <data name="&gt;&gt;lbMusic.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="header5.Description" xml:space="preserve">
+    <value>Manage your on hold music.</value>
+  </data>
+  <data name="header5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="header5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 0</value>
+  </data>
+  <data name="header5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>492, 47</value>
+  </data>
+  <data name="header5.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="header5.Title" xml:space="preserve">
+    <value>Hold Music</value>
+  </data>
+  <data name="&gt;&gt;header5.Name" xml:space="preserve">
+    <value>header5</value>
+  </data>
+  <data name="&gt;&gt;header5.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.Header, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;header5.Parent" xml:space="preserve">
+    <value>pgMusicSettings</value>
+  </data>
+  <data name="&gt;&gt;header5.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pgMusicSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgMusicSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 0</value>
+  </data>
+  <data name="pgMusicSettings.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 0, 0</value>
+  </data>
+  <data name="pgMusicSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 305</value>
+  </data>
+  <data name="pgMusicSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="pgMusicSettings.Text" xml:space="preserve">
+    <value>Hold Music</value>
+  </data>
+  <data name="&gt;&gt;pgMusicSettings.Name" xml:space="preserve">
+    <value>pgMusicSettings</value>
+  </data>
+  <data name="&gt;&gt;pgMusicSettings.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgMusicSettings.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pgMusicSettings.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtFromEmailAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 73</value>
+  </data>
+  <data name="txtFromEmailAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 21</value>
+  </data>
+  <data name="txtFromEmailAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;txtFromEmailAddress.Name" xml:space="preserve">
+    <value>txtFromEmailAddress</value>
+  </data>
+  <data name="&gt;&gt;txtFromEmailAddress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtFromEmailAddress.Parent" xml:space="preserve">
+    <value>pgEmailSettings</value>
+  </data>
+  <data name="&gt;&gt;txtFromEmailAddress.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="smoothLabel17.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel17.HelpText" xml:space="preserve">
+    <value>The address Emails will appear to be from.</value>
+  </data>
+  <data name="smoothLabel17.HelpTitle" xml:space="preserve">
+    <value>From Email Address</value>
+  </data>
+  <data name="smoothLabel17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="smoothLabel17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 57</value>
+  </data>
+  <data name="smoothLabel17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 13</value>
+  </data>
+  <data name="smoothLabel17.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="smoothLabel17.Text" xml:space="preserve">
+    <value>From Email Address</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel17.Name" xml:space="preserve">
+    <value>smoothLabel17</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel17.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel17.Parent" xml:space="preserve">
+    <value>pgEmailSettings</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel17.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblSSL.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblSSL.HelpText" xml:space="preserve">
+    <value>Check this if your SMTP server requires SSL encryption to connect. In most cases this will not be selected, but some newer SMTP servers may require this.</value>
+  </data>
+  <data name="lblSSL.HelpTitle" xml:space="preserve">
+    <value>Server Requires SSL</value>
+  </data>
+  <data name="lblSSL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 143</value>
+  </data>
+  <data name="lblSSL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 13</value>
+  </data>
+  <data name="lblSSL.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="lblSSL.Text" xml:space="preserve">
+    <value>Server requires SSL</value>
+  </data>
+  <data name="&gt;&gt;lblSSL.Name" xml:space="preserve">
+    <value>lblSSL</value>
+  </data>
+  <data name="&gt;&gt;lblSSL.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblSSL.Parent" xml:space="preserve">
+    <value>pgEmailSettings</value>
+  </data>
+  <data name="&gt;&gt;lblSSL.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="smoothLabel4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel4.HelpText" xml:space="preserve">
+    <value>Specify your password for this SMTP server. Most SMTP servers require this.</value>
+  </data>
+  <data name="smoothLabel4.HelpTitle" xml:space="preserve">
+    <value>SMTP Password</value>
+  </data>
+  <data name="smoothLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 206</value>
+  </data>
+  <data name="smoothLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 13</value>
+  </data>
+  <data name="smoothLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="smoothLabel4.Text" xml:space="preserve">
+    <value>SMTP Password</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel4.Name" xml:space="preserve">
+    <value>smoothLabel4</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel4.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel4.Parent" xml:space="preserve">
+    <value>pgEmailSettings</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="smoothLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel2.HelpText" xml:space="preserve">
+    <value>Specify your username for this SMTP server. Most SMTP servers require this.</value>
+  </data>
+  <data name="smoothLabel2.HelpTitle" xml:space="preserve">
+    <value>SMTP Username</value>
+  </data>
+  <data name="smoothLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 166</value>
+  </data>
+  <data name="smoothLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 13</value>
+  </data>
+  <data name="smoothLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="smoothLabel2.Text" xml:space="preserve">
+    <value>SMTP Username</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel2.Name" xml:space="preserve">
+    <value>smoothLabel2</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel2.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel2.Parent" xml:space="preserve">
+    <value>pgEmailSettings</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="smoothLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel1.HelpText" xml:space="preserve">
+    <value>Specify the network port used by your SMTP server. In most cases this port is 25 and should not be changed unless you know for certain that it differs.</value>
+  </data>
+  <data name="smoothLabel1.HelpTitle" xml:space="preserve">
+    <value>SMTP Port</value>
+  </data>
+  <data name="smoothLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 97</value>
+  </data>
+  <data name="smoothLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="smoothLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="smoothLabel1.Text" xml:space="preserve">
+    <value>SMTP Port</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel1.Name" xml:space="preserve">
+    <value>smoothLabel1</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel1.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel1.Parent" xml:space="preserve">
+    <value>pgEmailSettings</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="smoothLabel3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel3.HelpText" xml:space="preserve">
+    <value>Specify the name of your Internet SMTP mail server here. In most cases this is similar in form to mail.yourdomain.com or smtp.yourdomain.com.</value>
+  </data>
+  <data name="smoothLabel3.HelpTitle" xml:space="preserve">
+    <value>SMTP Server Name</value>
+  </data>
+  <data name="smoothLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 97</value>
+  </data>
+  <data name="smoothLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 13</value>
+  </data>
+  <data name="smoothLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="smoothLabel3.Text" xml:space="preserve">
+    <value>SMTP Server Name</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel3.Name" xml:space="preserve">
+    <value>smoothLabel3</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel3.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel3.Parent" xml:space="preserve">
+    <value>pgEmailSettings</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnSendTestEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>169, 251</value>
+  </data>
+  <data name="btnSendTestEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 16</value>
+  </data>
+  <data name="btnSendTestEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="btnSendTestEmail.Text" xml:space="preserve">
+    <value>Send a test email...</value>
+  </data>
+  <data name="&gt;&gt;btnSendTestEmail.Name" xml:space="preserve">
+    <value>btnSendTestEmail</value>
+  </data>
+  <data name="&gt;&gt;btnSendTestEmail.Type" xml:space="preserve">
+    <value>Controls.LinkButton, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnSendTestEmail.Parent" xml:space="preserve">
+    <value>pgEmailSettings</value>
+  </data>
+  <data name="&gt;&gt;btnSendTestEmail.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="cbSMTPSSL.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbSMTPSSL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 143</value>
+  </data>
+  <data name="cbSMTPSSL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="cbSMTPSSL.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;cbSMTPSSL.Name" xml:space="preserve">
+    <value>cbSMTPSSL</value>
+  </data>
+  <data name="&gt;&gt;cbSMTPSSL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbSMTPSSL.Parent" xml:space="preserve">
+    <value>pgEmailSettings</value>
+  </data>
+  <data name="&gt;&gt;cbSMTPSSL.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="numSMTPPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 114</value>
+  </data>
+  <data name="numSMTPPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 21</value>
+  </data>
+  <data name="numSMTPPort.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;numSMTPPort.Name" xml:space="preserve">
+    <value>numSMTPPort</value>
+  </data>
+  <data name="&gt;&gt;numSMTPPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numSMTPPort.Parent" xml:space="preserve">
+    <value>pgEmailSettings</value>
+  </data>
+  <data name="&gt;&gt;numSMTPPort.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="txtSMTPPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 222</value>
+  </data>
+  <data name="txtSMTPPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 21</value>
+  </data>
+  <data name="txtSMTPPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;txtSMTPPassword.Name" xml:space="preserve">
+    <value>txtSMTPPassword</value>
+  </data>
+  <data name="&gt;&gt;txtSMTPPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtSMTPPassword.Parent" xml:space="preserve">
+    <value>pgEmailSettings</value>
+  </data>
+  <data name="&gt;&gt;txtSMTPPassword.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="txtSMTPUsername.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 182</value>
+  </data>
+  <data name="txtSMTPUsername.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 21</value>
+  </data>
+  <data name="txtSMTPUsername.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;txtSMTPUsername.Name" xml:space="preserve">
+    <value>txtSMTPUsername</value>
+  </data>
+  <data name="&gt;&gt;txtSMTPUsername.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtSMTPUsername.Parent" xml:space="preserve">
+    <value>pgEmailSettings</value>
+  </data>
+  <data name="&gt;&gt;txtSMTPUsername.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="txtSMTPServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 113</value>
+  </data>
+  <data name="txtSMTPServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 21</value>
+  </data>
+  <data name="txtSMTPServer.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txtSMTPServer.Name" xml:space="preserve">
+    <value>txtSMTPServer</value>
+  </data>
+  <data name="&gt;&gt;txtSMTPServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtSMTPServer.Parent" xml:space="preserve">
+    <value>pgEmailSettings</value>
+  </data>
+  <data name="&gt;&gt;txtSMTPServer.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="header1.Description" xml:space="preserve">
+    <value>Manage your SMTP Email Server settings.</value>
+  </data>
+  <data name="header1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="header1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 0</value>
+  </data>
+  <data name="header1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>492, 47</value>
+  </data>
+  <data name="header1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="header1.Title" xml:space="preserve">
+    <value>Email Settings</value>
+  </data>
+  <data name="&gt;&gt;header1.Name" xml:space="preserve">
+    <value>header1</value>
+  </data>
+  <data name="&gt;&gt;header1.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.Header, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;header1.Parent" xml:space="preserve">
+    <value>pgEmailSettings</value>
+  </data>
+  <data name="&gt;&gt;header1.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="pgEmailSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgEmailSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 0</value>
+  </data>
+  <data name="pgEmailSettings.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 0, 0</value>
+  </data>
+  <data name="pgEmailSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 305</value>
+  </data>
+  <data name="pgEmailSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="pgEmailSettings.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="&gt;&gt;pgEmailSettings.Name" xml:space="preserve">
+    <value>pgEmailSettings</value>
+  </data>
+  <data name="&gt;&gt;pgEmailSettings.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgEmailSettings.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pgEmailSettings.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblRemoteManagement.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblRemoteManagement.HelpText" xml:space="preserve">
+    <value>Check this if you want to allow this CallButler service to be managed from remote computers. If this is not checked, CallButler will only allow this instance of CallButler to managed from the same computer it is installed on.</value>
+  </data>
+  <data name="lblRemoteManagement.HelpTitle" xml:space="preserve">
+    <value>Allow Remote Management</value>
+  </data>
+  <data name="lblRemoteManagement.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblRemoteManagement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 169</value>
+  </data>
+  <data name="lblRemoteManagement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 13</value>
+  </data>
+  <data name="lblRemoteManagement.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="lblRemoteManagement.Text" xml:space="preserve">
+    <value>Allow management from other computers</value>
+  </data>
+  <data name="&gt;&gt;lblRemoteManagement.Name" xml:space="preserve">
+    <value>lblRemoteManagement</value>
+  </data>
+  <data name="&gt;&gt;lblRemoteManagement.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblRemoteManagement.Parent" xml:space="preserve">
+    <value>pgSecurity</value>
+  </data>
+  <data name="&gt;&gt;lblRemoteManagement.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cbEnableManagement.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbEnableManagement.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="cbEnableManagement.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbEnableManagement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 169</value>
+  </data>
+  <data name="cbEnableManagement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="cbEnableManagement.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;cbEnableManagement.Name" xml:space="preserve">
+    <value>cbEnableManagement</value>
+  </data>
+  <data name="&gt;&gt;cbEnableManagement.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbEnableManagement.Parent" xml:space="preserve">
+    <value>pgSecurity</value>
+  </data>
+  <data name="&gt;&gt;cbEnableManagement.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="smoothLabel13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel13.HelpText" xml:space="preserve">
+    <value>Specify a password here if you would like to require that a password be entered before allowing a user to connect to and manage this CallButler service.</value>
+  </data>
+  <data name="smoothLabel13.HelpTitle" xml:space="preserve">
+    <value>Management Password</value>
+  </data>
+  <data name="smoothLabel13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 65</value>
+  </data>
+  <data name="smoothLabel13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 13</value>
+  </data>
+  <data name="smoothLabel13.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="smoothLabel13.Text" xml:space="preserve">
+    <value>Management Password</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel13.Name" xml:space="preserve">
+    <value>smoothLabel13</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel13.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel13.Parent" xml:space="preserve">
+    <value>pgSecurity</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel13.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtManagementConfirmPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 131</value>
+  </data>
+  <data name="txtManagementConfirmPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 21</value>
+  </data>
+  <data name="txtManagementConfirmPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txtManagementConfirmPassword.Name" xml:space="preserve">
+    <value>txtManagementConfirmPassword</value>
+  </data>
+  <data name="&gt;&gt;txtManagementConfirmPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtManagementConfirmPassword.Parent" xml:space="preserve">
+    <value>pgSecurity</value>
+  </data>
+  <data name="&gt;&gt;txtManagementConfirmPassword.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 115</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 13</value>
+  </data>
+  <data name="label14.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>pgSecurity</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txtManagementPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 81</value>
+  </data>
+  <data name="txtManagementPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 21</value>
+  </data>
+  <data name="txtManagementPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtManagementPassword.Name" xml:space="preserve">
+    <value>txtManagementPassword</value>
+  </data>
+  <data name="&gt;&gt;txtManagementPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtManagementPassword.Parent" xml:space="preserve">
+    <value>pgSecurity</value>
+  </data>
+  <data name="&gt;&gt;txtManagementPassword.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="header4.Description" xml:space="preserve">
+    <value>Manage your security settings.</value>
+  </data>
+  <data name="header4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="header4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 0</value>
+  </data>
+  <data name="header4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>492, 47</value>
+  </data>
+  <data name="header4.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="header4.Title" xml:space="preserve">
+    <value>Security Settings</value>
+  </data>
+  <data name="&gt;&gt;header4.Name" xml:space="preserve">
+    <value>header4</value>
+  </data>
+  <data name="&gt;&gt;header4.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.Header, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;header4.Parent" xml:space="preserve">
+    <value>pgSecurity</value>
+  </data>
+  <data name="&gt;&gt;header4.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="pgSecurity.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgSecurity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 0</value>
+  </data>
+  <data name="pgSecurity.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 0, 0</value>
+  </data>
+  <data name="pgSecurity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 305</value>
+  </data>
+  <data name="pgSecurity.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="pgSecurity.Text" xml:space="preserve">
+    <value>Security</value>
+  </data>
+  <data name="&gt;&gt;pgSecurity.Name" xml:space="preserve">
+    <value>pgSecurity</value>
+  </data>
+  <data name="&gt;&gt;pgSecurity.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgSecurity.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pgSecurity.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="wizard.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizard.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="wizard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 22</value>
+  </data>
+  <data name="wizard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>627, 353</value>
+  </data>
+  <data name="wizard.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="wizard.TablPanelTopMargin" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="wizard.TabPanelWidth" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="wizard.TabWidth" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="&gt;&gt;wizard.Name" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;wizard.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.Wizard, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizard.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;wizard.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>549, 3</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnApply.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnApply.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnApply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>468, 3</value>
+  </data>
+  <data name="btnApply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnApply.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnApply.Text" xml:space="preserve">
+    <value>&amp;Apply</value>
+  </data>
+  <data name="&gt;&gt;btnApply.Name" xml:space="preserve">
+    <value>btnApply</value>
+  </data>
+  <data name="&gt;&gt;btnApply.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnApply.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnApply.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 375</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>627, 26</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="openMusicDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="openMusicDialog.Filter" xml:space="preserve">
+    <value>Music Files (*.MP3, *.WAV)|*.mp3;*.wav</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.HeaderCaption" xml:space="preserve">
+    <value>Manage your general system settings</value>
+  </data>
+  <data name="$this.HeaderTitle" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>627, 401</value>
+  </data>
+  <data name="&gt;&gt;openMusicDialog.Name" xml:space="preserve">
+    <value>openMusicDialog</value>
+  </data>
+  <data name="&gt;&gt;openMusicDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>SettingsView</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>CallButler.Manager.ViewControls.ViewControlBase, CallButler Manager, Version=1.8.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

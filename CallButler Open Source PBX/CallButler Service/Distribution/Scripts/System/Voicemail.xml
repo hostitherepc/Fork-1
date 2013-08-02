@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IML Description="Voicemail System" AutoStop="true">
+	<GlobalPage />
+	<Page ID="aa169d40-8c60-4379-9203-377172b7630d" Description="Hold">
+		<Delay DelayTime="1000" />
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Find Extension.snd</ExternalAction>
+		<PlayMusic Location="#HoldMusicLocation#" IncludeSubFolders="true" />
+		<TimeoutEvent Duration="120" WaitForPageActions="true">
+			<ExternalAction Action="CALLBUTLERINTERNAL_EndExtensionFinder" Async="false" />
+			<GotoPage PageID="SoundGreeting" PageName="Greeting" />
+		</TimeoutEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_ExtensionNotAvailable">
+			<GotoPage PageID="SoundGreeting" PageName="Greeting" />
+		</ExternalEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_CallForwarded">
+			<GotoPage PageID="29b32683-ee58-42cd-9336-62ebe14d9bc4" PageName="Forward Call" />
+		</ExternalEvent>
+		<DTMFEvent Digits="1">
+			<ExternalAction Action="CALLBUTLERINTERNAL_EndExtensionFinder" Async="false" />
+			<GotoPage PageID="SoundGreeting" PageName="Greeting" />
+		</DTMFEvent>
+		<DTMFEvent Digits="^0$">
+			<GotoPage PageID="0aca7186-6752-4f1b-b515-6007934f4e2f" PageName="Transfer to Operator" />
+		</DTMFEvent>
+		<DTMFEvent Digits="^\*$">
+			<ExternalAction Action="CALLBUTLERINTERNAL_EndExtensionFinder" Async="false" />
+			<ExternalAction Action="CALLBUTLERINTERNAL_VoicemailManagement" Async="false" />
+		</DTMFEvent>
+		<HangupEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_EndExtensionFinder" Async="false" />
+		</HangupEvent>
+		<TransferFailedEvent>
+			<GotoPage PageID="SoundGreeting" PageName="Greeting" />
+		</TransferFailedEvent>
+	</Page>
+	<Page ID="SoundGreeting" Description="Greeting">
+		<SetVariable Name="VoicemailID" EnableEval="false">@GUID@</SetVariable>
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlayGreeting" Async="false">#ExtensionID#</ExternalAction>
+		<GotoPage PageID="29093012-441e-4562-a7f2-595d6b112f76" PageName="Start Menu" />
+		<DTMFEvent Digits="^\*$">
+			<ExternalAction Action="CALLBUTLERINTERNAL_VoicemailManagement" Async="false" />
+		</DTMFEvent>
+		<InvalidInputEvent>
+			<GotoPage PageID="f38df1d1-b09b-4fdf-b68f-7bf1b52454bd" PageName="Record Voicemail" />
+		</InvalidInputEvent>
+	</Page>
+	<Page ID="29093012-441e-4562-a7f2-595d6b112f76" Description="Start Menu">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">VM Start Menu.snd</ExternalAction>
+		<Delay DelayTime="2000" />
+		<GotoPage PageID="f38df1d1-b09b-4fdf-b68f-7bf1b52454bd" PageName="Record Voicemail" />
+		<DTMFEvent Digits="^\*$">
+			<ExternalAction Action="CALLBUTLERINTERNAL_VoicemailManagement" Async="false" />
+		</DTMFEvent>
+		<InvalidInputEvent>
+			<GotoPage PageID="f38df1d1-b09b-4fdf-b68f-7bf1b52454bd" PageName="Record Voicemail" />
+		</InvalidInputEvent>
+	</Page>
+	<Page ID="f38df1d1-b09b-4fdf-b68f-7bf1b52454bd" Description="Record Voicemail">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Beep.snd</ExternalAction>
+		<SetVariable Name="RecordingFile" EnableEval="false">#VoicemailRootFolder#\#ExtensionID#\#VoicemailID#.snd</SetVariable>
+		<StartRecording Location="#RecordingFile#" Format="WAV" />
+		<DTMFEvent Digits="#">
+			<StopRecording>@CallerDisplayName@
+@CallerUsername@
+@CallerHost@
+@FileTime@</StopRecording>
+			<GotoPage PageID="db382106-a5a8-40dc-ade8-ddc3bb2a66e1" PageName="End Menu" />
+		</DTMFEvent>
+		<HangupEvent>
+			<StopRecording>@CallerDisplayName@
+@CallerUsername@
+@CallerHost@
+@FileTime@</StopRecording>
+			<GotoPage PageID="54babce7-be40-41fb-9a0f-837ddc2332a3" PageName="Save Voicemail" />
+		</HangupEvent>
+	</Page>
+	<Page ID="db382106-a5a8-40dc-ade8-ddc3bb2a66e1" Description="End Menu">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">VM End Menu.snd</ExternalAction>
+		<DTMFEvent Digits="1">
+			<PlaySound Location="#RecordingFile#" />
+			<GotoPage PageID="db382106-a5a8-40dc-ade8-ddc3bb2a66e1" PageName="End Menu" />
+		</DTMFEvent>
+		<DTMFEvent Digits="2">
+			<DeleteLastRecording />
+			<GotoPage PageID="29093012-441e-4562-a7f2-595d6b112f76" PageName="Start Menu" />
+		</DTMFEvent>
+		<HangupEvent>
+			<GotoPage PageID="54babce7-be40-41fb-9a0f-837ddc2332a3" PageName="Save Voicemail" />
+		</HangupEvent>
+		<InvalidInputEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Not understood.snd</ExternalAction>
+			<GotoPage PageID="db382106-a5a8-40dc-ade8-ddc3bb2a66e1" PageName="End Menu" />
+		</InvalidInputEvent>
+	</Page>
+	<Page ID="54babce7-be40-41fb-9a0f-837ddc2332a3" Description="Save Voicemail">
+		<ExternalAction Action="CALLBUTLERINTERNAL_NewVoicemail" Async="false">#VoicemailID#</ExternalAction>
+	</Page>
+	<Page ID="0aca7186-6752-4f1b-b515-6007934f4e2f" Description="Transfer to Operator">
+		<ExternalAction Action="CALLBUTLERINTERNAL_EndExtensionFinder" Async="false" />
+		<Delay DelayTime="1000" />
+		<TransferCall TransferTo="0" IsExtension="true" UseBridge="false" />
+		<TransferFailedEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Number cannot be reached.snd
+</ExternalAction>
+			<GotoPage PageID="SoundGreeting" PageName="Greeting" />
+		</TransferFailedEvent>
+	</Page>
+	<Page ID="29b32683-ee58-42cd-9336-62ebe14d9bc4" Description="Forward Call">
+		<ExternalAction Action="CALLBUTLERINTERNAL_EndExtensionFinder" Async="false" />
+		<Delay DelayTime="1000" />
+		<TransferCall TransferTo="#TransferNumber#" IsExtension="true" UseBridge="false" />
+		<TransferFailedEvent>
+			<GotoPage PageID="SoundGreeting" PageName="Greeting" />
+		</TransferFailedEvent>
+	</Page>
+</IML>

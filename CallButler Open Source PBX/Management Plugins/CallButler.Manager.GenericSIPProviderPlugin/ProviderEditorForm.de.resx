@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblSipRegistration.HelpText" xml:space="preserve">
+    <value>Die meisten VoIP-Provider benötigen eine SIP-Registrierung, um eingehende Anrufe zu empfangen. Sollten Sie jedoch einen VoIP-Provider kennen, der keine SIP-Registrierung erfordert, können Sie dies abschalten, um Netzwerktraffic einzusparen.</value>
+  </data>
+  <data name="lblSipRegistration.HelpTitle" xml:space="preserve">
+    <value>SIP-Registrierung einschalten</value>
+  </data>
+  <data name="lblSipRegistration.Text" xml:space="preserve">
+    <value>SIP-Registrierung einschalten</value>
+  </data>
+  <data name="smoothLabel7.HelpText" xml:space="preserve">
+    <value>Definieren Sie den von Ihrem Provider benannten SIP-Registrar. Meistens ist es der gleiche Wert wie bei Domain/Realm und Proxy-Server. Dieser Wert ähnelt meistens dem Wert sip.domain.com.
+
+Dieses Feld wird für den Wert "sip.domain.com" verwendet, welches als URI in SIP-Nachrichten mitgesendet wird. z.B.  "BildschirmName" &lt;sip:Benutzername@sip.domain.com&gt;</value>
+  </data>
+  <data name="smoothLabel7.HelpTitle" xml:space="preserve">
+    <value>SIP Registrar-Server</value>
+  </data>
+  <data name="smoothLabel7.Text" xml:space="preserve">
+    <value>SIP Registrar-Server</value>
+  </data>
+  <data name="smoothLabel6.HelpText" xml:space="preserve">
+    <value>Tragen Sie hier den von Ihrem Provider benannten SIP Proxy-Server ein. In den meisten Fällen ist dieser Wert identisch mit Domain/Realm und Proxy-Server. Der Wert ähnelt sip.domain.com.
+
+Dieses Feld wird für den Wert "sip.domain.com" verwendet, welches als URI in SIP-Nachrichten mitgesendet wird. z.B.  "BildschirmName" &lt;sip:Benutzername@sip.domain.com&gt;</value>
+  </data>
+  <data name="smoothLabel6.HelpTitle" xml:space="preserve">
+    <value>SIP Proxy-Server</value>
+  </data>
+  <data name="smoothLabel6.Text" xml:space="preserve">
+    <value>SIP Proxy-Server</value>
+  </data>
+  <data name="smoothLabel5.HelpText" xml:space="preserve">
+    <value>Tragen Sie hier die von Ihrem Provider benannte Domain oder Realm ein.   Dieser Wert entspricht in den meisten Fällen dem Proxy-Server und sieht so ähnlich wie sip.domain.com aus.
+
+Dieses Feld wird für den Wert "sip.domain.com" verwendet, welches als URI in SIP-Nachrichten mitgesendet wird. z.B.  "BildschirmName" &lt;sip:Benutzername@sip.domain.com&gt;</value>
+  </data>
+  <data name="smoothLabel5.HelpTitle" xml:space="preserve">
+    <value>Provider Domain/Realm</value>
+  </data>
+  <data name="smoothLabel5.Text" xml:space="preserve">
+    <value>Provider Domain/Realm</value>
+  </data>
+  <data name="wizardHeader2.Description" xml:space="preserve">
+    <value>Bitte tragen Sie die Netzwerkeinstellungen ein, um sich mit dem Provider zu verbinden</value>
+  </data>
+  <data name="wizardHeader2.SubTitle" xml:space="preserve">
+    <value>Netzwerkeinstellungen</value>
+  </data>
+  <data name="wizardHeader2.Title" xml:space="preserve">
+    <value>VoIP-Provider</value>
+  </data>
+  <data name="pgNetwork.Text" xml:space="preserve">
+    <value>Netzwerkeinstellungen</value>
+  </data>
+  <data name="smoothLabel4.HelpText" xml:space="preserve">
+    <value>Tragen Sie hier das von Ihrem Provider benannte Passwort ein.</value>
+  </data>
+  <data name="smoothLabel4.HelpTitle" xml:space="preserve">
+    <value>Authorisierungs-Passwort</value>
+  </data>
+  <data name="smoothLabel4.Text" xml:space="preserve">
+    <value>Authorisierungs-Passwort</value>
+  </data>
+  <data name="smoothLabel3.HelpText" xml:space="preserve">
+    <value>Tragen Sie hier den vom Provider benannten Authorisierten Benutzernamen ein. In den meisten Fällen ist dieser identisch mit den Telefon-oder Benutzernamen auf der vorigen Seite.
+</value>
+  </data>
+  <data name="smoothLabel3.HelpTitle" xml:space="preserve">
+    <value>Authorisierungs-Benutzername</value>
+  </data>
+  <data name="smoothLabel3.Text" xml:space="preserve">
+    <value>Authorisierungs-Benutzername</value>
+  </data>
+  <data name="wizardHeader3.Description" xml:space="preserve">
+    <value>Bitte tragen Sie hier Ihre vertraulichen Daten ein, um sich mit dem Provider zu verbinden</value>
+  </data>
+  <data name="wizardHeader3.SubTitle" xml:space="preserve">
+    <value>Autorisierung</value>
+  </data>
+  <data name="wizardHeader3.Title" xml:space="preserve">
+    <value>VoIP-Provider</value>
+  </data>
+  <data name="pgAuth.Text" xml:space="preserve">
+    <value>Authorisierung</value>
+  </data>
+  <data name="lblEnableProvider.HelpText" xml:space="preserve">
+    <value>Markieren Sie hier, wenn Sie eingehende Anrufe von diesem Provider zulassen.</value>
+  </data>
+  <data name="lblEnableProvider.HelpTitle" xml:space="preserve">
+    <value>Aktiviere diesen Provider</value>
+  </data>
+  <data name="lblEnableProvider.Text" xml:space="preserve">
+    <value>Aktiviere diesen Provider</value>
+  </data>
+  <data name="smoothLabel2.HelpText" xml:space="preserve">
+    <value>Tragen Sie hier von Ihrem Provider benannte Telefonnummer bzw. Benutzername ein. In den meisten Fällen entspricht dies der Telefonnummer ohne Sonder/Leerzeichen, dennoch gibt es auch Provider, die spezielle Benutzernamen festlegen.
+
+Dieses Feld wird für den Wert "sip.domain.com" verwendet, welches als URI in SIP-Nachrichten mitgesendet wird. z.B.  "BildschirmName" &lt;sip:Benutzername@sip.domain.com&gt;</value>
+  </data>
+  <data name="smoothLabel2.HelpTitle" xml:space="preserve">
+    <value>Telefonnummer oder Benutzername</value>
+  </data>
+  <data name="smoothLabel2.Text" xml:space="preserve">
+    <value>Telefonnummer oder Benutzername</value>
+  </data>
+  <data name="smoothLabel1.HelpText" xml:space="preserve">
+    <value>Tragen Sie den Namen ein, welchen die Anrufer sehen sollen, wenn Sie über CallButler telefonieren. Normalerweise kann das ein beliebiger Name sein, aber es gibt auch VoIP-Provider, die einen bestimmten Wert erwarten.
+
+Dieses Feld wird für den Wert "sip.domain.com" verwendet, welches als URI in SIP-Nachrichten mitgesendet wird. z.B.  "BildschirmName" &lt;sip:Benutzername@sip.domain.com&gt;
+
+Achtung: Manche VoIP-Provider ignorieren diesen Eintrag und überschreiben Iihre Einstellung.</value>
+  </data>
+  <data name="smoothLabel1.HelpTitle" xml:space="preserve">
+    <value>Bildschirmname (AnruferID)</value>
+  </data>
+  <data name="smoothLabel1.Text" xml:space="preserve">
+    <value>Bildschirmname (AnruferID)</value>
+  </data>
+  <data name="lblContinueCall.HelpText" xml:space="preserve">
+    <value>Tragen Sie hier den Namen des Providers ein. Dies ist nur für interne Zwecke und beeinflusst die Providereinstellungen nicht.</value>
+  </data>
+  <data name="lblContinueCall.HelpTitle" xml:space="preserve">
+    <value>Providername</value>
+  </data>
+  <data name="lblContinueCall.Text" xml:space="preserve">
+    <value>Providername</value>
+  </data>
+  <data name="wizardHeader1.Description" xml:space="preserve">
+    <value>Bitte tragen Sie den Providernamen, AnruferID und Telefonnummer ein</value>
+  </data>
+  <data name="wizardHeader1.SubTitle" xml:space="preserve">
+    <value>Allgemeine Einstellungen</value>
+  </data>
+  <data name="wizardHeader1.Title" xml:space="preserve">
+    <value>VoIP-Provider</value>
+  </data>
+  <data name="pgGeneral.Text" xml:space="preserve">
+    <value>Allgemeine Einstellungen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Provider</value>
+  </data>
+</root>

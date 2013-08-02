@@ -1,0 +1,465 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{852CA2FA-FA8E-43CA-ACAE-20AE01AB4186}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CallButler.Manager.Controls</RootNamespace>
+    <AssemblyName>CallButler.Manager.Controls</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WOSI.Utilities.Sound, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\WOSI.Utilities.Sound.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CallButlerDialogFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CallButlerDialogFormBase.Designer.cs">
+      <DependentUpon>CallButlerDialogFormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CallFlowItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CallFlowItem.Designer.cs">
+      <DependentUpon>CallFlowItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataEditorWizardFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataEditorWizardFormBase.Designer.cs">
+      <DependentUpon>DataEditorWizardFormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtensionContactControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExtensionContactControl.Designer.cs">
+      <DependentUpon>ExtensionContactControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindMeNumberDiagramShape.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FindMeNumberDiagramShape.Designer.cs">
+      <DependentUpon>FindMeNumberDiagramShape.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GreetingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GreetingControl.designer.cs">
+      <DependentUpon>GreetingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\LocalizedStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocalizedStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="QuickTipsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuickTipsControl.Designer.cs">
+      <DependentUpon>QuickTipsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScheduleControl.designer.cs">
+      <DependentUpon>ScheduleControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VoicemailControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VoicemailControl.Designer.cs">
+      <DependentUpon>VoicemailControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CallButlerDataGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CallButlerEditDataGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VoicemailDiagramShape.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VoicemailDiagramShape.Designer.cs">
+      <DependentUpon>VoicemailDiagramShape.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WizardHeader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WizardHeader.Designer.cs">
+      <DependentUpon>WizardHeader.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CallButlerDataGrid.de.resx">
+      <DependentUpon>CallButlerDataGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CallButlerDialogFormBase.de.resx">
+      <DependentUpon>CallButlerDialogFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CallButlerDialogFormBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CallButlerDialogFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CallFlowItem.de.resx">
+      <DependentUpon>CallFlowItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CallFlowItem.resx">
+      <DependentUpon>CallFlowItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEditorWizardFormBase.de.resx">
+      <DependentUpon>DataEditorWizardFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEditorWizardFormBase.resx">
+      <DependentUpon>DataEditorWizardFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtensionContactControl.de.resx">
+      <DependentUpon>ExtensionContactControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtensionContactControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExtensionContactControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindMeNumberDiagramShape.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FindMeNumberDiagramShape.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GreetingControl.de.resx">
+      <DependentUpon>GreetingControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GreetingControl.resx">
+      <DependentUpon>GreetingControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\LocalizedStrings.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LocalizedStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuickTipsControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QuickTipsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleControl.de.resx">
+      <DependentUpon>ScheduleControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleControl.resx">
+      <DependentUpon>ScheduleControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VoicemailControl.de.resx">
+      <DependentUpon>VoicemailControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VoicemailControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VoicemailControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CallButlerDataGrid.resx">
+      <DependentUpon>CallButlerDataGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VoicemailDiagramShape.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VoicemailDiagramShape.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WizardHeader.de.resx">
+      <DependentUpon>WizardHeader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WizardHeader.resx">
+      <DependentUpon>WizardHeader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_down_blue_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_up_blue_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\branch_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\branch_48_shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\call_greeting_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\column_chart_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\connection_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\date_time_48_shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disk_blue_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divider_line.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\earth2_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\earth2_32_shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\earth_add_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_music_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gauge_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear_find_48_shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id_card_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id_card_32_shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\import_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loudspeaker_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail_earth_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mailbox_full_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mailbox_full_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mailbox_full_48_shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\media_play_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\media_record_red_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\media_step_back_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\media_step_forward_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\media_stop_red_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate_left2_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate_left_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate_right2_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate_right_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\office_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone_button_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pick_up_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plug_delete_48_shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\provider_connection_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scroll_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select_all_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select_inverse_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select_none_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telephone_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telephone_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telephone_48_shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_loudspeaker_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wizard_header.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controls.Diagram\Controls.Diagram.csproj">
+      <Project>{7F536F29-7BB7-49BD-B920-6448B8D4BAB9}</Project>
+      <Name>Controls.Diagram</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Controls\Controls.csproj">
+      <Project>{DBB6EEEC-0447-4F03-ABCE-0B4B6DDEEF67}</Project>
+      <Name>Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities.ContactManagement\Utilities.ContactManagement.csproj">
+      <Project>{0305C3BE-C55E-4519-AEE3-5166195A0F6A}</Project>
+      <Name>Utilities.ContactManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{48E06473-9007-4DA4-AD30-C97B702EFCC2}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CallButler.Data\CallButler.Data.csproj">
+      <Project>{D1AE6677-AEA4-4D16-9EA1-BCEA0C4B13BA}</Project>
+      <Name>CallButler.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CallButler.ManagementInterface\CallButler.ManagementInterface.csproj">
+      <Project>{B1DE2AA9-A6B7-4B85-A4C1-A62B8C6140FF}</Project>
+      <Name>CallButler.ManagementInterface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Small_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message_information_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outlook_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\user1_mobilephone_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wizard_header1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

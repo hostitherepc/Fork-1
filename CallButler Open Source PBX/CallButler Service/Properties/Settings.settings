@@ -1,0 +1,239 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CallButler.Service.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DataProviderType" Type="WOSI.CallButler.Data.LocalCallButlerDataProviderTypes" Scope="Application">
+      <Value Profile="(Default)">XmlDataProvider</Value>
+    </Setting>
+    <Setting Name="XmlDataRootDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\Data</Value>
+    </Setting>
+    <Setting Name="GreetingSoundRootDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\Sounds\Greetings</Value>
+    </Setting>
+    <Setting Name="CustomerID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="SipPort" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5060</Value>
+    </Setting>
+    <Setting Name="StunServer" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UseStun" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="LineCount" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">6</Value>
+    </Setting>
+    <Setting Name="LogDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\Logs</Value>
+    </Setting>
+    <Setting Name="SMTPServer" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SMTPPort" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">25</Value>
+    </Setting>
+    <Setting Name="SMTPUseSSL" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SMTPUsername" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SMTPPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="LicenseName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="LicenseKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SystemSoundRootDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\Sounds\System</Value>
+    </Setting>
+    <Setting Name="ImlPluginsFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\Plugins</Value>
+    </Setting>
+    <Setting Name="Multilingual" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DefaultLanguage" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Languages" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ServiceEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="VoicemailRootDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\Voicemail</Value>
+    </Setting>
+    <Setting Name="SoundVolume" Type="System.Byte" Scope="User">
+      <Value Profile="(Default)">35</Value>
+    </Setting>
+    <Setting Name="RecordVolume" Type="System.Byte" Scope="User">
+      <Value Profile="(Default)">255</Value>
+    </Setting>
+    <Setting Name="SpeechVolume" Type="System.Byte" Scope="User">
+      <Value Profile="(Default)">35</Value>
+    </Setting>
+    <Setting Name="HoldMusicRootDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\Music</Value>
+    </Setting>
+    <Setting Name="SystemScriptsRootDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\Scripts\System</Value>
+    </Setting>
+    <Setting Name="SMTPEmailFrom" Type="System.String" Scope="User">
+      <Value Profile="(Default)">mailer@callbutler.com</Value>
+    </Setting>
+    <Setting Name="ManagementPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ExpertMode" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="FirstTimeRun" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="LogStorage" Type="WOSI.CallButler.ManagementInterface.LogStorage" Scope="User">
+      <Value Profile="(Default)">SystemEventLog</Value>
+    </Setting>
+    <Setting Name="LoggingLevel" Type="WOSI.CallButler.ManagementInterface.LogLevel" Scope="User">
+      <Value Profile="(Default)">ErrorsOnly</Value>
+    </Setting>
+    <Setting Name="DefaultTTSVoice" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SqlConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ApplicationVersion" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ReportErrors" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="UseBridgedTransfers" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CallButlerManagementAppLocation" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">..\Management\CallButler Manager.exe</Value>
+    </Setting>
+    <Setting Name="PluginDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\Plugins</Value>
+    </Setting>
+    <Setting Name="DownloadRegistered" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ManagementServicePort" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">30872</Value>
+    </Setting>
+    <Setting Name="EnableRemoteManagement" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ClientServicePort" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">30874</Value>
+    </Setting>
+    <Setting Name="FindMePluginData" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;PhonospherePBX&lt;/string&gt;
+  &lt;string&gt;w0sInc06&lt;/string&gt;
+  &lt;string&gt;https://ws.myiotum.com:4849/RPC2&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="AnswerTimeout" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="WelcomeGreetingDelay" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1000</Value>
+    </Setting>
+    <Setting Name="UseInternalAddressForSIPMessages" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ProductID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CB-ULM-1B</Value>
+    </Setting>
+    <Setting Name="SendLogErrorEmails" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="LogErrorEmailAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CallRecordingSoundPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\Recordings</Value>
+    </Setting>
+    <Setting Name="PresenceTimeout" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="SIPRegistrarDomain" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CallBlastTimeout" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="AllowOutboundDialing" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="OutboundDialingPrefix" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TryReceptionistFirst" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CallConnectorQueuePeriod" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">5000</Value>
+    </Setting>
+    <Setting Name="ReceptionistExtensionID" Type="System.Guid" Scope="User">
+      <Value Profile="(Default)">00000000-0000-0000-0000-000000000000</Value>
+    </Setting>
+    <Setting Name="EnableCallHistory" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="EnablePBX" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="BusyRedirectServer" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="EnablePerformanceCounters" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SendDTMFInAudio" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ForceDefaultProviderForOutboundCalls" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AudioCodecs" Type="CallButler.Telecom.AudioCodecInformation[]" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="GreetingRecordingTempPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\Sounds\Temp</Value>
+    </Setting>
+    <Setting Name="AutoForwardFaxTo" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="InternalSIPDomain" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="EnableKinesisServer" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="CustomCallScreeningPrompt" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CustomIncomingCallerID" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CustomIncomingCallerNumber" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DTMFTimeoutInMs" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2000</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

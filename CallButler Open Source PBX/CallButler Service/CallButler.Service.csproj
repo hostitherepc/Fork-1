@@ -1,0 +1,283 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>Distribution\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <DefineConstants>SIP_BUILD</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EEE21BD8-26BD-49D4-A7A5-1355FC46D4D6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CallButler.Service</RootNamespace>
+    <AssemblyName>CallButler Service</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ApplicationIcon>callbutler.ico</ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Distribution\</OutputPath>
+    <DefineConstants>TRACE;SIP_BUILD</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WOSI.IVR.IML, Version=1.0.1.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\WOSI.IVR.IML.dll</HintPath>
+    </Reference>
+    <Reference Include="WOSI.NET.inTELIPhone, Version=1.1.13.0, Culture=neutral, PublicKeyToken=779a13b744b0a8d9, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\WOSI.NET.inTELIPhone.dll</HintPath>
+    </Reference>
+    <Reference Include="WOSI.Utilities.SoundConversion, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\WOSI.Utilities.SoundConversion.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ProjectInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectInstaller.Designer.cs">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ScriptProcessing\AddonModuleScriptProcessor.cs" />
+    <Compile Include="ScriptProcessing\AutoDialerProcessor.cs" />
+    <Compile Include="ScriptProcessing\Click2CallScriptProcessor.cs" />
+    <Compile Include="ScriptProcessing\OutboundCalleeScriptProcessor.cs" />
+    <Compile Include="ScriptProcessing\OutboundScriptProcessor.cs" />
+    <Compile Include="ScriptProcessing\ReceptionistFinderScriptProcessor.cs" />
+    <Compile Include="ScriptProcessing\TransferConferenceParticipantScriptProcessor.cs" />
+    <Compile Include="ScriptProcessing\TransferConferenceScriptProcessor.cs" />
+    <Compile Include="ScriptProcessing\VoicemailManagementProcessor.cs" />
+    <Compile Include="ScriptProcessing\ExpertScriptProcessor.cs" />
+    <Compile Include="ScriptProcessing\ExtensionScriptProcessor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScriptProcessing\ScheduleReminderScriptProcessor.cs" />
+    <Compile Include="ScriptProcessing\ScriptProcessorBase.cs" />
+    <Compile Include="ScriptProcessing\ScriptCompilers\ScriptUtils.cs" />
+    <Compile Include="ScriptProcessing\StandardScriptProcessor.cs" />
+    <Compile Include="ScriptProcessing\TelecomScriptInterface.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScriptProcessing\VoicemailScriptProcessor.cs" />
+    <Compile Include="Services\DialPlanManagerService.cs" />
+    <Compile Include="Services\ExtensionStateService.cs" />
+    <Compile Include="Services\LoggingService.cs" />
+    <Compile Include="Services\ManagementInterfaceService.cs" />
+    <Compile Include="Services\PerformanceCounterService.cs" />
+    <Compile Include="Services\ScriptService.cs" />
+    <Compile Include="Services\PBXRegistrarService.cs" />
+    <Compile Include="Services\PrivateLabelService.cs" />
+    <Compile Include="Services\VoicemailMailerService.cs" />
+    <Compile Include="CallButlerService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CallButlerService.Designer.cs">
+      <DependentUpon>CallButlerService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\VoicemailService.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Utils\ErrorUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ProjectInstaller.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CallButlerService.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CallButlerService.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\CallButler.Data\CallButler.Data.csproj">
+      <Project>{D1AE6677-AEA4-4D16-9EA1-BCEA0C4B13BA}</Project>
+      <Name>CallButler.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Remoting\Remoting.csproj">
+      <Project>{03E5F206-275B-4965-A60C-647C70E6A33F}</Project>
+      <Name>Remoting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Utilities.PluginManagement\Utilities.PluginManagement.csproj">
+      <Project>{FF49FF23-15B9-4FB9-82CA-E69527A9D99A}</Project>
+      <Name>Utilities.PluginManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Utilities\Utilities.csproj">
+      <Project>{48E06473-9007-4DA4-AD30-C97B702EFCC2}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\CallButler.ExceptionManagement\CallButler.ExceptionManagement.csproj">
+      <Project>{3D19D5D5-D1DE-4BD2-AF09-B285429D1DCA}</Project>
+      <Name>CallButler.ExceptionManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\CallButler.ManagementInterface\CallButler.ManagementInterface.csproj">
+      <Project>{B1DE2AA9-A6B7-4B85-A4C1-A62B8C6140FF}</Project>
+      <Name>CallButler.ManagementInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\CallButler.Service.Plugin\CallButler.Service.Plugin.csproj">
+      <Project>{33E3D43D-D0C2-4C3D-B7B4-070F9DD88C75}</Project>
+      <Name>CallButler.Service.Plugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\CallButler.Telecom\CallButler.Telecom.csproj">
+      <Project>{9476BA53-8D98-43D9-84D9-439AC02BD435}</Project>
+      <Name>CallButler.Telecom</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CallButler.ico" />
+    <None Include="CallButler Service.exe.manifest" />
+    <None Include="Resources\exit_16.png" />
+    <None Include="Resources\nut_and_bolt_16.png" />
+    <None Include="Resources\gear_connection_16.png" />
+    <Content Include="Distribution\Music\Bean-Bag-60sec.wav" />
+    <Content Include="Distribution\Music\For-Jehter-60sec.wav" />
+    <Content Include="Distribution\Scripts\System\Call Flow.xml" />
+    <Content Include="Distribution\Scripts\System\Click2Call Handler.xml" />
+    <Content Include="Distribution\Scripts\System\Extension Finder.xml" />
+    <Content Include="Distribution\Scripts\System\Greeting Recording.xml" />
+    <Content Include="Distribution\Scripts\System\Outbound Call.xml" />
+    <Content Include="Distribution\Scripts\System\Outbound Callee.xml" />
+    <Content Include="Distribution\Scripts\System\Receptionist Finder.xml" />
+    <Content Include="Distribution\Scripts\System\Schedule Reminder.xml" />
+    <Content Include="Distribution\Scripts\System\Transfer Conference Participant.xml" />
+    <Content Include="Distribution\Scripts\System\Transfer Conference.xml" />
+    <Content Include="Distribution\Scripts\System\Voicemail Management.xml" />
+    <Content Include="Distribution\Scripts\System\Voicemail.xml" />
+    <Content Include="Distribution\Sounds\System\en\Are you looking for.snd" />
+    <Content Include="Distribution\Sounds\System\en\Bad Passcode.snd" />
+    <Content Include="Distribution\Sounds\System\en\Beep.snd" />
+    <Content Include="Distribution\Sounds\System\en\Call Connected.snd" />
+    <Content Include="Distribution\Sounds\System\en\Call from.snd" />
+    <Content Include="Distribution\Sounds\System\en\Confirm New Greeting.snd" />
+    <Content Include="Distribution\Sounds\System\en\Confirm transfer.snd" />
+    <Content Include="Distribution\Sounds\System\en\Continue this call.snd" />
+    <Content Include="Distribution\Sounds\System\en\End of Messages.snd" />
+    <Content Include="Distribution\Sounds\System\en\Enter Number.snd" />
+    <Content Include="Distribution\Sounds\System\en\Enter Passcode.snd" />
+    <Content Include="Distribution\Sounds\System\en\Extension Management Main Menu.snd" />
+    <Content Include="Distribution\Sounds\System\en\Extension Management Options Menu.snd" />
+    <Content Include="Distribution\Sounds\System\en\Find extension.snd" />
+    <Content Include="Distribution\Sounds\System\en\First Three Letters.snd" />
+    <Content Include="Distribution\Sounds\System\en\Goodbye.snd" />
+    <Content Include="Distribution\Sounds\System\en\Join Beep.snd" />
+    <Content Include="Distribution\Sounds\System\en\Leave Beep.snd" />
+    <Content Include="Distribution\Sounds\System\en\Message Deleted.snd" />
+    <Content Include="Distribution\Sounds\System\en\Message Saved.snd" />
+    <Content Include="Distribution\Sounds\System\en\Multiple Reminder Options.snd" />
+    <Content Include="Distribution\Sounds\System\en\Name Not Found.snd" />
+    <Content Include="Distribution\Sounds\System\en\New Voicemails.snd" />
+    <Content Include="Distribution\Sounds\System\en\Not understood.snd" />
+    <Content Include="Distribution\Sounds\System\en\Number cannot be reached.snd" />
+    <Content Include="Distribution\Sounds\System\en\One Moment.snd" />
+    <Content Include="Distribution\Sounds\System\en\Press 0.snd" />
+    <Content Include="Distribution\Sounds\System\en\Press 1 For Yes.snd" />
+    <Content Include="Distribution\Sounds\System\en\Press 1.snd" />
+    <Content Include="Distribution\Sounds\System\en\Press 2 For No.snd" />
+    <Content Include="Distribution\Sounds\System\en\Press 2.snd" />
+    <Content Include="Distribution\Sounds\System\en\Press 3.snd" />
+    <Content Include="Distribution\Sounds\System\en\Press 4.snd" />
+    <Content Include="Distribution\Sounds\System\en\Press 5.snd" />
+    <Content Include="Distribution\Sounds\System\en\Press 6.snd" />
+    <Content Include="Distribution\Sounds\System\en\Press 7.snd" />
+    <Content Include="Distribution\Sounds\System\en\Press 8.snd" />
+    <Content Include="Distribution\Sounds\System\en\Press 9.snd" />
+    <Content Include="Distribution\Sounds\System\en\Press Star.snd" />
+    <Content Include="Distribution\Sounds\System\en\Record New Greeting.snd" />
+    <Content Include="Distribution\Sounds\System\en\Recording Finished.snd" />
+    <Content Include="Distribution\Sounds\System\en\Recording Started.snd" />
+    <Content Include="Distribution\Sounds\System\en\Return to Main Menu.snd" />
+    <Content Include="Distribution\Sounds\System\en\ring.snd" />
+    <Content Include="Distribution\Sounds\System\en\Schedule Reminder Intro.snd" />
+    <Content Include="Distribution\Sounds\System\en\Single Reminder Option.snd" />
+    <Content Include="Distribution\Sounds\System\en\To Hold.snd" />
+    <Content Include="Distribution\Sounds\System\en\To Record.snd" />
+    <Content Include="Distribution\Sounds\System\en\To Transfer.snd" />
+    <Content Include="Distribution\Sounds\System\en\Transfer Options.snd" />
+    <Content Include="Distribution\Sounds\System\en\Transferring Call.snd" />
+    <Content Include="Distribution\Sounds\System\en\Unable to Transfer.snd" />
+    <Content Include="Distribution\Sounds\System\en\VM End Menu.snd" />
+    <Content Include="Distribution\Sounds\System\en\VM Start Menu.snd" />
+    <Content Include="Distribution\Sounds\System\en\Voicemail Save Options.snd" />
+    <Content Include="Distribution\Sounds\System\en\You have.snd" />
+    <Content Include="Resources\Permissions.xml" />
+    <Content Include="Resources\FreeInfo.htm" />
+    <Content Include="Resources\ToggleStartup.vbs" />
+    <None Include="Resources\powered_by_16khz.wav" />
+    <None Include="Resources\powered_by_8khz.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SpeechLib">
+      <Guid>{C866CA3A-32F7-11D2-9602-00C04F8EE628}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

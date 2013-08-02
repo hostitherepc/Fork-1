@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<CallButlerDataset xmlns="http://www.worksoutsoft.com/Schemas/CallButlerDataset.xsd">
+  <Extensions>
+    <CustomerID>1</CustomerID>
+    <ExtensionID>fb779e2d-8d3f-4eb3-af65-a0d5e992cc1b</ExtensionID>
+    <ExtensionNumber>100</ExtensionNumber>
+    <FirstName>General</FirstName>
+    <LastName>Mailbox</LastName>
+    <EnableSearch>false</EnableSearch>
+    <Password />
+    <EnableManagement>false</EnableManagement>
+    <DoNotDisturb>false</DoNotDisturb>
+    <EmailNotification>false</EmailNotification>
+    <EmailAddress />
+    <EmailAttachment>false</EmailAttachment>
+  </Extensions>
+  <Departments>
+    <CustomerID>1</CustomerID>
+    <DepartmentID>6dde9796-573c-453d-a7f0-8f79542b9da1</DepartmentID>
+    <Name>General Mailbox</Name>
+    <Type>1</Type>
+    <Data1>fb779e2d-8d3f-4eb3-af65-a0d5e992cc1b</Data1>
+    <Enabled>true</Enabled>
+    <OptionNumber>1</OptionNumber>
+  </Departments>
+  <Greetings>
+    <CustomerID>1</CustomerID>
+    <GreetingID>33333333-3333-3333-3333-333333333333</GreetingID>
+    <LocalizedGreetings>
+      <GreetingID>33333333-3333-3333-3333-333333333333</GreetingID>
+      <LocalizedGreetingID>64acec76-f224-420a-840e-b6c61e638c30</LocalizedGreetingID>
+      <LanguageID>en</LanguageID>
+      <Type>0</Type>
+    </LocalizedGreetings>
+  </Greetings>
+</CallButlerDataset>

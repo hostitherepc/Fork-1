@@ -1,0 +1,1703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblEnableOutbound.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblEnableOutbound.HelpText" xml:space="preserve">
+    <value>If this is checked, the owner of this extension will be permitted to make outbound calls to public telephone numbers.
+
+If this is not checked, the owner of this extension will not be permitted to make outbound calls to public telephone numbers.</value>
+  </data>
+  <data name="lblEnableOutbound.HelpTitle" xml:space="preserve">
+    <value>Enable Outbound Calls</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblEnableOutbound.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblEnableOutbound.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 309</value>
+  </data>
+  <data name="lblEnableOutbound.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 13</value>
+  </data>
+  <data name="lblEnableOutbound.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="lblEnableOutbound.Text" xml:space="preserve">
+    <value>Allow outbound calls to other telephones</value>
+  </data>
+  <data name="&gt;&gt;lblEnableOutbound.Name" xml:space="preserve">
+    <value>lblEnableOutbound</value>
+  </data>
+  <data name="&gt;&gt;lblEnableOutbound.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblEnableOutbound.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;lblEnableOutbound.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cbEnableOutbound.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbEnableOutbound.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="cbEnableOutbound.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbEnableOutbound.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 309</value>
+  </data>
+  <data name="cbEnableOutbound.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="cbEnableOutbound.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;cbEnableOutbound.Name" xml:space="preserve">
+    <value>cbEnableOutbound</value>
+  </data>
+  <data name="&gt;&gt;cbEnableOutbound.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbEnableOutbound.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;cbEnableOutbound.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblCallScreen.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCallScreen.HelpText" xml:space="preserve">
+    <value>If this is checked, CallButler will announce who the caller is and give the extension owner the opportunity to answer the call or have it sent to Voicemail.
+
+If this is not checked, CallButler will automatically connect the caller without an announcement.</value>
+  </data>
+  <data name="lblCallScreen.HelpTitle" xml:space="preserve">
+    <value>Enable Call Screening</value>
+  </data>
+  <data name="lblCallScreen.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblCallScreen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 283</value>
+  </data>
+  <data name="lblCallScreen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>239, 13</value>
+  </data>
+  <data name="lblCallScreen.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="lblCallScreen.Text" xml:space="preserve">
+    <value>Announce (screen) callers before transferring</value>
+  </data>
+  <data name="&gt;&gt;lblCallScreen.Name" xml:space="preserve">
+    <value>lblCallScreen</value>
+  </data>
+  <data name="&gt;&gt;lblCallScreen.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblCallScreen.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;lblCallScreen.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cbCallScreening.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbCallScreening.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="cbCallScreening.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbCallScreening.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 283</value>
+  </data>
+  <data name="cbCallScreening.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="cbCallScreening.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;cbCallScreening.Name" xml:space="preserve">
+    <value>cbCallScreening</value>
+  </data>
+  <data name="&gt;&gt;cbCallScreening.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbCallScreening.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;cbCallScreening.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblHandoff.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblHandoff.HelpText" xml:space="preserve">
+    <value>If the person at this extension chooses to take a call and this is checked, CallButler will attempt to hand off both calls to the telephone provider. Once the calls are handed off, CallButler will hang up and no longer participate in the conversation. 
+
+Checking this can save network bandwidth and CPU resources, but will disable any in-call features.
+
+Note: This feature may not be supported with all Internet telephone providers.</value>
+  </data>
+  <data name="lblHandoff.HelpTitle" xml:space="preserve">
+    <value>Hand Off Call Transfers</value>
+  </data>
+  <data name="lblHandoff.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblHandoff.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 3</value>
+  </data>
+  <data name="lblHandoff.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 13</value>
+  </data>
+  <data name="lblHandoff.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="lblHandoff.Text" xml:space="preserve">
+    <value>Hand off call transfers</value>
+  </data>
+  <data name="&gt;&gt;lblHandoff.Name" xml:space="preserve">
+    <value>lblHandoff</value>
+  </data>
+  <data name="&gt;&gt;lblHandoff.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblHandoff.Parent" xml:space="preserve">
+    <value>pnlHandoff</value>
+  </data>
+  <data name="&gt;&gt;lblHandoff.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cbHandOff.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbHandOff.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="cbHandOff.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbHandOff.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 3</value>
+  </data>
+  <data name="cbHandOff.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="cbHandOff.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;cbHandOff.Name" xml:space="preserve">
+    <value>cbHandOff</value>
+  </data>
+  <data name="&gt;&gt;cbHandOff.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbHandOff.Parent" xml:space="preserve">
+    <value>pnlHandoff</value>
+  </data>
+  <data name="&gt;&gt;cbHandOff.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnlHandoff.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 332</value>
+  </data>
+  <data name="pnlHandoff.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 26</value>
+  </data>
+  <data name="pnlHandoff.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;pnlHandoff.Name" xml:space="preserve">
+    <value>pnlHandoff</value>
+  </data>
+  <data name="&gt;&gt;pnlHandoff.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlHandoff.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;pnlHandoff.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblDialByName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblDialByName.HelpText" xml:space="preserve">
+    <value>Callers may choose to find extensions by entering the first three digits of a person's last name. If you would like this extension to be hidden from callers when they search by name, uncheck this box. Otherwise this extension will be included in the list of search results.</value>
+  </data>
+  <data name="lblDialByName.HelpTitle" xml:space="preserve">
+    <value>Dial by Name </value>
+  </data>
+  <data name="lblDialByName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 256</value>
+  </data>
+  <data name="lblDialByName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 13</value>
+  </data>
+  <data name="lblDialByName.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lblDialByName.Text" xml:space="preserve">
+    <value>Let callers search for this extension (Dial by Name)</value>
+  </data>
+  <data name="&gt;&gt;lblDialByName.Name" xml:space="preserve">
+    <value>lblDialByName</value>
+  </data>
+  <data name="&gt;&gt;lblDialByName.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblDialByName.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;lblDialByName.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="smoothLabel3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel3.HelpText" xml:space="preserve">
+    <value>This is the last name of the person at this extension. If "Let callers search for this extension" is checked, CallButler will use this last name to match a callers search request.</value>
+  </data>
+  <data name="smoothLabel3.HelpTitle" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="smoothLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 206</value>
+  </data>
+  <data name="smoothLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 13</value>
+  </data>
+  <data name="smoothLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="smoothLabel3.Text" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel3.Name" xml:space="preserve">
+    <value>smoothLabel3</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel3.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel3.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="smoothLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel2.HelpText" xml:space="preserve">
+    <value>This is the first name of the person at this extension. This first name is not directly used by CallButler and used for your reference only.</value>
+  </data>
+  <data name="smoothLabel2.HelpTitle" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="smoothLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 166</value>
+  </data>
+  <data name="smoothLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="smoothLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="smoothLabel2.Text" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel2.Name" xml:space="preserve">
+    <value>smoothLabel2</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel2.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel2.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel2.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="smoothLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel1.HelpText" xml:space="preserve">
+    <value>This extension number can dialed by callers to be connected to this extension at any time during their call.</value>
+  </data>
+  <data name="smoothLabel1.HelpTitle" xml:space="preserve">
+    <value>Extension Number</value>
+  </data>
+  <data name="smoothLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 126</value>
+  </data>
+  <data name="smoothLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 13</value>
+  </data>
+  <data name="smoothLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="smoothLabel1.Text" xml:space="preserve">
+    <value>Extension Number</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel1.Name" xml:space="preserve">
+    <value>smoothLabel1</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel1.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel1.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="numExtNum.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="numExtNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 142</value>
+  </data>
+  <data name="numExtNum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 21</value>
+  </data>
+  <data name="numExtNum.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;numExtNum.Name" xml:space="preserve">
+    <value>numExtNum</value>
+  </data>
+  <data name="&gt;&gt;numExtNum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numExtNum.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;numExtNum.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="cbEnableSearch.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbEnableSearch.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="cbEnableSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 256</value>
+  </data>
+  <data name="cbEnableSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="cbEnableSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;cbEnableSearch.Name" xml:space="preserve">
+    <value>cbEnableSearch</value>
+  </data>
+  <data name="&gt;&gt;cbEnableSearch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbEnableSearch.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;cbEnableSearch.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="txtFirstName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="txtFirstName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 182</value>
+  </data>
+  <data name="txtFirstName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>422, 21</value>
+  </data>
+  <data name="txtFirstName.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;txtFirstName.Name" xml:space="preserve">
+    <value>txtFirstName</value>
+  </data>
+  <data name="&gt;&gt;txtFirstName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtFirstName.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;txtFirstName.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="txtLastName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="txtLastName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 222</value>
+  </data>
+  <data name="txtLastName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>421, 21</value>
+  </data>
+  <data name="txtLastName.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;txtLastName.Name" xml:space="preserve">
+    <value>txtLastName</value>
+  </data>
+  <data name="&gt;&gt;txtLastName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtLastName.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;txtLastName.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="btnImportOutlook.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="btnImportOutlook.Location" type="System.Drawing.Point, System.Drawing">
+    <value>271, 140</value>
+  </data>
+  <data name="btnImportOutlook.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 24</value>
+  </data>
+  <data name="btnImportOutlook.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="btnImportOutlook.Text" xml:space="preserve">
+    <value>Import a contact from Outlook...</value>
+  </data>
+  <data name="&gt;&gt;btnImportOutlook.Name" xml:space="preserve">
+    <value>btnImportOutlook</value>
+  </data>
+  <data name="&gt;&gt;btnImportOutlook.Type" xml:space="preserve">
+    <value>Controls.LinkButton, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnImportOutlook.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;btnImportOutlook.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="wizardHeader1.Description" xml:space="preserve">
+    <value>Specify the general settings for this extension.</value>
+  </data>
+  <data name="wizardHeader1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="wizardHeader1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardHeader1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 10, 20, 0</value>
+  </data>
+  <data name="wizardHeader1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 105</value>
+  </data>
+  <data name="wizardHeader1.SubTitle" xml:space="preserve">
+    <value>General Settings</value>
+  </data>
+  <data name="wizardHeader1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="wizardHeader1.Title" xml:space="preserve">
+    <value>Extension</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader1.Name" xml:space="preserve">
+    <value>wizardHeader1</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader1.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.WizardHeader, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader1.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader1.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="pgGeneral.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgGeneral.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 0</value>
+  </data>
+  <data name="pgGeneral.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 520</value>
+  </data>
+  <data name="pgGeneral.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="pgGeneral.Text" xml:space="preserve">
+    <value>General Settings</value>
+  </data>
+  <data name="&gt;&gt;pgGeneral.Name" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;pgGeneral.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgGeneral.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pgGeneral.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlFindMe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 126</value>
+  </data>
+  <data name="pnlFindMe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>458, 383</value>
+  </data>
+  <data name="pnlFindMe.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pnlFindMe.Name" xml:space="preserve">
+    <value>pnlFindMe</value>
+  </data>
+  <data name="&gt;&gt;pnlFindMe.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlFindMe.Parent" xml:space="preserve">
+    <value>pgFindme</value>
+  </data>
+  <data name="&gt;&gt;pnlFindMe.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="wizardHeader3.Description" xml:space="preserve">
+    <value>Specify telephone numbers where CallButler can try to find the person at this extension.</value>
+  </data>
+  <data name="wizardHeader3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="wizardHeader3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardHeader3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 10, 20, 0</value>
+  </data>
+  <data name="wizardHeader3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 105</value>
+  </data>
+  <data name="wizardHeader3.SubTitle" xml:space="preserve">
+    <value>Find Me...</value>
+  </data>
+  <data name="wizardHeader3.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="wizardHeader3.Title" xml:space="preserve">
+    <value>Extension</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader3.Name" xml:space="preserve">
+    <value>wizardHeader3</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader3.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.WizardHeader, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader3.Parent" xml:space="preserve">
+    <value>pgFindme</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pgFindme.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgFindme.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 0</value>
+  </data>
+  <data name="pgFindme.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 520</value>
+  </data>
+  <data name="pgFindme.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="pgFindme.Text" xml:space="preserve">
+    <value>Find Me...</value>
+  </data>
+  <data name="&gt;&gt;pgFindme.Name" xml:space="preserve">
+    <value>pgFindme</value>
+  </data>
+  <data name="&gt;&gt;pgFindme.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgFindme.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pgFindme.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="wizardHeader6.Description" xml:space="preserve">
+    <value>Record your voicemail greeting.</value>
+  </data>
+  <data name="wizardHeader6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="wizardHeader6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardHeader6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 10, 20, 0</value>
+  </data>
+  <data name="wizardHeader6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 105</value>
+  </data>
+  <data name="wizardHeader6.SubTitle" xml:space="preserve">
+    <value>Voicemail Greeting</value>
+  </data>
+  <data name="wizardHeader6.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="wizardHeader6.Title" xml:space="preserve">
+    <value>Extension</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader6.Name" xml:space="preserve">
+    <value>wizardHeader6</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader6.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.WizardHeader, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader6.Parent" xml:space="preserve">
+    <value>pgVoicemailGreeting</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="greetingControl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="greetingControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 121</value>
+  </data>
+  <data name="greetingControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>450, 382</value>
+  </data>
+  <data name="greetingControl.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;greetingControl.Name" xml:space="preserve">
+    <value>greetingControl</value>
+  </data>
+  <data name="&gt;&gt;greetingControl.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.GreetingControl, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;greetingControl.Parent" xml:space="preserve">
+    <value>pgVoicemailGreeting</value>
+  </data>
+  <data name="&gt;&gt;greetingControl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pgVoicemailGreeting.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgVoicemailGreeting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 0</value>
+  </data>
+  <data name="pgVoicemailGreeting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 520</value>
+  </data>
+  <data name="pgVoicemailGreeting.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="pgVoicemailGreeting.Text" xml:space="preserve">
+    <value>Voicemail Greeting</value>
+  </data>
+  <data name="&gt;&gt;pgVoicemailGreeting.Name" xml:space="preserve">
+    <value>pgVoicemailGreeting</value>
+  </data>
+  <data name="&gt;&gt;pgVoicemailGreeting.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgVoicemailGreeting.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pgVoicemailGreeting.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblEmail.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblEmail.HelpText" xml:space="preserve">
+    <value>Check this if you would like CallButler to send you an Email when a caller leaves a voicemail at this extension.</value>
+  </data>
+  <data name="lblEmail.HelpTitle" xml:space="preserve">
+    <value>Voicemail via Email</value>
+  </data>
+  <data name="lblEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 133</value>
+  </data>
+  <data name="lblEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 13</value>
+  </data>
+  <data name="lblEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="lblEmail.Text" xml:space="preserve">
+    <value>Send an Email when a new voicemail arrives</value>
+  </data>
+  <data name="&gt;&gt;lblEmail.Name" xml:space="preserve">
+    <value>lblEmail</value>
+  </data>
+  <data name="&gt;&gt;lblEmail.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblEmail.Parent" xml:space="preserve">
+    <value>pgEmailSettings</value>
+  </data>
+  <data name="&gt;&gt;lblEmail.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblAttachment.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblAttachment.HelpText" xml:space="preserve">
+    <value>Select this if you want CallButler to attach a copy of the voicemail sound file to the Email.</value>
+  </data>
+  <data name="lblAttachment.HelpTitle" xml:space="preserve">
+    <value>Voicemail Attachment</value>
+  </data>
+  <data name="lblAttachment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 56</value>
+  </data>
+  <data name="lblAttachment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 13</value>
+  </data>
+  <data name="lblAttachment.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="lblAttachment.Text" xml:space="preserve">
+    <value>Attach a copy of the voicemail to the Email</value>
+  </data>
+  <data name="&gt;&gt;lblAttachment.Name" xml:space="preserve">
+    <value>lblAttachment</value>
+  </data>
+  <data name="&gt;&gt;lblAttachment.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblAttachment.Parent" xml:space="preserve">
+    <value>pnlEmailNotifications</value>
+  </data>
+  <data name="&gt;&gt;lblAttachment.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="smoothLabel5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel5.HelpText" xml:space="preserve">
+    <value>This is the Email address to which CallButler will send a voicemail Email notification.
+
+To send and Email to more than one address you may use a comma (,) to separate the addresses. Example: email1@mydomain.com, email2@mydomain.com</value>
+  </data>
+  <data name="smoothLabel5.HelpTitle" xml:space="preserve">
+    <value>Email Address</value>
+  </data>
+  <data name="smoothLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 13</value>
+  </data>
+  <data name="smoothLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 13</value>
+  </data>
+  <data name="smoothLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="smoothLabel5.Text" xml:space="preserve">
+    <value>Email Address (Separate multiple addresses with a comma)</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.Name" xml:space="preserve">
+    <value>smoothLabel5</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.Parent" xml:space="preserve">
+    <value>pnlEmailNotifications</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnSendTestEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>322, 57</value>
+  </data>
+  <data name="btnSendTestEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 16</value>
+  </data>
+  <data name="btnSendTestEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="btnSendTestEmail.Text" xml:space="preserve">
+    <value>Send a test email...</value>
+  </data>
+  <data name="&gt;&gt;btnSendTestEmail.Name" xml:space="preserve">
+    <value>btnSendTestEmail</value>
+  </data>
+  <data name="&gt;&gt;btnSendTestEmail.Type" xml:space="preserve">
+    <value>Controls.LinkButton, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnSendTestEmail.Parent" xml:space="preserve">
+    <value>pnlEmailNotifications</value>
+  </data>
+  <data name="&gt;&gt;btnSendTestEmail.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cbAttach.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbAttach.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 56</value>
+  </data>
+  <data name="cbAttach.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="cbAttach.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;cbAttach.Name" xml:space="preserve">
+    <value>cbAttach</value>
+  </data>
+  <data name="&gt;&gt;cbAttach.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbAttach.Parent" xml:space="preserve">
+    <value>pnlEmailNotifications</value>
+  </data>
+  <data name="&gt;&gt;cbAttach.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtEmailAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 29</value>
+  </data>
+  <data name="txtEmailAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>422, 21</value>
+  </data>
+  <data name="txtEmailAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txtEmailAddress.Name" xml:space="preserve">
+    <value>txtEmailAddress</value>
+  </data>
+  <data name="&gt;&gt;txtEmailAddress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtEmailAddress.Parent" xml:space="preserve">
+    <value>pnlEmailNotifications</value>
+  </data>
+  <data name="&gt;&gt;txtEmailAddress.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="pnlEmailNotifications.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="pnlEmailNotifications.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 154</value>
+  </data>
+  <data name="pnlEmailNotifications.Size" type="System.Drawing.Size, System.Drawing">
+    <value>482, 238</value>
+  </data>
+  <data name="pnlEmailNotifications.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;pnlEmailNotifications.Name" xml:space="preserve">
+    <value>pnlEmailNotifications</value>
+  </data>
+  <data name="&gt;&gt;pnlEmailNotifications.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlEmailNotifications.Parent" xml:space="preserve">
+    <value>pgEmailSettings</value>
+  </data>
+  <data name="&gt;&gt;pnlEmailNotifications.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cbEmailNotification.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbEmailNotification.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 133</value>
+  </data>
+  <data name="cbEmailNotification.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="cbEmailNotification.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;cbEmailNotification.Name" xml:space="preserve">
+    <value>cbEmailNotification</value>
+  </data>
+  <data name="&gt;&gt;cbEmailNotification.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbEmailNotification.Parent" xml:space="preserve">
+    <value>pgEmailSettings</value>
+  </data>
+  <data name="&gt;&gt;cbEmailNotification.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="wizardHeader4.Description" xml:space="preserve">
+    <value>Setup the voicemail box for this extension</value>
+  </data>
+  <data name="wizardHeader4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="wizardHeader4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardHeader4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 10, 20, 0</value>
+  </data>
+  <data name="wizardHeader4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 105</value>
+  </data>
+  <data name="wizardHeader4.SubTitle" xml:space="preserve">
+    <value>Voicemail Settings</value>
+  </data>
+  <data name="wizardHeader4.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="wizardHeader4.Title" xml:space="preserve">
+    <value>Extension</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader4.Name" xml:space="preserve">
+    <value>wizardHeader4</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader4.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.WizardHeader, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader4.Parent" xml:space="preserve">
+    <value>pgEmailSettings</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pgEmailSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgEmailSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 0</value>
+  </data>
+  <data name="pgEmailSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 520</value>
+  </data>
+  <data name="pgEmailSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="pgEmailSettings.Text" xml:space="preserve">
+    <value>Email Settings</value>
+  </data>
+  <data name="&gt;&gt;pgEmailSettings.Name" xml:space="preserve">
+    <value>pgEmailSettings</value>
+  </data>
+  <data name="&gt;&gt;pgEmailSettings.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgEmailSettings.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pgEmailSettings.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="smoothLabel6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel6.HelpText" xml:space="preserve">
+    <value>If remote management is enabled for this extension, this is the passcode that will need to be used to access it. A passcode may consist of any number and combination of digits.</value>
+  </data>
+  <data name="smoothLabel6.HelpTitle" xml:space="preserve">
+    <value>IP Phone Password</value>
+  </data>
+  <data name="smoothLabel6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="smoothLabel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="smoothLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 13</value>
+  </data>
+  <data name="smoothLabel6.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="smoothLabel6.Text" xml:space="preserve">
+    <value>IP Phone Password</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel6.Name" xml:space="preserve">
+    <value>smoothLabel6</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel6.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel6.Parent" xml:space="preserve">
+    <value>pnlPBXPassword</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtConfirmPBXPassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="txtConfirmPBXPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 56</value>
+  </data>
+  <data name="txtConfirmPBXPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 21</value>
+  </data>
+  <data name="txtConfirmPBXPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;txtConfirmPBXPassword.Name" xml:space="preserve">
+    <value>txtConfirmPBXPassword</value>
+  </data>
+  <data name="&gt;&gt;txtConfirmPBXPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtConfirmPBXPassword.Parent" xml:space="preserve">
+    <value>pnlPBXPassword</value>
+  </data>
+  <data name="&gt;&gt;txtConfirmPBXPassword.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtPBXPassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="txtPBXPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 16</value>
+  </data>
+  <data name="txtPBXPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 21</value>
+  </data>
+  <data name="txtPBXPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;txtPBXPassword.Name" xml:space="preserve">
+    <value>txtPBXPassword</value>
+  </data>
+  <data name="&gt;&gt;txtPBXPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtPBXPassword.Parent" xml:space="preserve">
+    <value>pnlPBXPassword</value>
+  </data>
+  <data name="&gt;&gt;txtPBXPassword.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 40</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>pnlPBXPassword</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pnlPBXPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 277</value>
+  </data>
+  <data name="pnlPBXPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 100</value>
+  </data>
+  <data name="pnlPBXPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;pnlPBXPassword.Name" xml:space="preserve">
+    <value>pnlPBXPassword</value>
+  </data>
+  <data name="&gt;&gt;pnlPBXPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlPBXPassword.Parent" xml:space="preserve">
+    <value>pgManagement</value>
+  </data>
+  <data name="&gt;&gt;pnlPBXPassword.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="smoothLabel4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel4.HelpText" xml:space="preserve">
+    <value>If remote management is enabled for this extension, this is the passcode that will need to be used to access it. A passcode may consist of any number and combination of digits.</value>
+  </data>
+  <data name="smoothLabel4.HelpTitle" xml:space="preserve">
+    <value>Extension Management Passcode</value>
+  </data>
+  <data name="smoothLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 164</value>
+  </data>
+  <data name="smoothLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 13</value>
+  </data>
+  <data name="smoothLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="smoothLabel4.Text" xml:space="preserve">
+    <value>Extension Management Passcode</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel4.Name" xml:space="preserve">
+    <value>smoothLabel4</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel4.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel4.Parent" xml:space="preserve">
+    <value>pgManagement</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblRemoteManagement.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblRemoteManagement.HelpText" xml:space="preserve">
+    <value>Check this if you want to allow the owner of this extension to be able to manage it over the phone or from their own computer.
+
+To manage this extension from another computer you will need to install the CallButler Message Center client. With the CallButler message center client your users can:
+
+- Listen to their voicemail
+- Change their voicemail greeting
+- Change their Find Me numbers.
+
+To manage this extension from a phone you will need to call the main number and enter the extension number for this extension. You may then press the * (star) key at which point you will be prompted for your passcode.</value>
+  </data>
+  <data name="lblRemoteManagement.HelpTitle" xml:space="preserve">
+    <value>Remote Management</value>
+  </data>
+  <data name="lblRemoteManagement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 129</value>
+  </data>
+  <data name="lblRemoteManagement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 13</value>
+  </data>
+  <data name="lblRemoteManagement.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="lblRemoteManagement.Text" xml:space="preserve">
+    <value>Allow remote management of this extension</value>
+  </data>
+  <data name="&gt;&gt;lblRemoteManagement.Name" xml:space="preserve">
+    <value>lblRemoteManagement</value>
+  </data>
+  <data name="&gt;&gt;lblRemoteManagement.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblRemoteManagement.Parent" xml:space="preserve">
+    <value>pgManagement</value>
+  </data>
+  <data name="&gt;&gt;lblRemoteManagement.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cbEnableManagement.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbEnableManagement.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="cbEnableManagement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 129</value>
+  </data>
+  <data name="cbEnableManagement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="cbEnableManagement.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;cbEnableManagement.Name" xml:space="preserve">
+    <value>cbEnableManagement</value>
+  </data>
+  <data name="&gt;&gt;cbEnableManagement.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbEnableManagement.Parent" xml:space="preserve">
+    <value>pgManagement</value>
+  </data>
+  <data name="&gt;&gt;cbEnableManagement.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtConfirmPassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="txtConfirmPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 220</value>
+  </data>
+  <data name="txtConfirmPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 21</value>
+  </data>
+  <data name="txtConfirmPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;txtConfirmPassword.Name" xml:space="preserve">
+    <value>txtConfirmPassword</value>
+  </data>
+  <data name="&gt;&gt;txtConfirmPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtConfirmPassword.Parent" xml:space="preserve">
+    <value>pgManagement</value>
+  </data>
+  <data name="&gt;&gt;txtConfirmPassword.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txtPassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="txtPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 180</value>
+  </data>
+  <data name="txtPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 21</value>
+  </data>
+  <data name="txtPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.Name" xml:space="preserve">
+    <value>txtPassword</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.Parent" xml:space="preserve">
+    <value>pgManagement</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>189, 183</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 13</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>(Passcode must consist only of digits)</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>pgManagement</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 204</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 13</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Confirm Passcode</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>pgManagement</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="wizardHeader2.Description" xml:space="preserve">
+    <value>Protect this extension with a password</value>
+  </data>
+  <data name="wizardHeader2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="wizardHeader2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardHeader2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 10, 20, 0</value>
+  </data>
+  <data name="wizardHeader2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 105</value>
+  </data>
+  <data name="wizardHeader2.SubTitle" xml:space="preserve">
+    <value>Security Settings</value>
+  </data>
+  <data name="wizardHeader2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="wizardHeader2.Title" xml:space="preserve">
+    <value>Extension</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader2.Name" xml:space="preserve">
+    <value>wizardHeader2</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader2.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.WizardHeader, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader2.Parent" xml:space="preserve">
+    <value>pgManagement</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="pgManagement.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgManagement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 0</value>
+  </data>
+  <data name="pgManagement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 520</value>
+  </data>
+  <data name="pgManagement.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="pgManagement.Text" xml:space="preserve">
+    <value>Security Settings</value>
+  </data>
+  <data name="&gt;&gt;pgManagement.Name" xml:space="preserve">
+    <value>pgManagement</value>
+  </data>
+  <data name="&gt;&gt;pgManagement.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgManagement.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pgManagement.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnSetupInstructions.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="btnSetupInstructions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 240</value>
+  </data>
+  <data name="btnSetupInstructions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>349, 31</value>
+  </data>
+  <data name="btnSetupInstructions.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="btnSetupInstructions.Text" xml:space="preserve">
+    <value>Yes, please send setup instructions to the user at this extension...</value>
+  </data>
+  <data name="&gt;&gt;btnSetupInstructions.Name" xml:space="preserve">
+    <value>btnSetupInstructions</value>
+  </data>
+  <data name="&gt;&gt;btnSetupInstructions.Type" xml:space="preserve">
+    <value>Controls.LinkButton, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnSetupInstructions.Parent" xml:space="preserve">
+    <value>pgFinish</value>
+  </data>
+  <data name="&gt;&gt;btnSetupInstructions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 127</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>424, 110</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>You can allow your employees to manage their own extensions by allowing them to download the CallButler Extension Management Client. The Extension Management Client will allow an extension user to listen to their voicemail, change their voicemail greeting and much more.
+
+To help the user at this extension, CallButler can send an Email with download and setup instructions. Would you like to send setup instructions to the user at this extension?</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>pgFinish</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="wizardHeader5.Description" xml:space="preserve">
+    <value>Perform some last minute tasks before creating or modifying this extension.</value>
+  </data>
+  <data name="wizardHeader5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="wizardHeader5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardHeader5.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 10, 20, 0</value>
+  </data>
+  <data name="wizardHeader5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 105</value>
+  </data>
+  <data name="wizardHeader5.SubTitle" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="wizardHeader5.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="wizardHeader5.Title" xml:space="preserve">
+    <value>Extension</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader5.Name" xml:space="preserve">
+    <value>wizardHeader5</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader5.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.WizardHeader, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader5.Parent" xml:space="preserve">
+    <value>pgFinish</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pgFinish.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgFinish.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 0</value>
+  </data>
+  <data name="pgFinish.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 520</value>
+  </data>
+  <data name="pgFinish.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="pgFinish.Text" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="&gt;&gt;pgFinish.Name" xml:space="preserve">
+    <value>pgFinish</value>
+  </data>
+  <data name="&gt;&gt;pgFinish.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgFinish.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pgFinish.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="wizard.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizard.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="wizard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>651, 568</value>
+  </data>
+  <data name="wizard.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="wizard.TablPanelTopMargin" type="System.Int32, mscorlib">
+    <value>175</value>
+  </data>
+  <data name="wizard.TabPanelWidth" type="System.Int32, mscorlib">
+    <value>160</value>
+  </data>
+  <data name="wizard.TabWidth" type="System.Int32, mscorlib">
+    <value>135</value>
+  </data>
+  <data name="&gt;&gt;wizard.Name" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;wizard.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.Wizard, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizard.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;wizard.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>651, 568</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Extension</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ExtensionEditorForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>CallButler.Manager.Forms.EditorWizardFormBase, CallButler Manager, Version=1.8.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

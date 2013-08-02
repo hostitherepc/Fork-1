@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IML Description="Schedule Reminder Script">
+	<GlobalPage />
+	<Page ID="1fbb247e-d985-4c7b-980a-c36c25733eca" Description="Place a Call">
+		<ExternalAction Action="CALLBUTLERINTERNAL_GetNextNumber" Async="false" />
+		<Call Number="#NumberToCall#" />
+		<TimeoutEvent Duration="#ExtensionTimeout#" WaitForPageActions="true">
+			<GotoPage PageID="1fbb247e-d985-4c7b-980a-c36c25733eca" PageName="Place a Call" />
+		</TimeoutEvent>
+		<CallFailed>
+			<GotoPage PageID="97406219-0469-455e-8259-5cd28c9200d4" PageName="Place a Call" />
+		</CallFailed>
+		<CallConnected>
+			<GotoPage PageID="3fac14c0-4562-4f9d-81b6-876c39ebaa0d" PageName="Schedule Intro" />
+		</CallConnected>
+	</Page>
+	<Page ID="3fac14c0-4562-4f9d-81b6-876c39ebaa0d" Description="Schedule Intro">
+		<Delay DelayTime="1500" />
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Schedule Reminder Intro.snd</ExternalAction>
+		<SpeakText>#IntroDetails#</SpeakText>
+		<GotoPage PageID="80abc223-1ae8-4497-bcbe-2e12217ada18" PageName="Schedule Advance" />
+	</Page>
+	<Page ID="8b620756-6b37-439e-b05a-5611c9037fbf" Description="Schedule Reminder">
+		<Delay DelayTime="1500" />
+		<SpeakText>#ScheduleDetails#</SpeakText>
+		<Delay DelayTime="1500" />
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Multiple Reminder Options.snd</ExternalAction>
+		<TimeoutEvent Duration="20" WaitForPageActions="true">
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Goodbye.snd</ExternalAction>
+			<HangupCall />
+		</TimeoutEvent>
+		<DTMFEvent Digits="1">
+			<GotoPage PageID="8b620756-6b37-439e-b05a-5611c9037fbf" PageName="Schedule Reminder" />
+		</DTMFEvent>
+		<DTMFEvent Digits="2">
+			<GotoPage PageID="80abc223-1ae8-4497-bcbe-2e12217ada18" PageName="Schedule Advance" />
+		</DTMFEvent>
+	</Page>
+	<Page ID="80abc223-1ae8-4497-bcbe-2e12217ada18" Description="Schedule Advance">
+		<ExternalAction Action="CALLBUTLERINTERNAL_FetchNextReminder" Async="false" />
+		<GotoPage PageID="8b620756-6b37-439e-b05a-5611c9037fbf" PageName="Schedule Reminder" />
+		<ExternalEvent Event="CALLBUTLERINTERNAL_EndOfReminders">
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Goodbye.snd</ExternalAction>
+			<HangupCall />
+		</ExternalEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_LastReminder">
+			<GotoPage PageID="02b9f575-2774-4ca6-8e01-e842aa663338" PageName="Last Reminder" />
+		</ExternalEvent>
+	</Page>
+	<Page ID="02b9f575-2774-4ca6-8e01-e842aa663338" Description="Last Reminder">
+		<Delay DelayTime="1500" />
+		<SpeakText>#ScheduleDetails#</SpeakText>
+		<Delay DelayTime="1500" />
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Single Reminder Option.snd</ExternalAction>
+		<TimeoutEvent Duration="20" WaitForPageActions="true">
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Goodbye.snd</ExternalAction>
+			<HangupCall />
+		</TimeoutEvent>
+		<DTMFEvent Digits="1">
+			<GotoPage PageID="02b9f575-2774-4ca6-8e01-e842aa663338" PageName="Last Reminder" />
+		</DTMFEvent>
+	</Page>
+</IML>

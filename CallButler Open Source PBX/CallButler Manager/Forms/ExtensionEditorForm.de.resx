@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnSetupInstructions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 246</value>
+  </data>
+  <data name="btnSetupInstructions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>311, 31</value>
+  </data>
+  <data name="btnSetupInstructions.Text" xml:space="preserve">
+    <value>Ja, bitte senden Sie dem Benutzer der Durchwahl Installationsanweisungen...</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Sie können Ihren Beschäftigten erlauben Ihre Durchwahl selbst zu verwalten, in dem Sie den "CallButler Durchwahl-Management Client" herunterladen können.  Der "CallButler Durchwahl-Management Client" ermöglicht den Durchwahl-Benutzern die Nachrichten abzuhören, die Voicemail-Begrüssung zu ändern und vieles mehr.
+
+Um dem Benutzer dieser Durchwahl zu helfen, kann Callbutler eine E-Mail mit Downlaod und Installationsanweisung versenden. Möchten Sie diesem Durchwahl-Benutzer Installationsanweisungen zukommen lassen?</value>
+  </data>
+  <data name="wizardHeader5.Description" xml:space="preserve">
+    <value>Führen Sie nun noch die letzten Dinge durch, bevor Sie die Durchwahl definieren oder ändern.</value>
+  </data>
+  <data name="wizardHeader5.SubTitle" xml:space="preserve">
+    <value>Beenden</value>
+  </data>
+  <data name="wizardHeader5.Title" xml:space="preserve">
+    <value>Durchwahl</value>
+  </data>
+  <data name="pgFinish.Text" xml:space="preserve">
+    <value>Beenden</value>
+  </data>
+  <data name="lblEmail.HelpText" xml:space="preserve">
+    <value>Markiere dies, wenn Sie möchten, dass CallButler Ihnen einen E-Mail sendet, wenn der Anrufer eine Nachricht für diese Durchwahl hinterlässt.</value>
+  </data>
+  <data name="lblEmail.HelpTitle" xml:space="preserve">
+    <value>Sprachnachricht per E-Mail</value>
+  </data>
+  <data name="lblEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>278, 13</value>
+  </data>
+  <data name="lblEmail.Text" xml:space="preserve">
+    <value>Sende ein E-Mail, sobald eine Sprachnachricht eintrifft</value>
+  </data>
+  <data name="lblAttachment.HelpText" xml:space="preserve">
+    <value>Wählen Sie dies, wenn Sie möchten, dass CallButler eine Kopie der Sprachnachricht an das E-Mail hängen soll.</value>
+  </data>
+  <data name="lblAttachment.HelpTitle" xml:space="preserve">
+    <value>Anhang einer Sprachnachricht</value>
+  </data>
+  <data name="lblAttachment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 13</value>
+  </data>
+  <data name="lblAttachment.Text" xml:space="preserve">
+    <value>Eine Sprachnachricht in eine E-Mail beifügen</value>
+  </data>
+  <data name="smoothLabel5.HelpText" xml:space="preserve">
+    <value>Das ist die E-Mail-Adresse, an welche CallButler eine Info versendet, sobald eine Sprachnachricht eingegangen ist.
+
+Um eine E-Mail an mehr als eine Adresse versenden zu können, trennen Sie die E-Mail-Adressen mit einem Komma. z.B. email1@mydomain.com, email2@mydomain.com</value>
+  </data>
+  <data name="smoothLabel5.HelpTitle" xml:space="preserve">
+    <value>E-Mail Adresse</value>
+  </data>
+  <data name="smoothLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 13</value>
+  </data>
+  <data name="smoothLabel5.Text" xml:space="preserve">
+    <value>E-Mail Adresse</value>
+  </data>
+  <data name="btnSendTestEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>314, 57</value>
+  </data>
+  <data name="btnSendTestEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 16</value>
+  </data>
+  <data name="btnSendTestEmail.Text" xml:space="preserve">
+    <value>Sende eine Test-E-Mail</value>
+  </data>
+  <data name="wizardHeader4.Description" xml:space="preserve">
+    <value>Einrichten der Voicemail Box für diese Durchwahl</value>
+  </data>
+  <data name="wizardHeader4.SubTitle" xml:space="preserve">
+    <value>VoiceMail Einstellungen</value>
+  </data>
+  <data name="wizardHeader4.Title" xml:space="preserve">
+    <value>Durchwahl</value>
+  </data>
+  <data name="pgVoicemailSettings.Text" xml:space="preserve">
+    <value>E-Mail Einstellungen</value>
+  </data>
+  <data name="wizardHeader6.Description" xml:space="preserve">
+    <value>Zeichnen Sie Ihren Begrüssungstext für die Sprachbox auf.</value>
+  </data>
+  <data name="wizardHeader6.SubTitle" xml:space="preserve">
+    <value>VoiceMail Begrüssung</value>
+  </data>
+  <data name="wizardHeader6.Title" xml:space="preserve">
+    <value>Durchwahl</value>
+  </data>
+  <data name="pgVoicemailGreeting.Text" xml:space="preserve">
+    <value>VoiceMail Begrüssung</value>
+  </data>
+  <data name="wizardHeader3.Description" xml:space="preserve">
+    <value>Definieren Sie die Telefonnummern, wo CallButler versuchen kann, die entsprechende Person dieser Durchwahl zu finden.</value>
+  </data>
+  <data name="wizardHeader3.SubTitle" xml:space="preserve">
+    <value>Finde-Mich Nummern</value>
+  </data>
+  <data name="wizardHeader3.Title" xml:space="preserve">
+    <value>Durchwahl</value>
+  </data>
+  <data name="pgFindme.Text" xml:space="preserve">
+    <value>Finde-Mich Nummern</value>
+  </data>
+  <data name="smoothLabel4.HelpTitle" xml:space="preserve">
+    <value>Durchwahl-Passwort</value>
+  </data>
+  <data name="smoothLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 13</value>
+  </data>
+  <data name="smoothLabel4.Text" xml:space="preserve">
+    <value>Durchwahl-Passwort</value>
+  </data>
+  <data name="lblRemoteManagement.HelpText" xml:space="preserve">
+    <value>Markieren Sie hier, wenn Sie dem Besitzer der Durchwahl die Verwaltung über Telefon oder PC ermöglichen möchten.
+
+Um diese Durchwahl von einem anderen Computer verwalten zu können, benötigen Sie den CallButler MessageCenter-Client. Damit können die Benutzer:
+
+- Ihre Nachrichten abhören</value>
+  </data>
+  <data name="lblRemoteManagement.HelpTitle" xml:space="preserve">
+    <value>Remote-Verwaltung</value>
+  </data>
+  <data name="lblRemoteManagement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 13</value>
+  </data>
+  <data name="lblRemoteManagement.Text" xml:space="preserve">
+    <value>Remote-Verwaltung dieser Durchwahl zulassen</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 13</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>(Passwort darf nur aus Ziffern bestehen)</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 13</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Passwort bestätigen</value>
+  </data>
+  <data name="wizardHeader2.Description" xml:space="preserve">
+    <value>Benutzern erlauben, Ihre Durchwahl von einem anderen PC oder Telefon aus zu verwalten.</value>
+  </data>
+  <data name="wizardHeader2.SubTitle" xml:space="preserve">
+    <value>Verwaltungseinstellungen</value>
+  </data>
+  <data name="wizardHeader2.Title" xml:space="preserve">
+    <value>Durchwahlen</value>
+  </data>
+  <data name="pgManagement.Text" xml:space="preserve">
+    <value>Verwaltungseinstellungen</value>
+  </data>
+  <data name="lblDialByName.HelpText" xml:space="preserve">
+    <value>Anrufer können die Durchwahlen durch Eingabe der ersten 3 Zeichen des Nachnamens herausfinden. Wenn Sie möchten, dass die Durchwahl für den Anrufer unsichtbar bleiben, entfernen Sie die Markierung. Ansonsten wird die Durchwahl auf der Suchergebnis-Liste mit aufgeführt.
+</value>
+  </data>
+  <data name="lblDialByName.HelpTitle" xml:space="preserve">
+    <value>Wählen nach Namen</value>
+  </data>
+  <data name="lblDialByName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>366, 13</value>
+  </data>
+  <data name="lblDialByName.Text" xml:space="preserve">
+    <value>Anrufern erlauben nach der Durchwahl zu suchen (Wählen nach Namen)</value>
+  </data>
+  <data name="smoothLabel3.HelpText" xml:space="preserve">
+    <value>Das ist der Nachname der Person von dieser Durchwahl. Falls "Anrufer nach Durchwahl suchen" aktiviert ist, wird CallButler den Nachnamen benutzen, um die Suchanfrage des Anrufers zu beantworten.</value>
+  </data>
+  <data name="smoothLabel3.HelpTitle" xml:space="preserve">
+    <value>Nachname</value>
+  </data>
+  <data name="smoothLabel3.Text" xml:space="preserve">
+    <value>Nachname</value>
+  </data>
+  <data name="smoothLabel2.HelpText" xml:space="preserve">
+    <value>Das ist der Vorname der Person von dieser Durchwahl. Der Vorname wird nicht direkt von CallButler verwendet und dient nur internen Zwecken.</value>
+  </data>
+  <data name="smoothLabel2.HelpTitle" xml:space="preserve">
+    <value>Vorname</value>
+  </data>
+  <data name="smoothLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 13</value>
+  </data>
+  <data name="smoothLabel2.Text" xml:space="preserve">
+    <value>Vorname</value>
+  </data>
+  <data name="smoothLabel1.HelpText" xml:space="preserve">
+    <value>Diese Durchwahlnummer  kann vom Anrufer gewählt werden, um während des Anrufes zu jederzeit mit dieser Durchwahl verbunden zu werden.</value>
+  </data>
+  <data name="smoothLabel1.HelpTitle" xml:space="preserve">
+    <value>Durchwahlnummer</value>
+  </data>
+  <data name="smoothLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 13</value>
+  </data>
+  <data name="smoothLabel1.Text" xml:space="preserve">
+    <value>Durchwahlnummer</value>
+  </data>
+  <data name="btnImportOutlook.Location" type="System.Drawing.Point, System.Drawing">
+    <value>274, 140</value>
+  </data>
+  <data name="btnImportOutlook.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 24</value>
+  </data>
+  <data name="btnImportOutlook.Text" xml:space="preserve">
+    <value>Kontakt aus Outlook importieren</value>
+  </data>
+  <data name="wizardHeader1.Description" xml:space="preserve">
+    <value>Definieren Sie die Einstellungen für diese Durchwahl</value>
+  </data>
+  <data name="wizardHeader1.SubTitle" xml:space="preserve">
+    <value>Allgemeine Einstellungen</value>
+  </data>
+  <data name="wizardHeader1.Title" xml:space="preserve">
+    <value>Durchwahl</value>
+  </data>
+  <data name="pgGeneral.Text" xml:space="preserve">
+    <value>Allgemeine Einstellungen</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="wizard.TabWidth" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Durchwahl</value>
+  </data>
+</root>

@@ -1,0 +1,1402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="smoothLabel9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel9.HelpText" xml:space="preserve">
+    <value>The text specified here will be added to the beginning of the outbound caller-id telephone number.</value>
+  </data>
+  <data name="smoothLabel9.HelpTitle" xml:space="preserve">
+    <value>Outbound Caller-ID Telephone Number Prefix</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="smoothLabel9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="smoothLabel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 318</value>
+  </data>
+  <data name="smoothLabel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 13</value>
+  </data>
+  <data name="smoothLabel9.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="smoothLabel9.Text" xml:space="preserve">
+    <value>Outbound Caller-ID Telphone Number Prefix</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel9.Name" xml:space="preserve">
+    <value>smoothLabel9</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel9.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel9.Parent" xml:space="preserve">
+    <value>pgAuth</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel9.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtCallerIDPrefix.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="txtCallerIDPrefix.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 334</value>
+  </data>
+  <data name="txtCallerIDPrefix.Size" type="System.Drawing.Size, System.Drawing">
+    <value>422, 21</value>
+  </data>
+  <data name="txtCallerIDPrefix.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;txtCallerIDPrefix.Name" xml:space="preserve">
+    <value>txtCallerIDPrefix</value>
+  </data>
+  <data name="&gt;&gt;txtCallerIDPrefix.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtCallerIDPrefix.Parent" xml:space="preserve">
+    <value>pgAuth</value>
+  </data>
+  <data name="&gt;&gt;txtCallerIDPrefix.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cbCustomCallerID.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbCustomCallerID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 291</value>
+  </data>
+  <data name="cbCustomCallerID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 17</value>
+  </data>
+  <data name="cbCustomCallerID.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="cbCustomCallerID.Text" xml:space="preserve">
+    <value>Provider allows custom outbound caller-id</value>
+  </data>
+  <data name="&gt;&gt;cbCustomCallerID.Name" xml:space="preserve">
+    <value>cbCustomCallerID</value>
+  </data>
+  <data name="&gt;&gt;cbCustomCallerID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbCustomCallerID.Parent" xml:space="preserve">
+    <value>pgAuth</value>
+  </data>
+  <data name="&gt;&gt;cbCustomCallerID.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="smoothLabel4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel4.HelpText" xml:space="preserve">
+    <value>Specify the password given to you by your provider.</value>
+  </data>
+  <data name="smoothLabel4.HelpTitle" xml:space="preserve">
+    <value>Authorization Password</value>
+  </data>
+  <data name="smoothLabel4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="smoothLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 176</value>
+  </data>
+  <data name="smoothLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 13</value>
+  </data>
+  <data name="smoothLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="smoothLabel4.Text" xml:space="preserve">
+    <value>Authorization Password</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel4.Name" xml:space="preserve">
+    <value>smoothLabel4</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel4.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel4.Parent" xml:space="preserve">
+    <value>pgAuth</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="smoothLabel3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel3.HelpText" xml:space="preserve">
+    <value>Specify the authorization username given to you by your provider. In most cases this is the EXACT same value used for your Telephone or Username setting in the previous page.</value>
+  </data>
+  <data name="smoothLabel3.HelpTitle" xml:space="preserve">
+    <value>Authorization Username</value>
+  </data>
+  <data name="smoothLabel3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="smoothLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 127</value>
+  </data>
+  <data name="smoothLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 13</value>
+  </data>
+  <data name="smoothLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="smoothLabel3.Text" xml:space="preserve">
+    <value>Authorization Username</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel3.Name" xml:space="preserve">
+    <value>smoothLabel3</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel3.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel3.Parent" xml:space="preserve">
+    <value>pgAuth</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="wizardHeader3.Description" xml:space="preserve">
+    <value>Please enter your credentials for connecting to your provider</value>
+  </data>
+  <data name="wizardHeader3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="wizardHeader3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardHeader3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 10, 20, 0</value>
+  </data>
+  <data name="wizardHeader3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 105</value>
+  </data>
+  <data name="wizardHeader3.SubTitle" xml:space="preserve">
+    <value>Authorization</value>
+  </data>
+  <data name="wizardHeader3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="wizardHeader3.Title" xml:space="preserve">
+    <value>Internet Telephone Provider</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader3.Name" xml:space="preserve">
+    <value>wizardHeader3</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader3.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.WizardHeader, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader3.Parent" xml:space="preserve">
+    <value>pgAuth</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtPassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="txtPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 192</value>
+  </data>
+  <data name="txtPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>422, 21</value>
+  </data>
+  <data name="txtPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.Name" xml:space="preserve">
+    <value>txtPassword</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.Parent" xml:space="preserve">
+    <value>pgAuth</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtAuthUsername.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="txtAuthUsername.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 143</value>
+  </data>
+  <data name="txtAuthUsername.Size" type="System.Drawing.Size, System.Drawing">
+    <value>422, 21</value>
+  </data>
+  <data name="txtAuthUsername.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtAuthUsername.Name" xml:space="preserve">
+    <value>txtAuthUsername</value>
+  </data>
+  <data name="&gt;&gt;txtAuthUsername.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtAuthUsername.Parent" xml:space="preserve">
+    <value>pgAuth</value>
+  </data>
+  <data name="&gt;&gt;txtAuthUsername.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="pgAuth.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgAuth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 0</value>
+  </data>
+  <data name="pgAuth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 458</value>
+  </data>
+  <data name="pgAuth.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="pgAuth.Text" xml:space="preserve">
+    <value>Authorization</value>
+  </data>
+  <data name="&gt;&gt;pgAuth.Name" xml:space="preserve">
+    <value>pgAuth</value>
+  </data>
+  <data name="&gt;&gt;pgAuth.Type" xml:space="preserve">
+    <value>Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgAuth.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pgAuth.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 304</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 13</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>seconds</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>pgNetwork</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="numExpires.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 302</value>
+  </data>
+  <data name="numExpires.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 21</value>
+  </data>
+  <data name="numExpires.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;numExpires.Name" xml:space="preserve">
+    <value>numExpires</value>
+  </data>
+  <data name="&gt;&gt;numExpires.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numExpires.Parent" xml:space="preserve">
+    <value>pgNetwork</value>
+  </data>
+  <data name="&gt;&gt;numExpires.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="smoothLabel8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel8.HelpText" xml:space="preserve">
+    <value>This is the period of time in seconds that CallButler will re-register with the VoIP provider. This should usually be set to a lower value like 20-30 seconds if you have a NAT router or firewall connecting you to the Internet.</value>
+  </data>
+  <data name="smoothLabel8.HelpTitle" xml:space="preserve">
+    <value>Registration Teimout</value>
+  </data>
+  <data name="smoothLabel8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="smoothLabel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 304</value>
+  </data>
+  <data name="smoothLabel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 13</value>
+  </data>
+  <data name="smoothLabel8.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="smoothLabel8.Text" xml:space="preserve">
+    <value>Re-register every</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel8.Name" xml:space="preserve">
+    <value>smoothLabel8</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel8.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel8.Parent" xml:space="preserve">
+    <value>pgNetwork</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel8.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblSipRegistration.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblSipRegistration.HelpText" xml:space="preserve">
+    <value>Most VoIP providers require SIP registration in order to receive inbound calls. However if you know for certain that your VoIP provider doesn't require SIP registration you may turn this off to cut down on network traffic.</value>
+  </data>
+  <data name="lblSipRegistration.HelpTitle" xml:space="preserve">
+    <value>Enable SIP Registration</value>
+  </data>
+  <data name="lblSipRegistration.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblSipRegistration.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 280</value>
+  </data>
+  <data name="lblSipRegistration.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 13</value>
+  </data>
+  <data name="lblSipRegistration.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="lblSipRegistration.Text" xml:space="preserve">
+    <value>Enable SIP Registration</value>
+  </data>
+  <data name="&gt;&gt;lblSipRegistration.Name" xml:space="preserve">
+    <value>lblSipRegistration</value>
+  </data>
+  <data name="&gt;&gt;lblSipRegistration.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblSipRegistration.Parent" xml:space="preserve">
+    <value>pgNetwork</value>
+  </data>
+  <data name="&gt;&gt;lblSipRegistration.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="smoothLabel7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel7.HelpText" xml:space="preserve">
+    <value>Specify the SIP registrar server given to you by your provider. In most cases this is the same value as your domain/realm and proxy server. This value is usually similar in form to sip.domain.com.
+
+This field will be used as the "sip.domain.com" paremeter when sent as a URI in SIP messages. Example: "Display Name" &lt;sip:username@sip.domain.com&gt;</value>
+  </data>
+  <data name="smoothLabel7.HelpTitle" xml:space="preserve">
+    <value>SIP Registrar Server</value>
+  </data>
+  <data name="smoothLabel7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="smoothLabel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 233</value>
+  </data>
+  <data name="smoothLabel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 13</value>
+  </data>
+  <data name="smoothLabel7.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="smoothLabel7.Text" xml:space="preserve">
+    <value>SIP Registrar Server</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel7.Name" xml:space="preserve">
+    <value>smoothLabel7</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel7.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel7.Parent" xml:space="preserve">
+    <value>pgNetwork</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel7.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="smoothLabel6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel6.HelpText" xml:space="preserve">
+    <value>Specify the SIP proxy server given to you by your provider. In many cases this may be the same value as your domain/realm and proxy server. This value is usually similar in form to sip.domain.com.
+
+This field will be used as the "sip.domain.com" paremeter when sent as a URI in SIP messages. Example: "Display Name" &lt;sip:username@sip.domain.com&gt;</value>
+  </data>
+  <data name="smoothLabel6.HelpTitle" xml:space="preserve">
+    <value>SIP Proxy Server</value>
+  </data>
+  <data name="smoothLabel6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="smoothLabel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 183</value>
+  </data>
+  <data name="smoothLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 13</value>
+  </data>
+  <data name="smoothLabel6.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="smoothLabel6.Text" xml:space="preserve">
+    <value>SIP Proxy Server</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel6.Name" xml:space="preserve">
+    <value>smoothLabel6</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel6.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel6.Parent" xml:space="preserve">
+    <value>pgNetwork</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel6.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="smoothLabel5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel5.HelpText" xml:space="preserve">
+    <value>Specify the Domain or Realm given to you by your provider. In many cases this may be the same value as your proxy server and proxy server. This value is usually similar in form to sip.domain.com.
+
+This field will be used as the "sip.domain.com" paremeter when sent as a URI in SIP messages. Example: "Display Name" &lt;sip:username@sip.domain.com&gt;</value>
+  </data>
+  <data name="smoothLabel5.HelpTitle" xml:space="preserve">
+    <value>Provider Domain / Realm</value>
+  </data>
+  <data name="smoothLabel5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="smoothLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 133</value>
+  </data>
+  <data name="smoothLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 13</value>
+  </data>
+  <data name="smoothLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="smoothLabel5.Text" xml:space="preserve">
+    <value>Provider Domain / Realm</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.Name" xml:space="preserve">
+    <value>smoothLabel5</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.Parent" xml:space="preserve">
+    <value>pgNetwork</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cbEnableReg.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbEnableReg.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbEnableReg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 280</value>
+  </data>
+  <data name="cbEnableReg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="cbEnableReg.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;cbEnableReg.Name" xml:space="preserve">
+    <value>cbEnableReg</value>
+  </data>
+  <data name="&gt;&gt;cbEnableReg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbEnableReg.Parent" xml:space="preserve">
+    <value>pgNetwork</value>
+  </data>
+  <data name="&gt;&gt;cbEnableReg.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="txtRegistrarServer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="txtRegistrarServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 249</value>
+  </data>
+  <data name="txtRegistrarServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>422, 21</value>
+  </data>
+  <data name="txtRegistrarServer.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtRegistrarServer.Name" xml:space="preserve">
+    <value>txtRegistrarServer</value>
+  </data>
+  <data name="&gt;&gt;txtRegistrarServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtRegistrarServer.Parent" xml:space="preserve">
+    <value>pgNetwork</value>
+  </data>
+  <data name="&gt;&gt;txtRegistrarServer.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="txtProxyServer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="txtProxyServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 199</value>
+  </data>
+  <data name="txtProxyServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>422, 21</value>
+  </data>
+  <data name="txtProxyServer.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txtProxyServer.Name" xml:space="preserve">
+    <value>txtProxyServer</value>
+  </data>
+  <data name="&gt;&gt;txtProxyServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtProxyServer.Parent" xml:space="preserve">
+    <value>pgNetwork</value>
+  </data>
+  <data name="&gt;&gt;txtProxyServer.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="txtDomain.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="txtDomain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 149</value>
+  </data>
+  <data name="txtDomain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>422, 21</value>
+  </data>
+  <data name="txtDomain.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txtDomain.Name" xml:space="preserve">
+    <value>txtDomain</value>
+  </data>
+  <data name="&gt;&gt;txtDomain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtDomain.Parent" xml:space="preserve">
+    <value>pgNetwork</value>
+  </data>
+  <data name="&gt;&gt;txtDomain.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="wizardHeader2.Description" xml:space="preserve">
+    <value>Please enter the network settings used to connect to your provider</value>
+  </data>
+  <data name="wizardHeader2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="wizardHeader2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardHeader2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 10, 20, 0</value>
+  </data>
+  <data name="wizardHeader2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 105</value>
+  </data>
+  <data name="wizardHeader2.SubTitle" xml:space="preserve">
+    <value>Network Settings</value>
+  </data>
+  <data name="wizardHeader2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="wizardHeader2.Title" xml:space="preserve">
+    <value>Internet Telephone Provider</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader2.Name" xml:space="preserve">
+    <value>wizardHeader2</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader2.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.WizardHeader, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader2.Parent" xml:space="preserve">
+    <value>pgNetwork</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader2.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="pgNetwork.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgNetwork.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 0</value>
+  </data>
+  <data name="pgNetwork.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 458</value>
+  </data>
+  <data name="pgNetwork.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="pgNetwork.Text" xml:space="preserve">
+    <value>Network Settings</value>
+  </data>
+  <data name="&gt;&gt;pgNetwork.Name" xml:space="preserve">
+    <value>pgNetwork</value>
+  </data>
+  <data name="&gt;&gt;pgNetwork.Type" xml:space="preserve">
+    <value>Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgNetwork.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pgNetwork.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 11</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 26</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Testing VoIP Provider Connection.
+This test may take a few moments.</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>pnlLoading</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 5</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 39</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>AutoSize</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>pnlLoading</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnlLoading.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 66</value>
+  </data>
+  <data name="pnlLoading.Size" type="System.Drawing.Size, System.Drawing">
+    <value>248, 49</value>
+  </data>
+  <data name="pnlLoading.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pnlLoading.Name" xml:space="preserve">
+    <value>pnlLoading</value>
+  </data>
+  <data name="&gt;&gt;pnlLoading.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlLoading.Parent" xml:space="preserve">
+    <value>pnlResults</value>
+  </data>
+  <data name="&gt;&gt;pnlLoading.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlResults.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 226</value>
+  </data>
+  <data name="pnlResults.Size" type="System.Drawing.Size, System.Drawing">
+    <value>336, 190</value>
+  </data>
+  <data name="pnlResults.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="pnlResults.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pnlResults.Name" xml:space="preserve">
+    <value>pnlResults</value>
+  </data>
+  <data name="&gt;&gt;pnlResults.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlResults.Parent" xml:space="preserve">
+    <value>wizardPage1</value>
+  </data>
+  <data name="&gt;&gt;pnlResults.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnBeginTest.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="btnBeginTest.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="btnBeginTest.LinkImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAK7wAA
+        Cu8BfXaKSAAAA2VJREFUOE9V0ntMk1cYBvBT0apLYBRFWDY257gYskxxWUjckpEJWYJOB0KGIVHHH2sn
+        zMtAudcxoWNl2NaisOG4FWjB2yq6UOmAIDAtXqCALtSyFudIy9jaFUylwrP3ayBhJ/nlO1/yPm/OeXN4
+        bNlSWZ0BjrEF0V07dv41Mxf69JmTzc84zYIZm87U/3PDaHflEyr3ECzPefdGt3tX3tCxf97XtCKhcxdi
+        247gJbkNPqUmMPEINp/4dSp6X9WnVOpPfP7XoM/9bE/mUJpHNByMnJt9OGWORdbQB9itdmGj0ooVEgtY
+        tgWBud/OvRGTf5TCQWSFt0nrgCsw507ZtHBEgEJDO34cAFQPzRCPfo4TOje210whuKoCfGkp2DdvY9uh
+        C9Mr/TYlUlRAeKzoqrnowL1A7P1pEFkPPkLjfQ80w26ojR5IbroQp5pGSFUd1lbsBjvWhQilAEFRGbUU
+        3kL47ODlssGPu2IRr5lEsbEN7WOA+e8F3JucQ/ujp1AanIhvdoBfpgRT8LDhLEPkJ0eGKZxC1rEEdfZs
+        Un8QvvztTZyfSkfXSBs6u3vwQ60KV290oUmrQ0PHXagGJxBWFwbByZ3YIhS6KJxDXmM7ajNnY/TrkWbY
+        ijuOdpypkEOr1WJp9fb2QiaTIbswGy23ryH53BVEJtdxDUpJKNteVmoM0zLE6V+GeqIYlSo5xsfH0dGh
+        R319AywWKx4//gNjpnF8V34Grb9cw4df5JkoLPU2iMvokTLpYayRaiAZuATZ+TooFAo0Nbfgz0k7rFYb
+        TI8mYNG/A0t/GiTl51Cj6eZmcIpsYpExWREh+cUOVlCJVJUT5TWXIRKJYLO74Db4YdYYjaHRCfQoX6Rb
+        pcBwKYo73S0KF3hnQGv1W3ur033Fe577S4TQ3NchPeMwntj+ha6YAa4E2A07cLbkKPrk9I8S3Kh+fWBx
+        iK9yDXgkIORd8fHw44mO1OvvQXW9HyeLvoamUY0reQwLdiH0TUnI2J8431zg46kuCp+kTO7SCbgm3NsO
+        XukfmhwUdbA+V/797xfbOp9/VXJ64bN9SchP9p0XZx6wreKvafTjsypfPpNR/SHyivc5Ly6uSQCJIqmk
+        kJQTxaLTi8eOp2802UxeWN5g6TqrabOebCThJGIZbmh+hKtZRXj/AW4636y/s+X3AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnBeginTest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>69, 187</value>
+  </data>
+  <data name="btnBeginTest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 19</value>
+  </data>
+  <data name="btnBeginTest.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnBeginTest.Text" xml:space="preserve">
+    <value>Begin Connection Test...</value>
+  </data>
+  <data name="&gt;&gt;btnBeginTest.Name" xml:space="preserve">
+    <value>btnBeginTest</value>
+  </data>
+  <data name="&gt;&gt;btnBeginTest.Type" xml:space="preserve">
+    <value>Controls.LinkButton, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnBeginTest.Parent" xml:space="preserve">
+    <value>wizardPage1</value>
+  </data>
+  <data name="&gt;&gt;btnBeginTest.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 126</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>428, 58</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Here you may run a quick test to determine if the settings you used for your VoIP provider are correct. To begin the test, press the Begin Connection Test link below.</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>wizardPage1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="wizardHeader4.Description" xml:space="preserve">
+    <value>Test the connection to your VoIP provider and make sure your settings were properly entered.</value>
+  </data>
+  <data name="wizardHeader4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="wizardHeader4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardHeader4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 10, 20, 0</value>
+  </data>
+  <data name="wizardHeader4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 105</value>
+  </data>
+  <data name="wizardHeader4.SubTitle" xml:space="preserve">
+    <value>Test Connection</value>
+  </data>
+  <data name="wizardHeader4.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="wizardHeader4.Title" xml:space="preserve">
+    <value>Internet Telephone Provider</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader4.Name" xml:space="preserve">
+    <value>wizardHeader4</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader4.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.WizardHeader, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader4.Parent" xml:space="preserve">
+    <value>wizardPage1</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="wizardPage1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizardPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 0</value>
+  </data>
+  <data name="wizardPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 458</value>
+  </data>
+  <data name="wizardPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="wizardPage1.Text" xml:space="preserve">
+    <value>Test Connection</value>
+  </data>
+  <data name="&gt;&gt;wizardPage1.Name" xml:space="preserve">
+    <value>wizardPage1</value>
+  </data>
+  <data name="&gt;&gt;wizardPage1.Type" xml:space="preserve">
+    <value>Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardPage1.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;wizardPage1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblEnableProvider.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblEnableProvider.HelpText" xml:space="preserve">
+    <value>Check this if you want to accept incoming calls from this provider.</value>
+  </data>
+  <data name="lblEnableProvider.HelpTitle" xml:space="preserve">
+    <value>Enable this Provider</value>
+  </data>
+  <data name="lblEnableProvider.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblEnableProvider.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 280</value>
+  </data>
+  <data name="lblEnableProvider.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 13</value>
+  </data>
+  <data name="lblEnableProvider.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="lblEnableProvider.Text" xml:space="preserve">
+    <value>Enable this Provider</value>
+  </data>
+  <data name="&gt;&gt;lblEnableProvider.Name" xml:space="preserve">
+    <value>lblEnableProvider</value>
+  </data>
+  <data name="&gt;&gt;lblEnableProvider.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblEnableProvider.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;lblEnableProvider.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="smoothLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel2.HelpText" xml:space="preserve">
+    <value>Specify the telephone number or username given to you by your provider. In most cases this is your telephone number (without any punctuation or spaces), but some providers may assign you a specific username.
+
+This field will be used as the "username" paremeter when sent as a URI in SIP messages. Example: "Display Name" &lt;sip:username@domain.com&gt;</value>
+  </data>
+  <data name="smoothLabel2.HelpTitle" xml:space="preserve">
+    <value>Telephone Number or Username</value>
+  </data>
+  <data name="smoothLabel2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="smoothLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 221</value>
+  </data>
+  <data name="smoothLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 13</value>
+  </data>
+  <data name="smoothLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="smoothLabel2.Text" xml:space="preserve">
+    <value>Telephone Number or Username</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel2.Name" xml:space="preserve">
+    <value>smoothLabel2</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel2.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel2.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="smoothLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel1.HelpText" xml:space="preserve">
+    <value>Specify the name you want callers to see when you make calls from CallButler. Normally this can be anything you want, but some VoIP providers may require you to use a specific value.
+
+This field will be used as the "Display Name" paremeter when sent as a URI in SIP messages. Example: "Display Name" &lt;sip:username@domain.com&gt;
+
+Note: Some VoIP providers may choose ignore this field and override your setting.</value>
+  </data>
+  <data name="smoothLabel1.HelpTitle" xml:space="preserve">
+    <value>Display Name (Caller ID)</value>
+  </data>
+  <data name="smoothLabel1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="smoothLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 172</value>
+  </data>
+  <data name="smoothLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 13</value>
+  </data>
+  <data name="smoothLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="smoothLabel1.Text" xml:space="preserve">
+    <value>Display Name (Caller ID)</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel1.Name" xml:space="preserve">
+    <value>smoothLabel1</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel1.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel1.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblContinueCall.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblContinueCall.HelpText" xml:space="preserve">
+    <value>Specify a name for this provider. This is used for your reference only and will not affect any settings for this provider.</value>
+  </data>
+  <data name="lblContinueCall.HelpTitle" xml:space="preserve">
+    <value>Provider Name</value>
+  </data>
+  <data name="lblContinueCall.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblContinueCall.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 123</value>
+  </data>
+  <data name="lblContinueCall.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 13</value>
+  </data>
+  <data name="lblContinueCall.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="lblContinueCall.Text" xml:space="preserve">
+    <value>Provider Name</value>
+  </data>
+  <data name="&gt;&gt;lblContinueCall.Name" xml:space="preserve">
+    <value>lblContinueCall</value>
+  </data>
+  <data name="&gt;&gt;lblContinueCall.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblContinueCall.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;lblContinueCall.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cbEnable.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbEnable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbEnable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 280</value>
+  </data>
+  <data name="cbEnable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="cbEnable.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;cbEnable.Name" xml:space="preserve">
+    <value>cbEnable</value>
+  </data>
+  <data name="&gt;&gt;cbEnable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbEnable.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;cbEnable.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cboProviderName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 139</value>
+  </data>
+  <data name="cboProviderName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>421, 21</value>
+  </data>
+  <data name="cboProviderName.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cboProviderName.Name" xml:space="preserve">
+    <value>cboProviderName</value>
+  </data>
+  <data name="&gt;&gt;cboProviderName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboProviderName.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;cboProviderName.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtPhoneNumber.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="txtPhoneNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 237</value>
+  </data>
+  <data name="txtPhoneNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>421, 21</value>
+  </data>
+  <data name="txtPhoneNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtPhoneNumber.Name" xml:space="preserve">
+    <value>txtPhoneNumber</value>
+  </data>
+  <data name="&gt;&gt;txtPhoneNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtPhoneNumber.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;txtPhoneNumber.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtCallerID.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="txtCallerID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 188</value>
+  </data>
+  <data name="txtCallerID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>421, 21</value>
+  </data>
+  <data name="txtCallerID.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txtCallerID.Name" xml:space="preserve">
+    <value>txtCallerID</value>
+  </data>
+  <data name="&gt;&gt;txtCallerID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtCallerID.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;txtCallerID.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="wizardHeader1.Description" xml:space="preserve">
+    <value>Please enter the providers name, caller id and telephone number</value>
+  </data>
+  <data name="wizardHeader1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="wizardHeader1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardHeader1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 10, 20, 0</value>
+  </data>
+  <data name="wizardHeader1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 105</value>
+  </data>
+  <data name="wizardHeader1.SubTitle" xml:space="preserve">
+    <value>General Settings</value>
+  </data>
+  <data name="wizardHeader1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="wizardHeader1.Title" xml:space="preserve">
+    <value>Internet Telephone Provider</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader1.Name" xml:space="preserve">
+    <value>wizardHeader1</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader1.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.WizardHeader, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader1.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="pgGeneral.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgGeneral.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 0</value>
+  </data>
+  <data name="pgGeneral.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 458</value>
+  </data>
+  <data name="pgGeneral.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="pgGeneral.Text" xml:space="preserve">
+    <value>General Settings</value>
+  </data>
+  <data name="&gt;&gt;pgGeneral.Name" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;pgGeneral.Type" xml:space="preserve">
+    <value>Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgGeneral.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pgGeneral.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="wizard.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizard.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="wizard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>651, 506</value>
+  </data>
+  <data name="wizard.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="wizard.TablPanelTopMargin" type="System.Int32, mscorlib">
+    <value>175</value>
+  </data>
+  <data name="wizard.TabPanelWidth" type="System.Int32, mscorlib">
+    <value>160</value>
+  </data>
+  <data name="wizard.TabWidth" type="System.Int32, mscorlib">
+    <value>135</value>
+  </data>
+  <data name="&gt;&gt;wizard.Name" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;wizard.Type" xml:space="preserve">
+    <value>Controls.Wizard.Wizard, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizard.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;wizard.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>651, 506</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Internet Telephone Provider Settings</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ProviderEditorForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IML Description="Greeting Recording Script">
+	<GlobalPage>
+		<TimeoutEvent Duration="200" WaitForPageActions="true">
+			<HangupCall />
+		</TimeoutEvent>
+	</GlobalPage>
+	<Page ID="a55cbe10-576e-4d9c-9738-e0f7538a4b3f" Description="Greeting Record Start">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Record New Greeting.snd</ExternalAction>
+		<Delay DelayTime="1000" />
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Beep.snd</ExternalAction>
+		<StartRecording Location="#GreetingFileLocation#" Format="WAV" />
+		<TimeoutEvent Duration="120" WaitForPageActions="true">
+			<StopRecording />
+			<GotoPage PageID="0e972788-c7ac-4183-aa25-ce92b4209df1" PageName="Confirm New Greeting" />
+		</TimeoutEvent>
+		<DTMFEvent Digits="^\#$">
+			<StopRecording />
+			<GotoPage PageID="0e972788-c7ac-4183-aa25-ce92b4209df1" PageName="Confirm New Greeting" />
+		</DTMFEvent>
+	</Page>
+	<Page ID="0e972788-c7ac-4183-aa25-ce92b4209df1" Description="Confirm New Greeting">
+		<PlaySound Location="#GreetingFileLocation#" />
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Confirm New Greeting.snd</ExternalAction>
+		<DTMFEvent Digits="^1$">
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Goodbye.snd</ExternalAction>
+			<HangupCall />
+		</DTMFEvent>
+		<DTMFEvent Digits="^2$">
+			<GotoPage PageID="a55cbe10-576e-4d9c-9738-e0f7538a4b3f" PageName="Greeting Record Start" />
+		</DTMFEvent>
+		<HangupEvent>
+			<DeleteLastRecording />
+		</HangupEvent>
+		<InvalidInputEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Not understood.snd</ExternalAction>
+			<GotoPage PageID="0e972788-c7ac-4183-aa25-ce92b4209df1" PageName="Confirm New Greeting" />
+		</InvalidInputEvent>
+	</Page>
+</IML>

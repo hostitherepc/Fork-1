@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CallButlerPhoneStatusDataset" targetNamespace="http://tempuri.org/CallButlerPhoneStatusDataset.xsd" xmlns:mstns="http://tempuri.org/CallButlerPhoneStatusDataset.xsd" xmlns="http://tempuri.org/CallButlerPhoneStatusDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CallButlerPhoneStatusDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="CallButlerPhoneStatusDataset" msprop:Generator_DataSetName="CallButlerPhoneStatusDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PhoneStatus" msprop:Generator_UserTableName="PhoneStatus" msprop:Generator_RowDeletedName="PhoneStatusRowDeleted" msprop:Generator_RowChangedName="PhoneStatusRowChanged" msprop:Generator_RowClassName="PhoneStatusRow" msprop:Generator_RowChangingName="PhoneStatusRowChanging" msprop:Generator_RowEvArgName="PhoneStatusRowChangeEvent" msprop:Generator_RowEvHandlerName="PhoneStatusRowChangeEventHandler" msprop:Generator_TableClassName="PhoneStatusDataTable" msprop:Generator_TableVarName="tablePhoneStatus" msprop:Generator_RowDeletingName="PhoneStatusRowDeleting" msprop:Generator_TablePropName="PhoneStatus">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ExtensionID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="ExtensionID" msprop:Generator_ColumnPropNameInRow="ExtensionID" msprop:Generator_ColumnVarNameInTable="columnExtensionID" msprop:Generator_ColumnPropNameInTable="ExtensionIDColumn" type="xs:string" />
+              <xs:element name="ExtensionNumber" msprop:Generator_UserColumnName="ExtensionNumber" msprop:Generator_ColumnPropNameInRow="ExtensionNumber" msprop:Generator_ColumnVarNameInTable="columnExtensionNumber" msprop:Generator_ColumnPropNameInTable="ExtensionNumberColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="FirstName" msprop:Generator_UserColumnName="FirstName" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" msprop:Generator_ColumnPropNameInRow="FirstName" type="xs:string" minOccurs="0" />
+              <xs:element name="LastName" msprop:Generator_UserColumnName="LastName" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" msprop:Generator_ColumnPropNameInRow="LastName" type="xs:string" minOccurs="0" />
+              <xs:element name="StatusCode" msprop:Generator_UserColumnName="StatusCode" msprop:Generator_ColumnPropNameInRow="StatusCode" msprop:Generator_ColumnVarNameInTable="columnStatusCode" msprop:Generator_ColumnPropNameInTable="StatusCodeColumn" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="StatusText" msprop:Generator_UserColumnName="StatusText" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnStatusText" msprop:Generator_ColumnPropNameInTable="StatusTextColumn" msprop:Generator_ColumnPropNameInRow="StatusText" type="xs:string" minOccurs="0" />
+              <xs:element name="RemoteAddress" msprop:Generator_UserColumnName="RemoteAddress" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="RemoteAddress" msprop:Generator_ColumnPropNameInTable="RemoteAddressColumn" msprop:Generator_ColumnVarNameInTable="columnRemoteAddress" type="xs:string" minOccurs="0" />
+              <xs:element name="RemotePort" msprop:Generator_UserColumnName="RemotePort" msprop:Generator_ColumnPropNameInRow="RemotePort" msprop:Generator_ColumnVarNameInTable="columnRemotePort" msprop:Generator_ColumnPropNameInTable="RemotePortColumn" type="xs:int" default="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PhoneStatus" />
+      <xs:field xpath="mstns:ExtensionID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

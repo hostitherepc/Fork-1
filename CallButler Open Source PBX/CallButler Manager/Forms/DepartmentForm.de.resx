@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblDepartmentName.HelpText" xml:space="preserve">
+    <value>Definieren Sie den Namen für diese Abteilung hier. Der Name für die Abteilung, den Sie hier vergeben, ist nur für Sie intern und hat keinen Einfluß darauf, was der Anrufer zu hören bekommt.</value>
+  </data>
+  <data name="lblDepartmentName.HelpTitle" xml:space="preserve">
+    <value>Abteilungsname</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblDepartmentName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 13</value>
+  </data>
+  <data name="lblDepartmentName.Text" xml:space="preserve">
+    <value>Abteilungsname</value>
+  </data>
+  <data name="lblScript.HelpText" xml:space="preserve">
+    <value>Benutzen Sie diesen, falls Sie einen kundenspezifischen Skript starten möchten, wenn diese Abteilung angewählt wird. Mit einem kundenspezifischen Skript können Sie die Anrufsteuerung sowie die Schnittstelle zu Datenbanken und anderen Anwendungen selbst übernehmen.
+
+Um ein kundenspezifischen Skript zu erstellen, können Sie den in im CallButler integrierten inTeliScript-Editor verwenden. Beachten Sie die Dokumentation von CallButler, wo das Erstellung und Anwenden von Skripts erläutert wird.
+
+Um nach einem spezifischen Skript zu suchen, klicken Sie unten auf den Button "Weiter"</value>
+  </data>
+  <data name="lblScript.HelpTitle" xml:space="preserve">
+    <value>kundenspezifisches Skript starten</value>
+  </data>
+  <data name="lblScript.Size" type="System.Drawing.Size, System.Drawing">
+    <value>288, 13</value>
+  </data>
+  <data name="lblScript.Text" xml:space="preserve">
+    <value>kundenspezifisches Skript starten (für Fortgeschrittene)</value>
+  </data>
+  <data name="lblNumber.HelpText" xml:space="preserve">
+    <value>Benutzen Sie dies, wenn Sie den Anruf an eine andere Rufnummer weiterleiten möchten, wenn diese Abteilung angewählt wird.
+
+Sie könnten diesen Abteilungstyp auswählen, um:
+
+- Anrufer auf ein Faxgerät weiterzuleiten
+- Anrufer an eine andere Firma oder Abteilung weiterzuleiten
+
+Sie können eine Telefonnummer definiert, wenn Sie unten auf "Weiter" klicken.
+
+Achtung: CallButler für Skype Edition Benutzer/innen können für den Transfer auch Skype-Namen eintragen</value>
+  </data>
+  <data name="lblNumber.HelpTitle" xml:space="preserve">
+    <value>Leiten Sie den Anruf an eine Telefonnummer weiter</value>
+  </data>
+  <data name="lblNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 13</value>
+  </data>
+  <data name="lblNumber.Text" xml:space="preserve">
+    <value>Leiten Sie den Anruf an eine </value>
+  </data>
+  <data name="lblExtension.HelpText" xml:space="preserve">
+    <value>Benutze diesen, wenn Sie den Anrufer an eine spezielle Durchwahl weiterleiten möchten, wenn diese Abteilung ausgewählt wird
+
+Sie können diese Art von Abteilung auswählen, um
+
+- Anrufer, welche mit dem Verkauf verbunden werden wollen, an die Durchwahl des Verkaufsleiters weiterzuleiten
+- Anrufer mit der VoiceMail-Box zu verbinden, um allgemeine Informationen anzubieten
+
+Sie können eine spezifische Durchwahl definiert, wenn Sie unten auf "Weiter" klicken.</value>
+  </data>
+  <data name="lblExtension.HelpTitle" xml:space="preserve">
+    <value>Anruf an eine Durchwahl weiterleiten</value>
+  </data>
+  <data name="lblExtension.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 13</value>
+  </data>
+  <data name="lblExtension.Text" xml:space="preserve">
+    <value>Anruf an eine Durchwahl weiterleiten</value>
+  </data>
+  <data name="lblMessage.HelpText" xml:space="preserve">
+    <value>Benutzen Sie diesen, wenn Sie eine aufgezeichnete Nachricht für den Anrufer abspielen möchten, insofern er diese Abteilung angewählt hat.
+
+Sie können diese Abteilung nutzen, um die
+
+- Öffnungszeiten und Wegbeschreibung
+- Sonderangebote
+- Produkt und Dienstleistungsübersicht
+
+bekanntzugeben.
+
+Sie können eine neue Nachricht aufzeichen oder eine existierende Nachricht auswählen, in dem Sie unten auf "Weiter" klicken.</value>
+  </data>
+  <data name="lblMessage.HelpTitle" xml:space="preserve">
+    <value>Nachricht abspielen</value>
+  </data>
+  <data name="lblMessage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 13</value>
+  </data>
+  <data name="lblMessage.Text" xml:space="preserve">
+    <value>Nachricht abspieln</value>
+  </data>
+  <data name="wizardHeader5.Description" xml:space="preserve">
+    <value>Geben Sie dieser Abteilung einen Namen und wählen Sie die Informationsart aus, die der Anrufer erhält, wenn er diese Abteilung anwählt.</value>
+  </data>
+  <data name="wizardHeader5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>523, 105</value>
+  </data>
+  <data name="wizardHeader5.SubTitle" xml:space="preserve">
+    <value>Allgemeine Einstellugen</value>
+  </data>
+  <data name="wizardHeader5.Title" xml:space="preserve">
+    <value>Abteilung/Menü Option</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>289, 13</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Wenn der Anrufer diese Abteilung auswählt, möchte ich ...</value>
+  </data>
+  <data name="pgGeneralSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>523, 375</value>
+  </data>
+  <data name="pgGeneralSettings.Text" xml:space="preserve">
+    <value>Allgemeine Einstellungen</value>
+  </data>
+  <data name="wizardHeader1.Description" xml:space="preserve">
+    <value>Definieren Sie, wie die Nachricht abgespielt werden soll</value>
+  </data>
+  <data name="wizardHeader1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>523, 105</value>
+  </data>
+  <data name="wizardHeader1.SubTitle" xml:space="preserve">
+    <value>Nachrichten Einstellung</value>
+  </data>
+  <data name="wizardHeader1.Title" xml:space="preserve">
+    <value>Abteilung/Menü Option</value>
+  </data>
+  <data name="greetingControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 253</value>
+  </data>
+  <data name="wizardPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>523, 327</value>
+  </data>
+  <data name="extensionsView.HeaderIcon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="wizardHeader2.Description" xml:space="preserve">
+    <value>Wählen Sie eine Durchwahl aus der untenstehenden Liste</value>
+  </data>
+  <data name="wizardHeader2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>523, 105</value>
+  </data>
+  <data name="wizardHeader2.SubTitle" xml:space="preserve">
+    <value>Durchwahl-Einstellungen</value>
+  </data>
+  <data name="wizardHeader2.Title" xml:space="preserve">
+    <value>Abteilung/Menü Option</value>
+  </data>
+  <data name="pgExtensionSelector.Size" type="System.Drawing.Size, System.Drawing">
+    <value>523, 327</value>
+  </data>
+  <data name="wizardHeader3.Description" xml:space="preserve">
+    <value>Definieren Sie eine Nummer, wohin der Anruf verbunden werden soll</value>
+  </data>
+  <data name="wizardHeader3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>523, 105</value>
+  </data>
+  <data name="wizardHeader3.SubTitle" xml:space="preserve">
+    <value>Telefonnummer-Einstellung</value>
+  </data>
+  <data name="wizardHeader3.Title" xml:space="preserve">
+    <value>Abteilung/Menü Option</value>
+  </data>
+  <data name="btnImportOutlook.Location" type="System.Drawing.Point, System.Drawing">
+    <value>251, 174</value>
+  </data>
+  <data name="btnImportOutlook.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 19</value>
+  </data>
+  <data name="btnImportOutlook.Text" xml:space="preserve">
+    <value>Importiere einen Kontakt aus Outlook</value>
+  </data>
+  <data name="wizardPage5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>523, 327</value>
+  </data>
+  <data name="smoothLabel1.HelpText" xml:space="preserve">
+    <value>Definieren Sie einen Pfad zu einem kundenspezifischen Skript. CallButler wird dieses individuelle Skript ausführen, wenn diese Abteilung gewählt wird.
+
+Bitte beachten Sie, dass Sie - im Falle der CallButler Dienst auf einem anderen PC läuft, den entsprechend richtigen Pfad benennen.</value>
+  </data>
+  <data name="smoothLabel1.HelpTitle" xml:space="preserve">
+    <value>Pfad für individuelle Skripte</value>
+  </data>
+  <data name="smoothLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 13</value>
+  </data>
+  <data name="smoothLabel1.Text" xml:space="preserve">
+    <value>Pfad für Skripte</value>
+  </data>
+  <data name="wizardHeader4.Description" xml:space="preserve">
+    <value>Bitte tragen Sie unten einen Pfad zum Skript ein </value>
+  </data>
+  <data name="wizardHeader4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>523, 105</value>
+  </data>
+  <data name="wizardHeader4.SubTitle" xml:space="preserve">
+    <value>Individuelle Skripteinstellungen</value>
+  </data>
+  <data name="wizardHeader4.Title" xml:space="preserve">
+    <value>Abteilung/Menü Option</value>
+  </data>
+  <data name="btnScriptBrowse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>365, 167</value>
+  </data>
+  <data name="btnScriptBrowse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 21</value>
+  </data>
+  <data name="btnScriptBrowse.Text" xml:space="preserve">
+    <value>Durchblättern</value>
+  </data>
+  <data name="wizardPage7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>523, 327</value>
+  </data>
+  <data name="wzdDepartmentDetails.Size" type="System.Drawing.Size, System.Drawing">
+    <value>523, 375</value>
+  </data>
+  <data name="pgSpecificSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>523, 375</value>
+  </data>
+  <data name="wizard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>683, 423</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>683, 423</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Abteilung/Menü Option</value>
+  </data>
+</root>

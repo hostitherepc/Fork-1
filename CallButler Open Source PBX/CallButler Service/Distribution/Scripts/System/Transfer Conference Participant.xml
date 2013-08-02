@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IML Description="Transfer Conference Participant" AutoStop="true">
+	<GlobalPage>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_TransferCall">
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Transferring Call.snd</ExternalAction>
+			<GotoPage PageID="514ffddf-6d61-4d16-9d9f-0376761654e8" PageName="Transfer Call" />
+		</ExternalEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_HoldCall">
+			<GotoPage PageID="51e07917-131f-4f34-a8c7-d72b0a2a1165" PageName="Hold" />
+		</ExternalEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_UnholdCall">
+			<GotoPage PageID="9585e4a0-bd8a-4072-b113-13e52ec6a80b" PageName="Unhold" />
+		</ExternalEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_RecordingStarted">
+			<GotoPage PageID="796fe1af-2763-41fd-8eb3-61f4cc39ef0c" PageName="Main" />
+		</ExternalEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_RecordingFinished">
+			<GotoPage PageID="796fe1af-2763-41fd-8eb3-61f4cc39ef0c" PageName="Main" />
+		</ExternalEvent>
+		<HangupEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_EndConference" Async="false" />
+		</HangupEvent>
+		<TransferFailedEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Unable To Transfer.snd</ExternalAction>
+			<ExternalAction Action="CALLBUTLERINTERNAL_ReturnToCallFlowMainMenu" Async="false" />
+		</TransferFailedEvent>
+	</GlobalPage>
+	<Page ID="9df462fd-3fa0-47ff-9ad2-ce554c5024e1" Description="Start">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Call Connected.snd</ExternalAction>
+	</Page>
+	<Page ID="796fe1af-2763-41fd-8eb3-61f4cc39ef0c" Description="Main" />
+	<Page ID="514ffddf-6d61-4d16-9d9f-0376761654e8" Description="Transfer Call">
+		<IfCondition>
+			<GotoPage PageID="4b43abf5-159b-48e0-a1e8-3ca1d6b5dd1c" PageName="Transfer (Number)" />"#TransferNumber#".length &gt; 3</IfCondition>
+		<IfCondition>
+			<GotoPage PageID="7bc6f7b4-0ee8-4638-bc90-4a5a89ca448b" PageName="Transfer (Extension)" />"#TransferNumber#".length &lt;= 3</IfCondition>
+	</Page>
+	<Page ID="7bc6f7b4-0ee8-4638-bc90-4a5a89ca448b" Description="Transfer (Extension)">
+		<TransferCall TransferTo="#TransferNumber#" IsExtension="true" UseBridge="false" />
+		<TransferFailedEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Unable To Transfer.snd</ExternalAction>
+			<ExternalAction Action="CALLBUTLERINTERNAL_ReturnToCallFlowMainMenu" Async="false" />
+		</TransferFailedEvent>
+		<HangupEvent>
+			<Delay DelayTime="5000" />
+		</HangupEvent>
+	</Page>
+	<Page ID="4b43abf5-159b-48e0-a1e8-3ca1d6b5dd1c" Description="Transfer (Number)">
+		<TransferCall TransferTo="#TransferNumber#" IsExtension="false" UseBridge="false" />
+		<TransferFailedEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Unable To Transfer.snd</ExternalAction>
+			<ExternalAction Action="CALLBUTLERINTERNAL_ReturnToCallFlowMainMenu" Async="false" />
+		</TransferFailedEvent>
+		<HangupEvent>
+			<Delay DelayTime="5000" />
+		</HangupEvent>
+	</Page>
+	<Page ID="51e07917-131f-4f34-a8c7-d72b0a2a1165" Description="Hold">
+		<PlayMusic Location="#HoldMusicLocation#" IncludeSubFolders="true" />
+	</Page>
+	<Page ID="9585e4a0-bd8a-4072-b113-13e52ec6a80b" Description="Unhold" />
+</IML>

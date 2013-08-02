@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IML Description="Click2Call Handler" AutoStop="true">
+	<GlobalPage />
+	<Page ID="46fd5e4a-f194-41e0-9b44-e4ba21a51ba2" Description="Main Handler">
+		<ExternalEvent Event="CALLBUTLERINTERNAL_ExtensionNotAvailable">
+			<ExternalAction Action="CALLBUTLERINTERNAL_ExtensionNotAvailable" Async="false" />
+			<StopScript />
+		</ExternalEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_ConnectCalls">
+			<ExternalAction Action="CALLBUTLERINTERNAL_ConnectCalls" Async="false" />
+			<StopScript />
+		</ExternalEvent>
+	</Page>
+</IML>

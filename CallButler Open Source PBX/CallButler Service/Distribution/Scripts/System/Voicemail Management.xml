@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IML Description="Voicemail Management" AutoStop="true">
+	<GlobalPage />
+	<Page ID="eb28e2b7-7074-4127-88ae-d11e93864ee0" Description="Extension Management Passcode Prompt">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Enter Passcode.snd</ExternalAction>
+		<DTMFEvent Digits="^(?&lt;ExtensionPasscode&gt;.*)$">
+			<GotoPage PageID="1ce6c691-a3c1-4594-ad90-799e002826b8" PageName="Authenticate Passcode" />
+		</DTMFEvent>
+		<TimeoutEvent Duration="20" WaitForPageActions="false">
+			<ExternalAction Action="CALLBUTLERINTERNAL_ReturnToCallFlowMainMenu" Async="false" />
+		</TimeoutEvent>
+	</Page>
+	<Page ID="1ce6c691-a3c1-4594-ad90-799e002826b8" Description="Authenticate Passcode">
+		<ExternalAction Action="CALLBUTLERINTERNAL_AuthenticatePasscode" Async="false">#ExtensionPasscode#</ExternalAction>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_ValidPasscode">
+			<GotoPage PageID="068ce4fc-dd10-4f70-8b6d-93b606413f87" PageName="Extension Management Voicemail Info" />
+		</ExternalEvent>
+		<ExternalEvent Event="CALLBUTLERINTERNAL_InvalidPasscode">
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Bad Passcode.snd</ExternalAction>
+			<GotoPage PageID="eb28e2b7-7074-4127-88ae-d11e93864ee0" PageName="Extension Management Passcode Prompt" />
+		</ExternalEvent>
+	</Page>
+	<Page ID="068ce4fc-dd10-4f70-8b6d-93b606413f87" Description="Extension Management Voicemail Info">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">You have.snd</ExternalAction>
+		<SpeakText>#NewVoicemailCount#</SpeakText>
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">New Voicemails.snd</ExternalAction>
+		<GotoPage PageID="db1c33b2-d5ac-44c9-950d-2ef9cd2ffbe9" PageName="Extension Management Main Menu" />
+	</Page>
+	<Page ID="db1c33b2-d5ac-44c9-950d-2ef9cd2ffbe9" Description="Extension Management Main Menu">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Extension Management Main Menu.snd</ExternalAction>
+		<DTMFEvent Digits="^1$">
+			<SetVariable Name="VoicemailIndex" EnableEval="false">-1</SetVariable>
+			<GotoPage PageID="56c6abb5-185c-418d-96ca-13817fbc47e7" PageName="GetNextVoicemail" />
+		</DTMFEvent>
+		<DTMFEvent Digits="^2$">
+			<GotoPage PageID="f2448fb7-afce-4a6d-baba-855d8220d5a6" PageName="Extension Management Options Menu" />
+		</DTMFEvent>
+		<InvalidInputEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Not understood.snd</ExternalAction>
+			<GotoPage PageID="db1c33b2-d5ac-44c9-950d-2ef9cd2ffbe9" PageName="Extension Management Main Menu" />
+		</InvalidInputEvent>
+	</Page>
+	<Page ID="f2448fb7-afce-4a6d-baba-855d8220d5a6" Description="Extension Management Options Menu">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Extension Management Options Menu.snd</ExternalAction>
+		<DTMFEvent Digits="^1$">
+			<GotoPage PageID="be026d6e-773f-4a8b-b8cd-6c06f073d7c7" PageName="Change Greeting Start" />
+		</DTMFEvent>
+		<DTMFEvent Digits="^\*$">
+			<GotoPage PageID="db1c33b2-d5ac-44c9-950d-2ef9cd2ffbe9" PageName="Extension Management Main Menu" />
+		</DTMFEvent>
+		<InvalidInputEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Not understood.snd</ExternalAction>
+			<GotoPage PageID="f2448fb7-afce-4a6d-baba-855d8220d5a6" PageName="Extension Management Options Menu" />
+		</InvalidInputEvent>
+	</Page>
+	<Page ID="be026d6e-773f-4a8b-b8cd-6c06f073d7c7" Description="Change Greeting Start">
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Record New Greeting.snd</ExternalAction>
+		<Delay DelayTime="2000" />
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Beep.snd</ExternalAction>
+		<SetVariable Name="TempGreetingSound" EnableEval="false">@TempDirectory@\#ExtensionID#-greeting.snd</SetVariable>
+		<StartRecording Location="#TempGreetingSound#" Format="WAV" />
+		<TimeoutEvent Duration="120" WaitForPageActions="true">
+			<StopRecording />
+			<GotoPage PageID="96a6e084-916a-4e07-83d5-1bae457deb54" PageName="Confirm New Greeting" />
+		</TimeoutEvent>
+		<DTMFEvent Digits="^\#$">
+			<StopRecording />
+			<GotoPage PageID="96a6e084-916a-4e07-83d5-1bae457deb54" PageName="Confirm New Greeting" />
+		</DTMFEvent>
+	</Page>
+	<Page ID="96a6e084-916a-4e07-83d5-1bae457deb54" Description="Confirm New Greeting">
+		<Delay DelayTime="1000" />
+		<PlaySound Location="#TempGreetingSound#" />
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Confirm New Greeting.snd</ExternalAction>
+		<DTMFEvent Digits="^1$">
+			<ExternalAction Action="CALLBUTLERINTERNAL_SaveNewGreeting" Async="false">#TempGreetingSound#</ExternalAction>
+			<GotoPage PageID="f2448fb7-afce-4a6d-baba-855d8220d5a6" PageName="Extension Management Options Menu" />
+		</DTMFEvent>
+		<DTMFEvent Digits="^2$">
+			<GotoPage PageID="be026d6e-773f-4a8b-b8cd-6c06f073d7c7" PageName="Change Greeting Start" />
+		</DTMFEvent>
+		<DTMFEvent Digits="^\*$">
+			<GotoPage PageID="f2448fb7-afce-4a6d-baba-855d8220d5a6" PageName="Extension Management Options Menu" />
+		</DTMFEvent>
+		<HangupEvent>
+			<StopRecording />
+			<DeleteLastRecording />
+		</HangupEvent>
+		<InvalidInputEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Not understood.snd</ExternalAction>
+			<GotoPage PageID="96a6e084-916a-4e07-83d5-1bae457deb54" PageName="Confirm New Greeting" />
+		</InvalidInputEvent>
+	</Page>
+	<Page ID="e61c2eeb-3899-4898-af80-5e4ceaa779b2" Description="Listen To Voicemail">
+		<SpeakText>#VoicemailIntro#</SpeakText>
+		<PlaySound Location="#VoicemailSound#" />
+		<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Voicemail Save Options.snd</ExternalAction>
+		<DTMFEvent Digits="^1$">
+			<GotoPage PageID="e61c2eeb-3899-4898-af80-5e4ceaa779b2" PageName="Listen To Voicemail" />
+		</DTMFEvent>
+		<DTMFEvent Digits="^2$">
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Message Saved.snd</ExternalAction>
+			<GotoPage PageID="56c6abb5-185c-418d-96ca-13817fbc47e7" PageName="GetNextVoicemail" />
+		</DTMFEvent>
+		<DTMFEvent Digits="^3$">
+			<ExternalAction Action="CALLBUTLERINTERNAL_DeleteVoicemail" Async="false" />
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Message Deleted.snd</ExternalAction>
+			<GotoPage PageID="56c6abb5-185c-418d-96ca-13817fbc47e7" PageName="GetNextVoicemail" />
+		</DTMFEvent>
+		<InvalidInputEvent>
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">Not understood.snd</ExternalAction>
+			<GotoPage PageID="e61c2eeb-3899-4898-af80-5e4ceaa779b2" PageName="Listen To Voicemail" />
+		</InvalidInputEvent>
+	</Page>
+	<Page ID="56c6abb5-185c-418d-96ca-13817fbc47e7" Description="GetNextVoicemail">
+		<ExternalAction Action="CALLBUTLERINTERNAL_FetchNextVoicemail" Async="false" />
+		<GotoPage PageID="e61c2eeb-3899-4898-af80-5e4ceaa779b2" PageName="Listen To Voicemail" />
+		<ExternalEvent Event="CALLBUTLERINTERNAL_EndOfMessages">
+			<ExternalAction Action="CALLBUTLERINTERNAL_PlaySystemSound" Async="false">End of Messages.snd</ExternalAction>
+			<GotoPage PageID="db1c33b2-d5ac-44c9-950d-2ef9cd2ffbe9" PageName="Extension Management Main Menu" />
+		</ExternalEvent>
+	</Page>
+</IML>

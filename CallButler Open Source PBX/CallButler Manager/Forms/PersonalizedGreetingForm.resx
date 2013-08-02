@@ -1,0 +1,1495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblModule.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblModule.HelpText" xml:space="preserve">
+    <value>Select this if you want CallButler to run an add-on module.</value>
+  </data>
+  <data name="lblModule.HelpTitle" xml:space="preserve">
+    <value>Run an add-on module</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblModule.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 235</value>
+  </data>
+  <data name="lblModule.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 13</value>
+  </data>
+  <data name="lblModule.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="lblModule.Text" xml:space="preserve">
+    <value>Run an add-on module</value>
+  </data>
+  <data name="&gt;&gt;lblModule.Name" xml:space="preserve">
+    <value>lblModule</value>
+  </data>
+  <data name="&gt;&gt;lblModule.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblModule.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;lblModule.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rbModule.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rbModule.Location" type="System.Drawing.Point, System.Drawing">
+    <value>56, 235</value>
+  </data>
+  <data name="rbModule.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 13</value>
+  </data>
+  <data name="rbModule.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;rbModule.Name" xml:space="preserve">
+    <value>rbModule</value>
+  </data>
+  <data name="&gt;&gt;rbModule.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbModule.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;rbModule.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblScript.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblScript.HelpText" xml:space="preserve">
+    <value>Use this if you want to run a custom-built script after the personalized greeting is played. With a custom script you can create your own call flows and even interface with databases and other applications.
+
+To create a custom script you may want to use the inTeliScript editor included with CallButler. See the CallButler documentation for information on creating and using custom scripts.</value>
+  </data>
+  <data name="lblScript.HelpTitle" xml:space="preserve">
+    <value>Run a Custom Script</value>
+  </data>
+  <data name="lblScript.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 261</value>
+  </data>
+  <data name="lblScript.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 13</value>
+  </data>
+  <data name="lblScript.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="lblScript.Text" xml:space="preserve">
+    <value>Run a custom script (For advanced users)</value>
+  </data>
+  <data name="&gt;&gt;lblScript.Name" xml:space="preserve">
+    <value>lblScript</value>
+  </data>
+  <data name="&gt;&gt;lblScript.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblScript.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;lblScript.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblHangUp.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblHangUp.HelpText" xml:space="preserve">
+    <value>Select this if you want to hang up on this specific caller after the personalized message is played.
+
+You might use this personalization option to:
+
+- Notify unwanted callers that you will not take their calls</value>
+  </data>
+  <data name="lblHangUp.HelpTitle" xml:space="preserve">
+    <value>Hang up the Call</value>
+  </data>
+  <data name="lblHangUp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 209</value>
+  </data>
+  <data name="lblHangUp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 13</value>
+  </data>
+  <data name="lblHangUp.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="lblHangUp.Text" xml:space="preserve">
+    <value>Hang up the call</value>
+  </data>
+  <data name="&gt;&gt;lblHangUp.Name" xml:space="preserve">
+    <value>lblHangUp</value>
+  </data>
+  <data name="&gt;&gt;lblHangUp.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblHangUp.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;lblHangUp.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblTransfer.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblTransfer.HelpText" xml:space="preserve">
+    <value>Select this if you want this specific caller to be transferred directly to an extension after the personalized greeting is played.
+
+You might use this personalization option to:
+
+- Transfer important callers directly to the company owner
+- Transfer customers directly to their personal account reps</value>
+  </data>
+  <data name="lblTransfer.HelpTitle" xml:space="preserve">
+    <value>Transfer the Call to an Extension</value>
+  </data>
+  <data name="lblTransfer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 183</value>
+  </data>
+  <data name="lblTransfer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 13</value>
+  </data>
+  <data name="lblTransfer.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="lblTransfer.Text" xml:space="preserve">
+    <value>Transfer the call to an extension</value>
+  </data>
+  <data name="&gt;&gt;lblTransfer.Name" xml:space="preserve">
+    <value>lblTransfer</value>
+  </data>
+  <data name="&gt;&gt;lblTransfer.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblTransfer.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;lblTransfer.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblContinueCall.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblContinueCall.HelpText" xml:space="preserve">
+    <value>Select this if you want this specific caller to continue with the call as any other caller would (ie, after the personalized greeting is played, the caller will be sent to the main menu).
+
+You might use this personalization option to:
+
+- Tell callers in a specific area about an upcoming event</value>
+  </data>
+  <data name="lblContinueCall.HelpTitle" xml:space="preserve">
+    <value>Continue with the Call as Normal</value>
+  </data>
+  <data name="lblContinueCall.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 157</value>
+  </data>
+  <data name="lblContinueCall.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 13</value>
+  </data>
+  <data name="lblContinueCall.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="lblContinueCall.Text" xml:space="preserve">
+    <value>Continue with the call as normal</value>
+  </data>
+  <data name="&gt;&gt;lblContinueCall.Name" xml:space="preserve">
+    <value>lblContinueCall</value>
+  </data>
+  <data name="&gt;&gt;lblContinueCall.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblContinueCall.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;lblContinueCall.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="addOnModuleChooserControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="addOnModuleChooserControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="addOnModuleChooserControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 175</value>
+  </data>
+  <data name="addOnModuleChooserControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;addOnModuleChooserControl.Name" xml:space="preserve">
+    <value>addOnModuleChooserControl</value>
+  </data>
+  <data name="&gt;&gt;addOnModuleChooserControl.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.AddOnModuleChooserControl, CallButler Manager, Version=1.9.8.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;addOnModuleChooserControl.Parent" xml:space="preserve">
+    <value>wizardPage5</value>
+  </data>
+  <data name="&gt;&gt;addOnModuleChooserControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="wizardPage5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizardPage5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardPage5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 175</value>
+  </data>
+  <data name="wizardPage5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;wizardPage5.Name" xml:space="preserve">
+    <value>wizardPage5</value>
+  </data>
+  <data name="&gt;&gt;wizardPage5.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardPage5.Parent" xml:space="preserve">
+    <value>wizType</value>
+  </data>
+  <data name="&gt;&gt;wizardPage5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="extensionsView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="extensionsView.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="extensionsView.HeaderCaption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="extensionsView.HeaderIcon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="extensionsView.HeaderTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="extensionsView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 19</value>
+  </data>
+  <data name="extensionsView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 156</value>
+  </data>
+  <data name="extensionsView.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;extensionsView.Name" xml:space="preserve">
+    <value>extensionsView</value>
+  </data>
+  <data name="&gt;&gt;extensionsView.Type" xml:space="preserve">
+    <value>CallButler.Manager.ViewControls.ExtensionsView, CallButler Manager, Version=1.9.8.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;extensionsView.Parent" xml:space="preserve">
+    <value>wizardPage4</value>
+  </data>
+  <data name="&gt;&gt;extensionsView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 19</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Select an Extension</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>wizardPage4</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="wizardPage4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizardPage4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardPage4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 175</value>
+  </data>
+  <data name="wizardPage4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;wizardPage4.Name" xml:space="preserve">
+    <value>wizardPage4</value>
+  </data>
+  <data name="&gt;&gt;wizardPage4.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardPage4.Parent" xml:space="preserve">
+    <value>wizType</value>
+  </data>
+  <data name="&gt;&gt;wizardPage4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="smoothLabel3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel3.HelpText" xml:space="preserve">
+    <value>Specify a path to a custom script file. CallButler will execute this custom script after the personalized greeting has been played.
+
+Please note that if you are managing a CallButler service on another computer, you will need to specify a path to a script that is saved on that computer.</value>
+  </data>
+  <data name="smoothLabel3.HelpTitle" xml:space="preserve">
+    <value>Custom Script File Path</value>
+  </data>
+  <data name="smoothLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 5</value>
+  </data>
+  <data name="smoothLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 13</value>
+  </data>
+  <data name="smoothLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="smoothLabel3.Text" xml:space="preserve">
+    <value>Script File Path</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel3.Name" xml:space="preserve">
+    <value>smoothLabel3</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel3.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel3.Parent" xml:space="preserve">
+    <value>wizardPage3</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtScriptFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 21</value>
+  </data>
+  <data name="txtScriptFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>409, 21</value>
+  </data>
+  <data name="txtScriptFile.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;txtScriptFile.Name" xml:space="preserve">
+    <value>txtScriptFile</value>
+  </data>
+  <data name="&gt;&gt;txtScriptFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtScriptFile.Parent" xml:space="preserve">
+    <value>wizardPage3</value>
+  </data>
+  <data name="&gt;&gt;txtScriptFile.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnScriptBrowse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 48</value>
+  </data>
+  <data name="btnScriptBrowse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 21</value>
+  </data>
+  <data name="btnScriptBrowse.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="btnScriptBrowse.Text" xml:space="preserve">
+    <value>Browse...</value>
+  </data>
+  <data name="&gt;&gt;btnScriptBrowse.Name" xml:space="preserve">
+    <value>btnScriptBrowse</value>
+  </data>
+  <data name="&gt;&gt;btnScriptBrowse.Type" xml:space="preserve">
+    <value>Controls.LinkButton, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnScriptBrowse.Parent" xml:space="preserve">
+    <value>wizardPage3</value>
+  </data>
+  <data name="&gt;&gt;btnScriptBrowse.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="wizardPage3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizardPage3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 175</value>
+  </data>
+  <data name="wizardPage3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;wizardPage3.Name" xml:space="preserve">
+    <value>wizardPage3</value>
+  </data>
+  <data name="&gt;&gt;wizardPage3.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardPage3.Parent" xml:space="preserve">
+    <value>wizType</value>
+  </data>
+  <data name="&gt;&gt;wizardPage3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="wizType.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="wizType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 289</value>
+  </data>
+  <data name="wizType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 223</value>
+  </data>
+  <data name="wizType.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="wizType.TablPanelTopMargin" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="wizType.TabPanelWidth" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="wizType.TabWidth" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;wizType.Name" xml:space="preserve">
+    <value>wizType</value>
+  </data>
+  <data name="&gt;&gt;wizType.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.Wizard, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizType.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;wizType.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="rbExtension.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbExtension.Location" type="System.Drawing.Point, System.Drawing">
+    <value>56, 183</value>
+  </data>
+  <data name="rbExtension.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 13</value>
+  </data>
+  <data name="rbExtension.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;rbExtension.Name" xml:space="preserve">
+    <value>rbExtension</value>
+  </data>
+  <data name="&gt;&gt;rbExtension.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbExtension.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;rbExtension.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="wizardHeader3.Description" xml:space="preserve">
+    <value>Specify the general settings for this personalization.</value>
+  </data>
+  <data name="wizardHeader3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="wizardHeader3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardHeader3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 10, 20, 0</value>
+  </data>
+  <data name="wizardHeader3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>474, 108</value>
+  </data>
+  <data name="wizardHeader3.SubTitle" xml:space="preserve">
+    <value>Personalization Settings</value>
+  </data>
+  <data name="wizardHeader3.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="wizardHeader3.Title" xml:space="preserve">
+    <value>Call Personalization</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader3.Name" xml:space="preserve">
+    <value>wizardHeader3</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader3.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.WizardHeader, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader3.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader3.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="rbScript.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbScript.Location" type="System.Drawing.Point, System.Drawing">
+    <value>56, 261</value>
+  </data>
+  <data name="rbScript.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 13</value>
+  </data>
+  <data name="rbScript.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;rbScript.Name" xml:space="preserve">
+    <value>rbScript</value>
+  </data>
+  <data name="&gt;&gt;rbScript.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbScript.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;rbScript.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="rbHangup.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbHangup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>56, 209</value>
+  </data>
+  <data name="rbHangup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 13</value>
+  </data>
+  <data name="rbHangup.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;rbHangup.Name" xml:space="preserve">
+    <value>rbHangup</value>
+  </data>
+  <data name="&gt;&gt;rbHangup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbHangup.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;rbHangup.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="rbContinue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbContinue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>56, 157</value>
+  </data>
+  <data name="rbContinue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 13</value>
+  </data>
+  <data name="rbContinue.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;rbContinue.Name" xml:space="preserve">
+    <value>rbContinue</value>
+  </data>
+  <data name="&gt;&gt;rbContinue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbContinue.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;rbContinue.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 127</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 13</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>After the personalized message is played...</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="wizardPage2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizardPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 0</value>
+  </data>
+  <data name="wizardPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>474, 520</value>
+  </data>
+  <data name="wizardPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="wizardPage2.Text" xml:space="preserve">
+    <value>Personalization Settings</value>
+  </data>
+  <data name="&gt;&gt;wizardPage2.Name" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;wizardPage2.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardPage2.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;wizardPage2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="greetingControl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="greetingControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 121</value>
+  </data>
+  <data name="greetingControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>430, 381</value>
+  </data>
+  <data name="greetingControl.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;greetingControl.Name" xml:space="preserve">
+    <value>greetingControl</value>
+  </data>
+  <data name="&gt;&gt;greetingControl.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.GreetingControl, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;greetingControl.Parent" xml:space="preserve">
+    <value>wizardPage1</value>
+  </data>
+  <data name="&gt;&gt;greetingControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="wizardHeader2.Description" xml:space="preserve">
+    <value>Please specify a personalized message to be played for this caller.</value>
+  </data>
+  <data name="wizardHeader2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="wizardHeader2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardHeader2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 10, 20, 0</value>
+  </data>
+  <data name="wizardHeader2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>474, 108</value>
+  </data>
+  <data name="wizardHeader2.SubTitle" xml:space="preserve">
+    <value>Personalized Message</value>
+  </data>
+  <data name="wizardHeader2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="wizardHeader2.Title" xml:space="preserve">
+    <value>Call Personalization</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader2.Name" xml:space="preserve">
+    <value>wizardHeader2</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader2.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.WizardHeader, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader2.Parent" xml:space="preserve">
+    <value>wizardPage1</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="wizardPage1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizardPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 0</value>
+  </data>
+  <data name="wizardPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>474, 520</value>
+  </data>
+  <data name="wizardPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="wizardPage1.Text" xml:space="preserve">
+    <value>Personalized Message</value>
+  </data>
+  <data name="&gt;&gt;wizardPage1.Name" xml:space="preserve">
+    <value>wizardPage1</value>
+  </data>
+  <data name="&gt;&gt;wizardPage1.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardPage1.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;wizardPage1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtDialedNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 248</value>
+  </data>
+  <data name="txtDialedNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>409, 21</value>
+  </data>
+  <data name="txtDialedNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;txtDialedNumber.Name" xml:space="preserve">
+    <value>txtDialedNumber</value>
+  </data>
+  <data name="&gt;&gt;txtDialedNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtDialedNumber.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;txtDialedNumber.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="smoothLabel5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel5.HelpText" xml:space="preserve">
+    <value>Specify a value here if you have multiple inbound telephone numbers and want CallButler to inspect the dialed telephone number.
+
+You can use the * character for wildcard matching. For example if you wanted to match all numbers in area code 206, you would specify a value of "1206*" or "*206*" (without the quotes).
+
+Note: For CallButler for Skype editions, this number may also be a Skype Name.</value>
+  </data>
+  <data name="smoothLabel5.HelpTitle" xml:space="preserve">
+    <value>Dialed Telephone Number</value>
+  </data>
+  <data name="smoothLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 232</value>
+  </data>
+  <data name="smoothLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 13</value>
+  </data>
+  <data name="smoothLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="smoothLabel5.Text" xml:space="preserve">
+    <value>Dialed Telephone Number</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.Name" xml:space="preserve">
+    <value>smoothLabel5</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="smoothLabel4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel4.HelpText" xml:space="preserve">
+    <value>You may choose to specify a single value for Caller ID / Name, Caller Telephone Number and Dialed Telephone Number or you may choose to provide a value for all of them.
+
+For example if you wanted to match all callers that begin with J, you would enter "J*" for Caller ID / Name and leave Caller Telephone Number blank. 
+
+If you wanted to match all callers that begin with J AND are in the 206 area code, you would enter "J*" for CallerID / Name and "*206*" for Caller Telephone Number.</value>
+  </data>
+  <data name="smoothLabel4.HelpTitle" xml:space="preserve">
+    <value>Caller ID / Name and Telephone NUmber</value>
+  </data>
+  <data name="smoothLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 125</value>
+  </data>
+  <data name="smoothLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 13</value>
+  </data>
+  <data name="smoothLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="smoothLabel4.Text" xml:space="preserve">
+    <value>Fill in one or more:</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel4.Name" xml:space="preserve">
+    <value>smoothLabel4</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel4.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel4.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="smoothLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel2.HelpText" xml:space="preserve">
+    <value>Use this space to comment on this Call Personalization. This is used for your reference only and will not affect the operation of this Call Personalization.</value>
+  </data>
+  <data name="smoothLabel2.HelpTitle" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="smoothLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 356</value>
+  </data>
+  <data name="smoothLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="smoothLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="smoothLabel2.Text" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel2.Name" xml:space="preserve">
+    <value>smoothLabel2</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel2.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel2.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblOneTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblOneTime.HelpText" xml:space="preserve">
+    <value>If you select this box, CallButler will only use this Call Personalization for the first time this person calls.</value>
+  </data>
+  <data name="lblOneTime.HelpTitle" xml:space="preserve">
+    <value>Use One Time Only</value>
+  </data>
+  <data name="lblOneTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 318</value>
+  </data>
+  <data name="lblOneTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 13</value>
+  </data>
+  <data name="lblOneTime.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="lblOneTime.Text" xml:space="preserve">
+    <value>Use one time only</value>
+  </data>
+  <data name="&gt;&gt;lblOneTime.Name" xml:space="preserve">
+    <value>lblOneTime</value>
+  </data>
+  <data name="&gt;&gt;lblOneTime.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblOneTime.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;lblOneTime.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblRegex.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblRegex.HelpText" xml:space="preserve">
+    <value>With regular expressions you can create very complex matching algorithms. Check this box if you would like CallButler to interpret the values used for Caller ID and Telephone Number as regular expressions. 
+
+If you are unfamiliar with regular expressions you will find numerous sources for documentation and tutorials on the web.</value>
+  </data>
+  <data name="lblRegex.HelpTitle" xml:space="preserve">
+    <value>User Regular Expressions for Matching</value>
+  </data>
+  <data name="lblRegex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 295</value>
+  </data>
+  <data name="lblRegex.Size" type="System.Drawing.Size, System.Drawing">
+    <value>304, 13</value>
+  </data>
+  <data name="lblRegex.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="lblRegex.Text" xml:space="preserve">
+    <value>Use regular expressions for matching (For advanced users)</value>
+  </data>
+  <data name="&gt;&gt;lblRegex.Name" xml:space="preserve">
+    <value>lblRegex</value>
+  </data>
+  <data name="&gt;&gt;lblRegex.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblRegex.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;lblRegex.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="smoothLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel1.HelpText" xml:space="preserve">
+    <value>Specify a value here if you want CallButler to inspect the telephone number of the caller to determine if or how it should personalize the call.
+
+You can use the * character for wildcard matching. For example if you wanted to match all callers in area code 206, you would specify a value of "1206*" or "*206*" (without the quotes).
+
+Note: For CallButler for Skype editions, this number may also be a Skype Name.</value>
+  </data>
+  <data name="smoothLabel1.HelpTitle" xml:space="preserve">
+    <value>Caller Telephone Number</value>
+  </data>
+  <data name="smoothLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 192</value>
+  </data>
+  <data name="smoothLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 13</value>
+  </data>
+  <data name="smoothLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="smoothLabel1.Text" xml:space="preserve">
+    <value>Caller Telephone Number</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel1.Name" xml:space="preserve">
+    <value>smoothLabel1</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel1.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel1.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblCallerID.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCallerID.HelpText" xml:space="preserve">
+    <value>Specify a value here if you want CallButler to inspect the Caller ID or name of the caller to determine if or how it should personalize the call.
+
+You can use the * character for wildcard matching. For example if you wanted to match all callers with a name that start with the letter J, you would specify a value of "J*" (without the quotes).
+
+Note: For CallButler for Skype users you may specify a Skype Name for this value.</value>
+  </data>
+  <data name="lblCallerID.HelpTitle" xml:space="preserve">
+    <value>Caller ID / Name</value>
+  </data>
+  <data name="lblCallerID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 152</value>
+  </data>
+  <data name="lblCallerID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 13</value>
+  </data>
+  <data name="lblCallerID.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="lblCallerID.Text" xml:space="preserve">
+    <value>Caller ID / Name</value>
+  </data>
+  <data name="&gt;&gt;lblCallerID.Name" xml:space="preserve">
+    <value>lblCallerID</value>
+  </data>
+  <data name="&gt;&gt;lblCallerID.Type" xml:space="preserve">
+    <value>global::Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblCallerID.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;lblCallerID.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="cbPlayOnce.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbPlayOnce.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 318</value>
+  </data>
+  <data name="cbPlayOnce.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="cbPlayOnce.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;cbPlayOnce.Name" xml:space="preserve">
+    <value>cbPlayOnce</value>
+  </data>
+  <data name="&gt;&gt;cbPlayOnce.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbPlayOnce.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;cbPlayOnce.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="cbRegex.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbRegex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 295</value>
+  </data>
+  <data name="cbRegex.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="cbRegex.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;cbRegex.Name" xml:space="preserve">
+    <value>cbRegex</value>
+  </data>
+  <data name="&gt;&gt;cbRegex.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbRegex.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;cbRegex.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="txtNotes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 372</value>
+  </data>
+  <data name="txtNotes.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtNotes.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Both</value>
+  </data>
+  <data name="txtNotes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>409, 114</value>
+  </data>
+  <data name="txtNotes.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;txtNotes.Name" xml:space="preserve">
+    <value>txtNotes</value>
+  </data>
+  <data name="&gt;&gt;txtNotes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtNotes.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;txtNotes.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="btnImportOutlook.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="btnImportOutlook.Location" type="System.Drawing.Point, System.Drawing">
+    <value>251, 126</value>
+  </data>
+  <data name="btnImportOutlook.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 24</value>
+  </data>
+  <data name="btnImportOutlook.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="btnImportOutlook.Text" xml:space="preserve">
+    <value>Import a contact from Outlook...</value>
+  </data>
+  <data name="&gt;&gt;btnImportOutlook.Name" xml:space="preserve">
+    <value>btnImportOutlook</value>
+  </data>
+  <data name="&gt;&gt;btnImportOutlook.Type" xml:space="preserve">
+    <value>Controls.LinkButton, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnImportOutlook.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;btnImportOutlook.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="txtTelephoneNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 208</value>
+  </data>
+  <data name="txtTelephoneNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>409, 21</value>
+  </data>
+  <data name="txtTelephoneNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txtTelephoneNumber.Name" xml:space="preserve">
+    <value>txtTelephoneNumber</value>
+  </data>
+  <data name="&gt;&gt;txtTelephoneNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtTelephoneNumber.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;txtTelephoneNumber.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="txtCallerID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 168</value>
+  </data>
+  <data name="txtCallerID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>409, 21</value>
+  </data>
+  <data name="txtCallerID.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txtCallerID.Name" xml:space="preserve">
+    <value>txtCallerID</value>
+  </data>
+  <data name="&gt;&gt;txtCallerID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtCallerID.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;txtCallerID.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="wizardHeader1.Description" xml:space="preserve">
+    <value>Specify how CallButler will identify callers.</value>
+  </data>
+  <data name="wizardHeader1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="wizardHeader1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardHeader1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 10, 20, 0</value>
+  </data>
+  <data name="wizardHeader1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>474, 110</value>
+  </data>
+  <data name="wizardHeader1.SubTitle" xml:space="preserve">
+    <value>Caller Identification</value>
+  </data>
+  <data name="wizardHeader1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="wizardHeader1.Title" xml:space="preserve">
+    <value>Call Personalization</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader1.Name" xml:space="preserve">
+    <value>wizardHeader1</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader1.Type" xml:space="preserve">
+    <value>CallButler.Manager.Controls.WizardHeader, CallButler.Manager.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader1.Parent" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;wizardHeader1.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="pgGeneral.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pgGeneral.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 0</value>
+  </data>
+  <data name="pgGeneral.Size" type="System.Drawing.Size, System.Drawing">
+    <value>474, 520</value>
+  </data>
+  <data name="pgGeneral.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="pgGeneral.Text" xml:space="preserve">
+    <value>Caller Identification</value>
+  </data>
+  <data name="&gt;&gt;pgGeneral.Name" xml:space="preserve">
+    <value>pgGeneral</value>
+  </data>
+  <data name="&gt;&gt;pgGeneral.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pgGeneral.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pgGeneral.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="wizard.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizard.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="wizard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>634, 568</value>
+  </data>
+  <data name="wizard.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="wizard.TablPanelTopMargin" type="System.Int32, mscorlib">
+    <value>175</value>
+  </data>
+  <data name="wizard.TabPanelWidth" type="System.Int32, mscorlib">
+    <value>160</value>
+  </data>
+  <data name="wizard.TabWidth" type="System.Int32, mscorlib">
+    <value>135</value>
+  </data>
+  <data name="&gt;&gt;wizard.Name" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;wizard.Type" xml:space="preserve">
+    <value>global::Controls.Wizard.Wizard, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizard.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;wizard.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="openFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="openFileDialog.Filter" xml:space="preserve">
+    <value>CallButler XML Script File (*.xml)|*.xml</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>634, 568</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Call Butler</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog.Name" xml:space="preserve">
+    <value>openFileDialog</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>PersonalizedGreetingForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>CallButler.Manager.Forms.EditorWizardFormBase, CallButler Manager, Version=1.9.8.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

@@ -1,0 +1,113 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CallButler.Manager.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CallButlerServer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">localhost</Value>
+    </Setting>
+    <Setting Name="CustomerID" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="MinExtensionNumber" Type="System.Int16" Scope="Application">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="GreetingsSoundCache" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\Sounds\Greetings Cache</Value>
+    </Setting>
+    <Setting Name="RecentServers" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TcpManagementPort" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">30872</Value>
+    </Setting>
+    <Setting Name="VoicemailSoundCache" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\Sounds\Voicemails Cache</Value>
+    </Setting>
+    <Setting Name="DisplayCommonTasks" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ManagementPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ExtensionClientDownloadURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.callbutler.com/Files/CallButler%20Message%20Center%20Setup.exe</Value>
+    </Setting>
+    <Setting Name="ApplicationVersion" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UpdateNotification" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SupportUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.callbutler.com/</Value>
+    </Setting>
+    <Setting Name="DisplayShutdownDialog" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="CallFlowOrientation" Type="Controls.Diagram.DiagramLayoutDirection" Scope="User">
+      <Value Profile="(Default)">Horizontal</Value>
+    </Setting>
+    <Setting Name="BuyLicenseURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.callbutler.com/purchase/cart.aspx?ProductID=</Value>
+    </Setting>
+    <Setting Name="PrebuiltConfigCatalogPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\Data\Configs\PrebuiltConfigCatalog.xml</Value>
+    </Setting>
+    <Setting Name="PrebuiltConfigDataPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\Data\Configs\</Value>
+    </Setting>
+    <Setting Name="PluginsPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\Plugins</Value>
+    </Setting>
+    <Setting Name="ManagementInterfaceType" Type="CallButler.ManagementInterface.CallButlerManagementInterfaceType" Scope="Application">
+      <Value Profile="(Default)">Local</Value>
+    </Setting>
+    <Setting Name="PreviousLogin" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PreferredVoIPProviderPluginID" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">B9E75DC5-3B47-49bd-8D61-1628889104BB</Value>
+    </Setting>
+    <Setting Name="DefaultVoIPProviderPluginID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">B9E75DC5-3B47-49bd-8D61-1628889104BB</Value>
+    </Setting>
+    <Setting Name="DefaultFindMePluginID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">fe858d01-1ac7-46cc-817b-b206702440f9</Value>
+    </Setting>
+    <Setting Name="EditionCompareURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.callbutler.com/about/features.aspx</Value>
+    </Setting>
+    <Setting Name="UserManualPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\..\Help\CallButler User Manual.chm</Value>
+    </Setting>
+    <Setting Name="UICulture" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ModulesDownloadURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.callbutler.com/modules</Value>
+    </Setting>
+    <Setting Name="ExtensionClientSetupMail" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">
+Dear User,
+
+A new CallButler telephone system has been installed in your organization and you have been assigned a telephone Extension. This telephone extension will allow callers to leave voicemail messages and to optionally find and connect to you on your office, mobile or home phone.
+
+----------------------------------------------------------------
+You new extension number is:		#ExtNumber#
+You new extension passcode is:	#ExtPasscode#
+----------------------------------------------------------------
+
+To listen to your voicemail and change your voicemail greeting.
+
+1) From an outside line: Dial your organization's main telephone number.
+   When you hear the main menu, dial your extension number.
+   
+   From an inside line: Dial your extension number.
+
+2) Press the * key on your telephone.
+3) When asked for you passcode, dial #ExtPasscode#.
+
+For additional help, please contact your administrator.</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
